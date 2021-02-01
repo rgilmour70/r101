@@ -1,0 +1,539 @@
+[
+	{
+		"set" : {
+			"setId" : 1,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Citation: What &amp; Why</h1><p>When we write, we usually include or refer to the ideas of others. Citation is the practice of crediting our sources. This gives credit to the original author (thereby avoiding plagiarism) and makes it possible for the reader to track your ideas back to their sources.</p><p>The goal of citation is to allow the reader to</p><ol><li>identify the source for any given idea in your paper</li><li>locate that source</li></ol><p>The first goal is addressed by in-text citation, while the second is addressed by a reference list that appears at the end of your paper.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 2,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Citation</h1><p>Which of the following is NOT a reason why we cite our sources?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Give credit to the originator of an idea",
+							"isCorrect" : false,
+							"response" : "No. Giving credit to the originator of an idea is one of the reasons why we cite."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Get corporate sponsorship",
+							"isCorrect" : true,
+							"response" : "Correct! This is not a reason to cite your sources."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Help the reader to locate the sources of your ideas",
+							"isCorrect" : false,
+							"response" : "No. Helping the reader to locate sources is one of the reasons why we cite."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Avoid plagiarism",
+							"isCorrect" : false,
+							"response" : "No. Avoiding plagiarism is one of the reasons why we cite."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 3,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Citation Styles</h1><p>One of the most popular citation styles for student writing is that of the American Psychological Association (APA). This is codified in the <i>Publication Manual of the American Psychological Association,</i> currently in its 7th edition.</p><p>This tutorial will teach you the basics of using APA style to cite your sources. We can’t cover everything (the <i>Manual</i> is over 400 pages long!), but we’ll discuss general principles and a few of the more common reference types.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 4,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>The Reference List</h1><p>The reference list is an alphabetical list of all the sources you used for your paper. APA style specifies particular formats for different types of sources (e.g., journal article, book, film). These formats generally include</p><ul><li>Author or creator</li><li>Date of publication</li><li>Title</li><li>Source (where to find it)</li></ul>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 5,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Example</h1><div class='citation-reference-list'><span class='author'>Arriaga, G., Zhou, E., &amp; Jarvis, E.</span> <span class='date'>(2012).</span> <span class='title'>Of mice, birds, and men: The mouse ultrasonic song system has some features similar to humans and song-learning birds.</span> <span class='source'><i>PloS One, 7</i>(10), e46610. https://doi.org/10.1371/journal.pone.0046610</span></div><p>This example of a reference list entry for a journal article shows the four elements: authors (violet), date (blue), title (yellow), and source (green). In this case, the source contains a few sub-elements, the name of the Journal (PLoS One), the volume number (7), the issue number (10), the page numbering (e46610), and the DOI.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 6, 
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "tagIt",
+					"text" : "<h1>Test Yourself: Parts of a Reference List Entry</h1><p>Please drag the tags to the appropriate part of the reference list entry.</p>",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Title"
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "Source"
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "Date"
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "Author"
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"title" : null,
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"content" : "Ibrahim, H.",
+							"itemIds" : []
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"content" : "(2016).",
+							"itemIds" : []
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"content" : "Any other age: Vampires and oceanic lifespans.",
+							"itemIds" : []
+						},
+						"column-5" : {
+							"id" : "column-5",
+							"content" : "<i>African American Review, 49</i>(4), 313–327.",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2", "column-3", "column-4", "column-5"],
+					"correctAnswer" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : []
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : ["item-4"]
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"itemIds" : ["item-3"]
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"itemIds" : ["item-1"]
+						},
+						"column-5" : {
+							"id" : "column-5",
+							"itemIds" : ["item-2"]
+						}
+					},
+					"correctResponse" : "Nice job!",
+					"incorrectResponse" : "Not quite. H. Ibrahim is the author, the date is 2016, the title is \"Any other age&hellip;\", and the source is <i>African American Review</i>."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 7,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>In-text Citations</h1><p>In addition to listing your sources at the end of your paper, you also need to cite the sources within your text, directly after the ideas that you are borrowing. This is accomplished with a short parenthetical citation that gives enough information for the reader to find the item in your reference list. Usually this consists of author, date, and (for direct quotations or longer works) a page number.</p><div class='plain-text'>Forest fires may be caused by a combination of drought conditions and lightning strikes (Brown, 2017, p. 213).</div><p>If the work being cited has more than two authors, just list the first one with the abbreviation “et al.”, which means “and others.”</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 8,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: In-text Citation</h1><div class='citation-reference-list'><span class='author'>Sun, N., Arora, B., Lin, J., Lin, W., Chi, M., Chen, C., &amp; Pei, C.</span> <span class='date'>(2019).</span> <span class='title'>Mortality and morbidity in wild Taiwanese pangolin (Manis pentadactyla pentadactyla).</span> <span class='source'><i>PloS One, 14</i>(2), e0198230. https://doi.org/10.1371/journal.pone.0198230</span></div><p>Above is a reference list entry for a journal article. How would you cite this in-text?",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "(Sun, N., 2019)",
+							"isCorrect" : false,
+							"response" : "Incorrect."
+						},
+						{
+							"answerId" : 2,
+							"text" : "(Sun, N. ... Pei, C., 2019)",
+							"isCorrect" : false,
+							"response" : "Incorrect."
+						},
+						{
+							"answerId" : 3,
+							"text" : "(Sun et al., 2019)",
+							"isCorrect" : true,
+							"response" : "Correct! Name just the first author with \"et al.\""
+						},
+						{
+							"answerId" : 4,
+							"text" : "(Sun, N., Arora, B., Lin, J., Lin, W., Chi, M., Chen, C., & Pei, C., 2019)",
+							"isCorrect" : false,
+							"response" : "Incorrrect."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 9,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Types of Sources</h1><p>There are all manner of things that one might want to cite, including books, academic articles, newspaper articles, blog posts, legal cases, and dissertations.</p><p>These different types of sources may have their own specific formats in the reference list, but they all follow the general pattern of author, date, title, source.</p><p>Let’s examine three of the most common types: books, scholarly articles, and web pages.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 10,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Books</h1><p>Let’s start with a simple case: citing a book.</p><div class='citation-reference-list'><span class='author'>Edwards, D., &amp; Gensel, P. (Eds.).</span> <span class='date'>(2001).</span> <span class='title'><i>Plants invade the land: Evolutionary and environmental perspectives.</i></span> <span class='source'>Columbia University Press.</span></div><div class='citation-in-text'>(Edwards &amp; Gensel, 2001)</div><p>Notice that the reference list entry follows the usual formula: author (in this case, the editors as the book is a collection of papers), date, title, and source.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 11,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Journal Articles</h1><div class='citation-reference-list'><span class='author'>Da Costa, A.</span> <span class='date'>(2016).</span> <span class='title'>The significance of post-racial ideology, black political struggle, and racial literacy for Brazilian anti-racist education policy.</span> <span class='source'><i>Policy Futures in Education, 14</i>(3), 345–359. https://doi.org/10.1177/1478210316631871</span></div><div class='citation-in-text'>(Da Costa, 2016)</div><p>For journal articles, the source component of the citation consists of the title of the journal in which the article appears, the volume number, the issue number, and the page numbers. Notice that the journal title and the volume number are in italics. Also notice the DOI link at the end&mdash;more on that shortly!</p><p>It makes no difference whether you accessed this article in print or from a library database&mdash;it is cited the same way.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 12,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>DOI?</h1><p>A DOI (Digital Object Identifier) is a string of characters that uniquely identifies a document. The URL (web address) of a document may change, but its DOI never will. Always include a DOI if your document has one. Most academic articles will have a DOI. If you have a DOI, you don’t need to include a URL.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 13,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Websites</h1><div class='citation-reference-list'><span class='author'>U.S. Geological Survey.</span> <span class='date'>(2020, September 17).</span> <span class='title'><i>Multiagency initiative begins work on critical minerals and geothermal energy research in Nevada.</i></span> <span class='source'>https://www.usgs.gov/news/multiagency-initiative-begins-work-critical-minerals-and-geothermal-energy-research-nevada</span></div><div class='citation-in-text'>(U.S. Geological Survey, 2020)</div><p>In this case, the website has a group author&mdash;no individual is listed as author on the page. Since there is no DOI, we provide the URL.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 14,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Types of Sources</h1><div class='citation-reference-list'><span class='author'>Lindauer, M., &amp; Kahlo, F.</span> <span class='date'>(1999).</span> <span class='title'><i>Devouring Frida: The art history and popular celebrity of Frida Kahlo.</i></span> <span class='source'>University Press of New England.</span></div><p>This reference list entry refers to a</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "journal article",
+							"isCorrect" : false,
+							"response" : "Incorrect&mdash;this is a book. Hints include the inclusion of a publisher and the lack of any volume/issue/page information."
+						},
+						{
+							"answerId" : 2,
+							"text" : "book",
+							"isCorrect" : true,
+							"response" : "Correct. Hints include the inclusion of a publisher and the lack of any volume/issue/page information."
+						},
+						{
+							"answerId" : 3,
+							"text" : "web page",
+							"isCorrect" : false,
+							"response" : "Incorrect&mdash;this is a book. A web page would include a URL."
+						},
+						{
+							"answerId" : 4,
+							"text" : "letter to the editor",
+							"isCorrect" : false,
+							"response" : "Incorrect&mdash;this is a book. Hints include the inclusion of a publisher and the lack of any volume/issue/page information."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 15,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Elements of a Reference List Entry</h1><p>Different source types call for different types of information in the reference list entry. Which of the following elements is common to all source types?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Author",
+							"isCorrect" : true,
+							"response" : "Correct! All reference list entries should include an author."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Page numbers",
+							"isCorrect" : false,
+							"response" : "Incorrect. A reference list entry for a book or web page would not include page numbers."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Place of publication",
+							"isCorrect" : false,
+							"response" : "Incorrect. A place of publication is not included in APA style."
+						},
+						{
+							"answerId" : 4,
+							"text" : "URL",
+							"isCorrect" : false,
+							"response" : "Incorrect. A URL is relevant only to online resources."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 16,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Citation Generators</h1><p>Today there are a lot of ways to generate a reference list entry automatically, either from the database where you found the source or with software such as Mendeley or Zotero. But you <strong>must</strong> check the output!</p><p>Errors in these systems are common. Be especially alert for errors in capitalization and italics.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 17,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Finding Errors</h1><div class='citation-reference-list'><span class='author'>Frisby, C. M., &amp; Aubrey, J. S.</span> <span class='date'>(2012).</span> <span class='title'>Race and Genre in the Use of Sexual Objectification in Female Artists’ Music Videos.</span> <span class='source'><i>Howard Journal of Communications, 23</i>(1), 66–87. https://doi-org.ezproxy.ithaca.edu/10.1080/10646175.2012.641880</span></div><p>The reference list entry above was generated automatically by an EBSCO database. What problem do you see?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Punctuation",
+							"isCorrect" : false,
+							"response" : "Incorrect. The punctuation is fine."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Use of italics",
+							"isCorrect" : false,
+							"response" : "Incorrect. Italics are appropriately applied to the journal title and volume number."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Capitalization",
+							"isCorrect" : true,
+							"response" : "Correct! The article title should be in sentence case, not title case."
+						},
+						{
+							"answerId" : 4,
+							"text" : "No problems--everything is perfect",
+							"isCorrect" : false,
+							"response" : "Incorrect. There is a problem with capitalization. The article title should be in sentence case, not title case."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 18,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Almost Done!</h1><p>You’re almost there&mdash;just a few more questions&hellip;</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 19,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "textAnswer",
+					"text" : "A string that uniquely identifies a resource is called the",
+					"correctAnswers" : "DOI, document object identifier",
+					"correctResponse" : "Correct! The Document Object Identifier (DOI) uniquely identifies a resource.",
+					"incorrectResponse" : "Incorrect.  The Document Object Identifier (DOI) uniquely identifies a resource."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 20,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Parts of a Reference List Entry</h1><p>Which of the following is NOT a standard part of a reference list entry?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Source",
+							"isCorrect" : false,
+							"response" : "Incorrect. All reference list entries should have a source."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Date of access",
+							"isCorrect" : true,
+							"response" : "Correct! You don’t need to provide an access date in APA style."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Date of publication",
+							"isCorrect" : false,
+							"response" : "Incorrect. All reference list entries should include a date of publication."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Author",
+							"isCorrect" : false,
+							"response" : "Incorrect. All reference list entries should include an author."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 21,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "dragText",
+					"text" : "<h1>Test Yourself: Building a Reference</h1>Below are elements of a citation. Please drag them into the box in the appropriate order.",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Oxford University Press. "
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "(2004). "
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "Jenkyns, R. "
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "A fine brush on ivory: An appreciation of Jane Austen. "
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2"],
+					"correctAnswer" : ["item-3", "item-2", "item-4", "item-1"],
+					"correctResponse" : "Correct! Nice job!",
+					"incorrectResponse" : "Not quite."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 22,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Getting Help</h1><p>This tutorial is only an introduction to APA Style. As you write, you may find yourself stumped by an unusual resource or unable to remember an obscure rule. While the Publication Manual is the definitive guide, there are other places to go for APA help. See <a href='https://libguides.ithaca.edu/cite/apa' target='_blank'>IC Library’s APA Guide</a> for some of our favorites.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 23,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "submitForm",
+					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!"
+				}
+			]
+		}
+	}
+]

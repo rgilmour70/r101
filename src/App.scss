@@ -1,0 +1,101 @@
+$dark-color-scholarly: #e20e41;
+$light-color-scholarly: #fde2e8;
+
+$dark-color-evaluating: #f36943;
+$light-color-evaluating: #fef3f0;
+
+$dark-color-apa: #ff169e;
+$light-color-apa: #ffe2f3;
+
+$dark-color-mla: #ff169e;
+$light-color-mla: #ffe2f3;
+
+$dark-color-plagiarism: #288285;
+$light-color-plagiarism: #d4f1f2;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.scholarly {
+  .brand-text {
+    color: $light-color-scholarly;
+  }
+  .image-holder {
+    background-color: $light-color-scholarly;
+  }
+}
+
+.evaluating {
+  .brand-text {
+    color: $light-color-evaluating;
+  }
+  .image-holder {
+    background-color: $light-color-evaluating;
+  }
+}
+
+.apa {
+  .brand-text {
+    color: $light-color-apa;
+  }
+  .image-holder {
+    background-color: $light-color-apa;
+  }
+}
+
+.mla {
+  .brand-text {
+    color: $light-color-mla;
+  }
+  .image-holder {
+    background-color: $light-color-mla;
+  }
+}
+
+.plagiarism {
+  .brand-text {
+    color: $light-color-plagiarism;
+  }
+  .image-holder {
+    background-color: $light-color-plagiarism;
+  }
+}
+
+/* Splash screen */
+.splash {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+.brand-text {
+  font-size: 1.6em;
+  font-family: verdana, sans-serif;
+}
+.image-holder {
+  animation: fillit 5s infinite;
+  display: block;
+  height: 340px;
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes fillit {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+

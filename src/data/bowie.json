@@ -1,0 +1,14 @@
+[
+	{
+		"set" : {
+			"setId" : 1,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>David Bowie</h1><p>Pretty amazing, right?</p>"
+				}
+			]
+		}
+	}
+]

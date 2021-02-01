@@ -1,0 +1,545 @@
+[
+	{
+		"set" : {
+			"setId" : 1,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Citation: What &amp; Why</h1><p>When we write, we usually include or refer to the ideas of others. Citation is the practice of crediting our sources. This gives credit to the original author (thereby avoiding plagiarism) and makes it possible for the reader to track your ideas back to their sources.</p><p>The goal of citation is to allow the reader to</p><ol><li>identify the source for any given idea in your paper</li><li>locate that source</li></ol><p>The first goal is addressed by in-text citation, while the second is addressed by a works cited list that appears at the end of your paper.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 2,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Why Cite?</h1><p>Which of the following is NOT a reason why we cite our sources?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Give credit to the originator of an idea",
+							"isCorrect" : false,
+							"response" : "No. Giving credit to the originator of an idea is one of the reasons why we cite."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Get corporate sponsorship",
+							"isCorrect" : true,
+							"response" : "Correct! This is not a reason to cite your sources."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Help the reader to locate the sources of your ideas",
+							"isCorrect" : false,
+							"response" : "No. Helping the reader to locate sources is one of the reasons why we cite."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Avoid plagiarism",
+							"isCorrect" : false,
+							"response" : "No. Avoiding plagiarism is one of the reasons why we cite."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 3,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>MLA Style</h1><p>One of the most popular citation styles for student writing is that of the Modern Language Association (MLA). This is codified in the <i>MLA Handbook,</i> currently in its 8th edition.</p><p>This tutorial will teach you the basics of using MLA style to cite your sources. We can’t cover everything, but we’ll discuss general principles and a few of the most common resource types.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 4,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>The List of Works Cited</h1><p>The list of works cited is an alphabetical list of all the sources you used for your paper. For each entry, MLA style specifies a list of elements that may be used. Not all of these elements apply in every case. These elements always occur in the following order:</p><ol><li>Author</li><li>Title of source</li><li>Title of container</li><li>Other contributors</li><li>Version</li><li>Number</li><li>Publisher</li><li>Publication date</li><li>Location</li></ol><p>Each element is followed by a period (author, title of source, and the last element of the entry) or a comma (all other elements).</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 5,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Example</h1><div class='citation-reference-list'>Kraemer, Ross. “Women in the Religions of the Greco-Roman World.” <i>Religious Studies Review</i>, vol. 9, no. 2, 1983, pp. 127+.</div><p>This example of an entry for a journal article shows the relevant elements:</p><table><tr><td>Author</td><td>Kraemer, Ross</td></tr><tr><td>Title of source</td><td>“Women in the Religions of the Greco-Roman World”</td></tr><tr><td>Title of container</td><td>Religious Studies Review</td></tr><tr><td>Other contributors</td><td>N/A</td></tr><tr><td>Version</td><td>N/A</td></tr><tr><td>Number</td><td>vol. 9, no. 2</td></tr><tr><td>Publisher</td><td>N/A</td></tr><tr><td>Publication date</td><td>1983</td></tr><tr><td>Location</td><td>pp. 127+</td></tr></table>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 6, 
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "tagIt",
+					"text" : "<h1>Test Yourself: Parts of a Works Cited List Entry</h1><p>Please drag the tags to the appropriate part of the reference list entry.</p>",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Source Title"
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "Number"
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "Publication Date"
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "Author"
+						},
+						"item-5" : {
+							"id" : "item-5",
+							"content" : "Location"
+						},
+						"item-6" : {
+							"id" : "item-6",
+							"content" : "Container Title"
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"title" : null,
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4", "item-5", "item-6"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"content" : "Ibrahim, Habiba.",
+							"itemIds" : []
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"content" : "Any Other Age: Vampires and Oceanic Lifespans.",
+							"itemIds" : []
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"content" : "<i>African American Review, </i>",
+							"itemIds" : []
+						},
+						"column-5" : {
+							"id" : "column-5",
+							"content" : "vol. 49, no. 4,",
+							"itemIds" : []
+						},
+						"column-6" : {
+							"id" : "column-6",
+							"content" : "Dec. 2016,",
+							"itemIds" : []
+						},
+						"column-7" : {
+							"id" : "column-7",
+							"content" : "pp. 313–27.",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2", "column-3", "column-4", "column-5", "column-6", "column-7"],
+					"correctAnswer" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : []
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : ["item-4"]
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"itemIds" : ["item-1"]
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"itemIds" : ["item-6"]
+						},
+						"column-5" : {
+							"id" : "column-5",
+							"itemIds" : ["item-2"]
+						},
+						"column-6" : {
+							"id" : "column-6",
+							"itemIds" : ["item-3"]
+						},
+						"column-7" : {
+							"id" : "column-7",
+							"itemIds" : ["item-5"]
+						}
+					},
+					"correctResponse" : "Nice job!",
+					"incorrectResponse" : "Not quite. Habiba Ibrahim is the author, \"Any Other Age&hellip;\" is the source title, <i>African American Review</i> is the container title, the volume and issue number comprise the \"number\" element, \"Dec. 2016\" is the publication date, and the page numbers are the location."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 7,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>In-text Citations</h1><p>In addition to listing your sources at the end of your paper, you also need to cite the sources within your text, directly after the ideas that you are borrowing. This is accomplished with a short parenthetical citation that gives the reader enough information to find the item in your works cited list and to find the information within the item. Usually this consists of author and page number.</p><div class='plain-text'>There has been less research about the role of women in contemporary Judaism than in contemporary Christianity (Kraemer 130).</div><p>If the work has more than two authors, just list the first one with the abbreviation “et al.”, which means “and others.”</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 8,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: In-text Citation</h1><div class='citation-reference-list'>Highmore, Ben, and Anne Massey. “Brutalist Wallpaper and the Independent Group.” <i>Journal of Visual Culture,</i> vol. 12, no. 2, Aug. 2013, pp. 205–21, doi:10.1177/1470412913486325.</div><p>If you use information from p. 210, how would you cite this article in text?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "(Highmore, B., 2013)",
+							"isCorrect" : false,
+							"response" : "Incorrect. If there are two authors, both should be named. Use \"et al.\" for three or more authors."
+						},
+						{
+							"answerId" : 2,
+							"text" : "(Highmore and Massey 210)",
+							"isCorrect" : true,
+							"response" : "Correct!"
+						},
+						{
+							"answerId" : 3,
+							"text" : "(Highmore et al. 210)",
+							"isCorrect" : false,
+							"response" : "Incorrect. If there are two authors, both should be named. Use \"et al.\" for three or more authors."
+						},
+						{
+							"answerId" : 4,
+							"text" : "(Highmore & Massy, 2013)",
+							"isCorrect" : false,
+							"response" : "Incorrrect. If there are two authors, both should be named. Use \"et al.\" for three or more authors."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 9,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Types of Sources</h1><p>There are all manner of things that one might want to cite, including books, academic articles, newspaper articles, blog posts, legal cases, and dissertations.</p><p>In MLA style there are no special formulas for particular source types. We examine the same nine elements in every case, though usually only some of those will be relevant.</p><p>Let’s see how these elements are used in three of the most common source types: books, scholarly articles, and web pages.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 10,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Books</h1><p>Let’s start with a fairly simple case: citing a book.</p><div class='citation-reference-list'>Gardner, Julian. <i>Giotto and His Publics: Three Paradigms of Patronage.</i> Harvard University Press, 2011.</div><div class='citation-in-text'>(Gardner, 112)</div><p>The entry in the works cited list includes the following elements: author, title of source, publisher, and date. This assumes that you are using a physical copy of the book. In this case, the book is considered a stand-alone object that has no <strong>container.</strong></p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 11,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Containers</h1><p>Many things we might want to cite are parts of larger things: an essay in a collection, an article in a journal, or an issue of a comic book series. MLA calls the larger collection a container.</p><p>Let’s say that you do not have a physical copy of Gardner’s book about Giotto, but have accessed it through ProQuest Ebook Central. In this case, the ebook platform is considered a container and the entry in your works cited list would look like this:</p><div class='citation-reference-list'>Gardner, Julian. <i>Giotto and His Publics: Three Paradigms of Patronage.</i> Harvard University Press, 2011. <i>ProQuest Ebook Central,</i> ebookcentral.proquest.com/lib/ithaca-ebooks/detail.action?docID=3300967.</div>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 12,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Journal Articles</h1><div class='citation-reference-list'>Bonds, Mark. “Irony and Incomprehensibility: Beethoven’s ‘Serioso’ String Quartet in F Minor, Op. 95, and the Path to the Late Style.” <i>Journal of the American Musicological Society,</i> vol. 70, no. 2, June 2017, pp. 285–356.</div><div class='citation-in-text'>(Bonds 291)</div><p>The elements of this entry are: author, title of source, title of container, number, publisher, publication date, and location. This assumes that you are looking at the print version the article.</p><p>Journal articles will always have at least one container: the journal in which they appear. Here, that is the <i>Journal of the American Musicological Society.</i></p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 13,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Another Container</h1><p>The article by Bonds is contained in a journal, but it might also have a second container. If you accessed the article through an online database, the database is also a container. Your entry then becomes:</p><div class='citation-reference-list'>Bonds, Mark. “Irony and Incomprehensibility: Beethoven’s ‘Serioso’ String Quartet in F Minor, Op. 95, and the Path to the Late Style.” <i>Journal of the American Musicological Society,</i> vol. 70, no. 2, June 2017, pp. 285–356. <i>Gale Academic OneFile,</i> doi:10.1525/jams.2017.70.2.285.</div>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 14,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>DOI?</h1><p>You may have noticed the presence of a DOI in the preceding example. A DOI (Digital Object Identifier) is a string of characters that uniquely identifies a document. The URL (web address) of a document may change but its DOI never will. Always include a DOI if your document has one. Most academic journal articles will have a DOI.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 15,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Websites</h1><div class='citation-reference-list'>Metropolitan Museum of Art. “Making Marvels: Science and Splendor at the Courts of Europe.” 2000-20, www.metmuseum.org/exhibitions/listings/2019/making-marvels-science-splendor</div><p>In this case, the website has a group author&mdash;no individual is listed as author on the page. Since there is no DOI, we provide the URL (web address).</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 16,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Types of Sources</h1><div class='citation-reference-list'>Neels, Richard. “Elements and Opposites in Heraclitus.” <i>Apeiron,</i> vol. 51, no. 4, Oct. 2018, pp. 427–52, doi:10.1515/apeiron-2017-0029.</div><p>This works cited entry refers to a</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "journal article",
+							"isCorrect" : true,
+							"response" : "Correct! This is a journal article."
+						},
+						{
+							"answerId" : 2,
+							"text" : "book",
+							"isCorrect" : false,
+							"response" : "Incorrect&mdash;this is a journal article. Hints include the volume and issue numbers."
+						},
+						{
+							"answerId" : 3,
+							"text" : "web page",
+							"isCorrect" : false,
+							"response" : "Incorrect&mdash;this is a journal article. A web page would include a URL rather than a DOI."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 17,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Elements of a Citation</h1><p>Different source types call for different types of information in the works cited entry. Which of the following elements is common to all source types?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Author",
+							"isCorrect" : true,
+							"response" : "Correct! All reference list entries should include an author if this can be determined."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Page numbers",
+							"isCorrect" : false,
+							"response" : "Incorrect. A reference list entry for a book or web page would not include page numbers."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Place of publication",
+							"isCorrect" : false,
+							"response" : "Incorrect. A place of publication is rarely included in MLA style."
+						},
+						{
+							"answerId" : 4,
+							"text" : "URL",
+							"isCorrect" : false,
+							"response" : "Incorrect. A URL is relevant only to online resources."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 18,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Citation Generators</h1><p>There are a lot of ways to generate a works cited list entry automatically, either from the database where you found the source or with software such as Mendeley or Zotero. But you <strong>must</strong> check the output as errors are common.</p><p>Entries may also be incomplete with reference to containers. Make sure you generate the citation from within the database where you actually find the full text of the item, not from an intermediate database.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 19,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Almost Done!</h1><p>You’re almost there&mdash;just a few more questions&hellip;</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 20,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "textAnswer",
+					"text" : "A string that uniquely identifies a resource is called the",
+					"correctAnswers" : "DOI, document object identifier",
+					"correctResponse" : "Correct! The Document Object Identifier (DOI) uniquely identifies a resource.",
+					"incorrectResponse" : "Incorrect.  The Document Object Identifier (DOI) uniquely identifies a resource."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 21,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Parts of a Works Cited List Entry</h1><p>Which of the following is NOT a standard part of an entry in a works cited list?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Source title",
+							"isCorrect" : false,
+							"response" : "Incorrect. All reference list entries should have a source title."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Date of access",
+							"isCorrect" : true,
+							"response" : "Correct! You don’t usually need to provide an access date in MLA style."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Date of publication",
+							"isCorrect" : false,
+							"response" : "Incorrect. All reference list entries should include a date of publication."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Author",
+							"isCorrect" : false,
+							"response" : "Incorrect. All reference list entries should include an author."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 22,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "dragText",
+					"text" : "<h1>Test Yourself: Building a Reference</h1>Below are elements of a citation. Please drag them into the box in the appropriate order.",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Columbia University Press, "
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "2010. "
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "Coker, Christopher. "
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "<i>Barbarous Philosophers: Reflections on the Nature of War from Heraclitus to Heisenberg.</i> "
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2"],
+					"correctAnswer" : ["item-3", "item-4", "item-1", "item-2"],
+					"correctResponse" : "Correct! Nice job!",
+					"incorrectResponse" : "Not quite."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 23,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Getting Help</h1><p>This tutorial is only an introduction to MLA Style. As you write, you will often find yourself stumped by an unusual resource or unable to remember an obscure rule. While the <i>MLA Handbook</i> is the ultimate guide, there are other places to go for help. See <a href='https://libguides.ithaca.edu/cite/mla' target='_blank'>IC Library’s MLA Guide</a> for some of our favorites.</p><p>Finally, remember that the makers of this tutorial do not grade your assignments&mdash;your instructor does. When in doubt, check with them.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 24,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "submitForm",
+					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!"
+				}
+			]
+		}
+	}
+]
