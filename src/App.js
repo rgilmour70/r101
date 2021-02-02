@@ -1,10 +1,10 @@
 // eslint-disable-next-line
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.scss';
 // import ProgressBar from './components/progressBar';
 // import Slide from './components/slide';
 // import Navigation from './components/navigation';
-import { getSelectedContent } from './utils/dataService';
+// import  GetContent  from './utils/DataService';
 import Splash from './components/Splash';
 
 const queryString = require('query-string');
@@ -21,6 +21,27 @@ const App = () => {
 	const [record, setRecord] = useState([]);
 	const [content, setContent] = useState([]);
 
+	useEffect(() => {
+		// Grab data from the appropriate JSON file
+		// https://www.pluralsight.com/guides/fetch-data-from-a-json-file-in-a-react-app
+		const getData = () => {
+			fetch(`data/${slug}.json`
+			, {
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				}
+			}
+			).then(function(response) {
+				return response.json();
+			});
+		}
+		const d = getData();
+
+		setContent(d);
+	},[slug]);
+
+
 	// I wish I could do this in the CSS!
 	switch (slug) {
 		case 'scholarly': 
@@ -36,6 +57,8 @@ const App = () => {
 		case 'plagiarism':
 			document.body.style.backgroundColor = "#288285";
 			break;
+		default:
+			document.body.style.backgroundColor = "#ccc";
 	}
 
 
