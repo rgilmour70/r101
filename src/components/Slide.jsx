@@ -21,11 +21,11 @@ const Slide = (props) => {
 	const { slideId, currentSlide, content } = props;
 
 	let displayClass = 'content ';
-	// if (slideId === currentSlide) {
-	// 	displayClass += 'shown';
-	// } else {
-	// 	displayClass += 'hidden';
-	// }
+	if (slideId === currentSlide) {
+		displayClass += 'shown';
+	} else {
+		displayClass += 'hidden';
+	}
 
 	//const imagePath = content.image ? require('../images/' + content.image) : '';
 	

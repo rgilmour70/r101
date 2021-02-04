@@ -1,0 +1,332 @@
+[
+	{
+		"set" : {
+			"setId" : 1,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Plagiarism</h1><p>Plagiarism is presenting someone else’s words or ideas as your own. This is theft: it defrauds the original author. In student work it also defrauds the instructor who grades it and your classmates who are judged on their own merits.</p><p>Plagiarism covers a wide range of theft. It is not limited to books and articles, but includes music, lectures, websites, and materials in all media and formats.</p><p>The key to avoiding plagiarism is properly citing the original source.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 2,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Plagiarism</h1> <p>Your art history instructor has assigned a paper in which you need to select a painting for analysis. You find a Van Gogh painting online by using Google Images. Do you need to cite the source of this image?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Yes. I didn't paint it, so I have to cite it.",
+							"isCorrect" : true,
+							"response" : "Correct!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "No. Anyone can find it on Google, so why cite?",
+							"isCorrect" : false,
+							"response" : "No. You didn’t paint it, so you have to cite it. Citation is about crediting the creator of a work, not just about how to find something."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 3,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Unintentional Plagiarism</h1><p>Many cases of plagiarism are unintentional, but even if you don't deliberately steal from someone else's work, you are answerable for careless thefts. When in doubt—cite!</p><p>Properly crediting sources is the ethical basis of academic research. Ithaca College addresses plagiarism as part of the <a href='https://www.ithaca.edu/policies/vol7/' target='_blank'>Standards of Academic Conduct</a>, found in the Ithaca College Policy Manual.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 4,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Unintentional Plagiarism</h1><p>Can a student be held responsible for <em>unintentional</em> plagiarism?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Yes",
+							"isCorrect" : true,
+							"response" : "Correct! Even accidental plagiarism can have serious academic consequences."
+						},
+						{
+							"answerId" : 2,
+							"text" : "No",
+							"isCorrect" : false,
+							"response" : "Incorrect. Even accidental plagiarism can have serious academic consequences."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 5,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Self-Plagiarism</h1><p>It is possible to plagiarize content that you yourself produced. At the undergraduate level, this often takes the form of submitting work completed for one class in a second class.</p><p>In such a case you’re not defrauding the original author (yourself), but you are still defrauding the instructor, who presumes that he is grading work done for their class, and your fellow students who are working hard on an original creation.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 6,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself</h1><p>You are assigned a paper on a topic that is very close to that of a paper you wrote last semester for another class. It is so close that you wouldn't have to change a word to use it for your current class. Since the original paper is entirely your own work, is it acceptable to turn in the old paper instead of writing a new one?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Yes",
+							"isCorrect" : false,
+							"response" : "Incorrect. This is not appropriate unless you have the instructor's permission."
+						},
+						{
+							"answerId" : 2,
+							"text" : "No",
+							"isCorrect" : true,
+							"response" : "Correct! This is not appropriate unless you have the instructor's permission."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 7,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Uncontested Facts</h1><p>There are cases in which a statement that is not your own idea may not require a citation. This is the case of the “uncontested fact.” There is no need to provide a citation when you mention that the Earth orbits the sun or that JFK was assassinated in 1963. These are commonly known or easily determined facts that are generally uncontested.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 8, 
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "classify",
+					"text" : "<h1>Test Yourself: Uncontested Facts</h1><p>Decide if each statement meets the criteria for an uncontested fact and drag it to the appropriate column.</p>",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Barack Obama was the first African-American President of the United States."
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "The primary theme of Hamlet is vengeance."
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "The atomic number of lead is 82."
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "Disney’s advertising budget is over three billion dollars."
+						},
+						"item-5" : {
+							"id" : "item-5",
+							"content" : "Johannes Brahms was born in 1833."
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"title" : null,
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4", "item-5"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"title" : "Uncontested Fact",
+							"itemIds" : []
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"title" : "Needs a Citation",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2", "column-3"],
+					"correctAnswer" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : []
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : ["item-1", "item-3", "item-5"]
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"itemIds" : ["item-2", "item-4"]
+						}
+					},
+					"correctResponse" : "Nice job!",
+					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tr><td>Obama</td><td>Uncontested Fact</td></tr><tr><td>Hamlet</td><td>Needs a Citation</td></tr><tr><td>Lead</td><td>Uncontested Fact</td></tr><tr><td>Disney</td><td>Needs a Citation</td></tr><tr><td>Brahms</td><td>Uncontested Fact</td></tr></table>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 9,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Quoting</h1><p>Sometimes you’ll want to directly quote a source, especially if you find that it expresses an idea in an especially clear or interesting way. When you do this, use quotation marks and cite the source.</p><p>This is an example of how you might quote from page 311 of Ibram X. Kendi’s <i>Stamped From the Beginning</i> using MLA style.</p><div class='excerpt'>\"Eugenicist ideas also became part of the fledgling discipline of psychology and the basis of newly minted standardized intelligence tests\" (Kendi, 311).</div><p>Use quotation sparingly. A paper that’s just a bunch of quotes stitched together isn’t fun to read and won’t get you a good grade.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 10,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Paraphrasing</h1><p>Most of the time, you’ll want to express the ideas of others in your own words. This is called paraphrasing. When you paraphrase, you still need to cite the source, but you don’t need quotation marks.</p><div class='excerpt'>Kendi (311) links the development of standardized tests to eugenics.</div>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 11,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Quoting</h1><p>From the book <i>The Coke Machine,</i> by Michael Blanding, the following passage illustrates Coke’s marketing strategy:</p><div class='excerpt'>We’re putting ice-cold Coca-Cola Classic and our other brands within reach, wherever you look: at the supermarket, the video store, the soccer field, the gas station—everywhere.</div><p>You decide to use the information from the passage in your marketing paper. You write the following:</p><div class='excerpt'>According to Blanding (68), \"Coca-Cola is available everywhere: at the supermarket, the video store, the soccer field, the gas station.\"</div><p>Does this passage properly quote the original?</p>",		
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Yes", 
+							"isCorrect" : false,
+							"response" : "Incorrect. This passage is not properly quoted. The text that is set off in quotation marks must be a word-for-word transcription. A better approach would be: <div class='excerpt'>According to Blanding (68), Coca-Cola pursued a strategy of making their products readily available in a wide variety of venues. They are available \"wherever you look: at the video store, the supermarket, the soccer field, the gas station—everywhere.\"</div>This clearly distinguishes what is being quoted from what is being paraphrased."
+						},
+						{
+							"answerId" : 2,
+							"text" : "No",
+							"isCorrect" : true,
+							"response" : "Correct! This passage is not properly quoted. The text that is set off in quotation marks must be a word-for-word transcription. A better approach would be: <div class='excerpt'>According to Blanding (68), Coca-Cola pursued a strategy of making their products readily available in a wide variety of venues. They are available \"wherever you look: at the video store, the supermarket, the soccer field, the gas station—everywhere.\"</div>This clearly distinguishes what is being quoted from what is being paraphrased."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 12,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Paraphrasing</h1><div class='excerpt'>The argument for a \"new eugenics\" has emerged along-side a decline of the social movements that held that it was possible to improve human welfare through education and via social, economic, and political reform.<br>Sparrow, R. (2013). Sexism and human enhancement. <i>Journal of Medical Ethics 39</i>(12): 732-735.</div><p>You reference the above passage in your paper (using APA style) as follows:</p><div class='excerpt'>Enthusiasm for genetic enhancement has increased as social programs for improving humanity have fallen out of favor (Sparrow, 2013).</div><p>Is this an acceptable use of the passage?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Yes", 
+							"isCorrect" : true,
+							"response" : "Correct! The passage is effectively paraphrased and correctly cited."
+						},
+						{
+							"answerId" : 2,
+							"text" : "No.  A parenthetical citation is not required when paraphrasing.",
+							"isCorrect" : false,
+							"response" : "Incorrect. The passage is effectively paraphrased and correctly cited."
+						},
+						{
+							"answerId" : 3,
+							"text" : "No. This paraphrasing does not represent the ideas of the original passage.",
+							"isCorrect" : false,
+							"response" : "Incorrect. The passage is effectively paraphrased and correctly cited."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 14,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Almost Done</h1><p>Nice work! Just a couple more questions for review&hellip;<p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 15,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "textAnswer",
+					"text" : "What is it called when you turn in work that you completed for an earlier class?",
+					"correctAnswers" : "self plagiarism, self-plagiarism, plagiarism",
+					"correctResponse" : "That’s right!",
+					"incorrectResponse" : "Sorry, that’s not it."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 16,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "textAnswer",
+					"text" : "The date of JFK’s assassination is an example of an ",
+					"correctAnswers" : "uncontested fact",
+					"correctResponse" : "That’s right!",
+					"incorrectResponse" : "Sorry, that’s not it."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 17,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "submitForm",
+					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done! We hope that you can now enjoy college plagiarism-free!"
+				}
+			]
+		}
+	}
+]

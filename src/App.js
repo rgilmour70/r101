@@ -4,7 +4,6 @@ import './App.scss';
 // import ProgressBar from './components/progressBar';
 import Slide from './components/Slide';
 import Navigation from './components/Navigation';
-// import  GetContent  from './utils/DataService';
 import Splash from './components/Splash';
 
 const queryString = require('query-string');
@@ -65,34 +64,36 @@ const App = () => {
 
 
 	// navigation between slides
-	// handleSlideChange = (next, numberOfSlides) => {
-	// 	const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
-	// 	const nextType = this.state.content[next].type;
+	const handleSlideChange = (next, numberOfSlides) => {
+		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
+		const nextType = content[next].type;
 
-	// 	let seen = false;
+		let seen = false;
 
-	// 	this.state.record.forEach((e) => {
-	// 		if (e.slideId === next) {
-	// 			seen = true;
-	// 		}
-	// 	});
+		// change to map?
+		record.forEach((e) => {
+			if (e.slideId === next) {
+				seen = true;
+			}
+		});
 
-		// if ( !freezableTypes.includes(nextType) || seen ) { // or question registered in record?
-		// 	this.setState({	navFrozen: false });
-		// } else {
-		// 	this.setState({ navFrozen: true });
-		// }
+		if ( !freezableTypes.includes(nextType) || seen ) {
+			setNavFrozen(false);
+		} else {
+			setNavFrozen(true);
+		}
 
-		// if (next >= 0 && next <= numberOfSlides) {
-		// 	this.setState({ 
-		// 		currentSlide: next, 
-		// 		tried: false, 
-		// 		feedback:'', 
-		// 		sliderValue: 0
-		// 	});
-		// }
-		// console.log(this.state.record);
-	//}
+		if (next >= 0 && next <= numberOfSlides) {
+			setCurrentSlide(next);
+			// this.setState({ 
+			// 	currentSlide: next, 
+			// 	tried: false, 
+			// 	feedback:'', 
+			// 	sliderValue: 0
+			// });
+		}
+		console.log(record);
+	}
 
 	// recordAnswer = (currentSlide, contentId, answer, isCorrect) => {
 	// 	this.setState(state => {
@@ -147,7 +148,7 @@ const App = () => {
 				<Navigation 
 					slideNumber={currentSlide} 
 					numberOfSlides={content.length} 
-					//onNavEvent={handleSlideChange} 
+					onNavEvent={handleSlideChange} 
 					navFrozen={navFrozen}
 				/>
 			</Fragment>
