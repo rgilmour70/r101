@@ -1,9 +1,9 @@
 // eslint-disable-next-line
-import React, { useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import './App.scss';
 // import ProgressBar from './components/progressBar';
-// import Slide from './components/slide';
-// import Navigation from './components/navigation';
+import Slide from './components/Slide';
+import Navigation from './components/Navigation';
 // import  GetContent  from './utils/DataService';
 import Splash from './components/Splash';
 
@@ -14,9 +14,8 @@ const App = () => {
 	const tutorialSlug = queryString.parse(window.location.search).t;
 
 	const [slug, setSlug] = useState(tutorialSlug);
-	const [lightColor, setLightColor] = useState('');
 	const [currentSlide, setCurrentSlide] = useState(0); // really current set
-	const [isLoading, setIsLoading] = useState(true);
+	const [isLoading, setIsLoading] = useState(false);
 	const [navFrozen, setNavFrozen] = useState(false);
 	const [record, setRecord] = useState([]);
 	const [content, setContent] = useState([]);
@@ -34,12 +33,15 @@ const App = () => {
 			}
 			).then(function(response) {
 				return response.json();
+			}).then(function(myJson) {
+				setContent(myJson);
 			});
 		}
-		const d = getData();
-
-		setContent(d);
+		getData();
 	},[slug]);
+
+
+	console.log(content);
 
 
 	// I wish I could do this in the CSS!
@@ -121,40 +123,36 @@ const App = () => {
 	// 	setTimeout(setLoaded, 2000);
 	// }
 
-	//if (isLoading) {
+	if (isLoading) {
 		return (
 			<div className={'App ' + slug}>
 				<Splash />
 			</div>
 		)
-	//} // else {
-	// 	return (
-	// 		<Fragment>
-	// 			<ProgressBar 
-	// 				currentSlide={this.state.currentSlide}
-	// 				numberOfSlides={this.state.content.length}
-	// 			/>
-	// 			{this.state.content.map((s, i) => 
-	// 				<Slide 
-	// 					key={i}
-	// 					slideId={i}
-	// 					currentSlide={this.state.currentSlide}
-	// 					content={this.state.content[i]}
-	// 					recordAnswer={this.recordAnswer}
-	// 					freezeNav={this.freezeNav}
-	// 					thawNav={this.thawNav}
-	// 					record={this.state.record}
-	// 				/>
-	// 			)}
-	// 			<Navigation 
-	// 				slideNumber={this.state.currentSlide} 
-	// 				numberOfSlides={this.state.content.length} 
-	// 				onNavEvent={this.handleSlideChange} 
-	// 				navFrozen={this.state.navFrozen}
-	// 			/>
-	// 		</Fragment>
-	// 	);
-	// }
+	} else {
+	 	return (
+	 		<Fragment>
+				{content.map((s, i) => 
+					<Slide 
+						key={i}
+						slideId={i}
+						currentSlide={currentSlide}
+						content={content[i]}
+						// recordAnswer={recordAnswer}
+						// freezeNav={freezeNav}
+						// thawNav={thawNav}
+						// record={record}
+					/>
+				)}
+				<Navigation 
+					slideNumber={currentSlide} 
+					numberOfSlides={content.length} 
+					//onNavEvent={handleSlideChange} 
+					navFrozen={navFrozen}
+				/>
+			</Fragment>
+	 	);
+	}
 
 }
 
