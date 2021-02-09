@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 import React, { Component } from 'react';
-import renderHTML from 'react-render-html';
+// import renderHTML from 'react-render-html';
 import PropTypes from 'prop-types';
 // import Image from './image';
 // import MultipleChoice from './multipleChoice';
@@ -18,10 +18,10 @@ import Declarative from './Declarative';
 
 const Slide = (props) => {
 	
-	const { slideId, currentSlide, content } = props;
+	const { slideId, currentSet, content } = props;
 
 	let displayClass = 'content ';
-	if (slideId === currentSlide) {
+	if (slideId === currentSet) {
 		displayClass += 'shown';
 	} else {
 		displayClass += 'hidden';

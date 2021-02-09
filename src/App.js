@@ -14,15 +14,22 @@ const App = () => {
 	const tutorialSlug = queryString.parse(window.location.search).t;
 
 	const [slug, setSlug] = useState(tutorialSlug);
-	const [currentSlide, setCurrentSlide] = useState(0); // really current set
-	const [isLoading, setIsLoading] = useState(false);
-	const [navFrozen, setNavFrozen] = useState(false);
-	const [record, setRecord] = useState([]);
+	const [currentSet, setCurrentSet] = useState(0);
+	const [currentSlide, setCurrentSlide] = useState(0);
 	const [content, setContent] = useState([]);
+	const [contentToUse, setContentToUse] = useState([]);
 
+	const [tried, setTried] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
+	const [navFrozen, setNavFrozen] = useState(false);
+	const [feedback, setFeedback] = useState('');
+
+	// The record is an array containing the user's answers
+	const [record, setRecord] = useState([]);
+
+	// Grab data from the appropriate JSON file
+	// https://www.pluralsight.com/guides/fetch-data-from-a-json-file-in-a-react-app
 	useEffect(() => {
-		// Grab data from the appropriate JSON file
-		// https://www.pluralsight.com/guides/fetch-data-from-a-json-file-in-a-react-app
 		const getData = () => {
 			fetch(`data/${slug}.json`
 			, {
@@ -40,11 +47,37 @@ const App = () => {
 		getData();
 	},[slug]);
 
+	// console.log(content);
 
-	console.log(content);
+	const randomNumber = (min, max) => {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	};
 
+	// "Collapse" content so that only one question is used per set.
+	let toUse = [];
+	content.forEach(e => {
+		if (e.set.setContent.length === 1) {
+			//console.log('just one');
+			toUse.push(e.set.setContent[0]);
+		} else {
+			//console.log('> one');
+			const n = randomNumber(0, e.set.setContent.length-1);
+			//console.log(n);
+			toUse.push(e.set.setContent[n]);
+		}
+	});
+	console.log(toUse);
+	
+
+	// Make sure user sees our cool animation!
+	useEffect(() => {
+		const setLoaded = () => {
+			setIsLoading(false);
+		}
+		setTimeout(setLoaded, 2000);
+	},[]);
+		
 	// Set CSS variables for color scheme
-	let darkest = '';
 	switch (slug) {
 		case 'scholarly':
 			document.documentElement.style.setProperty('--light-color', '#fde2e8');
@@ -81,42 +114,42 @@ const App = () => {
 
 		let seen = false;
 
-		// change to map?
-		record.forEach((e) => {
+		record.forEach(e => {
 			if (e.slideId === next) {
 				seen = true;
 			}
 		});
 
-		if ( !freezableTypes.includes(nextType) || seen ) {
-			setNavFrozen(false);
-		} else {
-			setNavFrozen(true);
-		}
+		// if ( !freezableTypes.includes(nextType) || seen ) {
+		// 	setNavFrozen(false);
+		// } else {
+		// 	setNavFrozen(true);
+		// }
 
 		if (next >= 0 && next <= numberOfSlides) {
-			setCurrentSlide(next);
-			// this.setState({ 
-			// 	currentSlide: next, 
-			// 	tried: false, 
-			// 	feedback:'', 
-			// 	sliderValue: 0
-			// });
+			setCurrentSet(next);
+			setTried(false);
+			setFeedback('');
 		}
 		console.log(record);
 	}
 
-	// recordAnswer = (currentSlide, contentId, answer, isCorrect) => {
-	// 	this.setState(state => {
-	// 		const answerObj = {
-	// 			slideId: this.state.currentSlide,
-	// 			contentId: contentId,
-	// 			firstAnswer: answer,
-	// 			firstAnswerCorrect: isCorrect
-	// 		};
-	// 		const record = state.record.concat(answerObj);
-	// 		return { record	};
-	// 	});
+	// const recordAnswer = (currentSlide, contentId, answer, isCorrect) => {
+
+	// 	const answerObj = {
+	// 		setId
+	// 	};
+	// 	setRecord()
+	// 	// this.setState(state => {
+	// 	// 	const answerObj = {
+	// 	// 		slideId: this.state.currentSlide,
+	// 	// 		contentId: contentId,
+	// 	// 		firstAnswer: answer,
+	// 	// 		firstAnswerCorrect: isCorrect
+	// 	// 	};
+	// 	// 	const record = state.record.concat(answerObj);
+	// 	// 	return { record	};
+	// 	// });
 	// }
 
 	// freezeNav = () => {
@@ -127,13 +160,6 @@ const App = () => {
 	// 	this.setState({ navFrozen : false });
 	// }
 
-	// delays loading to allow for splash screen
-	// componentDidMount() {
-	// 	const setLoaded = () => {
-	// 		this.setState({ isLoading : false });
-	// 	}
-	// 	setTimeout(setLoaded, 2000);
-	// }
 
 	if (isLoading) {
 		return (
@@ -147,8 +173,8 @@ const App = () => {
 				{content.map((s, i) => 
 					<Slide 
 						key={i}
-						slideId={i}
-						currentSlide={currentSlide}
+						currentSet={currentSet}
+						currenstSlide={currentSlide}
 						content={content[i]}
 						// recordAnswer={recordAnswer}
 						// freezeNav={freezeNav}
@@ -157,10 +183,11 @@ const App = () => {
 					/>
 				)}
 				<Navigation 
-					slideNumber={currentSlide} 
+					currentSet={currentSet} 
+					currentSlide={currentSlide}
 					numberOfSlides={content.length} 
 					onNavEvent={handleSlideChange} 
-					navFrozen={navFrozen}
+					//navFrozen={navFrozen}
 				/>
 			</Fragment>
 	 	);

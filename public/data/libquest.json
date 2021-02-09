@@ -1,0 +1,948 @@
+[
+	{
+		"set" : {
+			"setId" : 1,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "Welcome to Ithaca College Library! This activity will help you explore the building and learn about our resources and services. We recommend doing this on your phone so you can move around.<br /><div class=\"image-container air-vent\"><img src=\"images/iclibAirVent.svg\"></div>",
+					"description" : "LibQuest!"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 2,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "How many books can I check out?",
+					"hint" : "Not sure? Ask at the circulation desk!",
+					"image" : "stapler.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "10",
+							"isCorrect" : false,
+							"response" : "No, it's more than that."
+						},
+						{
+							"answerId" : 2,
+							"text" : "20",
+							"isCorrect" : false,
+							"response" : "No, it's more than that."
+						},
+						{
+							"answerId" : 3,
+							"text" : "30",
+							"isCorrect" : false,
+							"response" : "No, it's more than that."
+						},
+						{
+							"answerId" : 4,
+							"text" : "There's no limit.",
+							"isCorrect" : true,
+							"response" : "That's true! You can check out as many books as you'd like!"
+						}
+					]
+				},
+				{
+					"contentId" : 2,
+					"type" : "multipleChoice",
+					"text" : "How long can I have an item that's on reserve?",
+					"hint" : "Not sure? Ask at the circulation desk!",
+					"image" : "stapler.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "2 hours",
+							"isCorrect" : true,
+							"response" : "That's true! Reserves can only be taken out for 2 hours so everyone has a chance to use them."
+						},
+						{
+							"answerId" : 2,
+							"text" : "4 hours",
+							"isCorrect" : false,
+							"response" : "Not quite!"
+						},
+						{
+							"answerId" : 3,
+							"text" : "1 day",
+							"isCorrect" : false,
+							"response" : "Not quite!"
+						},
+						{
+							"answerId" : 4,
+							"text" : "1 week",
+							"isCorrect" : false,
+							"response" : "Not quite!"
+						}
+					]
+				},
+				{
+					"contentId" : 3,
+					"type" : "multipleChoice",
+					"text" : "How long can I check out a laptop for?",
+					"hint" : "Not sure? Ask at the circulation desk!",
+					"image" : "stapler.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "2 hours",
+							"isCorrect" : false,
+							"response" : "No, it's longer than that."
+						},
+						{
+							"answerId" : 2,
+							"text" : "6 hours",
+							"isCorrect" : true,
+							"response" : "That's true. You can check out a laptop for up to 6 hours."
+						},
+						{
+							"answerId" : 3,
+							"text" : "1 day",
+							"isCorrect" : false,
+							"response" : "No, that's a little too long."
+						},
+						{
+							"answerId" : 4,
+							"text" : "3 days",
+							"isCorrect" : false,
+							"response" : "No, that's a little too long."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 3,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "Where can you pick up documents printed at the library?",
+					"hint" : "It's on the second floor",
+					"image" : "mouse.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Research help desk",
+							"isCorrect" : false,
+							"response" : "No, but they can tell you where to pick up your documents there."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Tech help desk",
+							"isCorrect" : true,
+							"response" : "Yes, that's where anything printed in the library can be picked up."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Multimedia desk",
+							"isCorrect" : false,
+							"response" : "No, but they can tell you where to pick up your documents there."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Music help desk",
+							"isCorrect" : false,
+							"response" : "No, but they can tell you where to pick up your documents there."
+						}
+					]
+				},
+				{
+					"contentId" : 2,
+					"type" : "multipleChoice",
+					"text" : "Where is the tech help desk located?",
+					"hint" : "Look near the library's main entrance.",
+					"image" : "mouse.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Behind the research help desk",
+							"isCorrect" : false,
+							"response" : "No, but the people at that desk can help you find it."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Next to the circulation desk",
+							"isCorrect" : true,
+							"response" : "That's right!"
+						},
+						{
+							"answerId" : 3,
+							"text" : "Next to the multimedia desk",
+							"isCorrect" : false,
+							"response" : "No, but the people at that desk can help you find it."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Behind the music help desk",
+							"isCorrect" : false,
+							"response" : "No, but the people at that desk can help you find it."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 4,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "textAnswer",
+					"text" : "What service allows you to borrow books and articles that we don't have at the IC library?",
+					"hint" : "Ask someone at the circulation desk!",
+					"correctAnswers" : "ILL, interlibrary loan, inter library loan",
+					"correctResponse" : "Correct! Interlibrary loan (or ILL) lets you borrow almost any item from another library!",
+					"incorrectResponse" : "Sorry, that's not it.",
+					"image" : "vent2.jpg"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 5,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "When you just need to print something, use one of the standing print stations to the right of the circulation desk. You'll have your paper printed in no time!",
+					"description" : "Pro Tip"
+				},
+				{
+					"contentId" : 2,
+					"type" : "declarative",
+					"text" : "To get to the fifth floor (yes, there's a fifth floor) use the elevator, the stairs next to the elevator, or the stairs at the back (west end) of the building. This is the quietest place in the library!",
+					"description" : "Pro Tip"
+				},
+				{
+					"contentId" : 3,
+					"type" : "declarative",
+					"text" : "Cancel your Netflix! We have a huge collection of DVDs, including popular blockbusters, that you can check out for free. You'll need to make your own popcorn.",
+					"description" : "Pro Tip"
+				},
+				{
+					"contentId" : 4,
+					"type" : "declarative",
+					"text" : "Secret passage! If you want to feel kind of Harry Potter, you can get from the library to the music building through the door opposite the music desk on the third floor.",
+					"description" : "Pro Tip"
+				},
+				{
+					"contentId" : 5,
+					"type" : "declarative",
+					"text" : "You can check out dry-erase markers at the circulation desk to use with the white boards that are placed around the second floor. Let your creativity flow!",
+					"description" : "Pro Tip"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 6,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "Which local newspaper is on the newspaper shelf under the stairs on the 2nd floor?",
+					"hint" : "The shelf if pretty close to the research help desk",
+					"image" : "chair.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "The Ithaca Journal",
+							"isCorrect" : true,
+							"response" : "That's right!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "The Ithacan",
+							"isCorrect" : false,
+							"response" : "Good guess, but that's not on the newspaper shelf."
+						},
+						{
+							"answerId" : 3,
+							"text" : "The Ithaca Times",
+							"isCorrect" : false,
+							"response" : "Good guess, but that's not on the newspaper shelf."
+						}
+					]
+				},
+				{
+					"contentId" : 2,
+					"type" : "multipleChoice",
+					"text" : "How many quick print stations does the library have?",
+					"hint" : "Check near the circulation desk.",
+					"image" : "chair.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "2",
+							"isCorrect": false,
+							"response": "Almost!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "3",
+							"isCorrect": false,
+							"response": "Almost!"
+						},
+						{
+							"answerId" : 3,
+							"text" : "4",
+							"isCorrect": true,
+							"response": "Yes! The library has 4 printing stations."
+						}
+					]
+				},
+				{
+					"contentId" : 3,
+					"type" : "multipleChoice",
+					"text" : "Which of these magazines is NOT on the popular periodicals shelves?",
+					"hint" : "Check on both sides of the shelf. The titles are alphabetical.",
+					"image" : "chair.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Cinefex",
+							"isCorrect" : false,
+							"response" : "No, that's on the shelf."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Vanity Fair",
+							"isCorrect" : true,
+							"response" : "That's right! We don't have Vanity Fair."
+						},
+						{
+							"answerId" : 3,
+							"text" : "People",
+							"isCorrect" : false,
+							"response" : "No, that's on the shelf."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Golf",
+							"isCorrect" : false,
+							"response" : "No, that's on the shelf."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 7,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "textAnswer",
+					"text" : "At the research help desk you'll find business cards for each subject librarian. What is the Business Librarian's last name?",
+					"hint" : "Ask a librarian! It might even be him.",
+					"correctAnswers" : "Bondra",
+					"correctResponse" : "That's right!",
+					"incorrectResponse" : "Sorry, that's not correct.",
+					"image": "cart.jpg"
+				},
+				{
+					"contentId" : 2,
+					"type" : "textAnswer",
+					"text" : "At the research help desk you'll find business cards for each subject librarian. What is the Communication Librarian's last name?",
+					"hint" : "Ask a librarian! It might even be her.",
+					"correctAnswers" : "Michael",
+					"correctResponse" : "That's right!",
+					"incorrectResponse" : "Sorry, that's not correct.",
+					"image": "cart.jpg"
+				},
+				{
+					"contentId" : 3,
+					"type" : "textAnswer",
+					"text" : "At the research help desk you'll find business cards for each subject librarian. What is the Health Science Librarian's first name?",
+					"hint" : "Ask a librarian! It might even be her.",
+					"correctAnswers" : "Laura",
+					"correctResponse" : "That's right!",
+					"incorrectResponse" : "Sorry, that's not correct.",
+					"image": "cart.jpg"
+				},
+				{
+					"contentId" : 4,
+					"type" : "textAnswer",
+					"text" : "At the research help desk you'll find business cards for each subject librarian. What is the Natural Sciences Librarian's first name?",
+					"hint" : "Ask a librarian! It might even be her.",
+					"correctAnswers" : "Abby",
+					"correctResponse" : "That's right!",
+					"incorrectResponse" : "Sorry, that's not correct.",
+					"image": "cart.jpg"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 8,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "Locate the APA style guide at the research help desk. What does section 6.12 of the guide refer to?",
+					"hint" : "The APA style guide is on the research help desk next to the column. If you can't find it, ask a librarian.",
+					"image" : "apa.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "One work by multiple authors",
+							"isCorrect" : true,
+							"response" : "That's right!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "Plagiarism",
+							"isCorrect" : false,
+							"response" : "That's not it."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Groups as authors",
+							"isCorrect" : false,
+							"response" : "That's not it."
+						}
+					]
+				},
+				{
+					"contentId" : 2,
+					"type" : "multipleChoice",
+					"text" : "Locate the APA style guide at the research help desk. What does section 7.11 of the guide refer to?",
+					"hint" : "The APA style guide is on the research help desk next to the column. If you can't find it, ask a librarian.",
+					"image" : "apa.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Audiovisual media",
+							"isCorrect" : false,
+							"response" : "That's not it."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Publication date",
+							"isCorrect" : false,
+							"response" : "That's not it."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Internet message board and online communities",
+							"isCorrect" : true,
+							"response" : "That's right!"
+						}
+					]
+				},
+				{
+					"contentId" : 3,
+					"type" : "multipleChoice",
+					"text" : "Locate the APA style guide at the research help desk. What does section 7.02 of the guide refer to?",
+					"hint" : "The APA style guide is on the research help desk next to the column. If you can't find it, ask a librarian.",
+					"image" : "apa.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Periodicals",
+							"isCorrect" : false,
+							"response" : "That's not it."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Books, reference books, and book chapters",
+							"isCorrect" : true,
+							"response" : "That's right!"
+						},
+						{
+							"answerId" : 3,
+							"text" : "Legislative materials",
+							"isCorrect" : false,
+							"response" : "That's not it."
+						}
+					]
+				},
+				{
+					"contentId" : 4,
+					"type" : "multipleChoice",
+					"text" : "Locate the APA style guide at the research help desk. What does section 5.29 of the guide refer to?",
+					"hint" : "The APA style guide is on the research help desk next to the column. If you can't find it, ask a librarian.",
+					"image" : "apa.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Photographs",
+							"isCorrect" : true,
+							"response" : "That's right!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "Parentheses",
+							"isCorrect" : false,
+							"response" : "That's not it."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Use of italics",
+							"isCorrect" : false,
+							"response" : "That's not it."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 9,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "What types of computers are in the Digital Media Center?",
+					"hint" : "The Digital Media Center is on the 3rd floor near the multimedia desk.",
+					"image" : "three2.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "PCs",
+							"isCorrect" : false,
+							"response" : "No."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Macs",
+							"isCorrect" : true,
+							"response" : "Correct! The Digital Media Center has macs."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Both PCs and Macs",
+							"isCorrect" : false,
+							"response" : "Unfortunately no."
+						}
+					]
+				},
+				{
+					"contentId" : 2,
+					"type" : "multipleChoice",
+					"text" : "Find the entrance to the Whalen building in the back of the 3rd floor. What time does that entrance close?",
+					"hint" : "The Whalen entrance is near the men's room on the 3rd floor.",
+					"image" : "three2.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "9 pm",
+							"isCorrect" : false,
+							"response" : "Close, but not quite."
+						},
+						{
+							"answerId" : 2,
+							"text" : "10 pm",
+							"isCorrect" : true,
+							"response" : "Correct! That door is locked at 10 pm."
+						},
+						{
+							"answerId" : 3,
+							"text" : "11 pm",
+							"isCorrect" : false,
+							"response" : "Close, but not quite."
+						},
+						{
+							"answerId" : 4,
+							"text" : "midnight",
+							"isCorrect" : false,
+							"response" : "Close, but not quite."
+						}
+					]
+				},
+				{
+					"contentId" : 3,
+					"type" : "multipleChoice",
+					"text" : "Find the bulletin board next to the multimedia desk. Which staff member is NOT listed?",
+					"hint" : "The board is to the right of the desk, and the names are near the bottom.",
+					"image" : "three2.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Kelly Merritt",
+							"isCorrect" : false,
+							"response" : "No, she's listed on the board."
+						},
+						{
+							"answerId" : 2,
+							"text" : "John Birk",
+							"isCorrect" : true,
+							"response" : "Correct! He's not listed there."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Scott Fish",
+							"isCorrect" : false,
+							"response" : "No, he's listed on the board."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 10,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "You're doing a great job. As a reward, please enjoy this cute kitten picture.",
+					"image" : "kitten.jpg",
+					"description" : "You're half way there!"
+				},
+				{
+					"contentId" : 2,
+					"type" : "declarative",
+					"text" : "You're doing a great job. As a reward, please enjoy this picture of an alpaca.",
+					"image" : "alpaca.jpg",
+					"description" : "You're half way there!"
+				},
+				{
+					"contentId" : 3,
+					"type" : "declarative",
+					"text" : "You're doing a great job. Here's a beagle puppy for your enjoyment.",
+					"image" : "beagle.jpg",
+					"description" : "You're half way there!"
+				},
+				{
+					"contentId" : 4,
+					"type" : "declarative",
+					"text" : "You deserve a treat! Here's a picture of a corgi puppy.",
+					"image" : "corgy.jpg",
+					"description" : "You're half way there!"
+				},
+				{
+					"contentId" : 5,
+					"type" : "declarative",
+					"text" : "Baby goats! Baby goats! Baby goats!",
+					"image" : "goats.jpg",
+					"description" : "You're half way there!"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 11,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "textAnswer",
+					"text" : "What does the sign above the music help desk say?",
+					"hint" : "The music help desk is on the third floor near the back of the building.",
+					"image" : "piano.jpg",
+					"correctAnswers" : "music center",
+					"correctResponse" : "Correct!",
+					"incorrectResponse" : "Sorry, that's not it."
+				},
+				{
+					"contentId" : 2,
+					"type" : "textAnswer",
+					"text" : "How many quick search stations are located next to the music help desk?",
+					"hint" : "The music help desk is on the third floor near the back of the building.",
+					"image" : "piano.jpg",
+					"correctAnswers" : "1, one",
+					"correctResponse" : "Correct!",
+					"incorrectResponse" : "Sorry, that's not it."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 12,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "Go to the 4th floor and find Life Magazine in Periodicals at AP2 .L548. Open to page 128 in volume 14, issue 1. Who is pictured there?",
+					"hint" : "Old issues of Life Magazine can be found on the 4th floor at range P1 East.",
+					"image" : "bound.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Nelson Mandela",
+							"isCorrect" : false,
+							"response" : "No, you must be on the wrong page."
+						},
+						{
+							"answerId" : 2,
+							"text" : "George Bush",
+							"isCorrect" : false,
+							"response" : "No, you must be on the wrong page."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Michael Jackson",
+							"isCorrect" : false,
+							"response" : "No, you must be on the wrong page."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Princess Diana",
+							"isCorrect" : true,
+							"response" : "That's right!"
+						}
+					]
+				},
+				{
+					"contentId" : 2,
+					"type" : "multipleChoice",
+					"text" : "Go to the 4th floor and find Life Magazine in Periodicals at AP2 .L548. Open to page 99 in volume 4, issue 1. Who is pictured there?",
+					"hint" : "Old issues of Life Magazine can be found on the 4th floor at range P1 East.",
+					"image" : "bound.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Ronald Reagan",
+							"isCorrect" : true,
+							"response" : "That's right!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "Nelson Mandela",
+							"isCorrect" : false,
+							"response" : "No, you must be on the wrong page."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Jimmy Carter",
+							"isCorrect" : false,
+							"response" : "No, you must be on the wrong page."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Princess Diana",
+							"isCorrect" : false,
+							"response" : "No, you must be on the wrong page."
+						}
+					]
+				},
+				{
+					"contentId" : 3,
+					"type" : "multipleChoice",
+					"text" : "Go to the 4th floor and find Life Magazine in Periodicals at AP2 .L548. Open to page 74 of the July 1987 issue. Who is pictured there?",
+					"hint" : "Old issues of Life Magazine can be found on the 4th floor at range P1 East.",
+					"image" : "bound.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Ronald Reagan",
+							"isCorrect" : false,
+							"response" : "No, you must be on the wrong page."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Abraham Lincoln",
+							"isCorrect" : true,
+							"response" : "That's right!"
+						},
+						{
+							"answerId" : 3,
+							"text" : "Jimmy Carter",
+							"isCorrect" : false,
+							"response" : "No, you must be on the wrong page."
+						},
+						{
+							"answerId" : 4,
+							"text" : "Princess Diana",
+							"isCorrect" : false,
+							"response" : "No, you must be on the wrong page."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 13,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "Go to call number range BR and look on the shelves. What subject do these books cover?",
+					"hint" : "You should be on the 4th floor.",
+					"image" : "shelves.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Religion",
+							"isCorrect" : true,
+							"response" : "Correct! Great job!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "Business",
+							"isCorrect" : false,
+							"response" : "Not quite."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Technology",
+							"isCorrect" : false,
+							"response" : "Not quite."
+						}
+					]
+				},
+				{
+					"contentId" : 2,
+					"type" : "multipleChoice",
+					"text" : "Go to call number range GE and look on the shelves. What subject do these books cover?",
+					"hint" : "You should be on the 4th floor.",
+					"image" : "shelves.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Music",
+							"isCorrect" : false,
+							"response" : "Not quite."
+						},
+						{
+							"answerId" : 2,
+							"text" : "American literature",
+							"isCorrect" : false,
+							"response" : "Not quite."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Environmental Science",
+							"isCorrect" : true,
+							"response" : "Correct! Great job!"
+						}
+					]
+				},
+				{
+					"contentId" : 3,
+					"type" : "multipleChoice",
+					"text" : "Go to call number range JF and look on the shelves. What subject do these books cover?",
+					"hint" : "You should be on the 5th floor.",
+					"image" : "shelves.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Music",
+							"isCorrect" : false,
+							"response" : "Not quite."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Politics",
+							"isCorrect" : true,
+							"response" : "Correct! Great job!"
+						},
+						{
+							"answerId" : 3,
+							"text" : "Biology",
+							"isCorrect" : false,
+							"response" : "Not quite."
+						}
+					]
+				},
+				{
+					"contentId" : 4,
+					"type" : "multipleChoice",
+					"text" : "Go to call number range RT and look on the shelves. What subject do these books cover?",
+					"hint" : "You should be on the 4th floor.",
+					"image" : "shelves.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Nursing",
+							"isCorrect" : true,
+							"response" : "Correct! Great job!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "Philosophy",
+							"isCorrect" : false,
+							"response" : "Not quite."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Architecture",
+							"isCorrect" : false,
+							"response" : "Not quite."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 14,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "textAnswer",
+					"text" : "Who is the artist of the sculpture on the 5th floor next to the study rooms?",
+					"hint" : "He shares a name with a ninja turtle.",
+					"image" : "cherubs.jpg",
+					"correctAnswers" : "Donatello",
+					"correctResponse" : "That's right!",
+					"incorrectResponse" : "Sorry, that's not it."
+				},
+				{
+					"contentId" : 2,
+					"type" : "multipleChoice",
+					"text" : "What is distinctive about the bathrooms on the library's 5th floor?",
+					"hint" : "They're near the archives.",
+					"image" : "spiral.jpg",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "They have changing tables",
+							"isCorrect" : false,
+							"response" : "Unfortunately, that's not the case."
+						},
+						{
+							"answerId" : 2,
+							"text" : "They have exquisite potpourri",
+							"isCorrect" : false,
+							"response" : "Unfortunately, that's not the case."
+						},
+						{
+							"answerId" : 3,
+							"text" : "They're gender inclusive",
+							"isCorrect" : true,
+							"response" : "Yes, they are!"
+						},
+						{
+							"answerId" : 4,
+							"text" : "They have showers",
+							"isCorrect" : false,
+							"response" : "Unfortunately, that's not the case."
+						}
+					]
+				},
+				{
+					"contentId" : 3,
+					"type" : "textAnswer",
+					"text" : "What department is located in the middle section of the 5th floor near the the back of the building?",
+					"hint" : "We're looking for one word. Check near the gender-neutral bathrooms.",
+					"images" : "spiral.jpg",
+					"correctAnswers" : "archive, archives",
+					"correctResponse" : "That's right!",
+					"incorrectResponse" : "Sorry, that's not it."
+				}
+			]
+		}
+	}
+]
