@@ -1,6 +1,7 @@
 // eslint-disable-next-line
 import React, { Fragment, useState, useEffect } from 'react';
-import './App.scss';
+import './App.css';
+import LightenDarkenColor from './utils/colors.js';
 // import ProgressBar from './components/progressBar';
 import Slide from './components/Slide';
 import Navigation from './components/Navigation';
@@ -42,24 +43,34 @@ const App = () => {
 
 	console.log(content);
 
-
-	// I wish I could do this in the CSS!
+	// Set CSS variables for color scheme
+	let darkest = '';
 	switch (slug) {
-		case 'scholarly': 
-			document.body.style.backgroundColor = "#e20e41";
+		case 'scholarly':
+			document.documentElement.style.setProperty('--light-color', '#fde2e8');
+			document.documentElement.style.setProperty('--dark-color', '#e20e41');
+			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#e20e41', -10));
 			break;
 		case 'evaluating':
-			document.body.style.backgroundColor = "#f36943";
+			document.documentElement.style.setProperty('--light-color', '#f3f3f0');
+			document.documentElement.style.setProperty('--dark-color', '#f36943');
+			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#f36943', -10));
 			break;
 		case 'apa':
 		case 'mla':
-			document.body.style.backgroundColor = "#ff169e";
+			document.documentElement.style.setProperty('--light-color', '#ffe2f3');
+			document.documentElement.style.setProperty('--dark-color', '#ff169e');
+			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#ff169e', -10));
 			break;
 		case 'plagiarism':
-			document.body.style.backgroundColor = "#288285";
+			document.documentElement.style.setProperty('--light-color', '#d4f1f2');
+			document.documentElement.style.setProperty('--dark-color', '#288285');
+			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#288285', -10));
 			break;
 		default:
-			document.body.style.backgroundColor = "#ccc";
+			document.documentElement.style.setProperty('--light-color', '#ccc');
+			document.documentElement.style.setProperty('--dark-color', '#333');
+			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#333333', -10));
 	}
 
 
