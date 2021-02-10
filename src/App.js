@@ -18,7 +18,7 @@ const App = () => {
 	const [content, setContent] = useState([]);
 
 	const [tried, setTried] = useState(false);
-	const [isLoading, setIsLoading] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 	// const [navFrozen, setNavFrozen] = useState(false);
 	// const [feedback, setFeedback] = useState('');
 
@@ -27,7 +27,30 @@ const App = () => {
 
 	// Grab data from the appropriate JSON file
 	// https://www.pluralsight.com/guides/fetch-data-from-a-json-file-in-a-react-app
+	// useEffect(() => {
+	// 	const getData = () => {
+	// 		fetch(`data/${slug}.json`
+	// 		, {
+	// 			headers: {
+	// 				'Content-Type': 'application/json',
+	// 				'Accept': 'application/json'
+	// 			}
+	// 		}
+	// 		).then(function(response) {
+	// 			return response.json();
+	// 		}).then(function(myJson) {
+	// 			setContent(myJson);
+	// 		});
+	// 	}
+	// 	getData();
+	// },[slug]);
+
+	const randomNumber = (min, max) => {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	};
+
 	useEffect(() => {
+		let toUse = [];
 		const getData = () => {
 			fetch(`data/${slug}.json`
 			, {
@@ -38,18 +61,27 @@ const App = () => {
 			}
 			).then(function(response) {
 				return response.json();
-			}).then(function(myJson) {
-				setContent(myJson);
+			}
+			).then(function(myJson) {
+				// if needed, choose a single question from each set
+				myJson.forEach((o) => {
+					if (o.set.setContent.length === 1) {
+						toUse.push(o.set.setContent[0]);
+					} else {
+						const n = randomNumber(0, o.set.setContent.length-1);
+						toUse.push(o.set.setContent[n]);
+					}
+				});
 			});
-		}
+		};
 		getData();
+		// slideContent contains only the questions selected for use
+		setContent(toUse);
 	},[slug]);
+
 
 	// console.log(content);
 
-	// const randomNumber = (min, max) => {
-	// 	return Math.floor(Math.random() * (max - min + 1)) + min;
-	// };
 
 	// // "Collapse" content so that only one question is used per set.
 	// let toUse = [];
