@@ -14,18 +14,16 @@ const App = () => {
 	const tutorialSlug = queryString.parse(window.location.search).t;
 
 	const [slug, setSlug] = useState(tutorialSlug);
-	const [currentSet, setCurrentSet] = useState(0);
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [content, setContent] = useState([]);
-	const [contentToUse, setContentToUse] = useState([]);
 
 	const [tried, setTried] = useState(false);
-	const [isLoading, setIsLoading] = useState(true);
-	const [navFrozen, setNavFrozen] = useState(false);
-	const [feedback, setFeedback] = useState('');
+	const [isLoading, setIsLoading] = useState(false);
+	// const [navFrozen, setNavFrozen] = useState(false);
+	// const [feedback, setFeedback] = useState('');
 
 	// The record is an array containing the user's answers
-	const [record, setRecord] = useState([]);
+	/// const [record, setRecord] = useState([]);
 
 	// Grab data from the appropriate JSON file
 	// https://www.pluralsight.com/guides/fetch-data-from-a-json-file-in-a-react-app
@@ -49,24 +47,24 @@ const App = () => {
 
 	// console.log(content);
 
-	const randomNumber = (min, max) => {
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-	};
+	// const randomNumber = (min, max) => {
+	// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+	// };
 
-	// "Collapse" content so that only one question is used per set.
-	let toUse = [];
-	content.forEach(e => {
-		if (e.set.setContent.length === 1) {
-			//console.log('just one');
-			toUse.push(e.set.setContent[0]);
-		} else {
-			//console.log('> one');
-			const n = randomNumber(0, e.set.setContent.length-1);
-			//console.log(n);
-			toUse.push(e.set.setContent[n]);
-		}
-	});
-	console.log(toUse);
+	// // "Collapse" content so that only one question is used per set.
+	// let toUse = [];
+	// content.forEach(e => {
+	// 	if (e.set.setContent.length === 1) {
+	// 		//console.log('just one');
+	// 		toUse.push(e.set.setContent[0]);
+	// 	} else {
+	// 		//console.log('> one');
+	// 		const n = randomNumber(0, e.set.setContent.length-1);
+	// 		//console.log(n);
+	// 		toUse.push(e.set.setContent[n]);
+	// 	}
+	// });
+	// console.log(toUse);
 	
 
 	// Make sure user sees our cool animation!
@@ -109,16 +107,16 @@ const App = () => {
 
 	// navigation between slides
 	const handleSlideChange = (next, numberOfSlides) => {
-		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
-		const nextType = content[next].type;
+		// const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
+		//const nextType = content[next].type;
 
-		let seen = false;
+		// let seen = false;
 
-		record.forEach(e => {
-			if (e.slideId === next) {
-				seen = true;
-			}
-		});
+		// record.forEach(e => {
+		// 	if (e.slideId === next) {
+		// 		seen = true;
+		// 	}
+		// });
 
 		// if ( !freezableTypes.includes(nextType) || seen ) {
 		// 	setNavFrozen(false);
@@ -127,11 +125,11 @@ const App = () => {
 		// }
 
 		if (next >= 0 && next <= numberOfSlides) {
-			setCurrentSet(next);
-			setTried(false);
-			setFeedback('');
+			setCurrentSlide(next);
+			// setTried(false);
+			// setFeedback('');
 		}
-		console.log(record);
+		//console.log(record);
 	}
 
 	// const recordAnswer = (currentSlide, contentId, answer, isCorrect) => {
@@ -173,8 +171,8 @@ const App = () => {
 				{content.map((s, i) => 
 					<Slide 
 						key={i}
-						currentSet={currentSet}
-						currenstSlide={currentSlide}
+						slideId={i}
+						currentSlide={currentSlide}
 						content={content[i]}
 						// recordAnswer={recordAnswer}
 						// freezeNav={freezeNav}
@@ -183,7 +181,6 @@ const App = () => {
 					/>
 				)}
 				<Navigation 
-					currentSet={currentSet} 
 					currentSlide={currentSlide}
 					numberOfSlides={content.length} 
 					onNavEvent={handleSlideChange} 

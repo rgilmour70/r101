@@ -18,10 +18,10 @@ import Declarative from './Declarative';
 
 const Slide = (props) => {
 	
-	const { slideId, currentSet, content } = props;
+	const { slideId, currentSlide, content } = props;
 
 	let displayClass = 'content ';
-	if (slideId === currentSet) {
+	if (slideId === currentSlide) {
 		displayClass += 'shown';
 	} else {
 		displayClass += 'hidden';
