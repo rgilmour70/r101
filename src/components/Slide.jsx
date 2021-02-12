@@ -1,9 +1,7 @@
-// eslint-disable-next-line
-import React, { Component } from 'react';
-// import renderHTML from 'react-render-html';
+import React from 'react';
+import renderHTML from 'react-render-html';
 import PropTypes from 'prop-types';
-// import Image from './image';
-// import MultipleChoice from './multipleChoice';
+import MultipleChoice from './MultipleChoice';
 // import TextAnswer from './textAnswer';
 // import Range from './range';
 // import OrderList from './orderList';
@@ -31,14 +29,13 @@ const Slide = (props) => {
 	
 	 switch(content.type) {
 
-	// 	case 'multipleChoice':
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<Image imageSrc={imagePath} />
-	// 				<div className="text">{renderHTML(content.text)}</div>
-	// 				<MultipleChoice {...props} />
-	// 			</div>
-	// 		);
+		case 'multipleChoice':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{renderHTML(content.text)}</div>
+					<MultipleChoice {...props} />
+				</div>
+			);
 
 	// 	case 'textAnswer':
 	// 		return (

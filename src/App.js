@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React, { Fragment, useState, useEffect } from 'react';
 import './App.css';
 import LightenDarkenColor from './utils/colors.js';
@@ -11,15 +10,16 @@ const queryString = require('query-string');
 
 const App = () => {
 
-	const tutorialSlug = queryString.parse(window.location.search).t;
+	const tutorialSlug = queryString.parse(window.location.search).t || 'libquest';
 
+	// eslint-disable-next-line
 	const [slug, setSlug] = useState(tutorialSlug);
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [content, setContent] = useState([]);
 
-	const [tried, setTried] = useState(false);
+	//const [tried, setTried] = useState(false);
 	const [isLoading, setIsLoading] = useState(true);
-	// const [navFrozen, setNavFrozen] = useState(false);
+	const [navFrozen, setNavFrozen] = useState(false);
 	// const [feedback, setFeedback] = useState('');
 
 	// The record is an array containing the user's answers
@@ -136,12 +136,15 @@ const App = () => {
 			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#333333', -10));
 	}
 
+	const thawNav = () => {
+		setNavFrozen(false);
+	}
 
 	// navigation between slides
 	const handleSlideChange = (next, numberOfSlides) => {
-		// const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
-		//const nextType = content[next].type;
-
+		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
+		const nextType = content[next].type;
+		console.log(nextType);
 		// let seen = false;
 
 		// record.forEach(e => {
@@ -150,11 +153,12 @@ const App = () => {
 		// 	}
 		// });
 
-		// if ( !freezableTypes.includes(nextType) || seen ) {
-		// 	setNavFrozen(false);
-		// } else {
-		// 	setNavFrozen(true);
-		// }
+//		if ( !freezableTypes.includes(nextType) || seen ) {
+		if ( !freezableTypes.includes(nextType) ) {
+			setNavFrozen(false);
+		} else {
+			setNavFrozen(true);
+		}
 
 		if (next >= 0 && next <= numberOfSlides) {
 			setCurrentSlide(next);
@@ -182,14 +186,6 @@ const App = () => {
 	// 	// });
 	// }
 
-	// freezeNav = () => {
-	// 	this.setState({ navFrozen : true });
-	// }
-
-	// thawNav = () => {
-	// 	this.setState({ navFrozen : false });
-	// }
-
 
 	if (isLoading) {
 		return (
@@ -208,7 +204,7 @@ const App = () => {
 						content={content[i]}
 						// recordAnswer={recordAnswer}
 						// freezeNav={freezeNav}
-						// thawNav={thawNav}
+						thawNav={thawNav}
 						// record={record}
 					/>
 				)}
@@ -216,7 +212,7 @@ const App = () => {
 					currentSlide={currentSlide}
 					numberOfSlides={content.length} 
 					onNavEvent={handleSlideChange} 
-					//navFrozen={navFrozen}
+					navFrozen={navFrozen}
 				/>
 			</Fragment>
 	 	);

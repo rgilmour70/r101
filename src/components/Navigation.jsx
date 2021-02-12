@@ -1,9 +1,9 @@
-// eslint-disable-next-line
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Navigation = (props) => {
 
-	const { numberOfSlides, currentSet, currentSlide, onNavEvent, navFrozen } = props;
+	const { numberOfSlides, currentSlide, onNavEvent, navFrozen } = props;
 
 	const rightArrow = <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" className="rightArrow">
 		<title>arrow-right2</title>
@@ -33,5 +33,12 @@ const Navigation = (props) => {
 	}
 
 }
+
+Navigation.propTypes = {
+	numberOfSlides: PropTypes.number.isRequired,
+	currentSlide: PropTypes.number.isRequired,
+	onNavEvent: PropTypes.func.isRequired,
+	navFrozen: PropTypes.bool.isRequired
+};
 
 export default Navigation;
