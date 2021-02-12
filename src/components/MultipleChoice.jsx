@@ -1,29 +1,17 @@
 import React, { Fragment, useState } from 'react';
+import PropTypes from 'prop-types';
 import Feedback from './Feedback';
 
 const MultipleChoice = (props) => {
 
 	const [response, setResponse] = useState('');
-	// constructor(props) {
-	// 	super(props);
-	// 	this.state = {
-	// 		content: this.props.content,
-	// 		currentSlide : this.props.currentSlide,
-	// 		tried : false,
-	// 		contentId : this.props.content.contentId,
-	// 		response: '',
-	// 	};
-	// 	this.recordAnswer = props.recordAnswer;
-	// 	this.thawNav = props.thawNav;
-	// }
+	const [tried, setTried] = useState(false);
 
-	const currentSlide = props.currentSlide;
+	const { currentSlide, content, thawNav, recordAnswer } = props;
 
 	const onMcAnswerSelect = (e) => {
 
-		// this.setState({ tried : true });
-		// setTried(true);
-		// this.thawNav();
+		setTried(true);
 
 		// Get the selected answer
 		const answerId = parseInt(e.target.previousSibling.value, 10);
@@ -50,19 +38,14 @@ const MultipleChoice = (props) => {
 
 		const isCorrect = answerId === theRightAnswer;
 
-		console.log(isCorrect);
+		if (isCorrect) {
+			props.thawNav();
+		}
 
-		/* Need to thaw the nav. */
-		props.thawNav();
-
-		/* Need to record the answer. */
-		props.recordAnswer(currentSlide, props.content.contentId, answerId, isCorrect);
-
-		// this.setState({ response: response, mcAnswer: answerId });
-
-		// if (!this.state.tried) {
-		// 	this.recordAnswer(this.state.currentSlide, this.state.contentId, answerId, isCorrect);
-		// }
+		/* Need to only record the answer if it's the first one! */
+		if (!tried) {
+			props.recordAnswer(currentSlide, props.content.contentId, answerId, isCorrect);
+		}
 
 	}
 
@@ -85,7 +68,13 @@ const MultipleChoice = (props) => {
 		</Fragment>
 	);
 
-
 }
+
+MultipleChoice.propTypes = {
+	currentSlide: PropTypes.number.isRequired,
+	content: PropTypes.object.isRequired,
+	thawNav: PropTypes.func.isRequired,
+	recordAnswer: PropTypes.func.isRequired
+};
 
 export default MultipleChoice;
