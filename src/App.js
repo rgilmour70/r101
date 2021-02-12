@@ -23,7 +23,7 @@ const App = () => {
 	// const [feedback, setFeedback] = useState('');
 
 	// The record is an array containing the user's answers
-	/// const [record, setRecord] = useState([]);
+	const [record, setRecord] = useState([]);
 
 	// Grab data from the appropriate JSON file
 	// https://www.pluralsight.com/guides/fetch-data-from-a-json-file-in-a-react-app
@@ -144,7 +144,6 @@ const App = () => {
 	const handleSlideChange = (next, numberOfSlides) => {
 		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
 		const nextType = content[next].type;
-		console.log(nextType);
 		// let seen = false;
 
 		// record.forEach(e => {
@@ -165,26 +164,29 @@ const App = () => {
 			// setTried(false);
 			// setFeedback('');
 		}
-		//console.log(record);
+		console.log(record);
 	}
 
-	// const recordAnswer = (currentSlide, contentId, answer, isCorrect) => {
+	const recordAnswer = (currentSlide, contentId, answer, isCorrect) => {
 
-	// 	const answerObj = {
-	// 		setId
-	// 	};
-	// 	setRecord()
-	// 	// this.setState(state => {
-	// 	// 	const answerObj = {
-	// 	// 		slideId: this.state.currentSlide,
-	// 	// 		contentId: contentId,
-	// 	// 		firstAnswer: answer,
-	// 	// 		firstAnswerCorrect: isCorrect
-	// 	// 	};
-	// 	// 	const record = state.record.concat(answerObj);
-	// 	// 	return { record	};
-	// 	// });
-	// }
+		const answerObj = {
+			slideId: currentSlide,
+			contentId: contentId,
+			firstAnswer: answer,
+			firstAnswerCorrect: isCorrect
+		};
+		setRecord(record.concat(answerObj));
+		// this.setState(state => {
+		// 	const answerObj = {
+		// 		slideId: this.state.currentSlide,
+		// 		contentId: contentId,
+		// 		firstAnswer: answer,
+		// 		firstAnswerCorrect: isCorrect
+		// 	};
+		// 	const record = state.record.concat(answerObj);
+		// 	return { record	};
+		// });
+	}
 
 
 	if (isLoading) {
@@ -202,10 +204,9 @@ const App = () => {
 						slideId={i}
 						currentSlide={currentSlide}
 						content={content[i]}
-						// recordAnswer={recordAnswer}
+						recordAnswer={recordAnswer}
 						// freezeNav={freezeNav}
 						thawNav={thawNav}
-						// record={record}
 					/>
 				)}
 				<Navigation 

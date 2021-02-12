@@ -44,7 +44,6 @@ const MultipleChoice = (props) => {
 				theRightAnswer = theAnswers[j].answerId;
 			} 
 			if (theAnswers[j].answerId === answerId) {
-				// response = theAnswers[j].response;
 				setResponse(theAnswers[j].response);
 			}
 		}
@@ -57,6 +56,7 @@ const MultipleChoice = (props) => {
 		props.thawNav();
 
 		/* Need to record the answer. */
+		props.recordAnswer(currentSlide, props.content.contentId, answerId, isCorrect);
 
 		// this.setState({ response: response, mcAnswer: answerId });
 
