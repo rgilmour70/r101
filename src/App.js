@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import './App.css';
 import LightenDarkenColor from './utils/colors.js';
-// import ProgressBar from './components/progressBar';
+import ProgressBar from './components/ProgressBar';
 import Slide from './components/Slide';
 import Navigation from './components/Navigation';
 import Splash from './components/Splash';
@@ -15,6 +15,7 @@ const App = () => {
 	// eslint-disable-next-line
 	const [slug, setSlug] = useState(tutorialSlug);
 	const [currentSlide, setCurrentSlide] = useState(0);
+	const [numberOfSlides, setNumberOfSlides] = useState(0);
 	const [content, setContent] = useState([]);
 
 	//const [tried, setTried] = useState(false);
@@ -25,32 +26,14 @@ const App = () => {
 	// The record is an array containing the user's answers
 	const [record, setRecord] = useState([]);
 
-	// Grab data from the appropriate JSON file
-	// https://www.pluralsight.com/guides/fetch-data-from-a-json-file-in-a-react-app
-	// useEffect(() => {
-	// 	const getData = () => {
-	// 		fetch(`data/${slug}.json`
-	// 		, {
-	// 			headers: {
-	// 				'Content-Type': 'application/json',
-	// 				'Accept': 'application/json'
-	// 			}
-	// 		}
-	// 		).then(function(response) {
-	// 			return response.json();
-	// 		}).then(function(myJson) {
-	// 			setContent(myJson);
-	// 		});
-	// 	}
-	// 	getData();
-	// },[slug]);
-
 	const randomNumber = (min, max) => {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	};
 
+	/* Grab data from the appropriate JSON file */
 	useEffect(() => {
 		let toUse = [];
+		let numberOfSets = 0;
 		const getData = () => {
 			fetch(`data/${slug}.json`
 			, {
@@ -71,34 +54,24 @@ const App = () => {
 						const n = randomNumber(0, o.set.setContent.length-1);
 						toUse.push(o.set.setContent[n]);
 					}
+					numberOfSets++;
 				});
+				setNumberOfSlides(numberOfSets);
 			});
 		};
 		getData();
 		// slideContent contains only the questions selected for use
 		setContent(toUse);
+
+		// we need this for the progress bar
+		// console.log(numberOfSets);
+		// setNumberOfSlides(numberOfSets);
 	},[slug]);
 
 
 	// console.log(content);
 
-
-	// // "Collapse" content so that only one question is used per set.
-	// let toUse = [];
-	// content.forEach(e => {
-	// 	if (e.set.setContent.length === 1) {
-	// 		//console.log('just one');
-	// 		toUse.push(e.set.setContent[0]);
-	// 	} else {
-	// 		//console.log('> one');
-	// 		const n = randomNumber(0, e.set.setContent.length-1);
-	// 		//console.log(n);
-	// 		toUse.push(e.set.setContent[n]);
-	// 	}
-	// });
-	// console.log(toUse);
 	
-
 	// Make sure user sees our cool animation!
 	useEffect(() => {
 		const setLoaded = () => {
@@ -198,6 +171,10 @@ const App = () => {
 	} else {
 	 	return (
 	 		<Fragment>
+	 			<ProgressBar 
+	 				currentSlide={currentSlide}
+	 				numberOfSlides={numberOfSlides}
+	 			/>
 				{content.map((s, i) => 
 					<Slide 
 						key={i}

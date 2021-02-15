@@ -2,7 +2,7 @@ import React from 'react';
 import renderHTML from 'react-render-html';
 import PropTypes from 'prop-types';
 import MultipleChoice from './MultipleChoice';
-// import TextAnswer from './textAnswer';
+import TextAnswer from './TextAnswer';
 // import Range from './range';
 // import OrderList from './orderList';
 // import Classify from './classify/classify';
@@ -37,15 +37,13 @@ const Slide = (props) => {
 				</div>
 			);
 
-	// 	case 'textAnswer':
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<Image imageSrc={imagePath} />
-	// 				<div className="text">{renderHTML(content.text)}</div>
-	// 				<TextAnswer {...props} />
-	// 				<ModalLink {...props} />
-	// 			</div>
-	// 		);
+		case 'textAnswer':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{renderHTML(content.text)}</div>
+					<TextAnswer {...props} />
+				</div>
+			);
 
 	// 	case 'range':
 	// 		return (

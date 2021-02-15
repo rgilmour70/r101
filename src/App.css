@@ -44,6 +44,17 @@ body {
   }
 }
 
+/* Progress Bar */
+.progress {
+  height: 5px;
+  background-color: var(--light-color);
+}
+.progress-bar {
+  height: 5px;
+  background-color: var(--dark-color);
+}
+
+/* Navigation */
 nav {
   display: flex;
   justify-content: center;

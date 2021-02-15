@@ -24,9 +24,8 @@ const MultipleChoice = (props) => {
 		e.target.previousSibling.checked = true;
 
 		// Determine the correct answer
-		const theAnswers = props.content.answers;
+		const theAnswers = content.answers;
 		let theRightAnswer = null;
-		let response = '';
 		for (let j=0; j<theAnswers.length; j++) {
 			if (theAnswers[j].isCorrect) {
 				theRightAnswer = theAnswers[j].answerId;
@@ -39,12 +38,12 @@ const MultipleChoice = (props) => {
 		const isCorrect = answerId === theRightAnswer;
 
 		if (isCorrect) {
-			props.thawNav();
+			thawNav();
 		}
 
 		/* Need to only record the answer if it's the first one! */
 		if (!tried) {
-			props.recordAnswer(currentSlide, props.content.contentId, answerId, isCorrect);
+			recordAnswer(currentSlide, props.content.contentId, answerId, isCorrect);
 		}
 
 	}

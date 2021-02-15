@@ -14,7 +14,8 @@ const Feedback = (props) => {
 
 };
 
-Feedback.PropTypes = {
+Feedback.propTypes = {
 	response: PropTypes.string.isRequired
-}
+};
+
 export default Feedback;
