@@ -3,7 +3,7 @@ import renderHTML from 'react-render-html';
 import PropTypes from 'prop-types';
 import MultipleChoice from './MultipleChoice';
 import TextAnswer from './TextAnswer';
-// import Range from './range';
+import Range from './Range';
 // import OrderList from './orderList';
 // import Classify from './classify/classify';
 // import DragText from './dragText/dragText';
@@ -45,14 +45,13 @@ const Slide = (props) => {
 				</div>
 			);
 
-	// 	case 'range':
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<Image imageSrc={imagePath} />
-	// 				<div className="text">{renderHTML(content.text)}</div>
-	// 				<Range {...props} />
-	// 			</div>
-	// 		);
+		case 'range':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{renderHTML(content.text)}</div>
+					<Range {...props} />
+				</div>
+			);
 
 	// 	case 'orderList':
 	// 		return (

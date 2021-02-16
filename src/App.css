@@ -96,6 +96,33 @@ nav .btn-primary.frozen {
   margin: 2em 4em;
 }
 
+/* Styles for react-rangeslider */
+.rangeslider-horizontal .rangeslider__handle {
+  border-radius: 5px !important;
+  border-color: #fff !important;
+  width: 20px !important;
+  height: 30px !important;
+  background-color: #fff !important;
+}
+.rangeslider-horizontal .rangeslider__handle::after {
+  content: '' !important;
+  height: 0 !important;
+  width: 0;
+}
+
+.rangeslider-horizontal .rangeslider__fill {
+  background-color: var(--dark-color) !important;
+}
+
+.rangeslider__label-item:first-of-type {
+  padding-right: 4em;
+  white-space: nowrap;
+}
+.rangeslider__label-item:last-of-type {
+  margin-left: 2em;
+  white-space: nowrap;
+}
+
 /* Utilities */
 .hidden {
   display: none !important;

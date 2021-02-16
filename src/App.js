@@ -5,6 +5,7 @@ import ProgressBar from './components/ProgressBar';
 import Slide from './components/Slide';
 import Navigation from './components/Navigation';
 import Splash from './components/Splash';
+import 'react-rangeslider/lib/index.css'
 
 const queryString = require('query-string');
 
