@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import MultipleChoice from './MultipleChoice';
 import TextAnswer from './TextAnswer';
 import Range from './Range';
-// import OrderList from './orderList';
-// import Classify from './classify/classify';
+import OrderList from './OrderList';
+import Classify from './Classify/Classify';
 // import DragText from './dragText/dragText';
 // import UserChoice from './userChoice';
 // import ModalLink from './modalLink';
@@ -25,7 +25,7 @@ const Slide = (props) => {
 		displayClass += 'hidden';
 	}
 
-	//const imagePath = content.image ? require('../images/' + content.image) : '';
+	// const imagePath = content.image ? require('../images/' + content.image) : '';
 	
 	 switch(content.type) {
 
@@ -53,23 +53,21 @@ const Slide = (props) => {
 				</div>
 			);
 
-	// 	case 'orderList':
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<Image imageSrc={imagePath} />
-	// 				<div className="text">{renderHTML(content.text)}</div>
-	// 				<OrderList {...props} />
-	// 			</div>
-	// 		);
+		case 'orderList':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{renderHTML(content.text)}</div>
+					<OrderList {...props} />
+				</div>
+			);
 
-	// 	case 'classify':
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<Image imageSrc={imagePath} />
-	// 				<div className="text">{renderHTML(content.text)}</div>
-	// 				<Classify {...props} />
-	// 			</div>
-	// 		);
+		case 'classify':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{renderHTML(content.text)}</div>
+					<Classify {...props} />
+				</div>
+			);
 
 	// 	case 'dragText':
 	// 		return (
