@@ -4,14 +4,13 @@ import PropTypes from 'prop-types';
 import MultipleChoice from './MultipleChoice';
 import TextAnswer from './TextAnswer';
 import Range from './Range';
-import OrderList from './OrderList';
+// import OrderList from './OrderList';
 import Classify from './Classify/Classify';
-// import DragText from './dragText/dragText';
-// import UserChoice from './userChoice';
+import UserChoice from './UserChoice';
 // import ModalLink from './modalLink';
 // import Mnemonic from './mnemonic';
 import Declarative from './Declarative';
-// import TagIt from './tagIt/tagIt';
+import TagIt from './TagIt/TagIt';
 // import SubmitForm from './submitForm';
 
 const Slide = (props) => {
@@ -53,13 +52,13 @@ const Slide = (props) => {
 				</div>
 			);
 
-		case 'orderList':
-			return (
-				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{renderHTML(content.text)}</div>
-					<OrderList {...props} />
-				</div>
-			);
+		// case 'orderList':
+		// 	return (
+		// 		<div className={displayClass} id={'s' + slideId}>
+		// 			<div className="text">{renderHTML(content.text)}</div>
+		// 			<OrderList {...props} />
+		// 		</div>
+		// 	);
 
 		case 'classify':
 			return (
@@ -77,12 +76,12 @@ const Slide = (props) => {
 	// 			</div>
 	// 		);
 
-	// 	case 'userChoice':
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<UserChoice {...props} />
-	// 			</div>
-	// 		);
+		// case 'userChoice':
+		// 	return (
+		// 		<div className={displayClass} id={'s' + slideId}>
+		// 			<UserChoice {...props} />
+		// 		</div>
+		// 	);
 
 	// 	case 'mnemonic':
 	// 		return (
@@ -91,13 +90,13 @@ const Slide = (props) => {
 	// 			</div>
 	// 		);
 			
-	// 	case 'tagIt' :
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<div className="text">{renderHTML(content.text)}</div>
-	// 				<TagIt {...props} />
-	// 			</div>	
-	// 		);
+		case 'tagIt' :
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{renderHTML(content.text)}</div>
+					<TagIt {...props} />
+				</div>	
+			);
 
 	// 	case 'submitForm':
 	// 		return (

@@ -123,6 +123,15 @@ nav .btn-primary.frozen {
   white-space: nowrap;
 }
 
+/* Feedback area */
+.feedback {
+  margin: 1em 2em;
+  background-color: #fff;
+  color: $orange;
+  border: 1px solid $orange;
+  padding: 0.5em 1em;
+}
+
 /* Utilities */
 .hidden {
   display: none !important;

@@ -1,8 +1,9 @@
+// eslint-disable-next-line
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import renderHTML from 'react-render-html';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import Feedback from './Feedback';
+import Feedback from './feedback';
 
 const reorder = (list, startIndex, endIndex) => {
 	const result = Array.from(list);
@@ -12,15 +13,15 @@ const reorder = (list, startIndex, endIndex) => {
 };
 
 const Container = styled.div`
-	background-color: ${ props => (props.isDragging ? '#ffb2a9' : 'white') };
+	display: inline;
+	background-color: ${ props => (props.isDragging ? '#ffc0e5' : 'white') };
 `;
 
-const OrderListItemText = styled.div`
-	display: table-cell;
-	padding: 0 0.5em 0.5em 1.5em;
+const OrderTextItemText = styled.div`
+	display: inline;
 `;
 
-class OrderList extends Component {
+class OrderText extends Component {
 
 	constructor(props) {
 		super(props);
@@ -90,9 +91,9 @@ class OrderList extends Component {
 												{...provided.dragHandleProps}
 												isDragging={snapshot.isDragging}
 											>
-												<OrderListItemText>
+												<OrderTextItemText>
 													{renderHTML(item.name)}
-												</OrderListItemText>
+												</OrderTextItemText>
 											</Container>
 										}
 									</Draggable>
@@ -112,4 +113,4 @@ class OrderList extends Component {
 
 }
 
-export default OrderList;
+export default OrderText;

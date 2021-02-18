@@ -1,0 +1,42 @@
+import React from 'react';
+import styled from 'styled-components';
+import { Draggable } from 'react-beautiful-dnd';
+
+const Container = styled.div`
+	display: inline-block;
+	padding: 0 8px;
+	border-radius: 500px;
+	margin: 10px;
+	text-align: left;
+	background-color: #ff2fa9;
+	color: white;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	min-height: 0;
+	max-width: 200px;
+	&::before {
+		content: "#";
+		color: #333;
+	}
+`;
+
+class Item extends React.Component {
+	render() {
+		return (
+			<Draggable draggableId={this.props.item.id} index={this.props.index}>
+				{ (provided, snapshot) => (
+					<Container
+						{...provided.draggableProps}
+						{...provided.dragHandleProps}
+						ref={provided.innerRef}
+						isDragging={snapshot.isDragging}
+						className="drag-tag"
+					>
+						{this.props.item.content}
+					</Container>
+				)}
+			</Draggable>
+		);
+	}
+}
+
+export default Item;
