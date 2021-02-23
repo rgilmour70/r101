@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import renderHTML from 'react-render-html';
+import ReactHtmlParser from 'react-html-parser';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import Feedback from './Feedback';
 
@@ -92,7 +92,7 @@ class OrderList extends Component {
 												isDragging={snapshot.isDragging}
 											>
 												<OrderListItemText>
-													{renderHTML(item.name)}
+													{ReactHtmlParser(item.name)}
 												</OrderListItemText>
 											</Container>
 										}

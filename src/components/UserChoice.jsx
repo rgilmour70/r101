@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-// import Order from './Order';
 import OrderList from './OrderList';
 
 class UserChoice extends Component {
@@ -53,7 +52,7 @@ class UserChoice extends Component {
 								key={q.contentId} 
 								content={q}
 								contentId={q.contentId}
-								display={this.state.selectedQuestion == q.contentId} 
+								display={this.state.selectedQuestion === q.contentId} 
 								items={q.items}
 								text={q.text}
 								correctOrder={q.correctOrder}

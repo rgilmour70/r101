@@ -1,5 +1,5 @@
 import React from 'react';
-import renderHTML from 'react-render-html';
+import ReactHtmlParser from 'react-html-parser';
 import PropTypes from 'prop-types';
 import MultipleChoice from './MultipleChoice';
 import TextAnswer from './TextAnswer';
@@ -31,7 +31,7 @@ const Slide = (props) => {
 		case 'multipleChoice':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{renderHTML(content.text)}</div>
+					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<MultipleChoice {...props} />
 				</div>
 			);
@@ -39,7 +39,7 @@ const Slide = (props) => {
 		case 'textAnswer':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{renderHTML(content.text)}</div>
+					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<TextAnswer {...props} />
 				</div>
 			);
@@ -47,7 +47,7 @@ const Slide = (props) => {
 		case 'range':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{renderHTML(content.text)}</div>
+					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<Range {...props} />
 				</div>
 			);
@@ -55,7 +55,7 @@ const Slide = (props) => {
 		case 'orderList':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{renderHTML(content.text)}</div>
+					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<OrderList {...props} />
 				</div>
 			);
@@ -63,7 +63,7 @@ const Slide = (props) => {
 		case 'classify':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{renderHTML(content.text)}</div>
+					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<Classify {...props} />
 				</div>
 			);
@@ -71,7 +71,7 @@ const Slide = (props) => {
 	// 	case 'dragText':
 	// 		return (
 	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<div className="text">{renderHTML(content.text)}</div>
+	// 				<div className="text">{ReactHtmlParser(content.text)}</div>
 	// 				<DragText {...props} />
 	// 			</div>
 	// 		);
@@ -90,18 +90,18 @@ const Slide = (props) => {
 	// 			</div>
 	// 		);
 			
-		case 'tagIt' :
-			return (
-				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{renderHTML(content.text)}</div>
-					<TagIt {...props} />
-				</div>	
-			);
+		// case 'tagIt' :
+		// 	return (
+		// 		<div className={displayClass} id={'s' + slideId}>
+		// 			<div className="text">{ReactHtmlParser(content.text)}</div>
+		// 			<TagIt {...props} />
+		// 		</div>	
+		// 	);
 
 	// 	case 'submitForm':
 	// 		return (
 	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<div className="text">{renderHTML(content.text)}</div>
+	// 				<div className="text">{ReactHtmlParser(content.text)}</div>
 	// 				<SubmitForm {...props} />
 	// 			</div>
 	// 		);

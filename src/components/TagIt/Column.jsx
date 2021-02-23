@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import renderHTML from 'react-render-html';
+import ReactHtmlParser from 'react-html-parser';
 import Item from './Item';
 import { Droppable } from 'react-beautiful-dnd';
 
@@ -63,7 +63,7 @@ class Column extends Component {
 							>
 								{this.props.items.map( (item, index) => <Item key={item.id} item={item} index={index} />)}
 								{provided.placeholder}
-								<span>{renderHTML(this.props.column.content)}</span>
+								<span>{ReactHtmlParser(this.props.column.content)}</span>
 							</ItemList>
 						)}
 					</Droppable>

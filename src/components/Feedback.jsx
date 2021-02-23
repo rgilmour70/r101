@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import renderHTML from 'react-render-html';
+import ReactHtmlParser from 'react-html-parser';
 
 const Feedback = (props) => {
 
 	if (props.response !== '') {
 		return (
-			<div className="feedback">{props.response}</div>
+			<div className="feedback">{ReactHtmlParser(props.response)}</div>
 		);
 	} else {
 		return null;

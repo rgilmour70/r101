@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import React, { Component } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
-import renderHTML from 'react-render-html';
+import ReactHtmlParser from 'react-html-parser';
 import styled from 'styled-components';
 import Column from './Column';
 import Feedback from '../Feedback';
@@ -133,7 +133,7 @@ class TagIt extends Component {
 		if (isCorrect) {
 			this.setState({ correct: isCorrect, response: correctResponse });
 		} else {
-			this.setState({ correct: isCorrect, response: renderHTML(incorrectResponse) });
+			this.setState({ correct: isCorrect, response: ReactHtmlParser(incorrectResponse) });
 		}
 
 		if (!this.state.tried) {
