@@ -1,0 +1,286 @@
+[
+	{
+		"set" : {
+			"setId" : 1,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Evaluating Information</h1><p>You can find almost anything on the Internet, but not all of that information is of high quality, and not all of it is appropriate for your assignments.</p><p>This tutorial will guide you through the process of evaluating sources of information. The goal is to help you select the best sources for your academic papers and projects.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 2,
+			"userChoice" : true,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"contentLabel" : "Communication",
+					"type" : "orderList",
+					"text" : "You are presenting a persuasive speech in favor of net neutrality. Please order the following sources from most to least appropriate for your project.",
+					"items" : [
+						{
+							"name" : "Restoring New Neutrality, One State at a Time” episode of <i>Radio Survivor</i> podcast, including an interview with a policy analyst from the Electronic Frontier Foundation",
+							"id" : 1,
+							"type" : "podcast",
+							"correctPosition" : 4
+						},
+						{
+							"name" : "\"Wither U.S. Net Neutrality Regulation?\" in the journal <i>Review of Industrial Organization</i>. The author is a professor in the business school at Berkeley.",
+							"id" : 2,
+							"type" : "article",
+							"correctPosition" : 3
+						},
+						{
+							"name" : "H.R. 1644 - Save the Internet Act of 2019, sponsored by Michael F. Doyle, D-PA. House Energy and Commerce Committee.",
+							"id" : 3,
+							"type" : "govdoc",
+							"correctPosition" : 2
+						},
+						{
+							"name" : "A video on Verizon’s website in which Verizon’s general counsel explains the changes he would like to see regarding net neutrality.",
+							"id" : 4,
+							"type" : "video",
+							"correctPosition" : 5
+						},
+						{
+							"name" : "The book <i>Virtual Freedom: Net Neutrality and Free Speech in the Internet Age</i> by Dawn C. Nunziato, 2009",
+							"id" : 5,
+							"type" : "book",
+							"correctPosition" : 1
+						}
+					],
+					"correctOrder" : [5, 3, 2, 1, 4],
+					"perfectResponse" : "Yes, you got the order right",
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+				},
+				{
+					"contentId" : 2,
+					"contentLabel" : "Literature",
+					"type" : "orderList",
+					"text" : "You are writing a paper on major themes in the works of Isabel Allende. Please order the following sources from most to least appropriate for your project.",
+					"items" : [
+						{
+							"name" : "\"Z/Z: Isabel Allende and the Mark of Zorro\" from the 2006 volume of <i>Romance Studies</i>",
+							"id" : 1,
+							"type" : "article",
+							"correctPosition" : 3
+						},
+						{
+							"name" : "The \"Isabel Allende\" page on Wikipedia",
+							"id" : 2,
+							"type" : "website",
+							"correctPosition" : 4
+						},
+						{
+							"name" : "The article \"On the Risks of Fictionalizing National Tragedy: Isabel Allende, Human Rights Novelist?\" written by a literature professor and published on the <i>Literary Hub</i> website",
+							"id" : 3,
+							"type" : "website",
+							"correctPosition" : 2
+						},
+						{
+							"name" : "A review of one of Allende's books on amazon.com",
+							"id" : 4,
+							"type" : "website",
+							"correctPosition" : 5
+						},
+						{
+							"name" : "The article \"Zorro by Isabel Allende: Masquerade, Identity, and Postcolonial Justice\" by Helene Weldt-Basson, published in the 2014 volume of <i>Letras Femeninas</i>",
+							"id" : 5,
+							"type" : "article",
+							"correctPosition" : 1
+						}
+					],
+					"correctOrder" : [5, 3, 1, 2, 4],
+					"perfectResponse" : "Yes, you got the order right",
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+				},
+				{
+					"contentId" : 3,
+					"contentLabel" : "Business",
+					"type" : "orderList",
+					"text" : "You are writing a paper about the business model of Starbucks. Please order the following sources from most to least appropriate for your project.",
+					"items" : [
+						{
+							"name" : "A video published on the Starbucks website called Starbucks Ethical Sourcing of Sustainable Products, 2019",
+							"id" : 1,
+							"type" : "video",
+							"correctPosition" : 5
+						},
+						{
+							"name" : "A scholarly article published in the <i>McKinsey Quarterly</i>, \"Starbucks' quest for healthy growth: An interview with Howard Schultz (former CEO of Starbucks)\"",
+							"id" : 2,
+							"type" : "article",
+							"correctPosition" : 1
+						},
+						{
+							"name" : "S&P Industry Survey, April 2019",
+							"id" : 3,
+							"type" : "book",
+							"correctPosition" : 4
+						},
+						{
+							"name" : "Global Markets Direct SWOT Report on Starbucks published by GlobalData Ltd., accessed via <i>Business Insights Essentials</i>, April 1, 2018",
+							"id" : 4,
+							"type" : "dataset",
+							"correctPosition" : 2
+						},
+						{
+							"name" : "The book <i>Leading the Starbucks Way: 5 Principles for Connecting People with Your Customers, Your Products and Your People\" written by Joseph Michelli, 2014",
+							"id" : 5,
+							"type" : "book",
+							"correctPosition" : 3
+						}
+					],
+					"correctOrder" : [2, 4, 5, 3, 1],
+					"perfectResponse" : "Yes, you got the order right",
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+				},
+				{
+					"contentId" : 4,
+					"contentLabel" : "Natural Sciences",
+					"type" : "orderList",
+					"text" : "You are writing a paper about how scientists are looking for signs of extraterrestrial life. Please order the following sources from most to least appropriate for your project.",
+					"items" : [
+						{
+							"name" : "A news alert posted on the NASA website: \"NASA InSight Lander Arrives on Martian Surface to Learn What Lies Beneath,\" Nov. 26, 2018",
+							"id" : 1,
+							"type" : "website",
+							"correctPosition" : 4
+						},
+						{
+							"name" : "An article from <i>The Atlantic</i>, \"The Search for Alien Life Begins in Earth’s Oldest Desert,\" by Rebecca Boyle, Nov. 28, 2018",
+							"id" : 2,
+							"type" : "article",
+							"correctPosition" : 3
+						},
+						{
+							"name" : "\"A Large Body of Water on Mars Is Detected, Raising the Potential for Alien Life,\" by Kenneth Chang and Dennis Overbye, <i>New York Times</i>, July 25, 2018",
+							"id" : 3,
+							"type" : "newspaper",
+							"correctPosition" : 2
+						},
+						{
+							"name" : "An episode of the podcast \"Are We There Yet?\" that featuring interviews with engineers and scientists about space exploration",
+							"id" : 4,
+							"type" : "podcast",
+							"correctPosition" : 5
+						},
+						{
+							"name" : "\"Surface Biosignatures of Exo-Earths: Remote Detection of Extraterrestrial Life\" by Siddharth Hegde in <i>Proceedings of the National Academy of Sciences of the United States of America</i>, 2015",
+							"id" : 5,
+							"type" : "article",
+							"correctPosition" : 1
+						}
+					],
+					"correctOrder" : [5, 3, 2, 1, 4],
+					"perfectResponse" : "Yes, you got the order right",
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+				},
+				{
+					"contentId" : 5, 
+					"contentLabel" : "Social Sciences",
+					"type" : "orderList",
+					"text" : "You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.",
+					"items" : [
+						{
+							"name" : "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
+							"id" : 1,
+							"type" : "book",
+							"correctPosition" : 1
+						},
+						{
+							"name" : "\"The New Model for a Health-First Approach to Legalizing Weed,\" article in <i>The Atlantic</i> by staff writer James Hamblin, June 22, 2018",
+							"id" : 2,
+							"type" : "article",
+							"correctPosition" : 3
+						},
+						{
+							"name" : "The website for the Marijuana Policy Project, an organization dedicated to regulating marijuana use similar to alcohol and educating readers about marijuana",
+							"id" : 3,
+							"type" : "website",
+							"correctPosition" : 5
+						},
+						{
+							"name" : "<i>Evergreen: The Road to Legalization</i>, a documentary that investigates the \"absurdity\" of medical marijuana prohibition, 2018",
+							"id" : 4,
+							"type" : "video",
+							"correctPosition" : 4
+						},
+						{
+							"name" : "A scholarly article, \"The Impact of Marijuana Legalization on Adolescent Use, Consequences, and Perceived Risk\" by Ashley Estoup in <i>Substance Use & Misuse</i>, 2016",
+							"id" : 5,
+							"type" : "article",
+							"correctPosition" : 2
+						}
+					],
+					"correctOrder" : [1, 5, 2, 4, 3],
+					"perfectResponse" : "Yes, you got the order right",
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+				},
+				{
+					"contentId" : 6,
+					"contentLabel" : "Health Sciences",
+					"type" : "orderList",
+					"text" : "You're writing a paper about how college students find mental health information. Please order the following sources from most to least appropriate for your project.",
+					"items" : [
+						{
+							"name" : "\"Do Online Mental Health Services Improve Help-Seeking for Young People? A Systematic Review\" by Sylvia Kauer in <i>Journal of Medical Internet Research</i>, 2014",
+							"id" : 1,
+							"type" : "article",
+							"correctPosition" : 1
+						},
+						{
+							"name" : "An episode of <i>Anxiety Slayer</i> podcast about anxiety, meditation, and healthy habits from April, 2019",
+							"id" : 2,
+							"type" : "podcast",
+							"correctPosition" : 5
+						},
+						{
+							"name" : "The website of the National Institute of Mental Health, the lead federal agency for research on mental disorders",
+							"id" : 3,
+							"type" : "website",
+							"correctPosition" : 3
+						},
+						{
+							"name" : "\"In Your Own Words: Mental Health on Campus\" by Monkia Aichele in <i>The New York Times</i>, Feb. 2019",
+							"id" : 4,
+							"type" : "newspaper",
+							"correctPosition" : 2
+						},
+						{
+							"name" : "\"Talkspace X Michael Phelps: How Therapy Saved His Life\", a video posted by Talkspace (a therapy app) in May 2018",
+							"id" : 5,
+							"type" : "video",
+							"correctPosition" : 4
+						}
+					],
+					"correctOrder" : [1, 4, 3, 5, 2],
+					"perfectResponse" : "Yes, you got the order right",
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 15,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "Thanks for playing! Fill out this form if you'd like to notify your instructor that you've completed this tutorial. Otherwise, you're all done!"
+				}
+			]
+		}
+	}
+]

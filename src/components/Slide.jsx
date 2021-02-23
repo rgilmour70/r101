@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import MultipleChoice from './MultipleChoice';
 import TextAnswer from './TextAnswer';
 import Range from './Range';
-// import OrderList from './OrderList';
+import OrderList from './OrderList';
 import Classify from './Classify/Classify';
 import UserChoice from './UserChoice';
 // import ModalLink from './modalLink';
@@ -52,13 +52,13 @@ const Slide = (props) => {
 				</div>
 			);
 
-		// case 'orderList':
-		// 	return (
-		// 		<div className={displayClass} id={'s' + slideId}>
-		// 			<div className="text">{renderHTML(content.text)}</div>
-		// 			<OrderList {...props} />
-		// 		</div>
-		// 	);
+		case 'orderList':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{renderHTML(content.text)}</div>
+					<OrderList {...props} />
+				</div>
+			);
 
 		case 'classify':
 			return (
@@ -76,12 +76,12 @@ const Slide = (props) => {
 	// 			</div>
 	// 		);
 
-		// case 'userChoice':
-		// 	return (
-		// 		<div className={displayClass} id={'s' + slideId}>
-		// 			<UserChoice {...props} />
-		// 		</div>
-		// 	);
+		case 'userChoice':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<UserChoice {...props} />
+				</div>
+			);
 
 	// 	case 'mnemonic':
 	// 		return (
@@ -116,7 +116,7 @@ const Slide = (props) => {
 		default:
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Declarative {...props} />
+					<p>Mango</p>
 				</div>
 			);
 	}

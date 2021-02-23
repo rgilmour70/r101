@@ -1,6 +1,6 @@
-// eslint-disable-next-line
-import React, { Component } from 'react';
-import Order from './Order';
+import React, { Component, Fragment } from 'react';
+// import Order from './Order';
+import OrderList from './OrderList';
 
 class UserChoice extends Component {
 
@@ -26,7 +26,7 @@ class UserChoice extends Component {
 		}
 		e.target.previousSibling.checked = true;
 
-		// Now hide it
+		// Now hide the form
 		const theForm = e.target.closest('form');
 		theForm.classList.add('hidden');
 
@@ -36,7 +36,7 @@ class UserChoice extends Component {
 
 	render() {
 		return (
-			<React.Fragment>
+			<Fragment>
 				<div className="mc-answers">
 					<form>
 						<p>Please choose a subject area. It doesn't have to be your major.</p>
@@ -49,10 +49,11 @@ class UserChoice extends Component {
 					</form>
 					<div className="uc-question-area">
 						{ this.props.content.setContent.map(q =>
-							<Order
+							<OrderList
 								key={q.contentId} 
+								content={q}
 								contentId={q.contentId}
-								display={this.state.selectedQuestion === q.contentId} 
+								display={this.state.selectedQuestion == q.contentId} 
 								items={q.items}
 								text={q.text}
 								correctOrder={q.correctOrder}
@@ -65,7 +66,7 @@ class UserChoice extends Component {
 						)}
 					</div>
 				</div>
-			</React.Fragment>
+			</Fragment>
 		);
 	}
 

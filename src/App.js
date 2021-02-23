@@ -53,8 +53,22 @@ const App = () => {
 					if (o.set.setContent.length === 1) {
 						toUse.push(o.set.setContent[0]);
 					} else {
-						const n = randomNumber(0, o.set.setContent.length-1);
-						toUse.push(o.set.setContent[n]);
+						// slurp in the whole
+						// set for user choice
+						if (o.set.userChoice) {
+							//const numberOfOptions = sets[i].set.setContent.length;
+							//for (let i=0; i<numberOfOptions; i++) {
+								toUse.push({
+									contentId: null,
+									type: 'userChoice',
+									setContent: o.set.setContent
+								});
+							//}
+							// toUse.push(o.set);
+						} else {
+							const n = randomNumber(0, o.set.setContent.length-1);
+							toUse.push(o.set.setContent[n]);
+						}
 					}
 					numberOfSets++;
 				});
@@ -64,14 +78,10 @@ const App = () => {
 		getData();
 		// slideContent contains only the questions selected for use
 		setContent(toUse);
-
-		// we need this for the progress bar
-		// console.log(numberOfSets);
-		// setNumberOfSlides(numberOfSets);
 	},[slug]);
 
 
-	// console.log(content);
+	console.log(content);
 
 	
 	// Make sure user sees our cool animation!

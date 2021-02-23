@@ -5,7 +5,7 @@ const ProgressBar = (props) => {
 
 	const { currentSlide, numberOfSlides } = props;
 
-	const howFar = currentSlide / numberOfSlides * 100;
+	const howFar = (currentSlide + 1) / numberOfSlides * 100;
 
 	const styles = {width: `${howFar}%`};
 

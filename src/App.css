@@ -123,6 +123,22 @@ nav .btn-primary.frozen {
   white-space: nowrap;
 }
 
+/* Order List */
+.order-list-item {
+  background-color: #fff;
+  width: 30em;
+  height: 40px;
+  min-height: 40px !important;
+  padding: 0;
+  border: 3px solid $orange;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 1em;
+  display: table;
+}
+
 /* Feedback area */
 .feedback {
   margin: 1em 2em;
@@ -137,5 +153,5 @@ nav .btn-primary.frozen {
   display: none !important;
 }
 .shown {
-  display: block;
+  display: block !important;
 }
