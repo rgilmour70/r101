@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import MultipleChoice from './MultipleChoice';
 import TextAnswer from './TextAnswer';
 import Range from './Range';
-import OrderList from './OrderList';
 import Classify from './Classify/Classify';
 import UserChoice from './UserChoice';
 // import ModalLink from './modalLink';
@@ -52,14 +51,6 @@ const Slide = (props) => {
 				</div>
 			);
 
-		case 'orderList':
-			return (
-				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{ReactHtmlParser(content.text)}</div>
-					<OrderList {...props} />
-				</div>
-			);
-
 		case 'classify':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
@@ -90,13 +81,13 @@ const Slide = (props) => {
 	// 			</div>
 	// 		);
 			
-		// case 'tagIt' :
-		// 	return (
-		// 		<div className={displayClass} id={'s' + slideId}>
-		// 			<div className="text">{ReactHtmlParser(content.text)}</div>
-		// 			<TagIt {...props} />
-		// 		</div>	
-		// 	);
+		case 'tagIt' :
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{ReactHtmlParser(content.text)}</div>
+					<TagIt {...props} />
+				</div>	
+			);
 
 	// 	case 'submitForm':
 	// 		return (
@@ -116,7 +107,7 @@ const Slide = (props) => {
 		default:
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<p>Mango</p>
+					<p>Error</p>
 				</div>
 			);
 	}
