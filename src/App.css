@@ -97,6 +97,9 @@ nav .btn-primary.frozen {
 }
 
 /* Styles for react-rangeslider */
+.slider button {
+  margin-top: 3em;
+}
 .rangeslider-horizontal .rangeslider__handle {
   border-radius: 5px !important;
   border-color: #fff !important;

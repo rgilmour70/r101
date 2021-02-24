@@ -81,7 +81,7 @@ const App = () => {
 	},[slug]);
 
 
-	console.log(content);
+	// console.log(content);
 
 	
 	// Make sure user sees our cool animation!
@@ -161,16 +161,7 @@ const App = () => {
 			firstAnswerCorrect: isCorrect
 		};
 		setRecord(record.concat(answerObj));
-		// this.setState(state => {
-		// 	const answerObj = {
-		// 		slideId: this.state.currentSlide,
-		// 		contentId: contentId,
-		// 		firstAnswer: answer,
-		// 		firstAnswerCorrect: isCorrect
-		// 	};
-		// 	const record = state.record.concat(answerObj);
-		// 	return { record	};
-		// });
+		console.log(record);
 	}
 
 

@@ -4,7 +4,6 @@ import Feedback from './Feedback';
 
 const Range = (props) => {
 
-	//const { scale, minCorrect, maxCorrect, correctResponse, incorrectResponse } = props;
 	const { thawNav, recordAnswer, content } = props;
 	const { currentSlide, contentId, scale, minCorrect, maxCorrect, correctResponse, incorrectResponse } = content;
 
@@ -17,8 +16,6 @@ const Range = (props) => {
 
 	const onFinish = () => {
 
-		thawNav();
-
 		setTried(true);
 
 		const firstAnswer = sliderValue;
@@ -26,9 +23,12 @@ const Range = (props) => {
 		const isCorrect = ( firstAnswer >= minCorrect && firstAnswer <= maxCorrect );
 
 		let response = isCorrect ? correctResponse : incorrectResponse;
-		// this.setState({ response : response , showResponse : true });
 		setResponse(response);
 		setShowResponse(true);
+
+		if (isCorrect) {
+			thawNav();
+		}
 
 		if (!tried) {
 			recordAnswer(currentSlide, contentId, firstAnswer, isCorrect);

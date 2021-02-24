@@ -34,7 +34,7 @@ const TextAnswer = (props) => {
 		}
 
 		if (!tried) {
-			recordAnswer(props.content.currentSlide, props.content.contentId, userInput, isCorrect);
+			recordAnswer(props.currentSlide, props.content.contentId, userInput, isCorrect);
 		}
 
 	}
