@@ -4,8 +4,8 @@ import Feedback from './Feedback';
 
 const Range = (props) => {
 
-	const { thawNav, recordAnswer, content } = props;
-	const { currentSlide, contentId, scale, minCorrect, maxCorrect, correctResponse, incorrectResponse } = content;
+	const { thawNav, recordAnswer, content, currentSlide } = props;
+	const { contentId, scale, minCorrect, maxCorrect, correctResponse, incorrectResponse } = content;
 
 	const [sliderValue, setSliderValue] = useState(0);
 	const [tried, setTried] = useState(false);

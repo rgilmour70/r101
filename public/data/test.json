@@ -294,7 +294,84 @@
 	},
 	{
 		"set" : {
-			"setId" : 4,
+			"setId" : 4, 
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "classify",
+					"text" : "<h1>Test Yourself: Review</h1>Drag each source type to the column that matches its degree of review.",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Tweet"
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "Article"
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "Book"
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "Wikipedia Entry"
+						},
+						"item-5" : {
+							"id" : "item-5",
+							"content" : "Newspaper"
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"title" : null,
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4", "item-5"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"title" : "No Review",
+							"itemIds" : []
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"title" : "Editorial Review",
+							"itemIds" : []
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"title" : "Peer Review",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2", "column-3", "column-4"],
+					"correctAnswer" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : []
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : ["item-1"]
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"itemIds" : ["item-3", "item-4", "item-5"]
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"itemIds" : ["item-2"]
+						}
+					},
+					"correctResponse" : "Nice job!",
+					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Tweet</td><td>No Review</td></tr><tr><td>Article</td><td>Peer Review</td></tr><tr><td>Book</td><td>Editorial Review</td></tr><tr><td>Wikipedia Entry</td><td>Editorial Review</td></tr><tr><td>Newspaper</td><td>Editorial Review</td></tr></tbody></table>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 5,
 			"setContent" : [
 				{
 					"contentId" : 1,

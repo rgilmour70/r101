@@ -7,23 +7,19 @@ import Navigation from './components/Navigation';
 import Splash from './components/Splash';
 import 'react-rangeslider/lib/index.css';
 
-
 const queryString = require('query-string');
 
 const App = () => {
 
-	const tutorialSlug = queryString.parse(window.location.search).t || 'libquest';
+	const tutorialSlug = queryString.parse(window.location.search).t || 'test';
 
 	// eslint-disable-next-line
 	const [slug, setSlug] = useState(tutorialSlug);
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [numberOfSlides, setNumberOfSlides] = useState(0);
 	const [content, setContent] = useState([]);
-
-	//const [tried, setTried] = useState(false);
 	const [isLoading, setIsLoading] = useState(true);
 	const [navFrozen, setNavFrozen] = useState(false);
-	// const [feedback, setFeedback] = useState('');
 
 	// The record is an array containing the user's answers
 	const [record, setRecord] = useState([]);
@@ -56,15 +52,11 @@ const App = () => {
 						// slurp in the whole
 						// set for user choice
 						if (o.set.userChoice) {
-							//const numberOfOptions = sets[i].set.setContent.length;
-							//for (let i=0; i<numberOfOptions; i++) {
-								toUse.push({
-									contentId: null,
-									type: 'userChoice',
-									setContent: o.set.setContent
-								});
-							//}
-							// toUse.push(o.set);
+							toUse.push({
+								contentId: null,
+								type: 'userChoice',
+								setContent: o.set.setContent
+							});
 						} else {
 							const n = randomNumber(0, o.set.setContent.length-1);
 							toUse.push(o.set.setContent[n]);
@@ -129,15 +121,7 @@ const App = () => {
 	const handleSlideChange = (next, numberOfSlides) => {
 		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
 		const nextType = content[next].type;
-		// let seen = false;
 
-		// record.forEach(e => {
-		// 	if (e.slideId === next) {
-		// 		seen = true;
-		// 	}
-		// });
-
-//		if ( !freezableTypes.includes(nextType) || seen ) {
 		if ( !freezableTypes.includes(nextType) ) {
 			setNavFrozen(false);
 		} else {
@@ -146,22 +130,21 @@ const App = () => {
 
 		if (next >= 0 && next <= numberOfSlides) {
 			setCurrentSlide(next);
-			// setTried(false);
-			// setFeedback('');
 		}
+
 		console.log(record);
 	}
 
 	const recordAnswer = (currentSlide, contentId, answer, isCorrect) => {
-
 		const answerObj = {
 			slideId: currentSlide,
 			contentId: contentId,
 			firstAnswer: answer,
 			firstAnswerCorrect: isCorrect
 		};
-		setRecord(record.concat(answerObj));
-		console.log(record);
+		// setRecord(newRecord);
+		setRecord((prevState) => prevState.concat(answerObj));
+
 	}
 
 

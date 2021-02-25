@@ -10,7 +10,7 @@ class UserChoice extends Component {
 			response: '',
 			selectedQuestion : null
 		};
-		this.recordAnswer = props.recordAnswer;
+		this.recordAnswer = this.props.recordAnswer;
 	}
 
 	onChoiceSelect = (e) => {
@@ -51,6 +51,7 @@ class UserChoice extends Component {
 							<OrderList
 								key={q.contentId} 
 								content={q}
+								slideId={this.props.slideId}
 								contentId={q.contentId}
 								display={this.state.selectedQuestion === q.contentId} 
 								items={q.items}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
-import ReactHtmlParser from 'react-html-parser';
+//import ReactHtmlParser from 'react-html-parser';
 import styled from 'styled-components';
 import Column from './Column';
 import Feedback from '../Feedback';
@@ -15,6 +15,7 @@ class Classify extends Component {
 		super(props);
 		this.state = {
 			contentId: this.props.content.contentId,
+			slideId: this.props.slideId,
 			currentSlide: this.props.currentSlide,
 			items: this.props.content.items,
 			columns: this.props.content.columns,
@@ -127,11 +128,11 @@ class Classify extends Component {
 		if (isCorrect) {
 			this.setState({ correct: isCorrect, response: correctResponse });
 		} else {
-			this.setState({ correct: isCorrect, response: ReactHtmlParser(incorrectResponse) });
+			this.setState({ correct: isCorrect, response: incorrectResponse });
 		}
 
 		if (!this.state.tried) {
-			this.recordAnswer(this.state.currentSlide, this.state.contentId, answerString, isCorrect);
+			this.recordAnswer(this.state.slideId, this.state.contentId, answerString, isCorrect);
 		}
 
 	};

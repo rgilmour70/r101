@@ -25,7 +25,7 @@ class OrderList extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			content: this.props.content,
+			slideId: this.props.slideId,
 			items : this.props.content.items,
 			tried : false,
 			contentId : this.props.content.contentId,
@@ -69,7 +69,7 @@ class OrderList extends Component {
 		this.setState({ response: response, tried: true, answer: firstAnswer });
 
 		if (!this.state.tried) {
-			this.recordAnswer(this.state.currentSlide, this.state.contentId, firstAnswer, isCorrect);
+			this.recordAnswer(this.state.slideId, this.state.contentId, firstAnswer, isCorrect);
 		}
 		
 	};
