@@ -11,13 +11,23 @@ const queryString = require('query-string');
 
 const App = () => {
 
+	const tutorialTitles = {
+		apa : "APA Citation Style",
+		mla : "MLA Citation Style",
+		plagiarism : "Plagiarism",
+		scholarly : "Scholarly Publications",
+		primary : "Primary and Secondary Sources",
+		evaluating : "Evaluating Sources"
+	}
+
 	const tutorialSlug = queryString.parse(window.location.search).t || 'test';
+	document.title = tutorialTitles[tutorialSlug] || 'test';
 
 	// eslint-disable-next-line
 	const [slug, setSlug] = useState(tutorialSlug);
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [numberOfSlides, setNumberOfSlides] = useState(0);
-	const [content, setContent] = useState([]);
+	const [theContent, setTheContent] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
 	const [navFrozen, setNavFrozen] = useState(false);
 
@@ -69,11 +79,11 @@ const App = () => {
 		};
 		getData();
 		// slideContent contains only the questions selected for use
-		setContent(toUse);
+		setTheContent(toUse);
 	},[slug]);
 
 
-	// console.log(content);
+	// console.log(theContent);
 
 	
 	// Make sure user sees our cool animation!
@@ -120,7 +130,7 @@ const App = () => {
 	// navigation between slides
 	const handleSlideChange = (next, numberOfSlides) => {
 		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
-		const nextType = content[next].type;
+		const nextType = theContent[next].type;
 
 		if ( !freezableTypes.includes(nextType) ) {
 			setNavFrozen(false);
@@ -161,12 +171,12 @@ const App = () => {
 	 				currentSlide={currentSlide}
 	 				numberOfSlides={numberOfSlides}
 	 			/>
-				{content.map((s, i) => 
+				{theContent.map((s, i) => 
 					<Slide 
 						key={i}
 						slideId={i}
 						currentSlide={currentSlide}
-						content={content[i]}
+						content={theContent[i]}
 						recordAnswer={recordAnswer}
 						// freezeNav={freezeNav}
 						thawNav={thawNav}
@@ -174,7 +184,7 @@ const App = () => {
 				)}
 				<Navigation 
 					currentSlide={currentSlide}
-					numberOfSlides={content.length} 
+					numberOfSlides={theContent.length} 
 					onNavEvent={handleSlideChange} 
 					navFrozen={navFrozen}
 				/>

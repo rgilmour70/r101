@@ -1,7 +1,6 @@
 [
 	{
 		"set" : {
-			"setId" : 1,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -13,7 +12,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 2,
 			"setContent" : [
 				{
 					"contentId" : 1, 
@@ -62,7 +60,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 3, 
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -144,7 +141,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 4,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -165,7 +161,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 5,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -209,7 +204,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 6,
 			"userChoice" : true,
 			"setContent" : [
 				{
@@ -469,7 +463,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 7, 
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -546,7 +539,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 8,
 			"setContent" : [
 				{
 					"contentId" : 1,

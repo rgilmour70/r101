@@ -1,7 +1,6 @@
 [
 	{
 		"set" : {
-			"setId" : 1,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -13,7 +12,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 2,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -39,7 +37,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 3,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -51,7 +48,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 4,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -77,7 +73,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 5,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -89,7 +84,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 6,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -115,7 +109,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 7,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -127,7 +120,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 8, 
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -188,14 +180,13 @@
 						}
 					},
 					"correctResponse" : "Nice job!",
-					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tr><td>Obama</td><td>Uncontested Fact</td></tr><tr><td>Hamlet</td><td>Needs a Citation</td></tr><tr><td>Lead</td><td>Uncontested Fact</td></tr><tr><td>Disney</td><td>Needs a Citation</td></tr><tr><td>Brahms</td><td>Uncontested Fact</td></tr></table>"
+					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Obama</td><td>Uncontested Fact</td></tr><tr><td>Hamlet</td><td>Needs a Citation</td></tr><tr><td>Lead</td><td>Uncontested Fact</td></tr><tr><td>Disney</td><td>Needs a Citation</td></tr><tr><td>Brahms</td><td>Uncontested Fact</td></tr></tbody></table>"
 				}
 			]
 		}
 	},
 	{
 		"set" : {
-			"setId" : 9,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -207,7 +198,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 10,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -219,7 +209,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 11,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -245,7 +234,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 12,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -277,7 +265,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 14,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -289,7 +276,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 15,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -304,7 +290,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 16,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -319,7 +304,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 17,
 			"setContent" : [
 				{
 					"contentId" : 1,

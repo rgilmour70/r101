@@ -1,7 +1,6 @@
 [
 	{
 		"set" : {
-			"setId" : 1,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -13,7 +12,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 2,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -51,7 +49,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 3,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -63,7 +60,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 4,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -75,7 +71,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 5,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -87,7 +82,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 6, 
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -169,7 +163,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 7,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -181,7 +174,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 8,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -219,7 +211,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 9,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -231,7 +222,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 10,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -243,7 +233,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 11,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -255,7 +244,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 12,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -267,7 +255,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 13,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -279,7 +266,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 14,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -317,7 +303,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 15,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -355,7 +340,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 16,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -367,7 +351,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 17,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -405,7 +388,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 18,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -417,7 +399,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 19,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -432,7 +413,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 20,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -470,7 +450,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 21,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -514,7 +493,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 22,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -526,7 +504,6 @@
 	},
 	{
 		"set" : {
-			"setId" : 23,
 			"setContent" : [
 				{
 					"contentId" : 1,
