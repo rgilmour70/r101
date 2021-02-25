@@ -22,6 +22,7 @@ class TagIt extends Component {
 		this.state = {
 			contentId: this.props.content.contentId,
 			currentSlide: this.props.currentSlide,
+			slideId: this.props.slideId,
 			items: this.props.content.items,
 			columns: this.props.content.columns,
 			columnOrder: this.props.content.columnOrder,
@@ -137,7 +138,7 @@ class TagIt extends Component {
 		}
 
 		if (!this.state.tried) {
-			this.recordAnswer(this.state.currentSlide, this.state.contentId, answerString, isCorrect);
+			this.recordAnswer(this.state.slideId, this.state.contentId, answerString, isCorrect);
 		}
 
 	};
