@@ -7,6 +7,7 @@ import Range from './Range';
 import Classify from './Classify/Classify';
 import UserChoice from './UserChoice';
 import DragText from './DragText/DragText';
+import OrderList from './OrderList';
 // import ModalLink from './modalLink';
 // import Mnemonic from './mnemonic';
 import Declarative from './Declarative';
@@ -72,6 +73,13 @@ const Slide = (props) => {
 			return (
 				<div className={displayClass} id={'s' + slideId}>
 					<UserChoice {...props} />
+				</div>
+			);
+
+		case 'orderList':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<OrderList {...props} display="shown" />
 				</div>
 			);
 

@@ -13,7 +13,56 @@
 	},
 	{
 		"set" : {
-			"setId" : 2, 
+			"setId" : 2,
+			"setContent" : [
+				{
+					"contentId" : 1, 
+					"contentLabel" : "Social Sciences",
+					"type" : "orderList",
+					"text" : "You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.",
+					"items" : [
+						{
+							"name" : "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
+							"id" : 1,
+							"type" : "book",
+							"correctPosition" : 1
+						},
+						{
+							"name" : "\"The New Model for a Health-First Approach to Legalizing Weed,\" article in <i>The Atlantic</i> by staff writer James Hamblin, June 22, 2018",
+							"id" : 2,
+							"type" : "article",
+							"correctPosition" : 3
+						},
+						{
+							"name" : "The website for the Marijuana Policy Project, an organization dedicated to regulating marijuana use similar to alcohol and educating readers about marijuana",
+							"id" : 3,
+							"type" : "website",
+							"correctPosition" : 5
+						},
+						{
+							"name" : "<i>Evergreen: The Road to Legalization</i>, a documentary that investigates the \"absurdity\" of medical marijuana prohibition, 2018",
+							"id" : 4,
+							"type" : "video",
+							"correctPosition" : 4
+						},
+						{
+							"name" : "A scholarly article, \"The Impact of Marijuana Legalization on Adolescent Use, Consequences, and Perceived Risk\" by Ashley Estoup in <i>Substance Use & Misuse</i>, 2016",
+							"id" : 5,
+							"type" : "article",
+							"correctPosition" : 2
+						}
+					],
+					"correctOrder" : [1, 5, 2, 4, 3],
+					"perfectResponse" : "Yes, you got the order right",
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 3, 
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -95,7 +144,7 @@
 	},
 	{
 		"set" : {
-			"setId" : 3,
+			"setId" : 4,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -116,7 +165,7 @@
 	},
 	{
 		"set" : {
-			"setId" : 4,
+			"setId" : 5,
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -160,7 +209,7 @@
 	},
 	{
 		"set" : {
-			"setId" : 5,
+			"setId" : 6,
 			"userChoice" : true,
 			"setContent" : [
 				{
@@ -420,7 +469,7 @@
 	},
 	{
 		"set" : {
-			"setId" : 6, 
+			"setId" : 7, 
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -497,7 +546,7 @@
 	},
 	{
 		"set" : {
-			"setId" : 7,
+			"setId" : 8,
 			"setContent" : [
 				{
 					"contentId" : 1,
