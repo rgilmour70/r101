@@ -12,7 +12,8 @@ const reorder = (list, startIndex, endIndex) => {
 };
 
 const Container = styled.div`
-	background-color: ${ props => (props.isDragging ? '#ffb2a9' : 'white') };
+	background-color: ${ props => (props.isDragging ? getComputedStyle(document.documentElement)
+    .getPropertyValue('--light-color') : 'white') };
 `;
 
 const OrderListItemText = styled.div`

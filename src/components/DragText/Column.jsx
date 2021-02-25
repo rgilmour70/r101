@@ -8,21 +8,12 @@ const ItemsContainer = styled.div`
 `;
 
 const ItemSet = styled.div`
-	background-color: #fde2e8;
+	background-color: var(--light-color);
 	padding: 1em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 `;
-
-// const Container = styled.div`
-// 	margin: 3px;
-// 	border: 1px solid lightgrey;
-// 	border-radius: 2px;
-// 	width: 90%;
-// 	display: inline-block;
-// 	vertical-align: top;
-// `;
 
 const Container = styled.div`
 	margin: 3px;

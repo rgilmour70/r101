@@ -133,7 +133,7 @@ nav .btn-primary.frozen {
   height: 40px;
   min-height: 40px !important;
   padding: 0;
-  border: 3px solid orange;
+  border: 3px solid var(--dark-color);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: relative;
@@ -147,7 +147,7 @@ nav .btn-primary.frozen {
   display: inline-block;
 }
 .source .drag {
-  background-color: pink;
+  background-color: var(--light-color);
   color: white;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
   padding: 5px;
@@ -176,8 +176,8 @@ nav .btn-primary.frozen {
 .feedback {
   margin: 1em 2em;
   background-color: #fff;
-  color: orange;
-  border: 1px solid orange;
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
   padding: 0.5em 1em;
 }
 
