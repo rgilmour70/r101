@@ -5,7 +5,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "Welcome to Ithaca College Library! This activity will help you explore the building and learn about our resources and services. We recommend doing this on your phone so you can move around.<br /><div class=\"image-container air-vent\"><img src=\"images/iclibAirVent.svg\"></div>",
+					"text" : "Welcome to Ithaca College Library! This activity will help you explore the building and learn about our resources and services. We recommend doing this on your phone so you can move around.</div>",
 					"description" : "LibQuest!"
 				}
 			]

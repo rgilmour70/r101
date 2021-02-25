@@ -16,7 +16,6 @@ const App = () => {
 		mla : "MLA Citation Style",
 		plagiarism : "Plagiarism",
 		scholarly : "Scholarly Publications",
-		primary : "Primary and Secondary Sources",
 		evaluating : "Evaluating Sources"
 	}
 
@@ -129,7 +128,7 @@ const App = () => {
 
 	// navigation between slides
 	const handleSlideChange = (next, numberOfSlides) => {
-		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'order', 'range', 'tagIt', 'dragText'];
+		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'orderList', 'range', 'tagIt', 'dragText'];
 		const nextType = theContent[next].type;
 
 		if ( !freezableTypes.includes(nextType) ) {
@@ -175,6 +174,7 @@ const App = () => {
 					<Slide 
 						key={i}
 						slideId={i}
+						slug={slug}
 						currentSlide={currentSlide}
 						content={theContent[i]}
 						recordAnswer={recordAnswer}

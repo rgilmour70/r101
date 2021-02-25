@@ -37,6 +37,7 @@ class OrderList extends Component {
 			response: ''
 		}
 		this.recordAnswer = props.recordAnswer;
+		this.thawNav = props.thawNav;
 	}
 
 
@@ -60,6 +61,8 @@ class OrderList extends Component {
 
 
 	onFinish = () => {
+
+		this.thawNav();
 		
 		const firstAnswer = JSON.stringify(this.state.items.map((obj, i) => obj.id));
 
