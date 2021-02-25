@@ -6,6 +6,7 @@ import TextAnswer from './TextAnswer';
 import Range from './Range';
 import Classify from './Classify/Classify';
 import UserChoice from './UserChoice';
+import DragText from './DragText/DragText';
 // import ModalLink from './modalLink';
 // import Mnemonic from './mnemonic';
 import Declarative from './Declarative';
@@ -59,13 +60,13 @@ const Slide = (props) => {
 				</div>
 			);
 
-	// 	case 'dragText':
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<div className="text">{ReactHtmlParser(content.text)}</div>
-	// 				<DragText {...props} />
-	// 			</div>
-	// 		);
+		case 'dragText':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{ReactHtmlParser(content.text)}</div>
+					<DragText {...props} />
+				</div>
+			);
 
 		case 'userChoice':
 			return (

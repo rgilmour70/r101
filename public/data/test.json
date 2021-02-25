@@ -35,6 +35,50 @@
 	{
 		"set" : {
 			"setId" : 3,
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "dragText",
+					"text" : "<h1>Test Yourself: Building a Reference</h1>Below are elements of a citation. Please drag them into the box in the appropriate order.",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Oxford University Press. "
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "(2004). "
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "Jenkyns, R. "
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "A fine brush on ivory: An appreciation of Jane Austen. "
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2"],
+					"correctAnswer" : ["item-3", "item-2", "item-4", "item-1"],
+					"correctResponse" : "Correct! Nice job!",
+					"incorrectResponse" : "Not quite."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setId" : 4,
 			"userChoice" : true,
 			"setContent" : [
 				{
@@ -294,7 +338,7 @@
 	},
 	{
 		"set" : {
-			"setId" : 4, 
+			"setId" : 5, 
 			"setContent" : [
 				{
 					"contentId" : 1,
@@ -371,7 +415,7 @@
 	},
 	{
 		"set" : {
-			"setId" : 5,
+			"setId" : 6,
 			"setContent" : [
 				{
 					"contentId" : 1,
