@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 import Feedback from './Feedback';
+import ModalLink from './ModalLink';
 
 const MultipleChoice = (props) => {
 
@@ -53,13 +54,14 @@ const MultipleChoice = (props) => {
 			<div className="mc-answers">
 				<form>
 				{ props.content.answers.map(a =>
-
-					<div className="mc-answer form-check" onClick={onMcAnswerSelect} key={a.answerId}>
-						<input type="radio" className="form-check-input" name={'s' + currentSlide} value={a.answerId}/>
-						<label className="form-check-label">{a.text}</label>
+					<Fragment>
+						<span className="mc-answer form-check" onClick={onMcAnswerSelect} key={a.answerId}>
+							<input type="radio" className="form-check-input" name={'s' + currentSlide} value={a.answerId}/>
+							<label className="form-check-label">{a.text}</label>
+						</span>
+						<ModalLink info={a.info} infoLabel={a.infoLabel} />
 						<br />
-					</div>
-
+					</Fragment>
 				)}
 				</form>
 			</div>

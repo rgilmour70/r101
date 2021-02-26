@@ -8,7 +8,6 @@ import Classify from './Classify/Classify';
 import UserChoice from './UserChoice';
 import DragText from './DragText/DragText';
 import OrderList from './OrderList';
-import Image from './Image';
 // import ModalLink from './modalLink';
 // import Mnemonic from './mnemonic';
 import Declarative from './Declarative';
@@ -17,7 +16,7 @@ import TagIt from './TagIt/TagIt';
 
 const Slide = (props) => {
 	
-	const { slideId, currentSlide, content, slug } = props;
+	const { slideId, currentSlide, content } = props;
 
 
 	let displayClass = 'content ';
@@ -27,14 +26,11 @@ const Slide = (props) => {
 		displayClass += 'hidden';
 	}
 
-	const imagePath = content.image ? 'images/' + slug + '/' + content.image : '';
-	
 	switch(content.type) {
 
 		case 'multipleChoice':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Image imgSrc={imagePath} />
 					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<MultipleChoice {...props} />
 				</div>
@@ -43,7 +39,6 @@ const Slide = (props) => {
 		case 'textAnswer':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Image imgSrc={imagePath} />
 					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<TextAnswer {...props} />
 				</div>
@@ -52,7 +47,6 @@ const Slide = (props) => {
 		case 'range':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Image imgSrc={imagePath} />
 					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<Range {...props} />
 				</div>
@@ -61,7 +55,6 @@ const Slide = (props) => {
 		case 'classify':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Image imgSrc={imagePath} />
 					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<Classify {...props} />
 				</div>
@@ -70,7 +63,6 @@ const Slide = (props) => {
 		case 'dragText':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Image imgSrc={imagePath} />
 					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<DragText {...props} />
 				</div>
@@ -79,7 +71,6 @@ const Slide = (props) => {
 		case 'userChoice':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Image imgSrc={imagePath} />
 					<UserChoice {...props} />
 				</div>
 			);
@@ -87,7 +78,7 @@ const Slide = (props) => {
 		case 'orderList':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Image imgSrc={imagePath} />
+					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<OrderList {...props} display="shown" />
 				</div>
 			);
@@ -102,7 +93,6 @@ const Slide = (props) => {
 		case 'tagIt' :
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Image imgSrc={imagePath} />
 					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<TagIt {...props} />
 				</div>	
@@ -119,7 +109,6 @@ const Slide = (props) => {
 		case 'declarative':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<Image imgSrc={imagePath} />
 					<Declarative {...props} />
 				</div>
 			);

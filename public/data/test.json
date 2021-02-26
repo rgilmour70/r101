@@ -10,6 +10,87 @@
 			]
 		}
 	},
+		{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Peer Review?</h1><p>Peer review is a process by which scholarly articles are vetted for publication. Approval by an editor is usually all that is required for an article to be published in a popular or trade magazine, but a scholarly journal will require that an article be reviewed by experts in the field before it is published.</p><div style='text-align:center'><img src='images/libquest/kitten.jpg' class='img-fluid' id='peer-review-image'></div>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Popular Periodicals</h1><p>Which of the following is most likely to be a popular periodical? Tap the info icons to see cover images.</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "The American Journal of Botany",
+							"isCorrect" : false,
+							"response" : "Incorrect. Even if you know nothing about this journal, you can guess that something with the name of an academic field in the title will be scholarly.",
+							"info" : "<img src='images/scholarly/ajb_cover.jpg' alt='Cover of the American Journal of Botany highlighting the ecology and evolution of pollen performance'>",
+							"infoLabel" : "Cover of The American Journal of Botany"
+						},
+						{
+							"answerId" : 2,
+							"text" : "Analytical Chemistry",
+							"isCorrect" : false,
+							"response" : "Incorrect. Do you know what \"isotachophoresis\" is? We don’t either, so it’s probably a scholarly journal.",
+							"info" : "<img src='images/scholarly/analytical_chemistry.jpg' alt='Cover of Analytical Chemistry'>",
+							"infoLabel" : "Cover of Analytical Chemistry"
+						},
+						{
+							"answerId" : 3,
+							"text" : "Art History and Criticism",
+							"isCorrect" : false,
+							"response" : "Incorrect. Even if you know nothing about this journal, you can guess that something with the name of an academic field in the title will be scholarly.",
+							"info" : "<img src='images/scholarly/mik_cover.jpg' alt='Cover of Art History and Criticism showing a metal chandelier'>",
+							"infoLabel" : "Cover of Art History and Criticism"
+						},
+						{
+							"answerId" : 4,
+							"text" : "Rolling Stone",
+							"isCorrect" : true,
+							"response" : "Correct! <i>Rolling Stone</i> is a popular periodical. It appeals to a very general readership, covering all aspects of popular culture. Celebrity interviews are a sure sign of a popular journal.",
+							"info" : "<img src='images/scholarly/rolling_stone_cover.jpg' alt='Cover of Rolling Stone featuring Taylor Swift'>",
+							"infoLabel" : "Cover of The Rolling Stone"
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Plagiarism</h1> <p>Your art history instructor has assigned a paper in which you need to select a painting for analysis. You find a Van Gogh painting online by using Google Images. Do you need to cite the source of this image?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Yes. I didn't paint it, so I have to cite it.",
+							"isCorrect" : true,
+							"response" : "Correct!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "No. Anyone can find it on Google, so why cite?",
+							"isCorrect" : false,
+							"response" : "No. You didn’t paint it, so you have to cite it. Citation is about crediting the creator of a work, not just about how to find something."
+						}
+					]
+				}
+			]
+		}
+	},
 	{
 		"set" : {
 			"setContent" : [
