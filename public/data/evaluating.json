@@ -27,6 +27,7 @@
 				{
 					"contentId" : 1,
 					"type" : "mnemonic",
+					"terms" : "Author, Review, Date, Sources, Bias",
 					"keyword" : "Author",
 					"text" : "<ul><li>It should be possible to identify the author. Bonus points if they list their affiliation (university or organization).</li><li>An author isn’t always a person&mdash;it could be an organization or government agency.</li><li>Check up on the author to make sure they're trustworthy.</li></ul>"
 				}
@@ -59,6 +60,7 @@
 				{
 					"contentId" : 1,
 					"type" : "mnemonic",
+					"terms" : "Author, Review, Date, Sources, Bias",
 					"keyword" : "Review",
 					"text" : "<p>There are different levels of review that a writer’s work could go through before being published.</p><p><strong>Peer review</strong> is considered the highest level of review. Multiple researchers in the author’s field make suggestions prior to its publication. Most papers in academic journals are peer reviewed.</p><p><strong>Editorial review</strong> means that an editor has looked over the material before publication. This is better than nothing, but we should remember that editors are susceptible to bias like everyone else.</p><p><strong>No review</strong> happens when an author self-publishes their material. Personal blog posts, for instance, are generally just written and posted.</p>"
 				}
@@ -147,6 +149,7 @@
 				{
 					"contentId" : 1,
 					"type" : "mnemonic",
+					"terms" : "Author, Review, Date, Sources, Bias",
 					"keyword" : "Date",
 					"text" : "<p>It’s important to think about when something was written. In many cases, you’ll want the latest information on a topic. This is especially true in fields where things change rapidly, like medicine or particle physics.</p><p>Newer isn’t always better, though. For instance, if you’re writing about a classic film or doing research for a history paper, older materials would be very good sources.</p>"
 				}
@@ -179,6 +182,7 @@
 				{
 					"contentId" : 1,
 					"type" : "mnemonic",
+					"terms" : "Author, Review, Date, Sources, Bias",
 					"keyword" : "Sources",
 					"text" : "<p>Research is a conversation. When a scholar takes part in that conversation, as you are doing when you write a paper in college, they need to acknowledge the work that has gone before.</p><p>Listing your sources also allows readers to verify your information.</p><p>A source that doesn’t cite external information probably isn’t a great choice for your assignment.</p>"
 				}
@@ -228,6 +232,7 @@
 				{
 					"contentId" : 1,
 					"type" : "mnemonic",
+					"terms" : "Author, Review, Date, Sources, Bias",
 					"keyword" : "Bias",
 					"text" : "<p>Consider whether there are social, ideological, or financial factors that may influence the author. Is a story on immigration published in a notably left- or right-leaning publication? Is a website about the benefits of a particular nutrient littered with ads for supplements?</p><p>Bias doesn’t always mean that a source is bad, but may indicate that you should seek out sources with alternate viewpoints and see how they differ.</p>"
 				}

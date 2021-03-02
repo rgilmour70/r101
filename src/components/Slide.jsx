@@ -9,7 +9,7 @@ import UserChoice from './UserChoice';
 import DragText from './DragText/DragText';
 import OrderList from './OrderList';
 // import ModalLink from './modalLink';
-// import Mnemonic from './mnemonic';
+import Mnemonic from './Mnemonic';
 import Declarative from './Declarative';
 import TagIt from './TagIt/TagIt';
 // import SubmitForm from './submitForm';
@@ -83,12 +83,12 @@ const Slide = (props) => {
 				</div>
 			);
 
-	// 	case 'mnemonic':
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<Mnemonic {...props} />
-	// 			</div>
-	// 		);
+		case 'mnemonic':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<Mnemonic {...props} />
+				</div>
+			);
 			
 		case 'tagIt' :
 			return (

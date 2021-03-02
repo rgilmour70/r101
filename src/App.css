@@ -172,6 +172,34 @@ nav .btn-primary.frozen {
   margin: 10px;
 }
 
+/* Mnemonic */
+.mnemonic-header .filler {
+  transform: translate(0, 35px);
+  height: 14px;
+  border-bottom: 2px dotted #888;
+}
+
+.mnemonic-header ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  z-index: 2;
+}
+
+.mnemonic-header li {
+  display: table-cell;
+  padding: 0.4em 0.5em;
+  background-color: var(--light-color);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.mnemonic-header li.active {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
 /* Feedback area */
 .feedback {
   margin: 1em 2em;
