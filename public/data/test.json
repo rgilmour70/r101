@@ -133,8 +133,8 @@
 					],
 					"correctOrder" : [1, 5, 2, 4, 3],
 					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
 				}
 			]
 		}

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ReactHtmlParser from 'react-html-parser';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import Feedback from './Feedback';
+import { getEditDistance } from '../utils/levenshtein';
 
 const reorder = (list, startIndex, endIndex) => {
 	const result = Array.from(list);
@@ -66,9 +67,21 @@ class OrderList extends Component {
 		
 		const firstAnswer = JSON.stringify(this.state.items.map((obj, i) => obj.id));
 
-		const isCorrect = firstAnswer === JSON.stringify(this.state.correctOrder);
+		const ourAnswer = JSON.stringify(this.state.correctOrder);
 
-		let response = isCorrect ? this.state.goodResponse : this.state.badResponse;
+		const lev = getEditDistance(firstAnswer, ourAnswer);
+
+		let response = '';
+
+		if (lev === 0) {
+			response = this.state.perfectResponse;
+		} else if (lev > 0 && lev <= 2) {
+			response = this.state.goodResponse;
+		} else {
+			response = this.state.badResponse;
+		}
+
+		const isCorrect = firstAnswer === ourAnswer;
 
 		this.setState({ response: response, tried: true, answer: firstAnswer });
 
