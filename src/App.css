@@ -200,6 +200,35 @@ nav .btn-primary.frozen {
   color: #fff;
 }
 
+
+/* Multiple choice */
+input[type='radio'] {
+  visibility: hidden;
+}
+input[type='radio'] + label {
+  padding: 0.2em 0.2em 0.2em 3em; 
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+input[type='radio'] + label::before {
+  content: '';
+  color: var(--dark-color);
+  position: absolute;
+  height: 31px;
+  width: 31px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 2px solid var(--dark-color);
+  border-radius: 50%;
+}
+input[type="radio"]:checked + label::before {
+  line-height: 1.8em;
+  color: #fff;
+  background-color: var(--dark-color);
+}
+
 /* Feedback area */
 .feedback {
   margin: 1em 2em;

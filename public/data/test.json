@@ -623,7 +623,7 @@
 			"setContent" : [
 				{
 					"contentId" : 1,
-					"type" : "declarative",
+					"type" : "submitForm",
 					"text" : "Thanks for playing! Fill out this form if you'd like to notify your instructor that you've completed this tutorial. Otherwise, you're all done!"
 				}
 			]

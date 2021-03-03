@@ -54,14 +54,14 @@ const MultipleChoice = (props) => {
 			<div className="mc-answers">
 				<form>
 				{ props.content.answers.map(a =>
-					<Fragment>
+					<div key={a.answerId}>
 						<span className="mc-answer form-check" onClick={onMcAnswerSelect} key={a.answerId}>
 							<input type="radio" className="form-check-input" name={'s' + currentSlide} value={a.answerId}/>
 							<label className="form-check-label">{a.text}</label>
 						</span>
 						<ModalLink info={a.info} infoLabel={a.infoLabel} />
 						<br />
-					</Fragment>
+					</div>
 				)}
 				</form>
 			</div>

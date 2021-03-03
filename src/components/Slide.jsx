@@ -12,7 +12,7 @@ import OrderList from './OrderList';
 import Mnemonic from './Mnemonic';
 import Declarative from './Declarative';
 import TagIt from './TagIt/TagIt';
-// import SubmitForm from './submitForm';
+import SubmitForm from './SubmitForm';
 
 const Slide = (props) => {
 	
@@ -98,13 +98,13 @@ const Slide = (props) => {
 				</div>	
 			);
 
-	// 	case 'submitForm':
-	// 		return (
-	// 			<div className={displayClass} id={'s' + slideId}>
-	// 				<div className="text">{ReactHtmlParser(content.text)}</div>
-	// 				<SubmitForm {...props} />
-	// 			</div>
-	// 		);
+		case 'submitForm':
+			return (
+				<div className={displayClass} id={'s' + slideId}>
+					<div className="text">{ReactHtmlParser(content.text)}</div>
+					<SubmitForm {...props} />
+				</div>
+			);
 			
 		case 'declarative':
 			return (
