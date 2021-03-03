@@ -54,7 +54,7 @@ const MultipleChoice = (props) => {
 			<div className="mc-answers">
 				<form>
 				{ props.content.answers.map(a =>
-					<div key={a.answerId}>
+					<div key={a.answerId} className="mc-answer-wrapper">
 						<span className="mc-answer form-check" onClick={onMcAnswerSelect} key={a.answerId}>
 							<input type="radio" className="form-check-input" name={'s' + currentSlide} value={a.answerId}/>
 							<label className="form-check-label">{a.text}</label>

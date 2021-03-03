@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
-//import ReactHtmlParser from 'react-html-parser';
 import styled from 'styled-components';
 import Column from './Column';
 import Feedback from '../Feedback';

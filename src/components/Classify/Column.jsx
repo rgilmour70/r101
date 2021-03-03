@@ -8,7 +8,7 @@ const ItemsContainer = styled.div`
 `;
 
 const ItemSet = styled.div`
-	background-color: seashell;
+	background-color: var(--light);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;

@@ -9,7 +9,7 @@ const Container = styled.div`
 	margin: 2px;
 	margin-bottom: 5px;
 	text-align: center;
-	background-color: #fa7268;
+	background-color: var(--dark-color);
 	color: white;
 	font-weight: bold;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
