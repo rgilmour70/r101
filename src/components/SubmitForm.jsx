@@ -14,7 +14,7 @@ class SubmitForm extends Component {
 			toEmail: '',
 			year: '1st year',
 			check: '',
-			whichTutorial: 'evaluating_resources',
+			whichTutorial: this.props.slug,
 			record: this.props.record,
 			mailSent: false,
 			error: null
@@ -29,7 +29,7 @@ class SubmitForm extends Component {
 	}
 
 	handleFormSubmit = e => {
-		console.log(this.state.record);
+		// console.log(this.state.record);
 		e.preventDefault();
 		this.validate();
 		axios({
@@ -139,7 +139,7 @@ class SubmitForm extends Component {
 				<input 
 					type="hidden" 
 					name="whichTutorial" 
-					value="evaluating_resources" 
+					value={this.state.whichTutorial} 
 				/>
 
 				<br /><br />
