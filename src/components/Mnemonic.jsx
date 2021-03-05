@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import ReactHtmlParser from 'react-html-parser';
-import PropTypes from 'prop-types';
 
 const Mnemonic = (props) => {
 
@@ -24,11 +23,5 @@ const Mnemonic = (props) => {
 	);
 	
 }
-
-Mnemonic.propTypes = {
-	keyword: PropTypes.string.isRequired,
-	text: PropTypes.string.isRequired,
-	terms: PropTypes.array.isRequired
-};
 
 export default Mnemonic;

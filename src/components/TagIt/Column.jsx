@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import ReactHtmlParser from 'react-html-parser';
 import Item from './Item';
 import { Droppable } from 'react-beautiful-dnd';
 

@@ -1,6 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import './App.css';
-import LightenDarkenColor from './utils/colors.js';
 import ProgressBar from './components/ProgressBar';
 import Slide from './components/Slide';
 import Navigation from './components/Navigation';
@@ -98,23 +97,23 @@ const App = () => {
 		case 'scholarly':
 			document.documentElement.style.setProperty('--light-color', '#fde2e8');
 			document.documentElement.style.setProperty('--dark-color', '#e20e41');
-			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#e20e41', -10));
+			document.documentElement.style.setProperty('--darkest-color', '#92092a');
 			break;
 		case 'evaluating':
-			document.documentElement.style.setProperty('--light-color', '#f3f3f0');
-			document.documentElement.style.setProperty('--dark-color', '#f36943');
-			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#f36943', -10));
+			document.documentElement.style.setProperty('--light-color', '#fedddb');
+			document.documentElement.style.setProperty('--dark-color', '#fa7268');
+			document.documentElement.style.setProperty('--darkest-color', '#f95347');
 			break;
 		case 'apa':
 		case 'mla':
-			document.documentElement.style.setProperty('--light-color', '#ffe2f3');
-			document.documentElement.style.setProperty('--dark-color', '#ff169e');
-			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#ff169e', -10));
+			document.documentElement.style.setProperty('--light-color', '#cce3fc');
+			document.documentElement.style.setProperty('--dark-color', '#0c77f1');
+			document.documentElement.style.setProperty('--darkest-color', '#0b6fe1');
 			break;
 		case 'plagiarism':
 			document.documentElement.style.setProperty('--light-color', '#d4f1f2');
 			document.documentElement.style.setProperty('--dark-color', '#288285');
-			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#288285', -10));
+			document.documentElement.style.setProperty('--darkest-color', '#1c5c5e');
 			break;
 		default:
 			document.documentElement.style.setProperty('--light-color', '#cce3fc');
