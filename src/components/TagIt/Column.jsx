@@ -63,7 +63,6 @@ class Column extends Component {
 							>
 								{this.props.items.map( (item, index) => <Item key={item.id} item={item} index={index} />)}
 								{provided.placeholder}
-								<span>{ReactHtmlParser(this.props.column.content)}</span>
 							</ItemList>
 						)}
 					</Droppable>

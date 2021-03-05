@@ -15,7 +15,7 @@ const Container = styled.div`
 	max-width: 200px;
 	&::before {
 		content: "#";
-		color: #333;
+		color: var(--light-color);
 	}
 `;
 

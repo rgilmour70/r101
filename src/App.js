@@ -117,9 +117,9 @@ const App = () => {
 			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#288285', -10));
 			break;
 		default:
-			document.documentElement.style.setProperty('--light-color', '#ccc');
-			document.documentElement.style.setProperty('--dark-color', '#333');
-			document.documentElement.style.setProperty('--darkest-color', LightenDarkenColor('#333333', -10));
+			document.documentElement.style.setProperty('--light-color', '#cce3fc');
+			document.documentElement.style.setProperty('--dark-color', '#0c77f1');
+			document.documentElement.style.setProperty('--darkest-color', '#0b6fe1');
 	}
 
 	const thawNav = () => {

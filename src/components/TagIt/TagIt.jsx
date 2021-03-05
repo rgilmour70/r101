@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React, { Component } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import ReactHtmlParser from 'react-html-parser';
@@ -8,11 +7,6 @@ import Feedback from '../Feedback';
 
 const Container = styled.div`
 	display: block;
-	&:after {
-		content: "";
-	    display: table;
-	    clear: both;
-	}
 `;
 
 class TagIt extends Component {
@@ -134,7 +128,7 @@ class TagIt extends Component {
 		if (isCorrect) {
 			this.setState({ correct: isCorrect, response: correctResponse });
 		} else {
-			this.setState({ correct: isCorrect, response: ReactHtmlParser(incorrectResponse) });
+			this.setState({ correct: isCorrect, response: incorrectResponse });
 		}
 
 		if (!this.state.tried) {
@@ -159,7 +153,10 @@ class TagIt extends Component {
 								);
 							} else {
 								return (
-									<Column key={column.id} column={column} items={items} type="destination-area" />
+									<div className="tag-destination-column" key={column.id}>
+										<div className="tag-column-label">{ReactHtmlParser(column.content)}</div>
+										<Column key={column.id} column={column} items={items} type="destination-area" />
+									</div>
 								);
 							}
 						})}

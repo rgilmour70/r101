@@ -10,6 +10,87 @@
 			]
 		}
 	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "tagIt",
+					"text" : "<h1>Test Yourself: Parts of a Reference List Entry</h1><p>Please drag the tags to the appropriate part of the reference list entry.</p>",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Title"
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "Source"
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "Date"
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "Author"
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"title" : null,
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"content" : "Ibrahim, H.",
+							"itemIds" : []
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"content" : "(2016).",
+							"itemIds" : []
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"content" : "Any other age: Vampires and oceanic lifespans.",
+							"itemIds" : []
+						},
+						"column-5" : {
+							"id" : "column-5",
+							"content" : "<i>African American Review, 49</i>(4), 313–327.",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2", "column-3", "column-4", "column-5"],
+					"correctAnswer" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : []
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : ["item-4"]
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"itemIds" : ["item-3"]
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"itemIds" : ["item-1"]
+						},
+						"column-5" : {
+							"id" : "column-5",
+							"itemIds" : ["item-2"]
+						}
+					},
+					"correctResponse" : "Nice job!",
+					"incorrectResponse" : "Not quite. H. Ibrahim is the author, the date is 2016, the title is \"Any other age&hellip;\", and the source is <i>African American Review</i>."
+				}
+			]
+		}
+	},
 		{
 		"set" : {
 			"setContent" : [
@@ -135,87 +216,6 @@
 					"perfectResponse" : "Yes, you got the order right",
 					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
 					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "tagIt",
-					"text" : "<h1>Test Yourself: Parts of a Reference List Entry</h1><p>Please drag the tags to the appropriate part of the reference list entry.</p>",
-					"items" : {
-						"item-1" : {
-							"id" : "item-1",
-							"content" : "Title"
-						},
-						"item-2" : {
-							"id" : "item-2",
-							"content" : "Source"
-						},
-						"item-3" : {
-							"id" : "item-3",
-							"content" : "Date"
-						},
-						"item-4" : {
-							"id" : "item-4",
-							"content" : "Author"
-						}
-					},
-					"columns" : {
-						"column-1" : {
-							"id" : "column-1",
-							"title" : null,
-							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"content" : "Ibrahim, H.",
-							"itemIds" : []
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"content" : "(2016).",
-							"itemIds" : []
-						},
-						"column-4" : {
-							"id" : "column-4",
-							"content" : "Any other age: Vampires and oceanic lifespans.",
-							"itemIds" : []
-						},
-						"column-5" : {
-							"id" : "column-5",
-							"content" : "<i>African American Review, 49</i>(4), 313–327.",
-							"itemIds" : []
-						}
-					},
-					"columnOrder" : ["column-1", "column-2", "column-3", "column-4", "column-5"],
-					"correctAnswer" : {
-						"column-1" : {
-							"id" : "column-1",
-							"itemIds" : []
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"itemIds" : ["item-4"]
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"itemIds" : ["item-3"]
-						},
-						"column-4" : {
-							"id" : "column-4",
-							"itemIds" : ["item-1"]
-						},
-						"column-5" : {
-							"id" : "column-5",
-							"itemIds" : ["item-2"]
-						}
-					},
-					"correctResponse" : "Nice job!",
-					"incorrectResponse" : "Not quite. H. Ibrahim is the author, the date is 2016, the title is \"Any other age&hellip;\", and the source is <i>African American Review</i>."
 				}
 			]
 		}

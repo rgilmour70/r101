@@ -20,6 +20,9 @@ $year = sanitizeString($_POST['year']);
 $check = sanitizeString($_POST['check']);
 $whichTutorial = sanitizeString($_POST['whichTutorial']);
 $msg = '';
+$db_table = '';
+$db_cols = '';
+$title_for_email = '';
 
 switch ($whichTutorial) {
 	case 'apa':
