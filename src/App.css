@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -58,6 +65,7 @@ body {
 .text {
   font-size: 1.2em;
   color: #000;
+  margin-bottom: 1em;
 }
 .text ul {
   /*list-style-image: url('images/bullet.svg');*/
@@ -178,7 +186,13 @@ nav .pulse {
 .rangeslider-horizontal .rangeslider__fill {
   background-color: var(--dark-color) !important;
 }
-
+.rangeslider__labels {
+  top: -10px;
+}
+.rangeslider__labels .rangeslider__label-item {
+  font-size: 18px;
+  font-style: italic;
+}
 .rangeslider__label-item:first-of-type {
   padding-right: 4em;
   white-space: nowrap;
@@ -188,21 +202,132 @@ nav .pulse {
   white-space: nowrap;
 }
 
+
+
 /* Order List */
 .order-list-item {
   background-color: #fff;
   width: 30em;
   height: 40px;
   min-height: 40px !important;
-  padding: 0;
   border: 3px solid var(--dark-color);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: relative;
-  cursor: pointer;
   margin-bottom: 1em;
   display: table;
 }
+.order-list-item.article::before {
+  content: url('./svgs/evaluating/article.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+.order-list-item.book::before {
+  content: url('./svgs/evaluating/book.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+.order-list-item.data::before {
+  content: url('./svgs/evaluating/data.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+.order-list-item.ebook::before {
+  content: url('./svgs/evaluating/ebook.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+.order-list-item.gov::before {
+  content: url('./svgs/evaluating/gov.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+.order-list-item.newspaper::before {
+  content: url('./svgs/evaluating/newspaper.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+.order-list-item.podcast::before {
+  content: url('./svgs/evaluating/podcast.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+.order-list-item.rss::before {
+  content: url('./svgs/evaluating/rss.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+.order-list-item.video::before {
+  content: url('./svgs/evaluating/video.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+.order-list-item.website::before {
+  content: url('./svgs/evaluating/website.svg');
+  background-color: var(--dark-color);
+  height: 100%;
+  min-width: 40px;
+  border-left: 4px solid var(--dark-color);
+  border-right: 5px solid var(--dark-color);
+  border-top: 1em solid var(--dark-color);
+  position: relative;
+  display: table;
+}
+
 
 /* Drag Text */
 .drag {

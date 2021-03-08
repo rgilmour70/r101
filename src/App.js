@@ -18,6 +18,7 @@ const App = () => {
 		evaluating : "Evaluating Sources"
 	}
 
+
 	const tutorialSlug = queryString.parse(window.location.search).t || 'test';
 	document.title = tutorialTitles[tutorialSlug] || 'test';
 
@@ -41,7 +42,7 @@ const App = () => {
 		let toUse = [];
 		let numberOfSets = 0;
 		const getData = () => {
-			fetch(`data/${slug}.json`
+			fetch(`./data/${slug}.json`
 			, {
 				headers: {
 					'Content-Type': 'application/json',

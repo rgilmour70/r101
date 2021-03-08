@@ -5,7 +5,54 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Evaluating Information</h1><p>You can find almost anything on the Internet, but not all of that information is of high quality, and not all of it is appropriate for your assignments.</p><p>This tutorial will guide you through the process of evaluating sources of information. The goal is to help you select the best sources for your academic papers and projects.</p>"
+					"text" : "<h1>Evaluating Information</h1><p>You can find almost anything on the Internet, but not all of that information is of high quality, and not all of it is appropriate for your assignments.</p><p>This tutorial will guide you through the process of evaluating sources of information. The goal is to help you select the best sources for your academic papers and projects.</p><div style='text-align:center'><img src='./images/libquest/kitten.jpg' class='img-fluid' id='peer-review-image'></div>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1, 
+					"type" : "orderList",
+					"text" : "You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.",
+					"items" : [
+						{
+							"name" : "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
+							"id" : 1,
+							"type" : "book",
+							"correctPosition" : 1
+						},
+						{
+							"name" : "\"The New Model for a Health-First Approach to Legalizing Weed,\" article in <i>The Atlantic</i> by staff writer James Hamblin, June 22, 2018",
+							"id" : 2,
+							"type" : "article",
+							"correctPosition" : 3
+						},
+						{
+							"name" : "The website for the Marijuana Policy Project, an organization dedicated to regulating marijuana use similar to alcohol and educating readers about marijuana",
+							"id" : 3,
+							"type" : "website",
+							"correctPosition" : 5
+						},
+						{
+							"name" : "<i>Evergreen: The Road to Legalization</i>, a documentary that investigates the \"absurdity\" of medical marijuana prohibition, 2018",
+							"id" : 4,
+							"type" : "video",
+							"correctPosition" : 4
+						},
+						{
+							"name" : "A scholarly article, \"The Impact of Marijuana Legalization on Adolescent Use, Consequences, and Perceived Risk\" by Ashley Estoup in <i>Substance Use & Misuse</i>, 2016",
+							"id" : 5,
+							"type" : "article",
+							"correctPosition" : 2
+						}
+					],
+					"correctOrder" : [1, 5, 2, 4, 3],
+					"perfectResponse" : "Yes, you got the order right",
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
 				}
 			]
 		}
@@ -97,7 +144,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Peer Review?</h1><p>Peer review is a process by which scholarly articles are vetted for publication. Approval by an editor is usually all that is required for an article to be published in a popular or trade magazine, but a scholarly journal will require that an article be reviewed by experts in the field before it is published.</p><div style='text-align:center'><img src='images/libquest/kitten.jpg' class='img-fluid' id='peer-review-image'></div>"
+					"text" : "<h1>Peer Review?</h1><p>Peer review is a process by which scholarly articles are vetted for publication. Approval by an editor is usually all that is required for an article to be published in a popular or trade magazine, but a scholarly journal will require that an article be reviewed by experts in the field before it is published.</p>"
 				}
 			]
 		}
@@ -168,54 +215,6 @@
 							"response" : "No. You didn’t paint it, so you have to cite it. Citation is about crediting the creator of a work, not just about how to find something."
 						}
 					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1, 
-					"contentLabel" : "Social Sciences",
-					"type" : "orderList",
-					"text" : "You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.",
-					"items" : [
-						{
-							"name" : "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
-							"id" : 1,
-							"type" : "book",
-							"correctPosition" : 1
-						},
-						{
-							"name" : "\"The New Model for a Health-First Approach to Legalizing Weed,\" article in <i>The Atlantic</i> by staff writer James Hamblin, June 22, 2018",
-							"id" : 2,
-							"type" : "article",
-							"correctPosition" : 3
-						},
-						{
-							"name" : "The website for the Marijuana Policy Project, an organization dedicated to regulating marijuana use similar to alcohol and educating readers about marijuana",
-							"id" : 3,
-							"type" : "website",
-							"correctPosition" : 5
-						},
-						{
-							"name" : "<i>Evergreen: The Road to Legalization</i>, a documentary that investigates the \"absurdity\" of medical marijuana prohibition, 2018",
-							"id" : 4,
-							"type" : "video",
-							"correctPosition" : 4
-						},
-						{
-							"name" : "A scholarly article, \"The Impact of Marijuana Legalization on Adolescent Use, Consequences, and Perceived Risk\" by Ashley Estoup in <i>Substance Use & Misuse</i>, 2016",
-							"id" : 5,
-							"type" : "article",
-							"correctPosition" : 2
-						}
-					],
-					"correctOrder" : [1, 5, 2, 4, 3],
-					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
 				}
 			]
 		}

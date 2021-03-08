@@ -19,7 +19,8 @@ const Container = styled.div`
 
 const OrderListItemText = styled.div`
 	display: table-cell;
-	padding: 0 0.5em 0.5em 1.5em;
+	vertical-align: top;
+	padding: 0.6em;
 `;
 
 class OrderList extends Component {
