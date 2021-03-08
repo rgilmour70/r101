@@ -13,14 +13,25 @@ const reorder = (list, startIndex, endIndex) => {
 };
 
 const Container = styled.div`
-	background-color: ${ props => (props.isDragging ? getComputedStyle(document.documentElement)
-    .getPropertyValue('--light-color') : 'white') };
+    background-color: ${ props => (props.isDragging ? '#ccc' : 'white') };
 `;
 
 const OrderListItemText = styled.div`
 	display: table-cell;
 	vertical-align: top;
 	padding: 0.6em;
+`;
+
+const OrderListItemNumber = styled.div`
+	float: right;
+	color: white;
+	font-size: 1.5em;
+	background: var(--dark-color);
+	padding: 6px 10px;
+	border-radius: 50%;
+	font-family: monospace;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+	opacity: 0;
 `;
 
 class OrderList extends Component {
@@ -62,7 +73,7 @@ class OrderList extends Component {
 	};
 
 
-	onFinish = () => {
+	onFinish = (e) => {
 
 		this.thawNav();
 		
@@ -84,6 +95,25 @@ class OrderList extends Component {
 
 		const isCorrect = firstAnswer === ourAnswer;
 
+		const parentElement = e.target.closest('.shown');
+		const theNumbers = parentElement.getElementsByClassName('correctPosition');
+		console.log(theNumbers);
+		// order the elements by correct sequence of sources
+		const theNumbersInOrder = [];
+
+		[].slice.call(theNumbers).sort(function(a, b) {
+			return a.textContent.localeCompare(b.textContent);
+		}).forEach(function(val, index) {
+			theNumbersInOrder.push(val);
+		});
+
+		// unhide the correct numbers
+		let interval = 300;
+		for (let i=0; i<theNumbersInOrder.length; i++) {
+			setTimeout(() => {theNumbersInOrder[i].classList.add('reveal')}, interval);
+			interval += 300;
+		}
+
 		this.setState({ response: response, tried: true, answer: firstAnswer });
 
 		if (!this.state.tried) {
@@ -94,7 +124,7 @@ class OrderList extends Component {
 
 	render() {
 		return (
-			<div className={ this.props.display ? 'shown' : 'hidden' }>
+			<div className={ 'shown' + this.props.display ? 'shown' : 'hidden' }>
 				<DragDropContext onDragEnd={this.onDragEnd}>
 					<Droppable droppableId="droppable">
 						{(provided, snapshot) => (
@@ -111,6 +141,9 @@ class OrderList extends Component {
 											>
 												<OrderListItemText>
 													{ReactHtmlParser(item.name)}
+													<OrderListItemNumber className="correctPosition">
+														{item.correctPosition}
+													</OrderListItemNumber>
 												</OrderListItemText>
 											</Container>
 										}

@@ -13,8 +13,9 @@ const Container = styled.div`
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 	min-height: 0;
 	max-width: 200px;
+	padding: 0.6em;
 	&::before {
-		content: "#";
+		content: "# ";
 		color: var(--light-color);
 	}
 `;

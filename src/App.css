@@ -334,7 +334,7 @@ nav .pulse {
   display: inline-block;
 }
 .source .drag {
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
   color: white;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
   padding: 5px;
@@ -502,4 +502,8 @@ input[type="radio"]:checked + label::before {
 }
 .shown {
   display: block !important;
+}
+.reveal {
+  opacity: 1 !important;
+  transition: opacity 1s;
 }
