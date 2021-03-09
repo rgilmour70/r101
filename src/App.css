@@ -97,6 +97,7 @@ button.check-answer {
   margin-top: 1em;
   height: 30px;
   font-size: 1.1em;
+  border-radius: 5px;
 }
 button.check-answer:hover {
   background-color: var(--darkest-color);
@@ -511,6 +512,11 @@ input[type="radio"]:checked + label::before {
 }
 
 /* Submission Form */
+#submitForm {
+  border: 3px solid var(--dark-color);
+  padding: 1em;
+  border-radius: 10px;
+}
 #submitForm .form-group {
   margin-bottom: 1em;
 }
@@ -526,6 +532,7 @@ input[type="radio"]:checked + label::before {
   margin-top: 1em;
   height: 30px;
   font-size: 1.1em;
+  border-radius: 5px;
 }
 #submitForm .btn-primary:hover {
   background-color: var(--darkest-color);

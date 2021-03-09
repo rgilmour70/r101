@@ -23,8 +23,10 @@ class Classify extends Component {
 			response: '',
 			correctResponse: this.props.content.correctResponse,
 			incorrectResponse: this.props.content.incorrectResponse,
+			noActionResponse: 'Oh, come on. Do something.',
 			tried: false,
-			correct: false
+			correct: false,
+			somethingDragged: false
 		}
 		this.recordAnswer = props.recordAnswer;
 		this.thawNav = props.thawNav;
@@ -63,7 +65,8 @@ class Classify extends Component {
 				columns: {
 					...this.state.columns,
 					[newColumn.id]: newColumn 
-				}
+				},
+				somethingDragged: true
 			};
 
 			this.setState(newState);
@@ -104,21 +107,25 @@ class Classify extends Component {
 
 		this.setState({ tried: true });
 
-		this.thawNav();
-
 		const correctAnswer = this.state.correctAnswer;
 
 		const answerString = JSON.stringify(this.state.columns['column-2'].itemIds);
 
 		const correctResponse = this.state.correctResponse;
 		const incorrectResponse = this.state.incorrectResponse;
+		const noActionResponse = this.state.noActionResponse;
 
 		const isCorrect = JSON.stringify(correctAnswer) === answerString;
 
-		if (isCorrect) {
-			this.setState({ correct: isCorrect, response: correctResponse });
+		if (this.state.somethingDragged) { // they at least did something
+			this.thawNav();
+			if (isCorrect) {
+				this.setState({ correct: isCorrect, response: correctResponse });
+			} else {
+				this.setState({ correct: isCorrect, response: incorrectResponse });
+			}
 		} else {
-			this.setState({ correct: isCorrect, response: incorrectResponse });
+			this.setState({ response: noActionResponse });
 		}
 
 		if (!this.state.tried) {

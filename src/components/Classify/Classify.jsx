@@ -23,8 +23,10 @@ class Classify extends Component {
 			response: '',
 			correctResponse: this.props.content.correctResponse,
 			incorrectResponse: this.props.content.incorrectResponse,
+			noActionResponse: 'Oh, come on. Do something.',
 			tried: false,
-			correct: false
+			correct: false,
+			somethingDragged: false
 		}
 		this.recordAnswer = props.recordAnswer;
 		this.thawNav = props.thawNav;
@@ -32,6 +34,7 @@ class Classify extends Component {
 
 
 	onDragEnd = result => {
+
 		const { destination, source, draggableId } = result;
 
 		if (!destination) {
@@ -91,7 +94,8 @@ class Classify extends Component {
 				...this.state.columns,
 				[newStart.id]: newStart,
 				[newFinish.id]: newFinish
-			}
+			},
+			somethingDragged: true
 		};
 
 		this.setState(newState);
@@ -103,11 +107,10 @@ class Classify extends Component {
 
 		this.setState({ tried: true });
 
-		this.thawNav();
-
 		const correctnessObj = {};
 		const correctResponse = this.state.correctResponse;
 		const incorrectResponse = this.state.incorrectResponse;
+		const noActionResponse = this.state.noActionResponse;
 
 		for (let i=1; i<=this.state.columnOrder.length; i++) {
 
@@ -124,10 +127,15 @@ class Classify extends Component {
 
 		const answerString = JSON.stringify(correctnessObj);
 
-		if (isCorrect) {
-			this.setState({ correct: isCorrect, response: correctResponse });
+		if (this.state.somethingDragged) { // they at least did something
+			this.thawNav();
+			if (isCorrect) {
+				this.setState({ correct: isCorrect, response: correctResponse });
+			} else {
+				this.setState({ correct: isCorrect, response: incorrectResponse });
+			}
 		} else {
-			this.setState({ correct: isCorrect, response: incorrectResponse });
+			this.setState({ response: noActionResponse });
 		}
 
 		if (!this.state.tried) {

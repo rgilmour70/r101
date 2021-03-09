@@ -97,7 +97,7 @@ class OrderList extends Component {
 
 		const parentElement = e.target.closest('.shown');
 		const theNumbers = parentElement.getElementsByClassName('correctPosition');
-		console.log(theNumbers);
+
 		// order the elements by correct sequence of sources
 		const theNumbersInOrder = [];
 
