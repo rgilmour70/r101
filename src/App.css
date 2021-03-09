@@ -449,6 +449,22 @@ input[type="radio"]:checked + label::before {
   border: 1px solid var(--dark-color);
   padding: 0.5em 1em;
 }
+/* Answers to classification question */
+.answer-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.answer-table td {
+  background-color: var(--light-color);
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+.answer-table td:first-of-type {
+  background-color: var(--dark-color);
+  color: white;
+  font-weight: bold;
+}
 
 /* Modals */
 .ReactModal__Content {
@@ -468,9 +484,6 @@ input[type="radio"]:checked + label::before {
     max-width: 50%;
     left: 30% !important;
   }
-/*  #peer-review-image, #peer-review-screenshot {
-    max-width: 60%;
-  }*/
 }
 .btn-hint {
   cursor: pointer;
@@ -495,6 +508,27 @@ input[type="radio"]:checked + label::before {
 .modal-body img {
   max-width: 100%;
   height: auto;
+}
+
+/* Submission Form */
+#submitForm .form-group {
+  margin-bottom: 1em;
+}
+#submitForm label {
+  margin-right: 1em;
+}
+#submitForm .btn-primary {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+  color: #fff;
+  border-style: solid;
+  outline: none !important;
+  margin-top: 1em;
+  height: 30px;
+  font-size: 1.1em;
+}
+#submitForm .btn-primary:hover {
+  background-color: var(--darkest-color);
 }
 
 /* Utilities */

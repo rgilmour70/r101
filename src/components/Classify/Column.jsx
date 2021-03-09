@@ -4,11 +4,10 @@ import Item from './Item';
 import { Droppable } from 'react-beautiful-dnd';
 
 const ItemsContainer = styled.div`
-	background-color: #fff;
+	background-color: var(--light-color);
 `;
 
 const ItemSet = styled.div`
-	background-color: var(--light);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
