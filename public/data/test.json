@@ -14,6 +14,26 @@
 		"set" : {
 			"setContent" : [
 				{
+					"contentId" : 1,
+					"type" : "range",
+					"text" : "<h1>Test Yourself: Author</h1>You‘re writing a paper on childhood lead exposure. You find a report from the Environmental Protection Agency. How trustworthy do you think it is?",
+					"scale" : {
+						"0" : "Not Trustworthy", 
+						"5" : "Okay", 
+						"10" : "Trustworthy"
+					},
+					"minCorrect" : 7,
+					"maxCorrect" : 10,
+					"correctResponse" : "You are correct! The EPA is generally considered a reliable source on environmental toxins.",
+					"incorrectResponse" : "We disagree. The EPA is generally considered a reliable source on environmental toxins."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
 					"contentId" : 1, 
 					"type" : "orderList",
 					"text" : "<h1>Test Yourself</h1><p>You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.</p>",
@@ -215,26 +235,6 @@
 							"response" : "No. You didn’t paint it, so you have to cite it. Citation is about crediting the creator of a work, not just about how to find something."
 						}
 					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "range",
-					"text" : "<h1>Test Yourself: Author</h1>You‘re writing a paper on childhood lead exposure. You find a report from the Environmental Protection Agency. How trustworthy do you think it is?",
-					"scale" : {
-						"0" : "Not Trustworthy", 
-						"5" : "Okay", 
-						"10" : "Trustworthy"
-					},
-					"minCorrect" : 7,
-					"maxCorrect" : 10,
-					"correctResponse" : "You are correct! The EPA is generally considered a reliable source on environmental toxins.",
-					"incorrectResponse" : "We disagree. The EPA is generally considered a reliable source on environmental toxins."
 				}
 			]
 		}

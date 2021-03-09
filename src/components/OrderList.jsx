@@ -47,7 +47,9 @@ class OrderList extends Component {
 			goodResponse : this.props.content.goodResponse,
 			badResponse : this.props.content.badResponse,
 			answer : null,
-			response: ''
+			response: '',
+			noActionResponse: 'Oh, come on. Do something.',
+			somethingDragged: false
 		}
 		this.recordAnswer = props.recordAnswer;
 		this.thawNav = props.thawNav;
@@ -66,58 +68,66 @@ class OrderList extends Component {
 			result.destination.index
 		);
 
-		this.setState({
-			items,
-		});
+		this.setState(
+			{
+				items,
+				somethingDragged: true
+			}
+		);
 
 	};
 
 
 	onFinish = (e) => {
 
-		this.thawNav();
-		
-		const firstAnswer = JSON.stringify(this.state.items.map((obj, i) => obj.id));
+		if (this.state.somethingDragged) {
 
-		const ourAnswer = JSON.stringify(this.state.correctOrder);
+			this.thawNav();
 
-		const lev = getEditDistance(firstAnswer, ourAnswer);
+			const firstAnswer = JSON.stringify(this.state.items.map((obj, i) => obj.id));
 
-		let response = '';
+			const ourAnswer = JSON.stringify(this.state.correctOrder);
 
-		if (lev === 0) {
-			response = this.state.perfectResponse;
-		} else if (lev > 0 && lev <= 2) {
-			response = this.state.goodResponse;
+			const lev = getEditDistance(firstAnswer, ourAnswer);
+
+			let response = '';
+
+			if (lev === 0) {
+				response = this.state.perfectResponse;
+			} else if (lev > 0 && lev <= 2) {
+				response = this.state.goodResponse;
+			} else {
+				response = this.state.badResponse;
+			}
+
+			const isCorrect = firstAnswer === ourAnswer;
+
+			const parentElement = e.target.closest('.shown');
+			const theNumbers = parentElement.getElementsByClassName('correctPosition');
+
+			// order the elements by correct sequence of sources
+			const theNumbersInOrder = [];
+
+			[].slice.call(theNumbers).sort(function(a, b) {
+				return a.textContent.localeCompare(b.textContent);
+			}).forEach(function(val, index) {
+				theNumbersInOrder.push(val);
+			});
+
+			// unhide the correct numbers
+			let interval = 300;
+			for (let i=0; i<theNumbersInOrder.length; i++) {
+				setTimeout(() => {theNumbersInOrder[i].classList.add('reveal')}, interval);
+				interval += 300;
+			}
+
+			this.setState({ response: response, tried: true, answer: firstAnswer });
+
+			if (!this.state.tried) {
+				this.recordAnswer(this.state.slideId, this.state.contentId, firstAnswer, isCorrect);
+			}
 		} else {
-			response = this.state.badResponse;
-		}
-
-		const isCorrect = firstAnswer === ourAnswer;
-
-		const parentElement = e.target.closest('.shown');
-		const theNumbers = parentElement.getElementsByClassName('correctPosition');
-
-		// order the elements by correct sequence of sources
-		const theNumbersInOrder = [];
-
-		[].slice.call(theNumbers).sort(function(a, b) {
-			return a.textContent.localeCompare(b.textContent);
-		}).forEach(function(val, index) {
-			theNumbersInOrder.push(val);
-		});
-
-		// unhide the correct numbers
-		let interval = 300;
-		for (let i=0; i<theNumbersInOrder.length; i++) {
-			setTimeout(() => {theNumbersInOrder[i].classList.add('reveal')}, interval);
-			interval += 300;
-		}
-
-		this.setState({ response: response, tried: true, answer: firstAnswer });
-
-		if (!this.state.tried) {
-			this.recordAnswer(this.state.slideId, this.state.contentId, firstAnswer, isCorrect);
+			this.setState({ response: this.state.noActionResponse });
 		}
 		
 	};
