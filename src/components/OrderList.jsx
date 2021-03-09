@@ -19,7 +19,7 @@ const Container = styled.div`
 const OrderListItemText = styled.div`
 	display: table-cell;
 	vertical-align: top;
-	padding: 0.6em;
+	padding: 0.6em 1em;
 `;
 
 const OrderListItemNumber = styled.div`
@@ -41,6 +41,7 @@ class OrderList extends Component {
 		this.state = {
 			slideId: this.props.slideId,
 			items : this.props.content.items,
+			text : this.props.content.text,
 			tried : false,
 			contentId : this.props.content.contentId,
 			correctOrder : this.props.content.correctOrder,
@@ -135,6 +136,7 @@ class OrderList extends Component {
 	render() {
 		return (
 			<div className={  this.props.display ? 'shown' : 'hidden' }>
+				<div className="text">{ReactHtmlParser(this.state.text)}</div>
 				<DragDropContext onDragEnd={this.onDragEnd}>
 					<Droppable droppableId="droppable">
 						{(provided, snapshot) => (

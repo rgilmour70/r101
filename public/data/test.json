@@ -290,7 +290,7 @@
 					"contentId" : 1,
 					"contentLabel" : "Communication",
 					"type" : "orderList",
-					"text" : "You are presenting a persuasive speech in favor of net neutrality. Please order the following sources from most to least appropriate for your project.",
+					"text" : "<h1>Test Yourself: Ranking Sources</h1><p>You are presenting a persuasive speech in favor of net neutrality. Please order the following sources from most to least appropriate for your project.</p>",
 					"items" : [
 						{
 							"name" : "Restoring New Neutrality, One State at a Time” episode of <i>Radio Survivor</i> podcast, including an interview with a policy analyst from the Electronic Frontier Foundation",
@@ -332,7 +332,7 @@
 					"contentId" : 2,
 					"contentLabel" : "Literature",
 					"type" : "orderList",
-					"text" : "You are writing a paper on major themes in the works of Isabel Allende. Please order the following sources from most to least appropriate for your project.",
+					"text" : "<h1>Test Yourself: Ranking Sources</h1><p>You are writing a paper on major themes in the works of Isabel Allende. Please order the following sources from most to least appropriate for your project.</p>",
 					"items" : [
 						{
 							"name" : "\"Z/Z: Isabel Allende and the Mark of Zorro\" from the 2006 volume of <i>Romance Studies</i>",
@@ -374,7 +374,7 @@
 					"contentId" : 3,
 					"contentLabel" : "Business",
 					"type" : "orderList",
-					"text" : "You are writing a paper about the business model of Starbucks. Please order the following sources from most to least appropriate for your project.",
+					"text" : "<h1>Test Yourself: Ranking Sources</h1><p>You are writing a paper about the business model of Starbucks. Please order the following sources from most to least appropriate for your project.</p>",
 					"items" : [
 						{
 							"name" : "A video published on the Starbucks website called Starbucks Ethical Sourcing of Sustainable Products, 2019",
@@ -416,7 +416,7 @@
 					"contentId" : 4,
 					"contentLabel" : "Natural Sciences",
 					"type" : "orderList",
-					"text" : "You are writing a paper about how scientists are looking for signs of extraterrestrial life. Please order the following sources from most to least appropriate for your project.",
+					"text" : "<h1>Test Yourself: Ranking Sources</h1><p>You are writing a paper about how scientists are looking for signs of extraterrestrial life. Please order the following sources from most to least appropriate for your project.</p>",
 					"items" : [
 						{
 							"name" : "A news alert posted on the NASA website: \"NASA InSight Lander Arrives on Martian Surface to Learn What Lies Beneath,\" Nov. 26, 2018",
@@ -458,7 +458,7 @@
 					"contentId" : 5, 
 					"contentLabel" : "Social Sciences",
 					"type" : "orderList",
-					"text" : "You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.",
+					"text" : "<h1>Test Yourself: Ranking Sources</h1><p>You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.</p>",
 					"items" : [
 						{
 							"name" : "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
@@ -500,7 +500,7 @@
 					"contentId" : 6,
 					"contentLabel" : "Health Sciences",
 					"type" : "orderList",
-					"text" : "You're writing a paper about how college students find mental health information. Please order the following sources from most to least appropriate for your project.",
+					"text" : "<h1>Test Yourself: Ranking Sources</h1><p>You're writing a paper about how college students find mental health information. Please order the following sources from most to least appropriate for your project.</p>",
 					"items" : [
 						{
 							"name" : "\"Do Online Mental Health Services Improve Help-Seeking for Young People? A Systematic Review\" by Sylvia Kauer in <i>Journal of Medical Internet Research</i>, 2014",

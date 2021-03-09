@@ -78,7 +78,6 @@ const Slide = (props) => {
 		case 'orderList':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<OrderList {...props} display="shown" />
 				</div>
 			);

@@ -24,10 +24,9 @@ class TagIt extends Component {
 			response: '',
 			correctResponse: this.props.content.correctResponse,
 			incorrectResponse: this.props.content.incorrectResponse,
-			noActionResponse: 'Oh, come on. Do something.',
+			incompleteResponse: 'Please drag one tag to each column.',
 			tried: false,
 			correct: false,
-			somethingDragged: false
 		}
 		this.recordAnswer = props.recordAnswer;
 		this.thawNav = props.thawNav;
@@ -95,8 +94,7 @@ class TagIt extends Component {
 				...this.state.columns,
 				[newStart.id]: newStart,
 				[newFinish.id]: newFinish
-			},
-			somethingDragged: true
+			}
 		};
 
 		this.setState(newState);
@@ -111,11 +109,10 @@ class TagIt extends Component {
 		const correctnessObj = {};
 		const correctResponse = this.state.correctResponse;
 		const incorrectResponse = this.state.incorrectResponse;
-		const noActionResponse = this.state.noActionResponse;
-		const somethingDragged = this.state.somethingDragged;
+		const incompleteResponse = this.state.incompleteResponse;
+		const cols = this.state.columns;
 
 		for (let i=1; i<=this.state.columnOrder.length; i++) {
-
 			let k = 'column-' + i;
 
 			let answerKey = JSON.stringify(this.state.correctAnswer[k].itemIds.sort());
@@ -125,11 +122,13 @@ class TagIt extends Component {
 
 		}
 
+		const originColContents = cols['column-1'].itemIds;
+
 		const isCorrect = Object.values(correctnessObj).every(Boolean);
 
 		const answerString = JSON.stringify(correctnessObj);
 
-		if (somethingDragged) { // they at least did something
+		if (originColContents.length === 0) { 
 			this.thawNav();
 			if (isCorrect) {
 				this.setState({ correct: isCorrect, response: correctResponse });
@@ -137,7 +136,7 @@ class TagIt extends Component {
 				this.setState({ correct: isCorrect, response: incorrectResponse });
 			}
 		} else {
-			this.setState({ response: noActionResponse });
+			this.setState({ response: incompleteResponse });
 		}
 
 		if (!this.state.tried) {
