@@ -325,8 +325,8 @@
 					],
 					"correctOrder" : [5, 3, 2, 1, 4],
 					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
 				},
 				{
 					"contentId" : 2,
@@ -367,8 +367,8 @@
 					],
 					"correctOrder" : [5, 3, 1, 2, 4],
 					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
 				},
 				{
 					"contentId" : 3,
@@ -409,8 +409,8 @@
 					],
 					"correctOrder" : [2, 4, 5, 3, 1],
 					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
 				},
 				{
 					"contentId" : 4,
@@ -451,8 +451,8 @@
 					],
 					"correctOrder" : [5, 3, 2, 1, 4],
 					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
 				},
 				{
 					"contentId" : 5, 
@@ -493,8 +493,8 @@
 					],
 					"correctOrder" : [1, 5, 2, 4, 3],
 					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
 				},
 				{
 					"contentId" : 6,
@@ -535,8 +535,8 @@
 					],
 					"correctOrder" : [1, 4, 3, 5, 2],
 					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers in the orange circles for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers in the orange circles for the way that we ordered the sources."
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
 				}
 			]
 		}
