@@ -95,7 +95,8 @@ class Classify extends Component {
 				...this.state.columns,
 				[newStart.id]: newStart,
 				[newFinish.id]: newFinish
-			}
+			},
+			somethingDragged: true
 		};
 
 		this.setState(newState);
