@@ -12,6 +12,278 @@
 	},
 	{
 		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1, 
+					"type" : "orderList",
+					"text" : "You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.",
+					"items" : [
+						{
+							"name" : "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
+							"id" : 1,
+							"type" : "book",
+							"correctPosition" : 1
+						},
+						{
+							"name" : "\"The New Model for a Health-First Approach to Legalizing Weed,\" article in <i>The Atlantic</i> by staff writer James Hamblin, June 22, 2018",
+							"id" : 2,
+							"type" : "article",
+							"correctPosition" : 3
+						},
+						{
+							"name" : "The website for the Marijuana Policy Project, an organization dedicated to regulating marijuana use similar to alcohol and educating readers about marijuana",
+							"id" : 3,
+							"type" : "website",
+							"correctPosition" : 5
+						},
+						{
+							"name" : "<i>Evergreen: The Road to Legalization</i>, a documentary that investigates the \"absurdity\" of medical marijuana prohibition, 2018",
+							"id" : 4,
+							"type" : "video",
+							"correctPosition" : 4
+						},
+						{
+							"name" : "A scholarly article, \"The Impact of Marijuana Legalization on Adolescent Use, Consequences, and Perceived Risk\" by Ashley Estoup in <i>Substance Use & Misuse</i>, 2016",
+							"id" : 5,
+							"type" : "article",
+							"correctPosition" : 2
+						}
+					],
+					"correctOrder" : [1, 5, 2, 4, 3],
+					"perfectResponse" : "Yes, you got the order right",
+					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
+					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "tagIt",
+					"text" : "<h1>Test Yourself: Parts of a Reference List Entry</h1><p>Please drag the tags to the appropriate part of the reference list entry.</p>",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Title"
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "Source"
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "Date"
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "Author"
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"title" : null,
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"content" : "Ibrahim, H.",
+							"itemIds" : []
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"content" : "(2016).",
+							"itemIds" : []
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"content" : "Any other age: Vampires and oceanic lifespans.",
+							"itemIds" : []
+						},
+						"column-5" : {
+							"id" : "column-5",
+							"content" : "<i>African American Review, 49</i>(4), 313–327.",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2", "column-3", "column-4", "column-5"],
+					"correctAnswer" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : []
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : ["item-4"]
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"itemIds" : ["item-3"]
+						},
+						"column-4" : {
+							"id" : "column-4",
+							"itemIds" : ["item-1"]
+						},
+						"column-5" : {
+							"id" : "column-5",
+							"itemIds" : ["item-2"]
+						}
+					},
+					"correctResponse" : "Nice job!",
+					"incorrectResponse" : "Not quite. H. Ibrahim is the author, the date is 2016, the title is \"Any other age&hellip;\", and the source is <i>African American Review</i>."
+				}
+			]
+		}
+	},
+		{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Peer Review?</h1><p>Peer review is a process by which scholarly articles are vetted for publication. Approval by an editor is usually all that is required for an article to be published in a popular or trade magazine, but a scholarly journal will require that an article be reviewed by experts in the field before it is published.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Popular Periodicals</h1><p>Which of the following is most likely to be a popular periodical? Tap the info icons to see cover images.</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "The American Journal of Botany",
+							"isCorrect" : false,
+							"response" : "Incorrect. Even if you know nothing about this journal, you can guess that something with the name of an academic field in the title will be scholarly.",
+							"info" : "<img src='images/scholarly/ajb_cover.jpg' alt='Cover of the American Journal of Botany highlighting the ecology and evolution of pollen performance'>",
+							"infoLabel" : "Cover of The American Journal of Botany"
+						},
+						{
+							"answerId" : 2,
+							"text" : "Analytical Chemistry",
+							"isCorrect" : false,
+							"response" : "Incorrect. Do you know what \"isotachophoresis\" is? We don’t either, so it’s probably a scholarly journal.",
+							"info" : "<img src='images/scholarly/analytical_chemistry.jpg' alt='Cover of Analytical Chemistry'>",
+							"infoLabel" : "Cover of Analytical Chemistry"
+						},
+						{
+							"answerId" : 3,
+							"text" : "Art History and Criticism",
+							"isCorrect" : false,
+							"response" : "Incorrect. Even if you know nothing about this journal, you can guess that something with the name of an academic field in the title will be scholarly.",
+							"info" : "<img src='images/scholarly/mik_cover.jpg' alt='Cover of Art History and Criticism showing a metal chandelier'>",
+							"infoLabel" : "Cover of Art History and Criticism"
+						},
+						{
+							"answerId" : 4,
+							"text" : "Rolling Stone",
+							"isCorrect" : true,
+							"response" : "Correct! <i>Rolling Stone</i> is a popular periodical. It appeals to a very general readership, covering all aspects of popular culture. Celebrity interviews are a sure sign of a popular journal.",
+							"info" : "<img src='images/scholarly/rolling_stone_cover.jpg' alt='Cover of Rolling Stone featuring Taylor Swift'>",
+							"infoLabel" : "Cover of The Rolling Stone"
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Plagiarism</h1> <p>Your art history instructor has assigned a paper in which you need to select a painting for analysis. You find a Van Gogh painting online by using Google Images. Do you need to cite the source of this image?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Yes. I didn't paint it, so I have to cite it.",
+							"isCorrect" : true,
+							"response" : "Correct!"
+						},
+						{
+							"answerId" : 2,
+							"text" : "No. Anyone can find it on Google, so why cite?",
+							"isCorrect" : false,
+							"response" : "No. You didn’t paint it, so you have to cite it. Citation is about crediting the creator of a work, not just about how to find something."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "range",
+					"text" : "<h1>Test Yourself: Author</h1>You‘re writing a paper on childhood lead exposure. You find a report from the Environmental Protection Agency. How trustworthy do you think it is?",
+					"scale" : {
+						"0" : "Not Trustworthy", 
+						"5" : "Okay", 
+						"10" : "Trustworthy"
+					},
+					"minCorrect" : 7,
+					"maxCorrect" : 10,
+					"correctResponse" : "You are correct! The EPA is generally considered a reliable source on environmental toxins.",
+					"incorrectResponse" : "We disagree. The EPA is generally considered a reliable source on environmental toxins."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "dragText",
+					"text" : "<h1>Test Yourself: Building a Reference</h1>Below are elements of a citation. Please drag them into the box in the appropriate order.",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "Oxford University Press. "
+						},
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "(2004). "
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "Jenkyns, R. "
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "A fine brush on ivory: An appreciation of Jane Austen. "
+						}
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2"],
+					"correctAnswer" : ["item-3", "item-2", "item-4", "item-1"],
+					"correctResponse" : "Correct! Nice job!",
+					"incorrectResponse" : "Not quite."
+				}
+			]
+		}
+	},
+	{
+		"set" : {
 			"userChoice" : true,
 			"setContent" : [
 				{
@@ -270,128 +542,6 @@
 		}
 	},
 	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "classify",
-					"text" : "<h1>Test Yourself: Review</h1>Drag each source type to the column that matches its degree of review.",
-					"items" : {
-						"item-1" : {
-							"id" : "item-1",
-							"content" : "Tweet"
-						},
-						"item-2" : {
-							"id" : "item-2",
-							"content" : "Article"
-						},
-						"item-3" : {
-							"id" : "item-3",
-							"content" : "Book"
-						},
-						"item-4" : {
-							"id" : "item-4",
-							"content" : "Wikipedia Entry"
-						},
-						"item-5" : {
-							"id" : "item-5",
-							"content" : "Newspaper"
-						}
-					},
-					"columns" : {
-						"column-1" : {
-							"id" : "column-1",
-							"title" : null,
-							"itemIds" : ["item-1", "item-2", "item-3", "item-4", "item-5"]
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"title" : "No Review",
-							"itemIds" : []
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"title" : "Editorial Review",
-							"itemIds" : []
-						},
-						"column-4" : {
-							"id" : "column-4",
-							"title" : "Peer Review",
-							"itemIds" : []
-						}
-					},
-					"columnOrder" : ["column-1", "column-2", "column-3", "column-4"],
-					"correctAnswer" : {
-						"column-1" : {
-							"id" : "column-1",
-							"itemIds" : []
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"itemIds" : ["item-1"]
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"itemIds" : ["item-3", "item-4", "item-5"]
-						},
-						"column-4" : {
-							"id" : "column-4",
-							"itemIds" : ["item-2"]
-						}
-					},
-					"correctResponse" : "Nice job!",
-					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Tweet</td><td>No Review</td></tr><tr><td>Article</td><td>Peer Review</td></tr><tr><td>Book</td><td>Editorial Review</td></tr><tr><td>Wikipedia Entry</td><td>Editorial Review</td></tr><tr><td>Newspaper</td><td>Editorial Review</td></tr></tbody></table>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1, 
-					"type" : "orderList",
-					"text" : "You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.",
-					"items" : [
-						{
-							"name" : "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
-							"id" : 1,
-							"type" : "book",
-							"correctPosition" : 1
-						},
-						{
-							"name" : "\"The New Model for a Health-First Approach to Legalizing Weed,\" article in <i>The Atlantic</i> by staff writer James Hamblin, June 22, 2018",
-							"id" : 2,
-							"type" : "article",
-							"correctPosition" : 3
-						},
-						{
-							"name" : "The website for the Marijuana Policy Project, an organization dedicated to regulating marijuana use similar to alcohol and educating readers about marijuana",
-							"id" : 3,
-							"type" : "website",
-							"correctPosition" : 5
-						},
-						{
-							"name" : "<i>Evergreen: The Road to Legalization</i>, a documentary that investigates the \"absurdity\" of medical marijuana prohibition, 2018",
-							"id" : 4,
-							"type" : "video",
-							"correctPosition" : 4
-						},
-						{
-							"name" : "A scholarly article, \"The Impact of Marijuana Legalization on Adolescent Use, Consequences, and Perceived Risk\" by Ashley Estoup in <i>Substance Use & Misuse</i>, 2016",
-							"id" : 5,
-							"type" : "article",
-							"correctPosition" : 2
-						}
-					],
-					"correctOrder" : [1, 5, 2, 4, 3],
-					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers in the circles for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers in the circles for the way that we ordered the sources."
-				}
-			]
-		}
-	},{
 		"set" : {
 			"setContent" : [
 				{

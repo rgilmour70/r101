@@ -124,7 +124,7 @@ class OrderList extends Component {
 
 	render() {
 		return (
-			<div className={ 'shown' + this.props.display ? 'shown' : 'hidden' }>
+			<div className={  this.props.display ? 'shown' : 'hidden' }>
 				<DragDropContext onDragEnd={this.onDragEnd}>
 					<Droppable droppableId="droppable">
 						{(provided, snapshot) => (
