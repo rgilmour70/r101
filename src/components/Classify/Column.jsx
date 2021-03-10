@@ -18,7 +18,6 @@ const Container = styled.div`
 	margin: 3px;
 	border: 1px solid lightgrey;
 	border-radius: 2px;
-	width: 31%;
 	display: inline-block;
 	vertical-align: top;
 `;
@@ -38,7 +37,17 @@ const ItemList = styled.div`
 `;
 
 
+
 class Column extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			numberOfDestinationColumns: this.props.numberOfDestinationColumns
+		}
+		this.colWidth = ( (1 / this.state.numberOfDestinationColumns * 100) - 3 ) + '%';
+	}
+
 	render() {
 
 		if (this.props.type === 'source-area') {
@@ -61,7 +70,7 @@ class Column extends Component {
 			);
 		} else {
 			return(
-				<Container>
+				<Container style={{width: this.colWidth}}>
 					<Title>{this.props.column.title}</Title>
 					<Droppable droppableId={this.props.column.id}>
 						{ (provided, snapshot) => (

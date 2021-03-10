@@ -193,7 +193,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>In-text Citations</h1><p>In addition to listing your sources at the end of your paper, you also need to cite the sources within your text, directly after the ideas that you are borrowing. This is accomplished with a short parenthetical citation that gives the reader enough information to find the item in your works cited list and to find the information within the item. Usually this consists of author and page number.</p><div class='plain-text'>There has been less research about the role of women in contemporary Judaism than in contemporary Christianity (Kraemer 130).</div><p>If the work has more than two authors, just list the first one with the abbreviation “et al.”, which means “and others.”</p>"
+					"text" : "<h1>In-text Citations</h1><p>In addition to listing your sources at the end of your paper, you also need to cite the sources within your text, directly after the ideas that you are borrowing. This is accomplished with a short parenthetical citation that gives the reader enough information to find the item in your works cited list and to find the information within the item. Usually this consists of author and page number.</p><div class='excerpt'>There has been less research about the role of women in contemporary Judaism than in contemporary Christianity (Kraemer 130).</div><p>If the work has more than two authors, just list the first one with the abbreviation “et al.”, which means “and others.”</p>"
 				}
 			]
 		}

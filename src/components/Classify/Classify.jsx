@@ -25,7 +25,7 @@ class Classify extends Component {
 			incorrectResponse: this.props.content.incorrectResponse,
 			incompleteResponse: 'Please drag all items into the columns below.',
 			tried: false,
-			correct: false,
+			correct: false
 		}
 		this.recordAnswer = props.recordAnswer;
 		this.thawNav = props.thawNav;
@@ -162,7 +162,13 @@ class Classify extends Component {
 								);
 							} else {
 								return (
-									<Column key={column.id} column={column} items={items} type="destination-area" />
+									<Column 
+										key={column.id} 
+										column={column} 
+										items={items} 
+										type="destination-area" 
+										numberOfDestinationColumns={this.props.content.columnOrder.length - 1}
+									/>
 								);
 							}
 						})}

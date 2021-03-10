@@ -44,7 +44,7 @@ const TextAnswer = (props) => {
 			<form className="input-group" onSubmit={onEnter}>
 				<input type="text" className="form-control" />
 				<div className="input-group-append">
-					<button type="submit" className="btn">Check Answer</button>
+					<button type="submit" className="btn check-answer">Check Answer</button>
 				</div>
 			</form>
 			<Feedback response={response} />

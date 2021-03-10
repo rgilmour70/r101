@@ -105,6 +105,54 @@ button.check-answer:hover {
   color: #fff;
 }
 
+/* Citation Formatting */
+div[class^=citation] {
+  margin: 2em 1em 3em 1em;
+  padding: 1em 1em 1em 4em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  text-indent: -2em;
+  line-height: 2;
+}
+div[class^=citation]::before {
+  float: right;
+  background-color: var(--dark-color);
+  display: table-cell;
+  color: white;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  text-indent: 0;
+  font-family: sans-serif;
+  position: relative;
+  top: -40px;
+  left: 1em;
+  line-height: 1.5;
+}
+
+.citation-reference-list .author {
+  background-color: plum;
+}
+.citation-reference-list .date {
+  background-color: PaleTurquoise;
+}
+.citation-reference-list .title {
+  background-color: yellow;
+}
+.citation-reference-list .source {
+  background-color: PaleGreen;
+}
+
+.citation-reference-list::before {
+  content: 'Reference List';
+}
+.citation-in-text::before {
+  content: 'In-text';
+}
+
 
 /* Navigation */
 nav {
@@ -484,7 +532,7 @@ input[type="radio"]:checked + label::before {
   margin-right: auto;
 }
 .answer-table td {
-  background-color: var(--light-color);
+  background-color: #fff;
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #fff;
