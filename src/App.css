@@ -206,7 +206,7 @@ nav .pulse {
 /* Order List */
 .order-list-item {
   background-color: #fff;
-  width: 30em;
+  width: 20em;
   height: 40px;
   min-height: 40px !important;
   border: 3px solid var(--dark-color);
@@ -215,6 +215,11 @@ nav .pulse {
   position: relative;
   margin-bottom: 1em;
   display: table;
+}
+@media (min-width: 550px) {
+  .order-list-item {
+    width: 30em;
+  }
 }
 .order-list-item.article::before {
   content: url('./svgs/evaluating/article.svg');
@@ -406,6 +411,14 @@ nav .pulse {
 
 
 /* Multiple choice */
+.mc-answers {
+  margin-left: -1em;
+}
+@media (min-width: 600px) {
+  .mc-answers {
+    margin-left: 2em;
+  }
+}
 .mc-answer-wrapper {
   margin: 1.8em auto;
 }
@@ -420,6 +433,7 @@ input[type='radio'] + label {
   position: relative;
   cursor: pointer;
   margin-bottom: 1em;
+  display: table-cell;
 }
 input[type='radio'] + label::before {
   content: '';
