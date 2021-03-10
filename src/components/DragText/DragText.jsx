@@ -23,7 +23,7 @@ class Classify extends Component {
 			response: '',
 			correctResponse: this.props.content.correctResponse,
 			incorrectResponse: this.props.content.incorrectResponse,
-			noActionResponse: 'Oh, come on. Do something.',
+			incompleteResponse: 'Please drag all items into the box.',
 			tried: false,
 			correct: false,
 			somethingDragged: false
@@ -95,8 +95,7 @@ class Classify extends Component {
 				...this.state.columns,
 				[newStart.id]: newStart,
 				[newFinish.id]: newFinish
-			},
-			somethingDragged: true
+			}
 		};
 
 		this.setState(newState);
@@ -114,11 +113,16 @@ class Classify extends Component {
 
 		const correctResponse = this.state.correctResponse;
 		const incorrectResponse = this.state.incorrectResponse;
-		const noActionResponse = this.state.noActionResponse;
+		const incompleteResponse = this.state.incompleteResponse;
 
 		const isCorrect = JSON.stringify(correctAnswer) === answerString;
 
-		if (this.state.somethingDragged) { // they at least did something
+		const cols = this.state.columns;
+
+		const originColContents = cols['column-1'].itemIds;
+
+
+		if (originColContents.length === 0) { // they at least did something
 			this.thawNav();
 			if (isCorrect) {
 				this.setState({ correct: isCorrect, response: correctResponse });
@@ -126,7 +130,7 @@ class Classify extends Component {
 				this.setState({ correct: isCorrect, response: incorrectResponse });
 			}
 		} else {
-			this.setState({ response: noActionResponse });
+			this.setState({ response: incompleteResponse });
 		}
 
 		if (!this.state.tried) {
