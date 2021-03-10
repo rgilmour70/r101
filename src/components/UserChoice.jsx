@@ -36,9 +36,9 @@ class UserChoice extends Component {
 	render() {
 		return (
 			<Fragment>
-				<div className="mc-answers">
+				<div className="mc-answers user-choice">
 					<form>
-						<p>Please choose a subject area. It doesn't have to be your major.</p>
+						<p class="text">Please choose a subject area. It doesn't have to be your major.</p>
 						{ this.props.content.setContent.map(q =>
 							<div className="mc-answer form-check" key={q.contentId}>
 								<input type="radio" className="form-check-input" value={q.contentId} name={'s' + this.props.currentSlide} />
