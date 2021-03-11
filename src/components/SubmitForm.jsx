@@ -29,9 +29,9 @@ class SubmitForm extends Component {
 	}
 
 	handleFormSubmit = e => {
-		// console.log(this.state.record);
 		e.preventDefault();
 		this.validate();
+		console.log(this.state);
 		axios({
 			method: 'post',
 			url: `${API_PATH}`,

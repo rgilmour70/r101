@@ -141,7 +141,7 @@ const App = () => {
 			setCurrentSlide(next);
 		}
 
-		console.log(record);
+		// console.log(record);
 	}
 
 	const recordAnswer = (currentSlide, contentId, answer, isCorrect) => {
@@ -177,8 +177,8 @@ const App = () => {
 						slug={slug}
 						currentSlide={currentSlide}
 						content={theContent[i]}
+						record={record}
 						recordAnswer={recordAnswer}
-						// freezeNav={freezeNav}
 						thawNav={thawNav}
 					/>
 				)}

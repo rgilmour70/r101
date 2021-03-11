@@ -14,6 +14,8 @@ const Container = styled.div`
 	font-weight: bold;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
 	min-height: 0;
+	max-width: 180px;
+	text-align: left;
 `;
 
 class Item extends React.Component {

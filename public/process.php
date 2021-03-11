@@ -98,15 +98,17 @@ if ($_POST) {
 	    $query .= $query_bit_2;
 	    $query .= ")";
 
+	    $query_final = preg_replace('/, \)/', ')', $query);
+
 	    $error_message = "";
 
 	    try {
-	        $db->exec($query);
+	        $db->exec($query_final);
 	    } catch(PDOException $e) {
 	        $error_message = $e->getMessage();
 	    }
 
-	    $msg .= "<br>" . $query . "<br><br>" . $error_message . "<br><br>";
+	    $msg .= "<br>" . $query_final . "<br><br>" . $error_message . "<br><br>";
 
 	}
 
