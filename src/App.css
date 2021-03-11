@@ -68,11 +68,19 @@ body {
   margin-bottom: 1em;
 }
 .text ul {
-  /*list-style-image: url('images/bullet.svg');*/
-  padding-top: 0.8em;
+  list-style: none;
 }
-.text ul span {
-  margin-left: -5px;
+.text ul li {
+  color: black;
+  margin-top: -4em;
+}
+.text ul li::before {
+  content: '· '; /* interpunct */
+  font-size: 5em;
+  color: var(--dark-color);
+  position: relative;
+  top: 20px;
+  left: 10px;
 }
 .text img {
   width: 300px;
@@ -80,6 +88,21 @@ body {
   margin-bottom: 1em;
   border: 1px solid #777;
 }
+
+
+/* Special images in Scholarly */
+#peer-review-screenshot {
+  border: none;
+}
+#peer-review-image, #peer-review-screenshot {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  #peer-review-image, #peer-review-screenshot {
+    width: 80%;
+  }
+}
+
 .excerpt {
   font-family: monospace;
   font-size: 0.9em;
@@ -551,9 +574,6 @@ input[type="radio"]:checked + label::before {
 @media (min-width: 600px) {
   .ReactModal__Content {
     max-width: 70%;
-  }
-  #peer-review-image, #peer-review-screenshot {
-    max-width: 100%;
   }
 }
 @media (min-width: 1000px) {

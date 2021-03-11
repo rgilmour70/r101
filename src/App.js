@@ -98,7 +98,7 @@ const App = () => {
 		case 'scholarly':
 			document.documentElement.style.setProperty('--light-color', '#fde2e8');
 			document.documentElement.style.setProperty('--dark-color', '#e20e41');
-			document.documentElement.style.setProperty('--darkest-color', '#92092a');
+			document.documentElement.style.setProperty('--darkest-color', '#c20c38');
 			break;
 		case 'evaluating':
 			document.documentElement.style.setProperty('--light-color', '#fedddb');

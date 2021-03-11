@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
-const Declarative = (props) => {
+const Declarative = props => {
 	return <div className="text">{ReactHtmlParser(props.content.text)}</div>;
 }
 
