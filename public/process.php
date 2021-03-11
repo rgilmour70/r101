@@ -1,8 +1,8 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 
-include('../../includes/config.php');
-include('../../includes/functions.php');
+include('../includes/config.php');
+include('../includes/functions.php');
 
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
@@ -106,7 +106,7 @@ if ($_POST) {
 	        $error_message = $e->getMessage();
 	    }
 
-	    // $msg .= "<br>" . $query . "<br><br>" . $error_message . "<br><br>";
+	    $msg .= "<br>" . $query . "<br><br>" . $error_message . "<br><br>";
 
 	}
 
