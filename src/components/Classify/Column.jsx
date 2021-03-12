@@ -31,7 +31,7 @@ const Title = styled.div`
 
 const ItemList = styled.div`
 	padding: 8px;
-	height: 250px;
+	height: 400px;
 	background-color: ${ props => props.isDraggingOver ? '#ccc' : 'white'};
 	transition: background-color 0.6s ease;
 `;
