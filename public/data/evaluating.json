@@ -168,7 +168,7 @@
 						"5" : "Okay", 
 						"10" : "Very Useful"
 					},
-					"minCorrect" : 2,
+					"minCorrect" : 0,
 					"maxCorrect" : 4,
 					"correctResponse" : "Nice job! At best, it might contain some good background information, but there have been a lot of elections since 2006.",
 					"incorrectResponse" : "We don’t think it’s very useful. At best, it might contain some good background information, but there have been a lot of elections since 2006."

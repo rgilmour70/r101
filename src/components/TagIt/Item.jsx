@@ -11,7 +11,6 @@ const Container = styled.div`
 	background-color: var(--dark-color);
 	color: white;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
-	min-height: 0;
 	max-width: 200px;
 	padding: 0.6em;
 	&::before {

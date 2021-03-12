@@ -19,8 +19,8 @@ const App = () => {
 	}
 
 
-	const tutorialSlug = queryString.parse(window.location.search).t || 'test';
-	document.title = tutorialTitles[tutorialSlug] || 'test';
+	const tutorialSlug = queryString.parse(window.location.search).t || 'plagiarism';
+	document.title = tutorialTitles[tutorialSlug] || 'plagiarism';
 
 	// eslint-disable-next-line
 	const [slug, setSlug] = useState(tutorialSlug);

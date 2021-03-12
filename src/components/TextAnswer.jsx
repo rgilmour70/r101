@@ -43,7 +43,7 @@ const TextAnswer = (props) => {
 		<Fragment>
 			<form className="input-group" onSubmit={onEnter}>
 				<input type="text" className="form-control" />
-				<div className="input-group-append">
+				<div>
 					<button type="submit" className="btn check-answer">Check Answer</button>
 				</div>
 			</form>

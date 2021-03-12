@@ -17,6 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   background-color: var(--light-color);
+  font-size: 1.05em;
 }
 
 /* Splash screen */
@@ -67,6 +68,12 @@ body {
   color: #000;
   margin-bottom: 1em;
 }
+.text a:link, .text a:visited {
+  color: var(--dark-color);
+}
+.text a:active, .text a:hover {
+  color: var(--darkest-color);
+}
 .text ul {
   list-style: none;
 }
@@ -90,6 +97,30 @@ body {
   border: 1px solid #777;
 }
 
+ol {
+  list-style: none;
+  counter-reset: my-counter;
+}
+ol li {
+  counter-increment: my-counter;
+  margin-bottom: 5px;
+}
+ol li::before {
+  content: counter(my-counter) ". ";
+  color: var(--dark-color);
+  font-weight: bold;
+}
+
+/* Generic form elements */
+input[type='text'], input[type='email'], input[type='number'] {
+  font-size: 1.1em;
+}
+label {
+  font-size: 1.1em;
+}
+select {
+  font-size: 1.1em;
+}
 
 /* Special images in Scholarly */
 #peer-review-screenshot {
@@ -155,6 +186,7 @@ div[class^=citation]::before {
   top: -40px;
   left: 1em;
   line-height: 1.5;
+  z-index: -1;
 }
 
 .citation-reference-list .author {
@@ -551,20 +583,22 @@ input[type="radio"]:checked + label::before {
   padding: 0.5em 1em;
 }
 /* Answers to classification question */
-.answer-table {
+.answer-table, .citation-table {
   margin-left: auto;
   margin-right: auto;
 }
-.answer-table td {
-  background-color: #fff;
+.answer-table td, .citation-table td {
+  background-color: var(--light-color);
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #fff;
 }
-.answer-table td:first-of-type {
+.citation-table td {
+  background-color: #fff;
+}
+.answer-table td:first-of-type, .citation-table td:first-of-type {
   background-color: var(--dark-color);
   color: white;
-  font-weight: bold;
 }
 
 /* Modals */
@@ -635,6 +669,29 @@ input[type="radio"]:checked + label::before {
   background-color: var(--darkest-color);
 }
 
+/* Thanks */
+.thanks {
+  background-color: var(--dark-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 1em;
+  font-size: 1.2em;
+}
+.thanks a:link, .thanks a:visited {
+  color: #fff;
+}
+.thanks a:active, .thanks a:hover {
+  color: var(--light-color);
+}
+.thanks ul {
+  list-style: none;
+  text-align: center;
+}
+.thanks li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
 /* Utilities */
 .hidden {
   display: none !important;
@@ -645,4 +702,16 @@ input[type="radio"]:checked + label::before {
 .reveal {
   opacity: 1 !important;
   transition: opacity 1s;
+}
+/* from Bootstrap */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
 }

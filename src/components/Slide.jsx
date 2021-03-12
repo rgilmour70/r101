@@ -100,7 +100,6 @@ const Slide = (props) => {
 		case 'submitForm':
 			return (
 				<div className={displayClass} id={'s' + slideId}>
-					<div className="text">{ReactHtmlParser(content.text)}</div>
 					<SubmitForm {...props} />
 				</div>
 			);

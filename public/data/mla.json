@@ -5,7 +5,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Citation: What &amp; Why</h1><p>When we write, we usually include or refer to the ideas of others. Citation is the practice of crediting our sources. This gives credit to the original author (thereby avoiding plagiarism) and makes it possible for the reader to track your ideas back to their sources.</p><p>The goal of citation is to allow the reader to</p><ol><li>identify the source for any given idea in your paper</li><li>locate that source</li></ol><p>The first goal is addressed by in-text citation, while the second is addressed by a works cited list that appears at the end of your paper.</p>"
+					"text" : "<h1>Citation: What &amp; Why</h1><p>When we write, we usually include or refer to the ideas of others. Citation is the practice of crediting our sources. This gives credit to the original author (thereby avoiding plagiarism) and makes it possible for the reader to track your ideas back to their sources.</p><p>The goal of citation is to allow the reader to</p><ol><li>Identify the source for any given idea in your paper</li><li>Locate that source</li></ol><p>The first goal is addressed by in-text citation, while the second is addressed by a works cited list that appears at the end of your paper.</p>"
 				}
 			]
 		}
@@ -75,7 +75,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Example</h1><div class='citation-reference-list'>Kraemer, Ross. “Women in the Religions of the Greco-Roman World.” <i>Religious Studies Review</i>, vol. 9, no. 2, 1983, pp. 127+.</div><p>This example of an entry for a journal article shows the relevant elements:</p><table class='answer-table'><tbody><tr><td>Author</td><td>Kraemer, Ross</td></tr><tr><td>Title of source</td><td>“Women in the Religions of the Greco-Roman World”</td></tr><tr><td>Title of container</td><td>Religious Studies Review</td></tr><tr><td>Other contributors</td><td>N/A</td></tr><tr><td>Version</td><td>N/A</td></tr><tr><td>Number</td><td>vol. 9, no. 2</td></tr><tr><td>Publisher</td><td>N/A</td></tr><tr><td>Publication date</td><td>1983</td></tr><tr><td>Location</td><td>pp. 127+</td></tr></tbody></table>"
+					"text" : "<h1>Example</h1><div class='citation-reference-list'>Kraemer, Ross. “Women in the Religions of the Greco-Roman World.” <i>Religious Studies Review</i>, vol. 9, no. 2, 1983, pp. 127+.</div><p>This example of an entry for a journal article shows the relevant elements:</p><table class='citation-table'><tbody><tr><td>Author</td><td>Kraemer, Ross</td></tr><tr><td>Title of source</td><td>“Women in the Religions of the Greco-Roman World”</td></tr><tr><td>Title of container</td><td>Religious Studies Review</td></tr><tr><td>Other contributors</td><td>N/A</td></tr><tr><td>Version</td><td>N/A</td></tr><tr><td>Number</td><td>vol. 9, no. 2</td></tr><tr><td>Publisher</td><td>N/A</td></tr><tr><td>Publication date</td><td>1983</td></tr><tr><td>Location</td><td>pp. 127+</td></tr></tbody></table>"
 				}
 			]
 		}
@@ -322,19 +322,19 @@
 					"answers" : [
 						{
 							"answerId" : 1,
-							"text" : "journal article",
+							"text" : "Journal article",
 							"isCorrect" : true,
 							"response" : "Correct! This is a journal article."
 						},
 						{
 							"answerId" : 2,
-							"text" : "book",
+							"text" : "Book",
 							"isCorrect" : false,
 							"response" : "Incorrect&mdash;this is a journal article. Hints include the volume and issue numbers."
 						},
 						{
 							"answerId" : 3,
-							"text" : "web page",
+							"text" : "Web page",
 							"isCorrect" : false,
 							"response" : "Incorrect&mdash;this is a journal article. A web page would include a URL rather than a DOI."
 						}
