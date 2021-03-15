@@ -268,8 +268,16 @@ nav .pulse {
 }
 
 /* Slide Styles */
-.content {
+/*.content {
   margin: 2em 4em;
+}*/
+.content {
+  margin: 1.4em;
+}
+@media (min-width: 600px) {
+  .content {
+    margin: 2em 4em;
+  }
 }
 ol.criteria-list {
   list-style: none;
