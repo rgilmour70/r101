@@ -469,7 +469,7 @@
 							"name" : "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
 							"id" : 1,
 							"type" : "book",
-							"correctPosition" : 1
+							"correctPosition" : 2
 						},
 						{
 							"name" : "\"The New Model for a Health-First Approach to Legalizing Weed,\" article in <i>The Atlantic</i> by staff writer James Hamblin, June 22, 2018",
@@ -493,7 +493,7 @@
 							"name" : "A scholarly article, \"The Impact of Marijuana Legalization on Adolescent Use, Consequences, and Perceived Risk\" by Ashley Estoup in <i>Substance Use & Misuse</i>, 2016",
 							"id" : 5,
 							"type" : "article",
-							"correctPosition" : 2
+							"correctPosition" : 1
 						}
 					],
 					"correctOrder" : [1, 5, 2, 4, 3],
@@ -552,7 +552,9 @@
 				{
 					"contentId" : 1,
 					"type" : "submitForm",
-					"text" : "Thanks for playing! Fill out this form if you'd like to notify your instructor that you've completed this tutorial. Otherwise, you're all done!"
+					"text" : "Thanks for playing! Fill out this form if you'd like to notify your instructor that you've completed this tutorial. Otherwise, you're all done!",
+					"problem" : "What is 3 times 8?",
+					"solution" : 24
 				}
 			]
 		}

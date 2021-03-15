@@ -409,7 +409,9 @@
 				{
 					"contentId" : 1,
 					"type" : "submitForm",
-					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!"
+					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!",
+					"problem" : "What is 5 times 6?",
+					"solution" : 30
 				}
 			]
 		}

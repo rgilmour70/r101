@@ -23,32 +23,38 @@ $msg = '';
 $db_table = '';
 $db_cols = '';
 $title_for_email = '';
+$solution = 0;
 
 switch ($whichTutorial) {
 	case 'apa':
 		$db_table = 'quiz_apa';
 		$db_cols = 24;
 		$title_for_email = 'APA Citation';
+		$solution = 18;
 		break;
 	case 'mla':
 		$db_table = 'quiz_mla';
 		$db_cols = 24;
 		$title_for_email = 'MLA Citation';
+		$solution = 16;
 		break;
 	case 'evaluating':
 		$db_table = 'quiz_eval_res_react';
 		$db_cols = 18;
 		$title_for_email = 'Evaluating Sources';
+		$solution = 24;
 		break;
 	case 'plagiarism':
 		$db_table = 'quiz_plagiarism_react';
 		$db_cols = 18;
 		$title_for_email = 'Plagiarism';
+		$solution = 27;
 		break;
 	case 'scholarly':
 		$db_table = 'quiz_scholarly_react';
 		$db_cols = 24;
 		$title_for_email = 'Scholarly Publications';
+		$solution = 30;
 		break;
 	default:
 		$db_table = null;
@@ -108,7 +114,7 @@ if ($_POST) {
 	        $error_message = $e->getMessage();
 	    }
 
-	    $msg .= "<br>" . $query_final . "<br><br>" . $error_message . "<br><br>";
+	    // $msg .= "<br>" . $query_final . "<br><br>" . $error_message . "<br><br>";
 
 	}
 
@@ -127,7 +133,7 @@ if ($_POST) {
 	$headers.= "From: 'Library No Reply' <libweb@ithaca.edu>\r\n";
 	// $headers.= "Reply-To " . $fromEmail ."\r\n";
 
-	if ($check == $db_cols
+	if ($check == $solution
     && preg_match('/\w+\@\w+\.\w{2,4}(\.\w{2,4})?/',$toEmail) 
     && preg_match('/\w+\@\w+\.\w{2,4}(\.\w{2,4})?/',$fromEmail)
     && isset($fromName)) {

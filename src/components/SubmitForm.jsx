@@ -19,7 +19,9 @@ class SubmitForm extends Component {
 			record: this.props.record,
 			mailSent: false,
 			error: null,
-			text: this.props.content.text
+			text: this.props.content.text,
+			problem: this.props.content.problem,
+			solution: this.props.content.solution
 		}
 		this.form = React.createRef();
 	}
@@ -33,7 +35,7 @@ class SubmitForm extends Component {
 	handleFormSubmit = e => {
 		e.preventDefault();
 		this.validate();
-		console.log(this.state);
+		// console.log(this.state);
 		axios({
 			method: 'post',
 			url: `${API_PATH}`,
@@ -41,7 +43,7 @@ class SubmitForm extends Component {
 			data: this.state
 		})
 		.then(response => {
-			console.log(response.status);
+			// console.log(response.status);
 			// this.setState({ mailSent: true });
 			this.setState({ mailSent: response.data.sent });
 		})
@@ -128,7 +130,7 @@ class SubmitForm extends Component {
 						</div>
 
 						<div type="form-group">
-							<label htmlFor="check">What's 3 times 6? <small>(This lets us know you're human.)</small></label>
+							<label htmlFor="check">{this.state.problem}<small> (This lets us know you're human.)</small></label>
 							<input 
 								type="number" 
 								name="check" 

@@ -274,25 +274,25 @@
 					"answers" : [
 						{
 							"answerId" : 1,
-							"text" : "journal article",
+							"text" : "Journal article",
 							"isCorrect" : false,
 							"response" : "Incorrect&mdash;this is a book. Hints include the inclusion of a publisher and the lack of any volume/issue/page information."
 						},
 						{
 							"answerId" : 2,
-							"text" : "book",
+							"text" : "Book",
 							"isCorrect" : true,
 							"response" : "Correct. Hints include the inclusion of a publisher and the lack of any volume/issue/page information."
 						},
 						{
 							"answerId" : 3,
-							"text" : "web page",
+							"text" : "Web page",
 							"isCorrect" : false,
 							"response" : "Incorrect&mdash;this is a book. A web page would include a URL."
 						},
 						{
 							"answerId" : 4,
-							"text" : "letter to the editor",
+							"text" : "Letter to the editor",
 							"isCorrect" : false,
 							"response" : "Incorrect&mdash;this is a book. Hints include the inclusion of a publisher and the lack of any volume/issue/page information."
 						}
@@ -508,7 +508,9 @@
 				{
 					"contentId" : 1,
 					"type" : "submitForm",
-					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!"
+					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!",
+					"problem" : "What is 3 times 6?",
+					"solution" : 18
 				}
 			]
 		}
