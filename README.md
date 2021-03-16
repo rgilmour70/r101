@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Research 101 - Ithaca College Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based framework for tutorials with interactive questions. It was built using [Create React App](https://github.com/facebook/create-react-app) as a starter, so you can use the standard scripts such as `start` and `run build`. It was made for [information literacy tutorials](https://library.ithaca.edu/r101/) but could be used for any type of content.
 
-## Available Scripts
+# Authoring Questions
 
-In the project directory, you can run:
+The content of the tutorials is stored in local JSON files. I have no independent documentation for the format, but the files in `public/data` demonstrate the use of all question types.
 
-### `npm start`
+# Question Types
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Each question type is a React component or set of components. They are:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Classify - drag items into categories
+* DragText - pull bits of text into order
+* TagIt - apply tags to some text
+* OrderList - reorder a list of items
+* Multiple Choice
+* Range
+* TextAnswer
 
-### `npm test`
+The first four of these involve drag-and-drop functionality and are dependent on the excellent [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Dealing With Student Input
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The optional submission form at the end of each tutorial sends emails to the student and instructor and records the students *initial* responses in a database. (Some of the question types require that the student answer correctly before proceeding, so recording their final answer would be pointless.) All of this is dealt with in `public/process.php`. Much of this is specific to Ithaca College, but I'm including the file in the repo as an example of what one might do with the results.
