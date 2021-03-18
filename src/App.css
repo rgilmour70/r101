@@ -31,7 +31,7 @@ body {
 .brand-text {
   font-size: 1.6em;
   font-family: verdana, sans-serif;
-  color: var(--light-color);
+  color: #fff;
 }
 .image-holder {
   animation: fillit 5s infinite;
@@ -40,7 +40,7 @@ body {
   width: 340px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--light-color);
+  background-color: #fff;
   clip-path: url(#clip-shape);
 }
 @keyframes fillit {

@@ -107,6 +107,7 @@ class Classify extends Component {
 		this.setState({ tried: true });
 
 		const correctnessObj = {};
+		const inputForRecord = {};
 		const correctResponse = this.state.correctResponse;
 		const incorrectResponse = this.state.incorrectResponse;
 		const incompleteResponse = this.state.incompleteResponse;
@@ -119,17 +120,21 @@ class Classify extends Component {
 			let answerKey = JSON.stringify(this.state.correctAnswer[k].itemIds.sort());
 			let userInput = JSON.stringify(this.state.columns[k].itemIds.sort());
 
-			correctnessObj[k] = answerKey === userInput;
+			correctnessObj[k] = answerKey === userInput; // determines correctness
+			inputForRecord[k] = this.state.columns[k].itemIds; // what we record in db
 
 		}
+
+		// console.log(inputForRecord);
+		const inputForRecordString = JSON.stringify(inputForRecord);
 
 		const originColContents = cols['column-1'].itemIds;
 
 		const isCorrect = Object.values(correctnessObj).every(Boolean);
 
-		const answerString = JSON.stringify(correctnessObj);
+		// const answerString = JSON.stringify(correctnessObj);
 
-		if (originColContents.length === 0) { // they at least did something
+		if (originColContents.length === 0) { // all items removed from source area
 			this.thawNav();
 			if (isCorrect) {
 				this.setState({ correct: isCorrect, response: correctResponse });
@@ -141,7 +146,7 @@ class Classify extends Component {
 		}
 
 		if (!this.state.tried) {
-			this.recordAnswer(this.state.slideId, this.state.contentId, answerString, isCorrect);
+			this.recordAnswer(this.state.slideId, this.state.contentId, inputForRecordString, isCorrect);
 		}
 
 	};
