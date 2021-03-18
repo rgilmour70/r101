@@ -1,8 +1,8 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 
-include('../includes/config.php');
-include('../includes/functions.php');
+include('../../includes/config.php');
+include('../../includes/functions.php');
 
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
@@ -136,7 +136,8 @@ if ($_POST) {
 	if ($check == $solution
     && preg_match('/\w+\@\w+\.\w{2,4}(\.\w{2,4})?/',$toEmail) 
     && preg_match('/\w+\@\w+\.\w{2,4}(\.\w{2,4})?/',$fromEmail)
-    && isset($fromName)) {
+    && isset($fromName)
+	&& $probablyIC) {
         mail($toEmail, $subjectLine, $msg, $headers);
         mail($fromEmail, $subjectLine, $msg, $headers);
 	}
