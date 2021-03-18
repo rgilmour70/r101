@@ -114,7 +114,7 @@ if ($_POST) {
 	        $error_message = $e->getMessage();
 	    }
 
-	    $msg .= "<br>" . $query_final . "<br><br>" . $error_message . "<br><br>";
+	    // $msg .= "<br>" . $query_final . "<br><br>" . $error_message . "<br><br>";
 
 	}
 
