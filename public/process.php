@@ -14,7 +14,6 @@ if (empty($_POST['fromName']) ||
 
 $fromName = sanitizeString($_POST['fromName']);
 $fromEmail = sanitizeString($_POST['fromEmail']);
-$toName = sanitizeString($_POST['toName']);
 $toEmail = sanitizeString($_POST['toEmail']);
 $year = sanitizeString($_POST['year']);
 $check = sanitizeString($_POST['check']);

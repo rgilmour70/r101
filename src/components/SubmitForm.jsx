@@ -88,18 +88,6 @@ class SubmitForm extends Component {
 						</div>
 
 						<div className="form-group">
-							<label htmlFor="toName">Your instructor's name </label>
-							<input 
-								type="text" 
-								className="form-control" 
-								id="toName" 
-								name="toName" 
-								value={this.state.toName}
-								onChange={e => this.setState({ toName: e.target.value })}
-							/>
-						</div>
-
-						<div className="form-group">
 							<label htmlFor="toEmail">Your instructor's email </label>
 							<input 
 								type="email" 
