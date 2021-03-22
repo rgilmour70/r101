@@ -126,10 +126,17 @@ const App = () => {
 		setNavFrozen(false);
 	}
 
+	// increment progress bar
+	const moveProgressBar = (howFar) => {
+		document.getElementById('progress-bar').style.width = howFar + '%';
+	}
+
 	// navigation between slides
 	const handleSlideChange = (next, numberOfSlides) => {
 		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'orderList', 'range', 'tagIt', 'dragText'];
 		const nextType = theContent[next].type;
+
+		const howFar = (next + 1) / numberOfSlides * 100;
 
 		if ( !freezableTypes.includes(nextType) ) {
 			setNavFrozen(false);
@@ -139,9 +146,9 @@ const App = () => {
 
 		if (next >= 0 && next <= numberOfSlides) {
 			setCurrentSlide(next);
+			moveProgressBar(howFar);
 		}
 
-		// console.log(record);
 	}
 
 	const recordAnswer = (currentSlide, contentId, answer, isCorrect) => {

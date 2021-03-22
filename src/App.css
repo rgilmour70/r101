@@ -53,13 +53,11 @@ body {
 }
 
 /* Progress Bar */
-.progress {
-  height: 5px;
-  background-color: var(--light-color);
-}
-.progress-bar {
+#progress-bar {
+  width: 0;
   height: 5px;
   background-color: var(--dark-color);
+  transition: width 0.5s;
 }
 
 /* The Basics */

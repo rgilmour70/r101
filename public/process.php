@@ -127,9 +127,9 @@ if ($_POST) {
 	$msg .= $fromName . ' (' . $fromEmail . ') has completed the IC Library ' . $title_for_email . ' Tutorial.';
 
 	// Headers
-	$headers = "MIME-Version: 1.0\r\n";
-	$headers.= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers.= "From: 'Library No Reply' <libweb@ithaca.edu>\r\n";
+	// $headers = "MIME-Version: 1.0\r\n";
+	// $headers.= "Content-type: text/html; charset=UTF-8\r\n";
+	// $headers.= "From: 'Library No Reply' <libweb@ithaca.edu>\r\n";
 	// $headers.= "Reply-To " . $fromEmail ."\r\n";
 
 	if ($check == $solution
@@ -137,8 +137,14 @@ if ($_POST) {
     && preg_match('/\w+\@\w+\.\w{2,4}(\.\w{2,4})?/',$fromEmail)
     && isset($fromName)
 	&& $probablyIC) {
-        mail($toEmail, $subjectLine, $msg, $headers);
-        mail($fromEmail, $subjectLine, $msg, $headers);
+		try {
+			smtpMail($toEmail, $subjectLine, $msg);
+			smtpMail($fromEmail, $subjectLine, $msg);
+		} catch (Exception $e) {
+			echo "Email could not be sent.";
+		}
+        // mail($toEmail, $subjectLine, $msg, $headers);
+        // mail($fromEmail, $subjectLine, $msg, $headers);
 	}
 
 	echo json_encode(array(

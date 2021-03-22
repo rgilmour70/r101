@@ -1,25 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-const ProgressBar = (props) => {
+const ProgressBar = () => {
 
-	const { currentSlide, numberOfSlides } = props;
-
-	const howFar = (currentSlide + 1) / numberOfSlides * 100;
-
-	const styles = {width: `${howFar}%`};
+	//const { currentSlide, numberOfSlides } = props;
 
 	return (
-		<div className="progress">
-			<div className="progress-bar" style={styles} role="progressbar"></div>
-		</div>
+		<div id="progress-bar" role="progressbar"></div>
 	);
 
 }
 
-ProgressBar.propTypes = {
-	currentSlide: PropTypes.number.isRequired,
-	numberOfSlides: PropTypes.number.isRequired
-};
+// ProgressBar.propTypes = {
+// 	currentSlide: PropTypes.number.isRequired,
+// 	numberOfSlides: PropTypes.number.isRequired
+// };
 
 export default ProgressBar;
