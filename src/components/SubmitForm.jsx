@@ -22,7 +22,7 @@ class SubmitForm extends Component {
 			text: this.props.content.text,
 			problem: this.props.content.problem,
 			solution: this.props.content.solution,
-			sending: false
+			sending: false,
 		}
 		this.form = React.createRef();
 	}
@@ -154,7 +154,15 @@ class SubmitForm extends Component {
 				</Fragment>
 			);
 		} else {
-			return <Thanks resetForm={this.returnToForm} />;
+			return (
+				<Thanks 
+					resetForm={this.returnToForm} 
+					fromName={this.state.fromName} 
+					fromEmail={this.state.fromEmail}
+					whichTutorial={this.state.whichTutorial} 
+					toEmail={this.state.toEmail}
+				/>
+			);
 		}
 
 	}
