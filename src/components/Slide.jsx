@@ -8,7 +8,6 @@ import Classify from './Classify/Classify';
 import UserChoice from './UserChoice';
 import DragText from './DragText/DragText';
 import OrderList from './OrderList';
-// import ModalLink from './modalLink';
 import Mnemonic from './Mnemonic';
 import Declarative from './Declarative';
 import TagIt from './TagIt/TagIt';

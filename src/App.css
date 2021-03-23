@@ -675,6 +675,11 @@ input[type="radio"]:checked + label::before {
   background-color: var(--darkest-color);
 }
 
+/* Spinner */
+#spinner {
+  fill: var(--dark-color);
+}
+
 /* Thanks */
 .thanks {
   background-color: var(--dark-color);

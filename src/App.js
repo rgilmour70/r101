@@ -18,7 +18,6 @@ const App = () => {
 		evaluating : "Evaluating Sources"
 	}
 
-
 	const tutorialSlug = queryString.parse(window.location.search).t || 'plagiarism';
 	document.title = tutorialTitles[tutorialSlug] || 'plagiarism';
 
@@ -162,7 +161,6 @@ const App = () => {
 		setRecord((prevState) => prevState.concat(answerObj));
 
 	}
-
 
 	if (isLoading) {
 		return (

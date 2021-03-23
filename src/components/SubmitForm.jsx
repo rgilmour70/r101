@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Spinner from './Spinner';
 import Thanks from './Thanks';
 import axios from 'axios';
 
@@ -21,7 +22,8 @@ class SubmitForm extends Component {
 			error: null,
 			text: this.props.content.text,
 			problem: this.props.content.problem,
-			solution: this.props.content.solution
+			solution: this.props.content.solution,
+			sending: false
 		}
 		this.form = React.createRef();
 	}
@@ -35,7 +37,7 @@ class SubmitForm extends Component {
 	handleFormSubmit = e => {
 		e.preventDefault();
 		this.validate();
-		// console.log(this.state);
+		this.setState({ sending: true });
 		axios({
 			method: 'post',
 			url: `${API_PATH}`,
@@ -43,9 +45,7 @@ class SubmitForm extends Component {
 			data: this.state
 		})
 		.then(response => {
-			// console.log(response.status);
-			// this.setState({ mailSent: true });
-			this.setState({ mailSent: response.data.sent });
+			this.setState({ mailSent: response.data.sent, sending: false });
 		})
 		.catch(error => this.setState({ error: error.message }));
 	};
@@ -55,6 +55,9 @@ class SubmitForm extends Component {
 	}
 
 	render() {
+		if (this.state.sending) {
+			return <Spinner/>;
+		}
 		if (!this.state.mailSent) {
 			return (
 				<Fragment>
