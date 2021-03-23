@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Thanks = () => {
+const Thanks = props => {
 
 	return (
 		<div className="thanks"><h1>Thanks for playing!</h1><p>We’ve sent emails to you and your instructor confirming that you have completed this tutorial.</p><p>For news and information about <a href="//library.ithaca.edu">Ithaca College Library</a>, follow us on social media!</p>
@@ -10,6 +10,7 @@ const Thanks = () => {
 				<li><a href="//instagram.com/ithacalibrary/" aria-hidden="true" target="_blank" rel="noreferrer"><svg className="svg-icon-instagram" width="40" height="40" viewBox="0 0 32 32" fill="#fff"><path d="M26.688 0h-21.375c-2.922 0-5.313 2.391-5.313 5.313v21.375c0 2.922 2.391 5.313 5.313 5.313h21.375c2.922 0 5.313-2.391 5.313-5.313v-21.375c0-2.922-2.391-5.313-5.313-5.313zM10.244 14h11.513c0.218 0.627 0.337 1.3 0.337 2 0 3.36-2.734 6.094-6.094 6.094s-6.094-2.734-6.094-6.094c0-0.7 0.119-1.373 0.338-2zM28 14.002v11.998c0 1.1-0.9 2-2 2h-20c-1.1 0-2-0.9-2-2v-12h3.128c-0.145 0.644-0.222 1.313-0.222 2 0 5.014 4.079 9.094 9.094 9.094s9.094-4.079 9.094-9.094c0-0.687-0.077-1.356-0.222-2l3.128 0.002zM28 7c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-2c0-0.55 0.45-1 1-1h2c0.55 0 1 0.45 1 1v2z"/></svg><span className="sr-only">Instagram</span></a></li>
 				<li><a href="//www.youtube.com/user/ithacalibrary" aria-hidden="true" target="_blank" rel="noreferrer"><svg className="svg-icon-youtube" width="40" height="40" viewBox="0 0 32 32" fill="#fff"><path d="M26 4H6c-3.3 0-6 2.7-6 6v12c0 3.3 2.7 6 6 6h20c3.3 0 6-2.7 6-6V10c0-3.3-2.7-6-6-6zM12 24V8l10 8-10 8z"></path></svg><span className="sr-only">YouTube</span></a></li>
 			</ul>
+			<button onClick={ e => props.resetForm() } id="reset">Return to form</button>
 		</div>
 	);
 }

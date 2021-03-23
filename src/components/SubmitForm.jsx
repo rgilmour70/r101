@@ -12,7 +12,6 @@ class SubmitForm extends Component {
 		this.state = {
 			fromName: '',
 			fromEmail: '',
-			toName: '',
 			toEmail: '',
 			year: '1st year',
 			check: '',
@@ -32,6 +31,10 @@ class SubmitForm extends Component {
 		if (nextProps.record !== this.props.record) {
 			this.setState({ record : nextProps.record});
 		}
+	}
+
+	returnToForm = () => {
+		this.setState({ 'mailSent': false, 'sending': false });
 	}
 
 	handleFormSubmit = e => {
@@ -151,7 +154,7 @@ class SubmitForm extends Component {
 				</Fragment>
 			);
 		} else {
-			return <Thanks />;
+			return <Thanks resetForm={this.returnToForm} />;
 		}
 
 	}

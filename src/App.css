@@ -702,6 +702,15 @@ input[type="radio"]:checked + label::before {
   display: inline-block;
   padding: 10px 15px;
 }
+#reset {
+  background-color: var(--dark-color);
+  border: 0;
+  color: #fff;
+}
+#reset:hover {
+  color: var(--light-color);
+  cursor: pointer;
+}
 
 /* Utilities */
 .hidden {
