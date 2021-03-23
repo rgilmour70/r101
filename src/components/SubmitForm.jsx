@@ -14,15 +14,16 @@ class SubmitForm extends Component {
 			fromEmail: '',
 			toEmail: '',
 			year: '1st year',
-			check: '',
+			check: null,
 			whichTutorial: this.props.slug,
 			record: this.props.record,
 			mailSent: false,
 			error: null,
 			text: this.props.content.text,
 			problem: this.props.content.problem,
-			solution: this.props.content.solution,
+			solution: Number(this.props.content.solution),
 			sending: false,
+			title: this.props.title
 		}
 		this.form = React.createRef();
 	}
@@ -39,18 +40,21 @@ class SubmitForm extends Component {
 
 	handleFormSubmit = e => {
 		e.preventDefault();
-		this.validate();
-		this.setState({ sending: true });
-		axios({
-			method: 'post',
-			url: `${API_PATH}`,
-			headers: { 'content-type': 'application/json' },
-			data: this.state
-		})
-		.then(response => {
-			this.setState({ mailSent: response.data.sent, sending: false });
-		})
-		.catch(error => this.setState({ error: error.message }));
+		if ( this.validate() && (this.state.solution === Number(this.state.check)) ) {
+			this.setState({ sending: true });
+			axios({
+				method: 'post',
+				url: `${API_PATH}`,
+				headers: { 'content-type': 'application/json' },
+				data: this.state
+			})
+			.then(response => {
+				this.setState({ mailSent: response.data.sent, sending: false });
+			})
+			.catch(error => this.setState({ error: error.message }));
+		} else {
+			alert('Math is hard!');
+		}
 	};
 
 	validate = () => {
@@ -159,8 +163,8 @@ class SubmitForm extends Component {
 					resetForm={this.returnToForm} 
 					fromName={this.state.fromName} 
 					fromEmail={this.state.fromEmail}
-					whichTutorial={this.state.whichTutorial} 
 					toEmail={this.state.toEmail}
+					title={this.state.title}
 				/>
 			);
 		}
