@@ -137,6 +137,8 @@ const App = () => {
 		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'orderList', 'range', 'tagIt', 'dragText'];
 		const nextType = theContent[next].type;
 
+
+
 		const howFar = (next + 1) / numberOfSlides * 100;
 
 		if ( !freezableTypes.includes(nextType) ) {
@@ -145,10 +147,18 @@ const App = () => {
 			setNavFrozen(true);
 		}
 
+		// allow forward nav if question has already been answered
+		for (let i=0; i<record.length; i++) {
+			if (record[i].slideId === next) {
+				thawNav();
+			}
+		}
+
 		if (next >= 0 && next <= numberOfSlides) {
 			setCurrentSlide(next);
 			moveProgressBar(howFar);
 		}
+		// console.log(record);
 
 	}
 

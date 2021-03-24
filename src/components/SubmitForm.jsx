@@ -14,7 +14,7 @@ class SubmitForm extends Component {
 			fromEmail: '',
 			toEmail: '',
 			year: '1st year',
-			check: null,
+			check: '',
 			whichTutorial: this.props.slug,
 			record: this.props.record,
 			mailSent: false,
