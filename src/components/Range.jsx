@@ -49,7 +49,7 @@ const Range = (props) => {
 				onChange={onMove}
 				labels={scale}
 			/>
-			<button className="btn btn-light check-answer" onClick={onFinish} >Check Answer</button>
+			<button className="check-answer" onClick={onFinish} >Check Answer</button>
 			<Feedback response={response} />
 		</div>
 	);

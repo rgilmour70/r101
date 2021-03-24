@@ -38,11 +38,11 @@ class UserChoice extends Component {
 			<Fragment>
 				<div className="mc-answers user-choice">
 					<form>
-						<p class="text">Please choose a subject area. It doesn't have to be your major.</p>
+						<p className="text">Please choose a subject area. It doesn't have to be your major.</p>
 						{ this.props.content.setContent.map(q =>
-							<div className="mc-answer form-check" key={q.contentId}>
-								<input type="radio" className="form-check-input" value={q.contentId} name={'s' + this.props.currentSlide} />
-								<label className="form-check-label" onClick={this.onChoiceSelect}>{q.contentLabel}</label>
+							<div className="mc-answer" key={q.contentId}>
+								<input type="radio" value={q.contentId} name={'s' + this.props.currentSlide} />
+								<label onClick={this.onChoiceSelect}>{q.contentLabel}</label>
 							</div>
 						)}
 					</form>

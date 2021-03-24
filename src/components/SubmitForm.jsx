@@ -71,11 +71,10 @@ class SubmitForm extends Component {
 					<div className="text">{this.state.text}</div>
 					<form action="#" ref={this.form} id="submitForm">
 						
-						<div className="form-group">
+						<div>
 							<label htmlFor="fromName">Your name </label>
 							<input 
-								type="text" 
-								className="form-control" 
+								type="text"  
 								id="fromName" 
 								name="fromName" 
 								value={this.state.fromName}
@@ -84,11 +83,10 @@ class SubmitForm extends Component {
 							/>
 						</div>
 
-						<div className="form-group">
+						<div>
 							<label htmlFor="fromEmail">Your email </label>
 							<input 
-								type="email" 
-								className="form-control" 
+								type="email"  
 								id="fromEmail" 
 								name="fromEmail" 
 								value={this.state.fromEmail}
@@ -97,11 +95,10 @@ class SubmitForm extends Component {
 							/>
 						</div>
 
-						<div className="form-group">
+						<div>
 							<label htmlFor="toEmail">Your instructor's email </label>
 							<input 
-								type="email" 
-								className="form-control" 
+								type="email"  
 								id="toEmail" 
 								name="toEmail" 
 								value={this.state.toEmail}
@@ -110,10 +107,9 @@ class SubmitForm extends Component {
 							/>
 						</div>
 
-						<div className="form-group">
+						<div>
 							<label htmlFor="year">Year of study </label>
-							<select 
-								className="form-control" 
+							<select  
 								name="year"
 								value={this.state.year}
 								onChange={e => this.setState({ year: e.target.value })}
@@ -127,12 +123,11 @@ class SubmitForm extends Component {
 							</select>
 						</div>
 
-						<div type="form-group">
+						<div>
 							<label htmlFor="check">{this.state.problem}<small> (This lets us know you're human.)</small></label>
 							<input 
 								type="number" 
-								name="check" 
-								className="form-control" 
+								name="check"  
 								pattern="18" 
 								value={this.state.check}
 								onChange={e => this.setState({ check: e.target.value })}
@@ -152,7 +147,6 @@ class SubmitForm extends Component {
 							onClick={e => this.handleFormSubmit(e)}
 							name="submit" 
 							value="Submit" 
-							className="btn btn-primary" 
 						/>
 					</form>
 				</Fragment>

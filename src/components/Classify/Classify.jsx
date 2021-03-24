@@ -179,7 +179,7 @@ class Classify extends Component {
 						})}
 					</Container>
 				</DragDropContext>
-				<button onClick={this.onFinish} className="btn btn-light check-answer">Check Answer</button>
+				<button onClick={this.onFinish} className="check-answer">Check Answer</button>
 				<Feedback response={this.state.response} />
 			</React.Fragment>
 		)

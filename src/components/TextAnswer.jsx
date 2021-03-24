@@ -42,9 +42,9 @@ const TextAnswer = (props) => {
 	return (
 		<Fragment>
 			<form className="input-group" onSubmit={onEnter}>
-				<input type="text" className="form-control" />
+				<input type="text" />
 				<div>
-					<button type="submit" className="btn check-answer">Check Answer</button>
+					<button type="submit" className="check-answer">Check Answer</button>
 				</div>
 			</form>
 			<Feedback response={response} />

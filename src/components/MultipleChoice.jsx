@@ -55,9 +55,9 @@ const MultipleChoice = (props) => {
 				<form>
 				{ props.content.answers.map(a =>
 					<div key={a.answerId} className="mc-answer-wrapper">
-						<span className="mc-answer form-check" onClick={onMcAnswerSelect} key={a.answerId}>
-							<input type="radio" className="form-check-input" name={'s' + currentSlide} value={a.answerId}/>
-							<label className="form-check-label">{a.text}</label>
+						<span className="mc-answer" onClick={onMcAnswerSelect} key={a.answerId}>
+							<input type="radio" name={'s' + currentSlide} value={a.answerId}/>
+							<label>{a.text}</label>
 						</span>
 						<ModalLink info={a.info} infoLabel={a.infoLabel} />
 						<br />

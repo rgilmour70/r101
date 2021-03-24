@@ -78,7 +78,7 @@ body {
 .text ul li {
   margin-left: 2em;
   text-indent: -2em;
-  line-height: 1.1em;
+  line-height: 1em;
 }
 .text ul li::before {
   content: '· '; /* interpunct */
@@ -216,7 +216,7 @@ nav {
   background-color: var(--light-color);
 }
 
-nav .btn-primary {
+nav button {
   background-color: var(--dark-color);
   border-color: var(--dark-color);
   border-style: solid;
@@ -227,12 +227,12 @@ nav .btn-primary {
   margin: 0 0.5em;
 }
 
-nav .btn-primary:hover {
+nav button:hover {
   background-color: var(--darkest-color);
   border-color: var(--darkest-color);
 }
 
-nav .btn-primary.frozen {
+nav button.frozen {
   cursor: not-allowed;
   background-color: #ccc;
   border-color: #ccc;
@@ -623,18 +623,18 @@ input[type="radio"]:checked + label::before {
     left: 30% !important;
   }
 }
-.btn-hint {
+button.hint {
   cursor: pointer;
   font-weight: bold !important;
   background-color: transparent;
   border-color: transparent !important;
 }
-.btn-hint svg {
+button.hint svg {
   fill: var(--dark-color);
   height: 1.4em;
   width: 1.4em;
 }
-.btn-hint svg:hover {
+button.hint svg:hover {
   fill: #000;
 }
 .modal-header button.close {
@@ -654,13 +654,13 @@ input[type="radio"]:checked + label::before {
   padding: 1em;
   border-radius: 10px;
 }
-#submitForm .form-group {
+#submitForm > div {
   margin-bottom: 1em;
 }
 #submitForm label {
   margin-right: 1em;
 }
-#submitForm .btn-primary {
+#submitForm input[type='submit'] {
   background-color: var(--dark-color);
   border-color: var(--dark-color);
   color: #fff;
@@ -671,7 +671,7 @@ input[type="radio"]:checked + label::before {
   font-size: 1.1em;
   border-radius: 5px;
 }
-#submitForm .btn-primary:hover {
+#submitForm input[type='submit']:hover {
   background-color: var(--darkest-color);
 }
 

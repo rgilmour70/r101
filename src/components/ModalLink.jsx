@@ -40,7 +40,7 @@ class ModalLink extends Component {
 			return (
 				<Fragment>
 					<button 
-						className="btn btn-sm btn-hint"
+						className="hint"
 						type="button"
 						onClick={this.handleOpenModal}
 					>
