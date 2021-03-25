@@ -18,8 +18,13 @@ const App = () => {
 		evaluating : "Evaluating Sources"
 	}
 
+	// which tutorial?
 	const tutorialSlug = queryString.parse(window.location.search).t || 'plagiarism';
 	document.title = tutorialTitles[tutorialSlug] || 'Plagiarism';
+
+	// are we in "classroom mode"?
+	const cr_param = queryString.parse(window.location.search).classroom;
+	const cr_bool = cr_param === 'true' ? true : false;
 
 	// eslint-disable-next-line
 	const [slug, setSlug] = useState(tutorialSlug);
@@ -30,6 +35,9 @@ const App = () => {
 	const [theContent, setTheContent] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
 	const [navFrozen, setNavFrozen] = useState(false);
+	// eslint-disable-next-line
+	const [classroom, setClassroom] = useState(cr_bool);
+
 
 	// The record is an array containing the user's answers
 	const [record, setRecord] = useState([]);
@@ -57,7 +65,16 @@ const App = () => {
 				// if needed, choose a single question from each set
 				myJson.forEach((o) => {
 					if (o.set.setContent.length === 1) {
-						toUse.push(o.set.setContent[0]);
+						// if (classroom) {
+						// 	if (o.set.setContent[0].type !== 'declarative' && o.set.setContent[0].type !== 'mnemonic') {
+						// 		toUse.push(o.set.setContent[0]);
+						// 	}
+						// } else {
+						// 	toUse.push(o.set.setContent[0]);
+						// }
+						if ( !classroom || (classroom && (o.set.setContent[0].type !== 'declarative') && (o.set.setContent[0].type !== 'mnemonic')) ) {
+							toUse.push(o.set.setContent[0]);
+						}
 					} else {
 						// slurp in the whole
 						// set for user choice
@@ -78,10 +95,9 @@ const App = () => {
 			});
 		};
 		getData();
-		// slideContent contains only the questions selected for use
+		// slideContent contains only the slides selected for use
 		setTheContent(toUse);
-	},[slug]);
-
+	},[slug, classroom]);
 
 	// console.log(theContent);
 
