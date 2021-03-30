@@ -135,7 +135,7 @@ const App = () => {
 			document.documentElement.style.setProperty('--darkest-color', '#1c5c5e');
 			break;
 		case 'primary':
-			document.documentElement.style.setProperty('--light-color', '#f1b5d6');
+			document.documentElement.style.setProperty('--light-color', '#f6d2e6');
 			document.documentElement.style.setProperty('--dark-color', '#a8216b');
 			document.documentElement.style.setProperty('--darkest-color', '#8c1b59');
 			break;

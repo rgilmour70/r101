@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 import Feedback from './Feedback';
-import ModalLink from './ModalLink';
+import ModalInfo from './ModalInfo';
 
 const MultipleChoice = (props) => {
 
@@ -59,7 +59,7 @@ const MultipleChoice = (props) => {
 							<input type="radio" name={'s' + currentSlide} value={a.answerId}/>
 							<label>{a.text}</label>
 						</span>
-						<ModalLink info={a.info} infoLabel={a.infoLabel} />
+						<ModalInfo info={a.info} infoLabel={a.infoLabel} />
 						<br />
 					</div>
 				)}

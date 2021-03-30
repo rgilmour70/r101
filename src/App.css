@@ -111,6 +111,14 @@ ol li::before {
 h1 {
   font-family: 'Nunito', sans-serif;
   }
+img.thumbnail {
+  cursor: pointer;
+  border: 2px solid var(--dark-color);
+  margin-bottom: 2em;
+}
+img.thumbnail:hover {
+  border: 2px solid #fff;
+}
 
 /* Generic form elements */
 input[type='text'], input[type='email'], input[type='number'] {
@@ -162,7 +170,7 @@ button.check-answer:hover {
 }
 
 /* Citation Formatting */
-div[class^=citation] {
+*[class^=citation] {
   margin: 2em 1em 3em 1em;
   padding: 1em 1em 1em 4em;
   background-color: #fff;
@@ -171,7 +179,7 @@ div[class^=citation] {
   text-indent: -2em;
   line-height: 2;
 }
-div[class^=citation]::before {
+*[class^=citation]::before {
   float: right;
   background-color: var(--dark-color);
   display: table-cell;
@@ -626,7 +634,7 @@ input[type="radio"]:checked + label::before {
     left: 30% !important;
   }
 }
-/*button.hint {
+button.hint {
   cursor: pointer;
   font-weight: bold !important;
   background-color: transparent;
@@ -639,10 +647,10 @@ button.hint svg {
 }
 button.hint svg:hover {
   fill: #000;
-}*/
-button.hint {
+}
+button.modal-button {
   display: inline-block;
-  margin: 1em auto;
+  margin-bottom: 2em;
   cursor: pointer;
   font-weight: bold;
   font-size: 0.9em;
@@ -650,9 +658,8 @@ button.hint {
   color: #fff;
   border: 2px solid var(--dark-color);
   border-radius: 4px;
-  height: 2.4em;
 }
-button.hint:hover {
+button.modal-button:hover {
   background-color: var(--darkest-color);
   color: #fff;
 }
