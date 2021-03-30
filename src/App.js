@@ -15,7 +15,8 @@ const App = () => {
 		mla : "MLA Citation Style",
 		plagiarism : "Plagiarism",
 		scholarly : "Scholarly Publications",
-		evaluating : "Evaluating Sources"
+		evaluating : "Evaluating Sources",
+		primary : "Primary and Secondary Sources"
 	}
 
 	// which tutorial?
@@ -38,7 +39,7 @@ const App = () => {
 	// eslint-disable-next-line
 	const [classroom, setClassroom] = useState(cr_bool);
 
-
+	
 	// The record is an array containing the user's answers
 	const [record, setRecord] = useState([]);
 
@@ -133,6 +134,11 @@ const App = () => {
 			document.documentElement.style.setProperty('--dark-color', '#288285');
 			document.documentElement.style.setProperty('--darkest-color', '#1c5c5e');
 			break;
+		case 'primary':
+			document.documentElement.style.setProperty('--light-color', '#f1b5d6');
+			document.documentElement.style.setProperty('--dark-color', '#a8216b');
+			document.documentElement.style.setProperty('--darkest-color', '#8c1b59');
+			break;
 		default:
 			document.documentElement.style.setProperty('--light-color', '#cce3fc');
 			document.documentElement.style.setProperty('--dark-color', '#0c77f1');
@@ -152,8 +158,6 @@ const App = () => {
 	const handleSlideChange = (next, numberOfSlides) => {
 		const freezableTypes = ['classify', 'multipleChoice', 'textAnswer', 'orderList', 'range', 'tagIt', 'dragText'];
 		const nextType = theContent[next].type;
-
-
 
 		const howFar = (next + 1) / numberOfSlides * 100;
 
@@ -175,7 +179,6 @@ const App = () => {
 			moveProgressBar(howFar);
 		}
 		// console.log(record);
-
 	}
 
 	const recordAnswer = (currentSlide, contentId, answer, isCorrect) => {

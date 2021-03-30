@@ -108,6 +108,9 @@ ol li::before {
   color: var(--dark-color);
   font-weight: bold;
 }
+h1 {
+  font-family: 'Nunito', sans-serif;
+  }
 
 /* Generic form elements */
 input[type='text'], input[type='email'], input[type='number'] {
@@ -623,7 +626,7 @@ input[type="radio"]:checked + label::before {
     left: 30% !important;
   }
 }
-button.hint {
+/*button.hint {
   cursor: pointer;
   font-weight: bold !important;
   background-color: transparent;
@@ -636,6 +639,22 @@ button.hint svg {
 }
 button.hint svg:hover {
   fill: #000;
+}*/
+button.hint {
+  display: inline-block;
+  margin: 1em auto;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em;
+  background-color: var(--dark-color);
+  color: #fff;
+  border: 2px solid var(--dark-color);
+  border-radius: 4px;
+  height: 2.4em;
+}
+button.hint:hover {
+  background-color: var(--darkest-color);
+  color: #fff;
 }
 .modal-header button.close {
   background-color: transparent;

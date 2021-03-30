@@ -1,0 +1,73 @@
+[
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Primary and Secondary Sources</h1><p>Sometimes an instructor will ask you to use <strong>primary sources</strong> for a research project. What does that mean?</p><p>A primary source provides firsthand evidence about an event, object, or person. In the natural and social sciences, primary sources are often empirical studies—research where an experiment was performed, or a direct observation was made.</p><p><i>Example: A chemist performs an experiment and publishes an article about the results in a scientific journal. That article is a primary source on the chemist’s work.</i></p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Secondary Sources</h1><p>Secondary sources are those that evaluate, describe, or summarize primary sources. They do not involve direct observation.</p><p><i>Example: A reporter from a local newspaper hears about the chemist’s work and writes a short piece explaining aspects of the work to non-scientific readers. That article is a secondary source on the chemist’s work.</i></p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Context</h1><p>Whether a source is considered primary or secondary depends on its relationship to the object of your research. If Researcher A publishes a review article citing the work of Researcher B, that article is a primary source for A’s biographer, but a secondary source on the topic of B’s research.</p><p>Confusing? Don’t worry! We’ll go through some examples that should clarify things.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself</h1><p>You are assigned a paper on the planet vs. non-planet status of Pluto. You recall hearing an NPR story about a book by Neil deGrasse Tyson on this topic and you find <i>The Pluto Files: The Rise and Fall of America's Favorite Planet</i> at the library.</p><p>Is this book a primary or secondary source on the Pluto controversy?</p>",
+					"info" : "<img src='images/primary/plutoFiles.png' alt='Cover of The Pluto Files'>",
+					"infoLabel" : "Cover of The Pluto Files",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Primary",
+							"isCorrect" : false,
+							"response" : "Incorrect. This book is a secondary source on the topic. Books, especially those written for a general readership, don’t generally report new research findings—they summarize findings that are reported in the scholarly literature (i.e., journals)."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Secondary",
+							"isCorrect" : true,
+							"response" : "Correct! This book is a secondary source on the topic. Books, especially those written for a general readership, don’t generally report new research findings—they summarize findings that are reported in the scholarly literature (i.e., journals)."
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
+					"type" : "submitForm",
+					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you're all done!"
+				}
+			]
+		}
+	}
+]

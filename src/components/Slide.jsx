@@ -12,13 +12,15 @@ import Mnemonic from './Mnemonic';
 import Declarative from './Declarative';
 import TagIt from './TagIt/TagIt';
 import SubmitForm from './SubmitForm';
+import ModalLink from './ModalLink';
 
 const Slide = (props) => {
-	
+
+	console.log(props);	
 	const { slideId, currentSlide, content } = props;
 
-
 	let displayClass = 'content ';
+
 	if (slideId === currentSlide) {
 		displayClass += 'shown';
 	} else {
@@ -31,6 +33,7 @@ const Slide = (props) => {
 			return (
 				<div className={displayClass} id={'s' + slideId}>
 					<div className="text">{ReactHtmlParser(content.text)}</div>
+					<ModalLink info={content.info} infoLabel={content.infoLabel} />
 					<MultipleChoice {...props} />
 				</div>
 			);
