@@ -12,7 +12,6 @@ import Mnemonic from './Mnemonic';
 import Declarative from './Declarative';
 import TagIt from './TagIt/TagIt';
 import SubmitForm from './SubmitForm';
-import ModalButton from './ModalButton';
 import ModalThumbnail from './ModalThumbnail';
 
 const Slide = (props) => {
@@ -33,7 +32,7 @@ const Slide = (props) => {
 			return (
 				<div className={displayClass} id={'s' + slideId}>
 					<div className="text">{ReactHtmlParser(content.text)}</div>
-					<ModalThumbnail {...props} imageUrl="images/primary/plutoFiles.png" alt="The Pluto Files" />
+					<ModalThumbnail {...props} imageUrl={content.image} alt={content.imageAlt} />
 					<MultipleChoice {...props} />
 				</div>
 			);

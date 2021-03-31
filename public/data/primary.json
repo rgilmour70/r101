@@ -39,8 +39,8 @@
 					"contentId" : 1,
 					"type" : "multipleChoice",
 					"text" : "<h1>Test Yourself</h1><p>You are assigned a paper on the planet vs. non-planet status of Pluto. You recall hearing an NPR story about a book by Neil deGrasse Tyson on this topic and you find <i>The Pluto Files: The Rise and Fall of America’s Favorite Planet</i> at the library.</p><p>Is this book a primary or secondary source on the Pluto controversy?</p>",
-					"info" : "<img src='images/primary/plutoFiles.png' alt='Cover of The Pluto Files'>",
-					"infoLabel" : "Cover of The Pluto Files",
+					"image" : "images/primary/plutoFiles.png",
+					"imageAlt" : "Cover of The Pluto Files",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -66,8 +66,8 @@
 					"contentId" : 1,
 					"type" : "multipleChoice",
 					"text" : "<h1>Test Yourself</h1><p>Okay, so <i>The Pluto Files</i> is secondary. What about the NPR story where Tyson discusses the book?</p><p>Is this a primary or secondary source on Pluto?</p>",
-					"info" : "<img src='images/primary/plutoNPR.png' alt='All Things Considered Story'>",
-					"infoLabel" : "All Things Considered Story",
+					"image" : "images/primary/plutoNPR.png",
+					"imageAlt" : "All Things Considered Story",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -118,8 +118,8 @@
 					"contentId" : 1,
 					"type" : "multipleChoice",
 					"text" : "<h1>Test Yourself</h1><p>As you’re working on a paper on dwarf galaxies for an astronomy class, Tyson’s name comes up again. Specifically, this paper:</p><p class='citation'>Tyson, Neil D. and Scalo, John M. (1988). \"Bursting dwarf galaxies: Implications for luminosity function, space density, and cosmological mass density.\" <i>Astrophysical Journal 329</i>: 618. doi:10.1086/166408</p><p>For the purposes of your paper, is this source primary or secondary?</p>",
-					"info" : "<img src='images/primary/dwarfGalaxies.jpg' alt='Article in Astrophysical Journal'>",
-					"infoLabel" : "Article in Astrophysical Journal",
+					"image" : "images/primary/dwarfGalaxies.jpg",
+					"imageAlt" : "Article in Astrophysical Journal",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -169,19 +169,19 @@
 				{
 					"contentId" : 1,
 					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>In YouTube's sidebar, you notice an interview with Bill Nye (\"The Science Guy!\") in which he talks about taking an astonomy class from Carl Sagan.</p><div class='embed-wrapper'><div class='embed-responsive embed-responsive-16by9'><iframe src='//www.youtube.com/embed/54q6M48WxSs' class='embed-responsive-item' allowfullscreen></iframe></div></div><br /><br /><p>Is this interview a primary or secondary source with reference to Sagan's life?</p>",
+					"text" : "<h1>Test Yourself</h1><p>In YouTube’s sidebar, you notice an interview with Bill Nye (\"The Science Guy!\") in which he talks about taking an astonomy class from Carl Sagan.</p><div class='embed-wrapper'><div class='embed-responsive embed-responsive-16by9'><iframe src='//www.youtube.com/embed/54q6M48WxSs' class='embed-responsive-item' allowfullscreen></iframe></div></div><br /><br /><p>Is this interview a primary or secondary source with reference to Sagan’s life?</p>",
 					"answers" : [
 						{
 							"answerId" : 1,
 							"text" : "Primary",
 							"isCorrect" : true,
-							"response" : "Correct. This is a primary source with reference to Sagan's life. Nye knew Sagan and is recounting his own memories about his life."
+							"response" : "Correct. This is a primary source with reference to Sagan’s life. Nye knew Sagan and is recounting his own memories about his life."
 						},
 						{
 							"answerId" : 2,
 							"text" : "Secondary",
 							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source with reference to Sagan's life. Nye knew Sagan and is recounting his own memories about his life."
+							"response" : "Incorrect. This is a primary source with reference to Sagan’s life. Nye knew Sagan and is recounting his own memories about his life."
 						}
 					]
 				}
@@ -195,8 +195,8 @@
 					"contentId" : 1,
 					"type" : "multipleChoice",
 					"text" : "<h1>Test Yourself</h1><p>For a history class, you are researching American popular scientists. You decide to focus on Carl Sagan, since you’ve now watched two YouTube videos about him. You find \"Who Was Carl Sagan?\" on the <i>National Geographic</i> website. The article was published in March of 2014.</p><p>Would this source be primary or secondary?</p>",
-					"info" : "<img src='images/primary/whoWasCarlSagan.jpg' alt='Article in National Geographic'>",
-					"infoLabel" : "Article in National Geographic",
+					"image" : "images/primary/whoWasCarlSagan.jpg",
+					"imageAlt" : "Article in National Geographic",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -222,8 +222,8 @@
 					"contentId" : 1,
 					"type" : "multipleChoice",
 					"text" : "<h1>Test Yourself</h1><p>You find a good biography of Sagan, written in 1999 by William Poundstone.</p><p>Is this source primary or secondary?</p>",
-					"info" : "<img src='images/primary/poundstoneBook.jpg' alt='Sagan biography'>",
-					"infoLabel" : "Sagan biography",
+					"image" : "images/primary/poundstoneBook.png",
+					"imageAlt" : "Sagan biography",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -249,8 +249,8 @@
 					"contentId" : 1,
 					"type" : "multipleChoice",
 					"text" : "<h1>Test Yourself</h1><p>Using the <i>Historical New York Times</i> database, you find this interview with the Sagans from 1985 about the publication of Sagan's books <i>Contact</i> and <i>Comet</i>.</p><p>Is this a primary or secondary source for your paper on Sagan?</p>",
-					"info" : "<img src='images/primary/saganNYT.jpg' alt='Article in NYT'>",
-					"infoLabel" : "Article in NYT",
+					"image" : "images/primary/saganNYT.jpg",
+					"imageAlt" : "Article in NYT",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -276,8 +276,8 @@
 					"contentId" : 1,
 					"type" : "multipleChoice",
 					"text" : "<h1>Test Yourself</h1><p>Sagan's papers are held at the Library of Congress, and some of them are available online, including an early manuscript of <i>A Pale Blue Dot</i>.</p><p>Is this a primary or secondary source on Sagan?</p>",
-					"info" : "<img src='images/primary/paleBlueDot.jpg' alt='Pale Blue Dot MS'>",
-					"infoLabel" : "Pale Blue Dot MS",
+					"image" : "images/primary/paleBlueDot.jpg",
+					"imageAlt" : "Pale Blue Dot MS",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -303,8 +303,8 @@
 					"contentId" : 1,
 					"type" : "multipleChoice",
 					"text" : "<h1>Test Yourself</h1><p><strong>Bonus Question:</strong> Your astronomy professor mentions that Johannes Kepler developed a theory linking the orbits of the planets to the musical scale. You decide to make this the subject of a paper. Kepler published this theory in his 1619 book <i>Harmonices Mundi</i>. Good news: it's <a href='#' data-toggle='modal' data-target='#kepler'>available online</a> from the Library of Congress. Bad news: it's in Latin. Good news: an English translation was published in <i>The Memoirs of the American Philosophical Society</i> in 1997.</p><p class='questionText'>Is the English translation a primary or secondary source for the purposes of your paper on Kepler's theory?</p>",
-					"info" : "<img src='images/primary/kepler.jpg' alt='Kepler’s Harmonices Mundi'>",
-					"infoLabel" : "Kepler’s Harmonices Mundi",
+					"image" : "images/primary/kepler.jpg",
+					"imageAlt" : "Kepler’s Harmonices Mundi",
 					"answers" : [
 						{
 							"answerId" : 1,

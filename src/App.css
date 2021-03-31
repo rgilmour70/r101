@@ -111,14 +111,39 @@ ol li::before {
 h1 {
   font-family: 'Nunito', sans-serif;
   }
-img.thumbnail {
+.thumbnail-container {
+  position: relative;
+  cursor: pointer;
+  width: 26%;
+  margin-bottom: 2em;
+  border: 2px solid #fff;
+}
+.thumbnail-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.thumbnail-container::after {
+  content: 'Click to Expand';
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40%;
+  padding-right: 5px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: right;
+}
+
+/*img.thumbnail {
   cursor: pointer;
   border: 2px solid var(--dark-color);
   margin-bottom: 2em;
 }
 img.thumbnail:hover {
   border: 2px solid #fff;
-}
+}*/
 
 /* Generic form elements */
 input[type='text'], input[type='email'], input[type='number'] {

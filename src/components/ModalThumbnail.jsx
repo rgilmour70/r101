@@ -1,17 +1,12 @@
 import React, { Component, Fragment } from 'react';
 import ReactModal from 'react-modal';
-import ReactHtmlParser from 'react-html-parser';
 
 const modalStyles = {
 	content : {
 		top: '10%',
-		left: '20%'
+		left: '10%',
+		'min-width': '60%'
 	}
-};
-
-const modalTextStyles = {
-	fontWeight: 'bold',
-	fontSize: '1.2em',
 };
 
 ReactModal.setAppElement('#root');
@@ -20,7 +15,6 @@ class ModalThumbnail extends Component {
 
 	constructor(props) {
 		super(props);
-		console.log(props);
 		this.state = {
 			showModal: false,
 			imageUrl: props.imageUrl,
@@ -38,23 +32,21 @@ class ModalThumbnail extends Component {
 
 	render() {
 
-		const parts = this.state.imageUrl.split(/\//);
-
-		let thumbUrl = '';
-		for (let i=0; i<parts.length - 1; i++) {
-		    thumbUrl += parts[i] + '/';
-		}
-		thumbUrl += 'thumbnails/' + parts.pop();
-
 		if (this.state.imageUrl) {
+			const parts = this.state.imageUrl.split(/\//);
+			let thumbUrl = '';
+			for (let i=0; i<parts.length - 1; i++) {
+			    thumbUrl += parts[i] + '/';
+			}
+			thumbUrl += 'thumbnails/' + parts.pop();
 			return (
 				<Fragment>
-					<img
-						src={thumbUrl}
-						alt={this.state.alt}
-						onClick={this.handleOpenModal}
-						className="thumbnail"
-					/>
+					<div className="thumbnail-container" onClick={this.handleOpenModal}>
+						<img
+							src={thumbUrl}
+							alt={this.state.alt}
+						/>
+					</div>
 					<ReactModal 
 						isOpen={this.state.showModal}
 						shouldCloseOnOverlayClick={true}
@@ -62,10 +54,9 @@ class ModalThumbnail extends Component {
 						style={modalStyles}
 					>
 						<div className="modal-header">
-							<span>{this.state.infoLabel}</span>
 							<button onClick={this.handleCloseModal} type="button" className="close">&times;</button>
 						</div>
-						<div className="modal-body" style={modalTextStyles}><img src={this.state.imageUrl} alt={this.state.alt} /></div>
+						<div className="modal-body"><img src={this.state.imageUrl} alt={this.state.alt} /></div>
 					</ReactModal>
 				</Fragment>
 			)
