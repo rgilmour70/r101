@@ -62,7 +62,7 @@
 					"type" : "mnemonic",
 					"terms" : "Author, Review, Date, Sources, Bias",
 					"keyword" : "Review",
-					"text" : "<p>There are different levels of review that a writer’s work could go through before being published.</p><p><strong>Peer review</strong> is considered the highest level of review. Multiple researchers in the author’s field make suggestions prior to its publication. Most papers in academic journals are peer reviewed.</p><p><strong>Editorial review</strong> means that an editor has looked over the material before publication. This is better than nothing, but we should remember that editors are susceptible to bias like everyone else.</p><p><strong>No review</strong> happens when an author self-publishes their material. Personal blog posts, for instance, are generally just written and posted.</p>"
+					"text" : "<p>There are different levels of review that a writer’s work could go through before being published.</p><p><strong>Peer review</strong> is considered the highest level of review. Multiple researchers in the author’s field make suggestions prior to its publication. Most papers in academic journals are peer reviewed.</p><p><strong>Editorial review</strong> means that an editor has looked over the material before publication. This is better than nothing, but we should remember that editors are susceptible to bias like everyone else. Most books and magazine/newspaper articles are reviewed by editors.</p><p><strong>No review</strong> happens when an author self-publishes their material. Personal blog posts, for instance, are generally just written and posted.</p>"
 				}
 			]
 		}

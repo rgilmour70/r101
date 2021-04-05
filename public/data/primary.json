@@ -73,13 +73,13 @@
 							"answerId" : 1,
 							"text" : "Primary",
 							"isCorrect" : false,
-							"response" : "Incorrect. The NPR piece is also a secondary source <em>with reference to Pluto.</em>"
+							"response" : "Incorrect. The NPR piece is also a secondary source <em>with reference to Pluto.</em> It is not a first-hand account of original research."
 						},
 						{
 							"answerId" : 2,
 							"text" : "Secondary",
 							"isCorrect" : true,
-							"response" : "Correct! The NPR piece is also a secondary source <em>with reference to Pluto.</em>"
+							"response" : "Correct! The NPR piece is also a secondary source <em>with reference to Pluto.</em> It is not a first-hand account of original research."
 						}
 					]
 				}
@@ -92,19 +92,19 @@
 				{
 					"contentId" : 1,
 					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>Now imagine that you're not writing about Pluto, but about Neil deGrasse Tyson.</p><p class='questionText'>Would the NPR story be primary or secondary with reference to Tyson himself?</p>",
+					"text" : "<h1>Test Yourself</h1><p>Now imagine that you’re not writing about Pluto, but about Neil deGrasse Tyson.</p><p>Would the NPR story be primary or secondary with reference to Tyson himself?</p>",
 					"answers" : [
 						{
 							"answerId" : 1,
 							"text" : "Primary",
 							"isCorrect" : true,
-							"response" : "Correct. This is a primary source with respect to Tyson, since he is interviewed."
+							"response" : "Correct. This is a primary source with respect to Tyson, since Tyson himself is interviewed."
 						},
 						{
 							"answerId" : 2,
 							"text" : "Secondary",
 							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source with respect to Tyson, since he is interviewed."
+							"response" : "Incorrect. This is a primary source with respect to Tyson, since Tyson himself is interviewed."
 						}
 					]
 				}
@@ -125,13 +125,13 @@
 							"answerId" : 1,
 							"text" : "Primary",
 							"isCorrect" : true,
-							"response" : "Correct. This is a primary source on dwarf galaxies as evidenced by the use of the first person: \"<em>We</em> have attempted to estimate&hellip;\" (p. 618), \"<em>we</em> represented the form of the Luminosity decline&hellip;\" (p. 619). This paper is a report of original research conducted by the authors."
+							"response" : "Correct. This is a primary source on dwarf galaxies as evidenced by the use of the first person: \"<em>We</em> have attempted to estimate&hellip;\" (p. 618). This paper is a report of original research conducted by the authors."
 						},
 						{
 							"answerId" : 2,
 							"text" : "Secondary",
 							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source on dwarf galaxies. Notice the use of the first person: \"<em>We</em> have attempted to estimate&hellip;\" (p. 618), \"<em>we</em> represented the form of the Luminosity decline&hellip;\" (p. 619). This paper is a report of original research conducted by the authors."
+							"response" : "Incorrect. This is a primary source on dwarf galaxies. Notice the use of the first person: \"<em>We</em> have attempted to estimate&hellip;\" (p. 618). This paper is a report of original research conducted by the authors."
 						}
 					]
 				}
@@ -144,7 +144,7 @@
 				{
 					"contentId" : 1,
 					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1>Having gained an interest in Tyson as a researcher, you learn that he has ties to noted Ithacan Carl Sagan. A quick YouTube search yields the following interview, in which Tyson tells a story about meeting Sagan at Cornell early in his (Tyson's) career:</p><div class='embed-wrapper'><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/eeqrN3Bfro8?rel=0' allowfullscreen></iframe></div></div><br /><br /><p>Is this interview a primary or secondary source with reference to Tyson's life?</p>",
+					"text" : "<h1>Test Yourself</h1>Having gained an interest in Tyson as a researcher, you learn that he has ties to noted Ithacan Carl Sagan. A quick YouTube search yields the following interview, in which Tyson tells a story about meeting Sagan at Cornell early in his (Tyson's) career:</p><iframe src='https://www.youtube.com/embed/eeqrN3Bfro8?rel=0' allowfullscreen></iframe><br /><br /><p>Is this interview a primary or secondary source with reference to Tyson's life?</p>",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -169,31 +169,6 @@
 				{
 					"contentId" : 1,
 					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>In YouTube’s sidebar, you notice an interview with Bill Nye (\"The Science Guy!\") in which he talks about taking an astonomy class from Carl Sagan.</p><div class='embed-wrapper'><div class='embed-responsive embed-responsive-16by9'><iframe src='//www.youtube.com/embed/54q6M48WxSs' class='embed-responsive-item' allowfullscreen></iframe></div></div><br /><br /><p>Is this interview a primary or secondary source with reference to Sagan’s life?</p>",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : true,
-							"response" : "Correct. This is a primary source with reference to Sagan’s life. Nye knew Sagan and is recounting his own memories about his life."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source with reference to Sagan’s life. Nye knew Sagan and is recounting his own memories about his life."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
 					"text" : "<h1>Test Yourself</h1><p>For a history class, you are researching American popular scientists. You decide to focus on Carl Sagan, since you’ve now watched two YouTube videos about him. You find \"Who Was Carl Sagan?\" on the <i>National Geographic</i> website. The article was published in March of 2014.</p><p>Would this source be primary or secondary?</p>",
 					"image" : "images/primary/whoWasCarlSagan.jpg",
 					"imageAlt" : "Article in National Geographic",
@@ -202,13 +177,13 @@
 							"answerId" : 1,
 							"text" : "Primary",
 							"isCorrect" : false,
-							"response" : "Incorrect. This is a secondary source for the purposes of a paper about Sagan. This piece was written after Sagan's death in 1996 and there is no indication that the author knew Sagan or is writing from personal memory."
+							"response" : "Incorrect. This is a secondary source for the purposes of a paper about Sagan. This piece was written after Sagan’s death in 1996 and there is no indication that the author knew Sagan or is writing from personal memory."
 						},
 						{
 							"answerId" : 2,
 							"text" : "Secondary",
 							"isCorrect" : true,
-							"response" : "Correct. This is a secondary source for the purposes of a paper about Sagan. This piece was written after Sagan's death in 1996 and there is no indication that the author knew Sagan or is writing from personal memory."
+							"response" : "Correct. This is a secondary source for the purposes of a paper about Sagan. This piece was written after Sagan’s death in 1996 and there is no indication that the author knew Sagan or is writing from personal memory."
 						}
 					]
 				}
@@ -248,7 +223,7 @@
 				{
 					"contentId" : 1,
 					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>Using the <i>Historical New York Times</i> database, you find this interview with the Sagans from 1985 about the publication of Sagan's books <i>Contact</i> and <i>Comet</i>.</p><p>Is this a primary or secondary source for your paper on Sagan?</p>",
+					"text" : "<h1>Test Yourself</h1><p>Using the <i>Historical New York Times</i> database, you find this interview with the Sagans from 1985 about the publication of Sagan’s books <i>Contact</i> and <i>Comet</i>.</p><p>Is this a primary or secondary source for your paper on Sagan?</p>",
 					"image" : "images/primary/saganNYT.jpg",
 					"imageAlt" : "Article in NYT",
 					"answers" : [
@@ -275,7 +250,7 @@
 				{
 					"contentId" : 1,
 					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>Sagan's papers are held at the Library of Congress, and some of them are available online, including an early manuscript of <i>A Pale Blue Dot</i>.</p><p>Is this a primary or secondary source on Sagan?</p>",
+					"text" : "<h1>Test Yourself</h1><p>Sagan’s papers are held at the Library of Congress, and some of them are available online, including an early manuscript of <i>A Pale Blue Dot</i>.</p><p>Is this a primary or secondary source on Sagan?</p>",
 					"image" : "images/primary/paleBlueDot.jpg",
 					"imageAlt" : "Pale Blue Dot MS",
 					"answers" : [
@@ -283,13 +258,13 @@
 							"answerId" : 1,
 							"text" : "Primary",
 							"isCorrect" : true,
-							"response" : "Correct. This is a primary source on Sagan, as it is Sagan's own creative work."
+							"response" : "Correct. This is a primary source on Sagan, as it is Sagan’s own creative work."
 						},
 						{
 							"answerId" : 2,
 							"text" : "Secondary",
 							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source on Sagan, as it is Sagan's own creative work."
+							"response" : "Incorrect. This is a primary source on Sagan, as it is Sagan’s own creative work."
 						}
 					]
 				}
@@ -301,24 +276,60 @@
 			"setContent" : [
 				{
 					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p><strong>Bonus Question:</strong> Your astronomy professor mentions that Johannes Kepler developed a theory linking the orbits of the planets to the musical scale. You decide to make this the subject of a paper. Kepler published this theory in his 1619 book <i>Harmonices Mundi</i>. Good news: it's <a href='#' data-toggle='modal' data-target='#kepler'>available online</a> from the Library of Congress. Bad news: it's in Latin. Good news: an English translation was published in <i>The Memoirs of the American Philosophical Society</i> in 1997.</p><p class='questionText'>Is the English translation a primary or secondary source for the purposes of your paper on Kepler's theory?</p>",
-					"image" : "images/primary/kepler.jpg",
-					"imageAlt" : "Kepler’s Harmonices Mundi",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : true,
-							"response" : "Correct. This is a primary source, since it is Kepler's own creative work, even if it is in translation."
+					"type" : "classify",
+					"text" : "<h1>Last Question!</h1><p>You’re writing a paper about the possibility of sub-surface water on Mars. With reference to that topic, classify the sources below as primary or secondary by dragging them to the appropriate box.</p>",
+					"items" : {
+						"item-1" : {
+							"id" : "item-1",
+							"content" : "An encyclopedia entry on Mars"
 						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source, since it is Kepler's own creative work, even if it is in translation."
+						"item-2" : {
+							"id" : "item-2",
+							"content" : "A published paper by a scientist describing his computer analysis of Martian topography"
+						},
+						"item-3" : {
+							"id" : "item-3",
+							"content" : "A scientist’s lab notes from his work on Martian rocks"
+						},
+						"item-4" : {
+							"id" : "item-4",
+							"content" : "An article in Time describing the latest Mars mission"
 						}
-					]
+					},
+					"columns" : {
+						"column-1" : {
+							"id" : "column-1",
+							"title" : null,
+							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"title" : "Primary",
+							"itemIds" : []
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"title" : "Secondary",
+							"itemIds" : []
+						}
+					},
+					"columnOrder" : ["column-1", "column-2", "column-3"],
+					"correctAnswer" : {
+						"column-1" : {
+							"id" : "column-1",
+							"itemIds" : []
+						},
+						"column-2" : {
+							"id" : "column-2",
+							"itemIds" : ["item-2", "item-3"]
+						},
+						"column-3" : {
+							"id" : "column-3",
+							"itemIds" : ["item-1", "item-4"]
+						}
+					},
+					"correctResponse" : "Nice job!",
+					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Encyclopedia</td><td>Secondary</td></tr><tr><td>Published Paper</td><td>Primary</td></tr><tr><td>Lab notes</td><td>Primary</td></tr><tr><td>Time article</td><td>Secondary</td></tr></tbody></table>"
 				}
 			]
 		}
@@ -329,7 +340,7 @@
 				{
 					"contentId" : 1,
 					"type" : "submitForm",
-					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you're all done!"
+					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!"
 				}
 			]
 		}

@@ -88,7 +88,7 @@
 				{
 					"contentId" : 1,
 					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>You are assigned a paper on a topic that is very close to that of a paper you wrote last semester for another class. It is so close that you wouldn't have to change a word to use it for your current class. Since the original paper is entirely your own work, is it acceptable to turn in the old paper instead of writing a new one?</p>",
+					"text" : "<h1>Test Yourself</h1><p>You are assigned a paper on a topic that is very close to that of a paper you wrote last semester for another class. It is so close that you wouldn’t have to change a word to use it for your current class. Since the original paper is entirely your own work, is it acceptable to turn in the old paper instead of writing a new one?</p>",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -113,7 +113,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Uncontested Facts</h1><p>There are cases in which a statement that is not your own idea may not require a citation. This is the case of the “uncontested fact.” There is no need to provide a citation when you mention that the Earth orbits the sun or that JFK was assassinated in 1963. These are commonly known or easily determined facts that are generally uncontested.</p>"
+					"text" : "<h1>Uncontested Facts</h1><p>There are cases in which a statement that is not your own idea may not require a citation. This is the case of the “uncontested fact.” There is no need to provide a citation if you mention that the Earth orbits the sun or that JFK was assassinated in 1963. These are commonly known or easily determined facts that are generally uncontested and do not change over time.</p>"
 				}
 			]
 		}
@@ -180,7 +180,7 @@
 						}
 					},
 					"correctResponse" : "Nice job!",
-					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Obama</td><td>Uncontested Fact</td></tr><tr><td>Hamlet</td><td>Needs a Citation</td></tr><tr><td>Lead</td><td>Uncontested Fact</td></tr><tr><td>Disney</td><td>Needs a Citation</td></tr><tr><td>Brahms</td><td>Uncontested Fact</td></tr></tbody></table>"
+					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Obama</td><td>Uncontested Fact</td></tr><tr><td>Hamlet</td><td>Needs a Citation (this is an opinion)</td></tr><tr><td>Lead</td><td>Uncontested Fact</td></tr><tr><td>Disney</td><td>Needs a Citation (if only to provide a date for the information)</td></tr><tr><td>Brahms</td><td>Uncontested Fact</td></tr></tbody></table>"
 				}
 			]
 		}
