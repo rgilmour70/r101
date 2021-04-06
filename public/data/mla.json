@@ -75,7 +75,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Example</h1><div class='citation-reference-list'>Kraemer, Ross. “Women in the Religions of the Greco-Roman World.” <i>Religious Studies Review</i>, vol. 9, no. 2, 1983, pp. 127+.</div><p>This example of an entry for a journal article shows the relevant elements:</p><table class='citation-table'><tbody><tr><td>Author</td><td>Kraemer, Ross</td></tr><tr><td>Title of source</td><td>“Women in the Religions of the Greco-Roman World”</td></tr><tr><td>Title of container</td><td>Religious Studies Review</td></tr><tr><td>Other contributors</td><td>N/A</td></tr><tr><td>Version</td><td>N/A</td></tr><tr><td>Number</td><td>vol. 9, no. 2</td></tr><tr><td>Publisher</td><td>N/A</td></tr><tr><td>Publication date</td><td>1983</td></tr><tr><td>Location</td><td>pp. 127+</td></tr></tbody></table>"
+					"text" : "<h1>Example</h1><div class='citation-reference-list'>Kraemer, Ross. “Women in the Religions of the Greco-Roman World.” <i>Religious Studies Review</i>, vol. 9, no. 2, 1983, pp. 127+.</div><p>This example of an entry for a journal article shows the relevant elements:</p><table class='citation-data-table'><tbody><tr><td>Author</td><td>Kraemer, Ross</td></tr><tr><td>Title of source</td><td>“Women in the Religions of the Greco-Roman World”</td></tr><tr><td>Title of container</td><td>Religious Studies Review</td></tr><tr><td>Other contributors</td><td>N/A</td></tr><tr><td>Version</td><td>N/A</td></tr><tr><td>Number</td><td>vol. 9, no. 2</td></tr><tr><td>Publisher</td><td>N/A</td></tr><tr><td>Publication date</td><td>1983</td></tr><tr><td>Location</td><td>pp. 127+</td></tr></tbody></table>"
 				}
 			]
 		}

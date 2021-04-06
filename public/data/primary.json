@@ -339,6 +339,17 @@
 			"setContent" : [
 				{
 					"contentId" : 1,
+					"type" : "declarative",
+					"text" : "<h1>Warning</h1><p>As we mentioned at the beginning of this tutorial, definitions of primary and secondary sources may vary by discipline. Your instructor may not entirely agree with our assessments of what is primary or secondary. When in doubt, ask your instructor.</p>"
+				}
+			]
+		}
+	},
+	{
+		"set" : {
+			"setContent" : [
+				{
+					"contentId" : 1,
 					"type" : "submitForm",
 					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!",
 					"problem" : "What is 3 times 6?",

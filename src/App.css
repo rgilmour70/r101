@@ -140,6 +140,21 @@ h1 {
   text-align: right;
 }
 
+.citation-data-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.citation-data-table td {
+  background-color: #fff;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+.citation-data-table td:first-of-type {
+  background-color: var(--dark-color);
+  color: white;
+}
+
 /*img.thumbnail {
   cursor: pointer;
   border: 2px solid var(--dark-color);
@@ -199,7 +214,7 @@ button.check-answer:hover {
 }
 
 /* Citation Formatting */
-*[class^=citation] {
+.citation-reference-list, .citation-in-text {
   margin: 2em 1em 3em 1em;
   padding: 1em 1em 1em 4em;
   background-color: #fff;
@@ -208,7 +223,7 @@ button.check-answer:hover {
   text-indent: -2em;
   line-height: 2;
 }
-*[class^=citation]::before {
+.citation-reference-list::before, .citation-in-text::before {
   float: right;
   background-color: var(--dark-color);
   display: table-cell;
@@ -629,20 +644,17 @@ input[type="radio"]:checked + label::before {
   padding: 0.5em 1em;
 }
 /* Answers to classification question */
-.answer-table, .citation-table {
+.answer-table {
   margin-left: auto;
   margin-right: auto;
 }
-.answer-table td, .citation-table td {
+.answer-table td {
   background-color: var(--light-color);
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #fff;
 }
-.citation-table td {
-  background-color: #fff;
-}
-.answer-table td:first-of-type, .citation-table td:first-of-type {
+.answer-table td:first-of-type {
   background-color: var(--dark-color);
   color: white;
 }

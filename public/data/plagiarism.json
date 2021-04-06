@@ -279,11 +279,28 @@
 			"setContent" : [
 				{
 					"contentId" : 1,
-					"type" : "textAnswer",
-					"text" : "What is it called when you turn in work that you completed for an earlier class?",
-					"correctAnswers" : "self plagiarism, self-plagiarism, plagiarism",
-					"correctResponse" : "That’s right!",
-					"incorrectResponse" : "Sorry, that’s not it."
+					"type" : "multipleChoice",
+					"text" : "<h1>Test Yourself: Resubmitting</h1><p>What is it called when you turn in work that you completed for an earlier class?</p>",
+					"answers" : [
+						{
+							"answerId" : 1,
+							"text" : "Self-awareness",
+							"isCorrect" : false,
+							"response" : "Incorrect."
+						},
+						{
+							"answerId" : 2,
+							"text" : "Self-plagiarism",
+							"isCorrect" : true,
+							"response" : "Correct! This is self-plagiarism and is an act of academic dishonesty."
+						},
+						{
+							"answerId" : 3,
+							"text" : "Self-citation",
+							"isCorrect" : false,
+							"response" : "Incorrect."
+						}
+					]
 				}
 			]
 		}
@@ -294,7 +311,7 @@
 				{
 					"contentId" : 1,
 					"type" : "textAnswer",
-					"text" : "The date of JFK’s assassination is an example of an ",
+					"text" : "<h1>Test Yourself: JFK</h1><p>The date of JFK’s assassination is an example of an&hellip;</p> ",
 					"correctAnswers" : "uncontested fact",
 					"correctResponse" : "That’s right!",
 					"incorrectResponse" : "Sorry, that’s not it."
