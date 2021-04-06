@@ -27,33 +27,39 @@ $solution = 0;
 switch ($whichTutorial) {
 	case 'apa':
 		$db_table = 'quiz_apa';
-		$db_cols = 24;
+		$db_cols = 39;
 		$title_for_email = 'APA Citation';
 		$solution = 18;
 		break;
 	case 'mla':
 		$db_table = 'quiz_mla';
-		$db_cols = 24;
+		$db_cols = 35;
 		$title_for_email = 'MLA Citation';
 		$solution = 16;
 		break;
 	case 'evaluating':
 		$db_table = 'quiz_eval_res_react';
-		$db_cols = 18;
+		$db_cols = 27;
 		$title_for_email = 'Evaluating Sources';
 		$solution = 24;
 		break;
 	case 'plagiarism':
 		$db_table = 'quiz_plagiarism_react';
-		$db_cols = 18;
+		$db_cols = 35;
 		$title_for_email = 'Plagiarism';
 		$solution = 27;
 		break;
 	case 'scholarly':
 		$db_table = 'quiz_scholarly_react';
-		$db_cols = 24;
+		$db_cols = 31;
 		$title_for_email = 'Scholarly Publications';
 		$solution = 30;
+		break;
+	case 'primary':
+		$db_table = 'quiz_primary';
+		$db_cols = 43;
+		$title_for_email = 'Primary and Secondary Sources';
+		$solution = 18;
 		break;
 	default:
 		$db_table = null;
@@ -86,12 +92,12 @@ if ($_POST) {
 	    	foreach ($v1 as $k => $v) {
 	    		$n = $k1 + 1;
 	    		$query_bit_1 .= 'q' . $n . '_' . from_camel_case($k);
-	    		if ($i < 35) {
+	    		if ($i <= $db_cols) {
 	    			$query_bit_1 .= ', ';
 	    		}
 	    		$val = toSQL($v);
 	    		$query_bit_2 .= $val;
-	    		if ($i < 35) {
+	    		if ($i <= $db_cols) {
 	    			$query_bit_2 .= ', ';
 	    		}
 	    		$i++;
