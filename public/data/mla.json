@@ -53,7 +53,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>MLA Style</h1><p>One of the most popular citation styles for student writing is that of the Modern Language Association (MLA). This is codified in the <i>MLA Handbook,</i> currently in its 8th edition.</p><p>This tutorial will teach you the basics of using MLA style to cite your sources. We can’t cover everything, but we’ll discuss general principles and a few of the most common resource types.</p>"
+					"text" : "<h1>MLA Style</h1><p>One of the most popular citation styles for student writing is that of the Modern Language Association (MLA). This is codified in the <i>MLA Handbook,</i> currently in its 9th edition.</p><p>This tutorial will teach you the basics of using MLA style to cite your sources. We can’t cover everything, but we’ll discuss general principles and a few of the most common resource types.</p>"
 				}
 			]
 		}
@@ -64,7 +64,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>The List of Works Cited</h1><p>The list of works cited is an alphabetical list of all the sources you used for your paper. For each entry, MLA style specifies a list of elements that may be used. Not all of these elements apply in every case. These elements always occur in the following order:</p><ol><li>Author</li><li>Title of source</li><li>Title of container</li><li>Other contributors</li><li>Version</li><li>Number</li><li>Publisher</li><li>Publication date</li><li>Location</li></ol><p>Each element is followed by a period (author, title of source, and the last element of the entry) or a comma (all other elements).</p>"
+					"text" : "<h1>The List of Works Cited</h1><p>The list of works cited is an alphabetical list of all the sources you used for your paper. For each entry, MLA style specifies a list of elements that may be used. Not all of these elements apply in every case. These elements always occur in the following order:</p><ol><li>Author</li><li>Title of source</li><li>Title of container</li><li>Other contributors</li><li>Version</li><li>Number</li><li>Publisher</li><li>Publication date</li><li>Location</li></ol><p>Each element is followed by a period (author, title of source, and the last element of the entry) or a comma (all other elements). In the case of there being two containers, items 3 – 9 are repeated.</p>"
 				}
 			]
 		}
@@ -204,7 +204,7 @@
 				{
 					"contentId" : 1,
 					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself: In-text Citation</h1><div class='citation-reference-list'>Highmore, Ben, and Anne Massey. “Brutalist Wallpaper and the Independent Group.” <i>Journal of Visual Culture,</i> vol. 12, no. 2, Aug. 2013, pp. 205–21, doi:10.1177/1470412913486325.</div><p>If you use information from p. 210, how would you cite this article in text?</p>",
+					"text" : "<h1>Test Yourself: In-text Citation</h1><div class='citation-reference-list'>Highmore, Ben, and Anne Massey. “Brutalist Wallpaper and the Independent Group.” <i>Journal of Visual Culture,</i> vol. 12, no. 2, Aug. 2013, pp. 205–21. https://doi.org/10.1177/1470412913486325.</div><p>If you use information from p. 210, how would you cite this article in text?</p>",
 					"answers" : [
 						{
 							"answerId" : 1,
@@ -252,7 +252,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Books</h1><p>Let’s start with a fairly simple case: citing a book.</p><div class='citation-reference-list'>Gardner, Julian. <i>Giotto and His Publics: Three Paradigms of Patronage.</i> Harvard University Press, 2011.</div><div class='citation-in-text'>(Gardner, 112)</div><p>The entry in the works cited list includes the following elements: author, title of source, publisher, and date. This assumes that you are using a physical copy of the book. In this case, the book is considered a stand-alone object that has no <strong>container.</strong></p>"
+					"text" : "<h1>Books</h1><p>Let’s start with a fairly simple case: citing a book.</p><div class='citation-reference-list'>Gardner, Julian. <i>Giotto and His Publics: Three Paradigms of Patronage.</i> Harvard University Press, 2011.</div><div class='citation-in-text'>(Gardner 112)</div><p>The entry in the works cited list includes the following elements: author, title of source, publisher, and date. This assumes that you are using a physical copy of the book. In this case, the book is considered a stand-alone object that has no <strong>container.</strong></p>"
 				}
 			]
 		}
@@ -285,7 +285,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Another Container</h1><p>The article by Bonds is contained in a journal, but it might also have a second container. If you accessed the article through an online database, the database is also a container. Your entry then becomes:</p><div class='citation-reference-list'>Bonds, Mark. “Irony and Incomprehensibility: Beethoven’s ‘Serioso’ String Quartet in F Minor, Op. 95, and the Path to the Late Style.” <i>Journal of the American Musicological Society,</i> vol. 70, no. 2, June 2017, pp. 285–356. <i>Gale Academic OneFile,</i> doi:10.1525/jams.2017.70.2.285.</div>"
+					"text" : "<h1>Another Container</h1><p>The article by Bonds is contained in a journal, but it might also have a second container. If you accessed the article through an online database, the database is also a container. Your entry then becomes:</p><div class='citation-reference-list'>Bonds, Mark. “Irony and Incomprehensibility: Beethoven’s ‘Serioso’ String Quartet in F Minor, Op. 95, and the Path to the Late Style.” <i>Journal of the American Musicological Society,</i> vol. 70, no. 2, June 2017, pp. 285–356. <i>Gale Academic OneFile,</i> https://doi.org/10.1525/jams.2017.70.2.285.</div>"
 				}
 			]
 		}
@@ -296,7 +296,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>DOI?</h1><p>You may have noticed the presence of a DOI in the preceding example. A DOI (Digital Object Identifier) is a string of characters that uniquely identifies a document. The URL (web address) of a document may change but its DOI never will. Always include a DOI if your document has one. Most academic journal articles will have a DOI.</p>"
+					"text" : "<h1>DOI?</h1><p>You may have noticed the presence of a DOI in the preceding example. A DOI (Digital Object Identifier) is a string of characters that uniquely identifies a document. The URL (web address) of a document may change but its DOI never will. Always include a DOI if your document has one. Most academic journal articles will have a DOI. DOIs should be prepended by <code>https://doi.org/</code>, even if that is not how it appears in the source.</p>"
 				}
 			]
 		}
@@ -318,7 +318,7 @@
 				{
 					"contentId" : 1,
 					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself: Types of Sources</h1><div class='citation-reference-list'>Neels, Richard. “Elements and Opposites in Heraclitus.” <i>Apeiron,</i> vol. 51, no. 4, Oct. 2018, pp. 427–52, doi:10.1515/apeiron-2017-0029.</div><p>This works cited entry refers to a</p>",
+					"text" : "<h1>Test Yourself: Types of Sources</h1><div class='citation-reference-list'>Neels, Richard. “Elements and Opposites in Heraclitus.” <i>Apeiron,</i> vol. 51, no. 4, Oct. 2018, pp. 427–52, https://doi.org/10.1515/apeiron-2017-0029.</div><p>This works cited entry refers to a</p>",
 					"answers" : [
 						{
 							"answerId" : 1,
