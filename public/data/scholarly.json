@@ -1,419 +1,384 @@
 [
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Scholarly Publications</h1><p>One aspect of learning to evaluate sources is to understand the different types of periodical publications.</p><p>A <strong>periodical</strong> is a publication with issues that appear at regular intervals. For example, the <i>New York Times</i> comes out daily, <i>Nature</i> comes out weekly, and the <i>Journal of Psychiatry &amp; Neuroscience</i> comes out every other month.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Three Kinds of Periodicals</h1><p>Periodicals fall into three basic categories: <strong>popular</strong>, <strong>trade</strong>, and <strong>scholarly</strong>.</p><p>A statement in a scholarly source has a different intellectual weight than one in a popular source. For this reason, your instructor may request that you use scholarly sources in your paper.</p><p>This tutorial will help you distinguish scholarly periodicals from the other types.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself: Types of Periodicals</h1><p>Which of the following is <strong>not</strong> one of the three types of periodicals?</p>",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Trade",
-							"isCorrect" : false,
-							"response" : "Incorrect. Trade publications are one of the three types of periodicals."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Encyclopedia",
-							"isCorrect" : true,
-							"response" : "Correct! Encyclopedias are not periodicals."
-						},
-						{
-							"answerId" : 3,
-							"text" : "Scholarly",
-							"isCorrect" : false,
-							"response" : "Incorrect. Scholarly publications are one of the three types of periodicals."
-						},
-						{
-							"answerId" : 4,
-							"text" : "Popular",
-							"isCorrect" : false,
-							"response" : "Incorrect. Popular publications are one of the three types of periodicals."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Popular Periodicals</h1><p>Popular periodicals (aka \"magazines\") are meant for a general audience. They might be truly general in scope (e.g., <i>Life</i>, <i>Smithsonian</i>) or be geared to <em>enthusiasts</em> with a specific interest. In the later case, the articles will still be written such that an average reader can understand them. Even if cooking isn’t your thing, you can pick up an issue of <i>Bon Appétit</i> and get the gist of the articles.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Popular Periodicals: Common Characteristics</h1><ul><li><span>Appeal to a general readership: not much jargon</span></li><li><span>Lots of ads (print and website; not in library databases)</span></li><li><span>Authors are usually staff members or freelancers. They might not have extensive credentials.</span></li><li><span>Citations and references to other sources may be limited.</span></li></ul>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself: Popular Periodicals</h1><p>Which of the following is most likely to be a popular periodical? Tap the info icons to see cover images.</p>",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "The American Journal of Botany",
-							"isCorrect" : false,
-							"response" : "Incorrect. Even if you know nothing about this journal, you can guess that something with the name of an academic field in the title will be scholarly.",
-							"info" : "<img src='images/scholarly/ajb_cover.jpg' alt='Cover of the American Journal of Botany highlighting the ecology and evolution of pollen performance'>",
-							"infoLabel" : "Cover of The American Journal of Botany"
-						},
-						{
-							"answerId" : 2,
-							"text" : "Analytical Chemistry",
-							"isCorrect" : false,
-							"response" : "Incorrect. Do you know what \"isotachophoresis\" is? We don’t either, so it’s probably a scholarly journal.",
-							"info" : "<img src='images/scholarly/analytical_chemistry.jpg' alt='Cover of Analytical Chemistry'>",
-							"infoLabel" : "Cover of Analytical Chemistry"
-						},
-						{
-							"answerId" : 3,
-							"text" : "Art History and Criticism",
-							"isCorrect" : false,
-							"response" : "Incorrect. Even if you know nothing about this journal, you can guess that something with the name of an academic field in the title will be scholarly.",
-							"info" : "<img src='images/scholarly/mik_cover.jpg' alt='Cover of Art History and Criticism showing a metal chandelier'>",
-							"infoLabel" : "Cover of Art History and Criticism"
-						},
-						{
-							"answerId" : 4,
-							"text" : "Rolling Stone",
-							"isCorrect" : true,
-							"response" : "Correct! <i>Rolling Stone</i> is a popular periodical. It appeals to a very general readership, covering all aspects of popular culture. Celebrity interviews are a sure sign of a popular journal.",
-							"info" : "<img src='images/scholarly/rolling_stone_cover.jpg' alt='Cover of Rolling Stone featuring Taylor Swift'>",
-							"infoLabel" : "Cover of The Rolling Stone"
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Trade Periodicals</h1><p>Trade periodicals are directed at <em>practitioners</em> in a specific industry. While <i>Bon Appétit</i> is geared to home cooks, <i>Restaurant Business</i> (a trade publication) targets restaurant owners, with a focus on financial news and industry trends rather than home cooking tips.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Trade Periodicals: Common Characteristics</h1><ul><li><span>Written for those employed in a particular industry or commercial sector</span></li><li><span>Article types include how-to and opinion pieces and news</span></li><li><span>Reports of original research are rare</span></li><li><span>Authors may be specialists in the field or journalists</span></li><li><span>Advertising aimed at professionals</span></li></ul>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself: Trade Periodicals</h1><p>Which of the following is most likely to be a trade periodical? Tap the info icons to see the publication’s website.</p>",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "USA Today",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a newspaper for a general audience: a popular periodical.",
-							"info" : "<img src='images/scholarly/usa_today_web.jpg' alt='USA Today Website'>",
-							"infoLabel" : "USA Today Website"
-						},
-						{
-							"answerId" : 2,
-							"text" : "The New Yorker",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a news and culture magazine for a general audience: a popular periodical.",
-							"info" : "<img src='images/scholarly/new_yorker_web.jpg' alt='The New Yorker Website'>",
-							"infoLabel" : "The New Yorker Website"
-						},
-						{
-							"answerId" : 3,
-							"text" : "Bicycle Retailer and Industry News",
-							"isCorrect" : true,
-							"response" : "Correct! The phrase \"Industry News\" is a dead giveaway.",
-							"info" : "<img src='images/scholarly/bicycle_retailer_web.jpg' alt='Bicycle Retailer Website'>",
-							"infoLabel" : "Bicycle Retailer Website"
-						},
-						{
-							"answerId" : 4,
-							"text" : "Journal of Social Philosophy",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a scholarly journal. ",
-							"info" : "<img src='images/scholarly/social_philosophy_web.jpg' alt='Website of the Journal of Social Philosophy'>",
-							"infoLabel" : "Journal of Social Philosophy Website"
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Scholarly Periodicals</h1><p>Scholarly periodicals (aka \"journals\") are intended for academic researchers in a specific field. <i>The Journal of Food Science</i> publishes articles reporting the original research of food scientists, usually employed by universities or government labs.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Scholarly Periodicals: Common Characteristics</h1><ul><li><span>Titles might begin with \"Journal of,\" \"Proceedings of,\" or similar.</span></li><li><span>Authors will list their academic credentials.</span></li><li><span>Articles are divided into sections: abstract, methods, conclusions, etc.</span></li><li><span>Articles are <b>peer reviewed</b>.</span></li></ul>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Peer Review?</h1><p>Peer review is a process by which scholarly articles are vetted for publication. Approval by an editor is usually all that is required for an article to be published in a popular or trade magazine, but a scholarly journal will require that an article be reviewed by experts in the field before it is published.</p><div style='text-align:center'><img src='images/scholarly/peer_review_dan.png' class='img-fluid' id='peer-review-image'></div>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Pro Tip</h1><p>Many library databases will indicate that an article is peer-reviewed and may let you filter your results to see only peer-reviewed articles.</p><div style='text-align:center'><img src='images/scholarly/peer_review_facet.png' class='img-fluid' id='peer-review-screenshot'></div>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Double Blind</h1><p>Peer review is often described as a \"double blind\" process, meaning that the author doesn’t know who the reviewers are, and the reviewers don’t know who the author is. The double blind ensures that papers are judged on their own merits rather than the reputation of the author.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself: Scholarly Periodicals</h1><p>Which of the following is most likely to be a scholarly periodical? Tap the info icons to see articles as they appear in library databases.</p>",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "System Contractor News",
-							"isCorrect" : false,
-							"response" : "Incorrect. This presents news for a particular profession: a trade periodical.",
-							"info" : "<img src='images/scholarly/system_contractor_db.jpg' alt='Article from System Contractor News'>",
-							"infoLabel" : "Article from System Contractor News as it appears in a ProQuest database"
-						},
-						{
-							"answerId" : 2,
-							"text" : "The American Journal of Botany",
-							"isCorrect" : true,
-							"response" : "Correct! The mention of an academic specialty in the title indicates that it is probably a scholarly journal. Also notice the \"peer review\" tag in the database description.",
-							"info" : "<img src='images/scholarly/ajb_db.jpg' alt='Article from the American Journal of Botany'>",
-							"infoLabel" : "Article from the American Journal of Botany as it appears in the main library search."
-						},
-						{
-							"answerId" : 3,
-							"text" : "American Artist Magazine",
-							"isCorrect" : false,
-							"response" : "Incorrect. The word \"magazine\" in the title is a big hint that this is probably a popular periodical.",
-							"info" : "<img src='images/scholarly/american_artist_db.jpg' alt='Article from American Artist'>",
-							"infoLabel" : "Article from American Artist as it appears in Gale Academic OneFile"
-						},
-						{
-							"answerId" : 4,
-							"text" : "Rolling Stone",
-							"isCorrect" : false,
-							"response" : "Incorrect. <i>Rolling Stone</i> is a popular periodical. It appeals to a very general readership, covering all aspects of popular culture, even John Mayer.",
-							"info" : "<img src='images/scholarly/rolling_stone_db.jpg' alt='Article from Rolling Stone'>",
-							"infoLabel" : "Article from Rolling Stone as it appears in an EBSCO database"
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "classify",
-					"text" : "<h1>Test Yourself: Periodical Types</h1><p>Classify the following periodicals as popular, trade, or scholarly by dragging them to the appropriate box.</p>",
-					"items" : {
-						"item-1" : {
-							"id" : "item-1",
-							"content" : "Journal of Experimental Psychology"
-						},
-						"item-2" : {
-							"id" : "item-2",
-							"content" : "The New Yorker"
-						},
-						"item-3" : {
-							"id" : "item-3",
-							"content" : "California Dairy Magazine"
-						},
-						"item-4" : {
-							"id" : "item-4",
-							"content" : "The Washington Post"
-						}
-					},
-					"columns" : {
-						"column-1" : {
-							"id" : "column-1",
-							"title" : null,
-							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"title" : "Popular",
-							"itemIds" : []
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"title" : "Trade",
-							"itemIds" : []
-						},
-						"column-4" : {
-							"id" : "column-4",
-							"title" : "Scholarly",
-							"itemIds" : []
-						}
-					},
-					"columnOrder" : ["column-1", "column-2", "column-3", "column-4"],
-					"correctAnswer" : {
-						"column-1" : {
-							"id" : "column-1",
-							"itemIds" : []
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"itemIds" : ["item-2", "item-4"]
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"itemIds" : ["item-3"]
-						},
-						"column-4" : {
-							"id" : "column-4",
-							"itemIds" : ["item-1"]
-						}
-					},
-					"correctResponse" : "Nice job!",
-					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Journal of Experimental Psychology</td><td>Scholarly</td></tr><tr><td>The New Yorker</td><td>Popular</td></tr><tr><td>California Dairy Magazine</td><td>Trade</td></tr><tr><td>The Washington Post</td><td>Popular</td></tr></tbody></table>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Almost Done!</h1><p>You’re doing great! Just a couple more questions.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "textAnswer",
-					"text" : "The process by which scholarly articles are vetted for publication is called ",
-					"correctAnswers" : "peer review, peer-review",
-					"correctResponse" : "That’s right!",
-					"incorrectResponse" : "Sorry, that’s not it."
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "textAnswer",
-					"text" : "Which type of periodical contains articles written for practitioners in a specific industry?",
-					"correctAnswers" : "trade",
-					"correctResponse" : "That’s right!",
-					"incorrectResponse" : "Sorry, that’s not it."
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "submitForm",
-					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!",
-					"problem" : "What is 5 times 6?",
-					"solution" : 30
-				}
-			]
-		}
-	}
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Scholarly Publications</h1><p>One aspect of learning to evaluate sources is to understand the different types of periodical publications.</p><p>A <strong>periodical</strong> is a publication with issues that appear at regular intervals. For example, the <i>New York Times</i> comes out daily, <i>Nature</i> comes out weekly, and the <i>Journal of Psychiatry &amp; Neuroscience</i> comes out every other month.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Three Kinds of Periodicals</h1><p>Periodicals fall into three basic categories: <strong>popular</strong>, <strong>trade</strong>, and <strong>scholarly</strong>.</p><p>A statement in a scholarly source has a different intellectual weight than one in a popular source. For this reason, your instructor may request that you use scholarly sources in your paper.</p><p>This tutorial will help you distinguish scholarly periodicals from the other types.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself: Types of Periodicals</h1><p>Which of the following is <strong>not</strong> one of the three types of periodicals?</p>",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Trade",
+              "isCorrect": false,
+              "response": "Incorrect. Trade publications are one of the three types of periodicals."
+            },
+            {
+              "answerId": 2,
+              "text": "Encyclopedia",
+              "isCorrect": true,
+              "response": "Correct! Encyclopedias are not periodicals."
+            },
+            {
+              "answerId": 3,
+              "text": "Scholarly",
+              "isCorrect": false,
+              "response": "Incorrect. Scholarly publications are one of the three types of periodicals."
+            },
+            {
+              "answerId": 4,
+              "text": "Popular",
+              "isCorrect": false,
+              "response": "Incorrect. Popular publications are one of the three types of periodicals."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Popular Periodicals</h1><p>Popular periodicals (aka \"magazines\") are meant for a general audience. They might be truly general in scope (e.g., <i>Life</i>, <i>Smithsonian</i>) or be geared to <em>enthusiasts</em> with a specific interest.</p><p>Characteristics of popular periodicals include:</p><ul><li><span>Appeal to a general readership: not much jargon</span></li><li><span>Lots of ads (print and website; not in library databases)</span></li><li><span>Authors are usually staff members or freelancers, not experts in the field.</span></li><li><span>Citations and references to other sources may be limited or absent.</span></li></ul>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself: Popular Periodicals</h1><p>Which of the following is most likely to be a popular periodical?</p>",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "The American Journal of Botany",
+              "isCorrect": false,
+              "response": "Incorrect. Even if you know nothing about this journal, you can guess that something with the name of an academic field in the title will be scholarly. \"Journal of\" in the title is also a clue."
+            },
+            {
+              "answerId": 2,
+              "text": "Analytical Chemistry",
+              "isCorrect": false,
+              "response": "Incorrect. Even if you know nothing about this journal, you can guess that something with the name of an academic field in the title will be scholarly."
+            },
+            {
+              "answerId": 3,
+              "text": "Art History and Criticism",
+              "isCorrect": false,
+              "response": "Incorrect. Even if you know nothing about this journal, you can guess that something with the name of an academic field in the title will be scholarly."
+            },
+            {
+              "answerId": 4,
+              "text": "Rolling Stone",
+              "isCorrect": true,
+              "response": "Correct! <i>Rolling Stone</i> is a popular periodical. It appeals to a very general readership, covering all aspects of popular culture."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Trade Periodicals</h1><p>Trade periodicals are directed at <em>practitioners</em> in a specific industry. While <i>Bon Appétit</i> is geared to home cooks, <i>Restaurant Business</i> (a trade publication) targets restaurant owners, with a focus on financial news and industry trends.</p><p>Characteristics of trade periodicals include:</p><ul><li><span>Written for those employed in a particular industry or commercial sector</span></li><li><span>Article types include how-to and opinion pieces and news</span></li><li><span>Reports of original research are rare</span></li><li><span>Authors may be specialists in the field or journalists</span></li><li><span>Advertising aimed at professionals</span></li></ul>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself: Trade Periodicals</h1><p>Which of the following is most likely to be a trade periodical?</p>",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "USA Today",
+              "isCorrect": false,
+              "response": "Incorrect. This is a newspaper for a general audience: a popular periodical."
+            },
+            {
+              "answerId": 2,
+              "text": "The New Yorker",
+              "isCorrect": false,
+              "response": "Incorrect. This is a news and culture magazine for a general audience: a popular periodical."
+            },
+            {
+              "answerId": 3,
+              "text": "Bicycle Retailer and Industry News",
+              "isCorrect": true,
+              "response": "Correct! The phrase \"Industry News\" is a dead giveaway."
+            },
+            {
+              "answerId": 4,
+              "text": "Journal of Social Philosophy",
+              "isCorrect": false,
+              "response": "Incorrect. This is a scholarly journal. \"Journal of\" in the title is a hint."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Scholarly Periodicals</h1><p>Scholarly periodicals (aka \"journals\") are intended for academic researchers in a specific field. <i>The Journal of Food Science</i> publishes articles reporting the original research of food scientists, usually employed by universities or government labs.</p><p>Characteristics of scholarly periodicals include:</p><ul><li><span>Titles might begin with \"Journal of,\" \"Proceedings of,\" or similar.</span></li><li><span>Authors will list their academic credentials.</span></li><li><span>Articles are divided into sections: abstract, methods, conclusions, etc.</span></li><li><span>Articles are <b>peer reviewed</b>.</span></li></ul>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Peer Review?</h1><p>Peer review is a process by which scholarly articles are vetted for publication. Approval by an editor is usually all that is required for an article to be published in a popular or trade magazine, but a scholarly journal will require that an article be reviewed by experts in the field before it is published.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Pro Tip</h1><p>Many library databases will indicate that an article is peer-reviewed and may let you filter your results to see only peer-reviewed articles.</p><div style='text-align:center'><img src='images/scholarly/peer_review_facet.png' class='img-fluid' id='peer-review-screenshot'></div>",
+          "image": "images/scholarly/peer_review_facet.png",
+          "imageAlt": "Library catalog showing peer review facet"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>What kind of periodical does this come from?</p><img src=\"images/scholarly/trade_periodical.png\" alt=\"Article about ruby chocolate\" />",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Popular",
+              "isCorrect": false,
+              "response": "Incorrect. Notice the business jargon: \"soft launch,\" \"rollout\" and the header \"Breaking Industry Developments.\" This is for people in the candy business, not general lovers of chocolate."
+            },
+            {
+              "answerId": 2,
+              "text": "Trade",
+              "isCorrect": true,
+              "response": "Correct! Hints include business jargon like \"soft launch\" and \"rollout\" and the header \"Breaking Industry Developments.\" This is for people in the candy business, not general lovers of chocolate."
+            },
+            {
+              "answerId": 3,
+              "text": "Scholarly",
+              "isCorrect": false,
+              "response": "Incorrect. Notice the business jargon: \"soft launch,\" \"rollout\" and the header \"Breaking Industry Developments.\" This is for people in the candy business, not general lovers of chocolate."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>What kind of periodical does this come from?</p><img src=\"images/scholarly/tswift.png\" alt=\"Article about Taylor Swift\" />",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Popular",
+              "isCorrect": true,
+              "response": "Correct! If Taylor Swift isn't popular, we don't know what is."
+            },
+            {
+              "answerId": 2,
+              "text": "Trade",
+              "isCorrect": false,
+              "response": "Incorrect. This is a general interest article about a celebrity. Articles like this come from popular periodicals."
+            },
+            {
+              "answerId": 3,
+              "text": "Scholarly",
+              "isCorrect": false,
+              "response": "Incorrect. This is a general interest article about a celebrity. Articles like this come from popular periodicals."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>What kind of periodical does this come from?</p><img src=\"images/scholarly/skull_morphology.png\" alt=\"Article about dinosaur skull morphology\" />",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Popular",
+              "isCorrect": false,
+              "response": "Incorrect. While dinosaurs are eternally popular, scientific terms like \"ecomorphology\" and \"megaherbivorous\" indicate that this is a scholarly article. Also notice the characteristic structure of the article outlined on the left."
+            },
+            {
+              "answerId": 2,
+              "text": "Trade",
+              "isCorrect": false,
+              "response": "Incorrect. This is a scholarly article written for paleontologists. Notice the scientific terms like \"ecomorphology\" and \"megaherbivorous\" as well as the characteristic structure of the article outlined on the left."
+            },
+            {
+              "answerId": 3,
+              "text": "Scholarly",
+              "isCorrect": true,
+              "response": "Correct! Hints include the use of scientific terms like \"ecomorphology\" and \"megaherbivorous\" as well as the characteristic stucture of the article outlined on the left."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "classify",
+          "text": "<h1>Test Yourself: Periodical Types</h1><p>Classify the following periodicals as popular, trade, or scholarly by dragging them to the appropriate box.</p>",
+          "items": {
+            "item-1": {
+              "id": "item-1",
+              "content": "Journal of Experimental Psychology"
+            },
+            "item-2": {
+              "id": "item-2",
+              "content": "The New Yorker"
+            },
+            "item-3": {
+              "id": "item-3",
+              "content": "California Dairy Magazine"
+            },
+            "item-4": {
+              "id": "item-4",
+              "content": "The Washington Post"
+            }
+          },
+          "columns": {
+            "column-1": {
+              "id": "column-1",
+              "title": null,
+              "itemIds": ["item-1", "item-2", "item-3", "item-4"]
+            },
+            "column-2": {
+              "id": "column-2",
+              "title": "Popular",
+              "itemIds": []
+            },
+            "column-3": {
+              "id": "column-3",
+              "title": "Trade",
+              "itemIds": []
+            },
+            "column-4": {
+              "id": "column-4",
+              "title": "Scholarly",
+              "itemIds": []
+            }
+          },
+          "columnOrder": ["column-1", "column-2", "column-3", "column-4"],
+          "correctAnswer": {
+            "column-1": {
+              "id": "column-1",
+              "itemIds": []
+            },
+            "column-2": {
+              "id": "column-2",
+              "itemIds": ["item-2", "item-4"]
+            },
+            "column-3": {
+              "id": "column-3",
+              "itemIds": ["item-3"]
+            },
+            "column-4": {
+              "id": "column-4",
+              "itemIds": ["item-1"]
+            }
+          },
+          "correctResponse": "Nice job!",
+          "incorrectResponse": "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Journal of Experimental Psychology</td><td>Scholarly</td></tr><tr><td>The New Yorker</td><td>Popular</td></tr><tr><td>California Dairy Magazine</td><td>Trade</td></tr><tr><td>The Washington Post</td><td>Popular</td></tr></tbody></table>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "textAnswer",
+          "text": "The process by which scholarly articles are vetted for publication is called ",
+          "correctAnswers": "peer review, peer-review",
+          "correctResponse": "That’s right!",
+          "incorrectResponse": "Sorry, that’s not it."
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "submitForm",
+          "text": "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!",
+          "problem": "What is 5 times 6?",
+          "solution": 30
+        }
+      ]
+    }
+  }
 ]

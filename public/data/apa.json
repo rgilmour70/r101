@@ -344,7 +344,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Citation Generators</h1><p>Today there are a lot of ways to generate a reference list entry automatically, either from the database where you found the source or with software such as Mendeley or Zotero. But you <strong>must</strong> check the output!</p><p>Errors in these systems are common. Be especially alert for errors in capitalization and italics.</p>"
+					"text" : "<h1>Citation Generators</h1><p>Today there are a lot of ways to generate a reference list entry automatically, either from the database where you found the source or with software such as Zotero. But you <strong>must</strong> check the output!</p><p>Errors in these systems are common. Be especially alert for errors in capitalization and italics.</p>"
 				}
 			]
 		}

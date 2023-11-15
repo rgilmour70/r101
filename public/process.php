@@ -51,7 +51,7 @@ switch ($whichTutorial) {
 		break;
 	case 'scholarly':
 		$db_table = 'quiz_scholarly_react';
-		$db_cols = 31;
+		$db_cols = 35;
 		$title_for_email = 'Scholarly Publications';
 		$solution = 30;
 		break;

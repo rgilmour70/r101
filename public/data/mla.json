@@ -386,7 +386,7 @@
 				{
 					"contentId" : 1,
 					"type" : "declarative",
-					"text" : "<h1>Citation Generators</h1><p>There are a lot of ways to generate a works cited list entry automatically, either from the database where you found the source or with software such as Mendeley or Zotero. But you <strong>must</strong> check the output, as errors are common.</p><p>Entries may also be incomplete with reference to containers. Make sure you generate the citation from within the database where you actually find the full text of the item, not from an intermediate database.</p>"
+					"text" : "<h1>Citation Generators</h1><p>There are a lot of ways to generate a works cited list entry automatically, either from the database where you found the source or with software such as Zotero. But you <strong>must</strong> check the output, as errors are common.</p><p>Entries may also be incomplete with reference to containers. Make sure you generate the citation from within the database where you actually find the full text of the item, not from an intermediate database.</p>"
 				}
 			]
 		}
