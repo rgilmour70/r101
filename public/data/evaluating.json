@@ -1,562 +1,587 @@
 [
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Evaluating Sources</h1><p>You can find almost anything on the Internet, but not all of that information is of high quality, and not all of it is appropriate for your assignments.</p><p>This tutorial will guide you through the process of evaluating sources of information. The goal is to help you select the best sources for your academic papers and projects.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Five Criteria</h1><p>When evaluating an information source, there are five things that you should consider.</p><ol class='criteria-list'><li>Author</li><li>Review</li><li>Date</li><li>Sources</li><li>Bias</li></ol>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "mnemonic",
-					"terms" : "Author, Review, Date, Sources, Bias",
-					"keyword" : "Author",
-					"text" : "<ul><li>It should be possible to identify the author. Bonus points if they list their affiliation (university or organization).</li><li>An author isn’t always a person&mdash;it could be an organization or government agency.</li><li>Check up on the author to make sure they're trustworthy.</li></ul>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "range",
-					"text" : "<h1>Test Yourself: Author</h1>You‘re writing a paper on childhood lead exposure. You find a report from the Environmental Protection Agency. How trustworthy do you think it is?",
-					"scale" : {
-						"0" : "Not Trustworthy", 
-						"5" : "Okay", 
-						"10" : "Trustworthy"
-					},
-					"minCorrect" : 7,
-					"maxCorrect" : 10,
-					"correctResponse" : "You are correct! The EPA is generally considered a reliable source on environmental toxins.",
-					"incorrectResponse" : "We disagree. The EPA is generally considered a reliable source on environmental toxins."
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "mnemonic",
-					"terms" : "Author, Review, Date, Sources, Bias",
-					"keyword" : "Review",
-					"text" : "<p>There are different levels of review that a writer’s work could go through before being published.</p><p><strong>Peer review</strong> is considered the highest level of review. Multiple researchers in the author’s field make suggestions prior to its publication. Most papers in academic journals are peer reviewed.</p><p><strong>Editorial review</strong> means that an editor has looked over the material before publication. This is better than nothing, but we should remember that editors are susceptible to bias like everyone else. Most books and magazine/newspaper articles are reviewed by editors.</p><p><strong>No review</strong> happens when an author self-publishes their material. Personal blog posts, for instance, are generally just written and posted.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "classify",
-					"text" : "<h1>Test Yourself: Review</h1>Drag each source type to the column that matches its degree of review.",
-					"items" : {
-						"item-1" : {
-							"id" : "item-1",
-							"content" : "Tweet"
-						},
-						"item-2" : {
-							"id" : "item-2",
-							"content" : "Article"
-						},
-						"item-3" : {
-							"id" : "item-3",
-							"content" : "Book"
-						},
-						"item-4" : {
-							"id" : "item-4",
-							"content" : "Wikipedia Entry"
-						},
-						"item-5" : {
-							"id" : "item-5",
-							"content" : "Newspaper"
-						}
-					},
-					"columns" : {
-						"column-1" : {
-							"id" : "column-1",
-							"title" : null,
-							"itemIds" : ["item-1", "item-2", "item-3", "item-4", "item-5"]
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"title" : "No Review",
-							"itemIds" : []
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"title" : "Editorial Review",
-							"itemIds" : []
-						},
-						"column-4" : {
-							"id" : "column-4",
-							"title" : "Peer Review",
-							"itemIds" : []
-						}
-					},
-					"columnOrder" : ["column-1", "column-2", "column-3", "column-4"],
-					"correctAnswer" : {
-						"column-1" : {
-							"id" : "column-1",
-							"itemIds" : []
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"itemIds" : ["item-1"]
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"itemIds" : ["item-3", "item-4", "item-5"]
-						},
-						"column-4" : {
-							"id" : "column-4",
-							"itemIds" : ["item-2"]
-						}
-					},
-					"correctResponse" : "Nice job!",
-					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Tweet</td><td>No Review</td></tr><tr><td>Article</td><td>Peer Review</td></tr><tr><td>Book</td><td>Editorial Review</td></tr><tr><td>Wikipedia Entry</td><td>Editorial Review</td></tr><tr><td>Newspaper</td><td>Editorial Review</td></tr></tbody></table>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "mnemonic",
-					"terms" : "Author, Review, Date, Sources, Bias",
-					"keyword" : "Date",
-					"text" : "<p>It’s important to think about when something was written. In many cases, you’ll want the latest information on a topic. This is especially true in fields where things change rapidly, like medicine or particle physics.</p><p>Newer isn’t always better, though. For instance, if you’re writing about a classic film or doing research for a history paper, older materials would be very good sources.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "range",
-					"text" : "<h1>Test Yourself: Date</h1>You’re writing a paper on recent American elections. You find an article in a major politics journal that addresses this topic. The paper is from 2006. How useful would this source be for your paper?",
-					"scale" : {
-						"0" : "Not Useful", 
-						"5" : "Okay", 
-						"10" : "Very Useful"
-					},
-					"minCorrect" : 0,
-					"maxCorrect" : 4,
-					"correctResponse" : "Nice job! At best, it might contain some good background information, but there have been a lot of elections since 2006.",
-					"incorrectResponse" : "We don’t think it’s very useful. At best, it might contain some good background information, but there have been a lot of elections since 2006."
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "mnemonic",
-					"terms" : "Author, Review, Date, Sources, Bias",
-					"keyword" : "Sources",
-					"text" : "<p>Research is a conversation. When a scholar takes part in that conversation, as you are doing when you write a paper in college, they need to acknowledge the work that has gone before.</p><p>Listing your sources also allows readers to verify your information.</p><p>A source that doesn’t cite external information probably isn’t a great choice for your assignment.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself: Sources</h1><p class='excerpt'>\"&hellip; Pippi Longstocking &hellip; is a Swedish cultural icon. She is a rebel; an anti-authoritarian, norm-critical girl who defies convention and challenges gender stereotypes (Metcalf 1990). Pippi breaks down the gender barrier, revealing herself as 'the strongest in the world' as she saves lives, tackles boa constrictors and villains, and even out-lifts the world’s strongest man, Mighty Adolph (Edström 2007; Lindgren 1997). Astrid Lindgren created a female character who dominates her world, living according to her own rules and values (Kåreland and Lindh-Munther 2005a; Metcalf 1990).\"<br/><small>From Lynch, L. (2016). Where are all the Pippis? <i>Sex Roles,</i> 75(9-10), 422-433.</small></p><p>Based on the paragraph above, which source does the idea that Pippi Longstocking challenges gender stereotypes come from?",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Metcalf 1990",
-							"isCorrect" : true,
-							"response" : "Correct!"
-						},
-						{
-							"answerId" : 2,
-							"text" : "Edström 2007",
-							"isCorrect" : false,
-							"response" : "No. The idea is credited to Metcalf 1990."
-						},
-						{
-							"answerId" : 3,
-							"text" : "Lindgren 1997",
-							"isCorrect" : false,
-							"response" : "No. The idea is credited to Metcalf 1990."
-						},
-						{
-							"answerId" : 4,
-							"text" : "None of the above",
-							"isCorrect" : false,
-							"response" : "No. The idea is credited to Metcalf 1990."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "mnemonic",
-					"terms" : "Author, Review, Date, Sources, Bias",
-					"keyword" : "Bias",
-					"text" : "<p>Consider whether there are social, ideological, or financial factors that may influence the author. Is a story on immigration published in a notably left- or right-leaning publication? Is a website about the benefits of a particular nutrient littered with ads for supplements?</p><p>Bias doesn’t always mean that a source is bad, but may indicate that you should seek out sources with alternate viewpoints and see how they differ.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself: Bias</h1><p>Consider the following passage from the Marijuana Policy Project website (mpp.org).</p><p class='excerpt'>Criminalizing possession of small amounts of marijuana forces law enforcement to spend valuable time on arresting, processing, and prosecuting non-violent offenders. This time could be better spent going after violent criminals. According to the FBI’s Uniform Crime Reporting Program, an estimated 700,993 Americans were arrested for marijuana-related offenses in 2014, and over 88% were for possession alone. Meanwhile, according to the FBI’s 2014 data, the national clearance rate for murder and non-negligent manslaughter was 64.5%; for rape, it was 38.5%; and for robbery, it was only 29.6%.</p><p>What is this text trying to convince you of?</p>",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "This passage is purely fact-based and is not trying to convince the reader of anything.",
-							"isCorrect" : false,
-							"response" : "No, this passage has a definite viewpoint."
-						},
-						{
-							"answerId" : 2,
-							"text" : "More law enforcement resources should be devoted to the control of white-collar crime.",
-							"isCorrect" : false,
-							"response" : "No, the passage implies that law enforcement should devote more resources to violent crime."
-						},
-						{
-							"answerId" : 3,
-							"text" : "Law enforcement resources would be better spent on controlling violent crime than on marijuana offenses.",
-							"isCorrect" : true,
-							"response" : "Correct! This is the main rhetorical point of the passage."
-						},
-						{
-							"answerId" : 4,
-							"text" : "These brownies are awesome!",
-							"isCorrect" : false,
-							"response" : "They may be, but that's not the answer."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Putting It All Together</h1><p>Consider all five criteria when you’re choosing your sources. If a source fails on one criterion, but is strong in all the others, it may still be acceptable.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"userChoice" : true,
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"contentLabel" : "Communication",
-					"type" : "orderText",
-					"text" : "You are presenting a persuasive speech in favor of net neutrality. Please order the following sources from most to least appropriate for your project.",
-					"items" : [
-						{
-							"name" : "Restoring New Neutrality, One State at a Time” episode of <i>Radio Survivor</i> podcast, including an interview with a policy analyst from the Electronic Frontier Foundation",
-							"id" : 1,
-							"type" : "podcast",
-							"correctPosition" : 4
-						},
-						{
-							"name" : "\"Wither U.S. Net Neutrality Regulation?\" in the journal <i>Review of Industrial Organization</i>. The author is a professor in the business school at Berkeley.",
-							"id" : 2,
-							"type" : "article",
-							"correctPosition" : 3
-						},
-						{
-							"name" : "H.R. 1644 - Save the Internet Act of 2019, sponsored by Michael F. Doyle, D-PA. House Energy and Commerce Committee.",
-							"id" : 3,
-							"type" : "govdoc",
-							"correctPosition" : 2
-						},
-						{
-							"name" : "A video on Verizon’s website in which Verizon’s general counsel explains the changes he would like to see regarding net neutrality.",
-							"id" : 4,
-							"type" : "video",
-							"correctPosition" : 5
-						},
-						{
-							"name" : "The book <i>Virtual Freedom: Net Neutrality and Free Speech in the Internet Age</i> by Dawn C. Nunziato, 2009",
-							"id" : 5,
-							"type" : "book",
-							"correctPosition" : 1
-						}
-					],
-					"correctOrder" : [5, 3, 2, 1, 4],
-					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers above for the way that we ordered the sources."
-				},
-				{
-					"contentId" : 2,
-					"contentLabel" : "Literature",
-					"type" : "orderList",
-					"text" : "You are writing a paper on major themes in the works of Isabel Allende. Please order the following sources from most to least appropriate for your project.",
-					"items" : [
-						{
-							"name" : "\"Z/Z: Isabel Allende and the Mark of Zorro\" from the 2006 volume of <i>Romance Studies</i>",
-							"id" : 1,
-							"type" : "article",
-							"correctPosition" : 3
-						},
-						{
-							"name" : "The \"Isabel Allende\" page on Wikipedia",
-							"id" : 2,
-							"type" : "website",
-							"correctPosition" : 4
-						},
-						{
-							"name" : "The article \"On the Risks of Fictionalizing National Tragedy: Isabel Allende, Human Rights Novelist?\" written by a literature professor and published on the <i>Literary Hub</i> website",
-							"id" : 3,
-							"type" : "website",
-							"correctPosition" : 2
-						},
-						{
-							"name" : "A review of one of Allende's books on amazon.com",
-							"id" : 4,
-							"type" : "website",
-							"correctPosition" : 5
-						},
-						{
-							"name" : "The article \"Zorro by Isabel Allende: Masquerade, Identity, and Postcolonial Justice\" by Helene Weldt-Basson, published in the 2014 volume of <i>Letras Femeninas</i>",
-							"id" : 5,
-							"type" : "article",
-							"correctPosition" : 1
-						}
-					],
-					"correctOrder" : [5, 3, 1, 2, 4],
-					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers above for the way that we ordered the sources."
-				},
-				{
-					"contentId" : 3,
-					"contentLabel" : "Business",
-					"type" : "orderList",
-					"text" : "You are writing a paper about the business model of Starbucks. Please order the following sources from most to least appropriate for your project.",
-					"items" : [
-						{
-							"name" : "A video published on the Starbucks website called Starbucks Ethical Sourcing of Sustainable Products, 2019",
-							"id" : 1,
-							"type" : "video",
-							"correctPosition" : 5
-						},
-						{
-							"name" : "A scholarly article published in the <i>McKinsey Quarterly</i>, \"Starbucks' quest for healthy growth: An interview with Howard Schultz (former CEO of Starbucks)\"",
-							"id" : 2,
-							"type" : "article",
-							"correctPosition" : 1
-						},
-						{
-							"name" : "S&P Industry Survey, April 2019",
-							"id" : 3,
-							"type" : "book",
-							"correctPosition" : 4
-						},
-						{
-							"name" : "Global Markets Direct SWOT Report on Starbucks published by GlobalData Ltd., accessed via <i>Business Insights Essentials</i>, April 1, 2018",
-							"id" : 4,
-							"type" : "data",
-							"correctPosition" : 2
-						},
-						{
-							"name" : "The book <i>Leading the Starbucks Way: 5 Principles for Connecting People with Your Customers, Your Products and Your People\" written by Joseph Michelli, 2014",
-							"id" : 5,
-							"type" : "book",
-							"correctPosition" : 3
-						}
-					],
-					"correctOrder" : [2, 4, 5, 3, 1],
-					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers above for the way that we ordered the sources."
-				},
-				{
-					"contentId" : 4,
-					"contentLabel" : "Natural Sciences",
-					"type" : "orderList",
-					"text" : "You are writing a paper about how scientists are looking for signs of extraterrestrial life. Please order the following sources from most to least appropriate for your project.",
-					"items" : [
-						{
-							"name" : "A news alert posted on the NASA website: \"NASA InSight Lander Arrives on Martian Surface to Learn What Lies Beneath,\" Nov. 26, 2018",
-							"id" : 1,
-							"type" : "website",
-							"correctPosition" : 4
-						},
-						{
-							"name" : "An article from <i>The Atlantic</i>, \"The Search for Alien Life Begins in Earth’s Oldest Desert,\" by Rebecca Boyle, Nov. 28, 2018",
-							"id" : 2,
-							"type" : "article",
-							"correctPosition" : 3
-						},
-						{
-							"name" : "\"A Large Body of Water on Mars Is Detected, Raising the Potential for Alien Life,\" by Kenneth Chang and Dennis Overbye, <i>New York Times</i>, July 25, 2018",
-							"id" : 3,
-							"type" : "newspaper",
-							"correctPosition" : 2
-						},
-						{
-							"name" : "An episode of the podcast \"Are We There Yet?\" that featuring interviews with engineers and scientists about space exploration",
-							"id" : 4,
-							"type" : "podcast",
-							"correctPosition" : 5
-						},
-						{
-							"name" : "\"Surface Biosignatures of Exo-Earths: Remote Detection of Extraterrestrial Life\" by Siddharth Hegde in <i>Proceedings of the National Academy of Sciences of the United States of America</i>, 2015",
-							"id" : 5,
-							"type" : "article",
-							"correctPosition" : 1
-						}
-					],
-					"correctOrder" : [5, 3, 2, 1, 4],
-					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers above for the way that we ordered the sources."
-				},
-				{
-					"contentId" : 5, 
-					"contentLabel" : "Social Sciences",
-					"type" : "orderList",
-					"text" : "You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.",
-					"items" : [
-						{
-							"name" : "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
-							"id" : 1,
-							"type" : "book",
-							"correctPosition" : 2
-						},
-						{
-							"name" : "\"The New Model for a Health-First Approach to Legalizing Weed,\" article in <i>The Atlantic</i> by staff writer James Hamblin, June 22, 2018",
-							"id" : 2,
-							"type" : "article",
-							"correctPosition" : 3
-						},
-						{
-							"name" : "The website for the Marijuana Policy Project, an organization dedicated to regulating marijuana use similar to alcohol and educating readers about marijuana",
-							"id" : 3,
-							"type" : "website",
-							"correctPosition" : 5
-						},
-						{
-							"name" : "<i>Evergreen: The Road to Legalization</i>, a documentary that investigates the \"absurdity\" of medical marijuana prohibition, 2018",
-							"id" : 4,
-							"type" : "video",
-							"correctPosition" : 4
-						},
-						{
-							"name" : "A scholarly article, \"The Impact of Marijuana Legalization on Adolescent Use, Consequences, and Perceived Risk\" by Ashley Estoup in <i>Substance Use & Misuse</i>, 2016",
-							"id" : 5,
-							"type" : "article",
-							"correctPosition" : 1
-						}
-					],
-					"correctOrder" : [1, 5, 2, 4, 3],
-					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers above for the way that we ordered the sources."
-				},
-				{
-					"contentId" : 6,
-					"contentLabel" : "Health Sciences",
-					"type" : "orderList",
-					"text" : "You're writing a paper about how college students find mental health information. Please order the following sources from most to least appropriate for your project.",
-					"items" : [
-						{
-							"name" : "\"Do Online Mental Health Services Improve Help-Seeking for Young People? A Systematic Review\" by Sylvia Kauer in <i>Journal of Medical Internet Research</i>, 2014",
-							"id" : 1,
-							"type" : "article",
-							"correctPosition" : 1
-						},
-						{
-							"name" : "An episode of <i>Anxiety Slayer</i> podcast about anxiety, meditation, and healthy habits from April, 2019",
-							"id" : 2,
-							"type" : "podcast",
-							"correctPosition" : 5
-						},
-						{
-							"name" : "The website of the National Institute of Mental Health, the lead federal agency for research on mental disorders",
-							"id" : 3,
-							"type" : "website",
-							"correctPosition" : 3
-						},
-						{
-							"name" : "\"In Your Own Words: Mental Health on Campus\" by Monkia Aichele in <i>The New York Times</i>, Feb. 2019",
-							"id" : 4,
-							"type" : "newspaper",
-							"correctPosition" : 2
-						},
-						{
-							"name" : "\"Talkspace X Michael Phelps: How Therapy Saved His Life\", a video posted by Talkspace (a therapy app) in May 2018",
-							"id" : 5,
-							"type" : "video",
-							"correctPosition" : 4
-						}
-					],
-					"correctOrder" : [1, 4, 3, 5, 2],
-					"perfectResponse" : "Yes, you got the order right",
-					"goodResponse" : "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
-					"badResponse" : "Not quite. See the numbers above for the way that we ordered the sources."
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "submitForm",
-					"text" : "Thanks for playing! Fill out this form if you'd like to notify your instructor that you've completed this tutorial. Otherwise, you're all done!",
-					"problem" : "What is 3 times 8?",
-					"solution" : 24
-				}
-			]
-		}
-	}
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Evaluating Sources</h1><p>You can find almost anything on the Internet, but not all of that information is of high quality, and not all of it is appropriate for your assignments.</p><p>This tutorial will guide you through the process of evaluating sources of information. The goal is to help you select the best sources for your academic papers and projects.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Five Criteria</h1><p>When evaluating an information source, there are five things that you should consider.</p><ol class='criteria-list'><li>Author</li><li>Review</li><li>Date</li><li>Sources</li><li>Bias</li></ol>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "mnemonic",
+          "terms": "Author, Review, Date, Sources, Bias",
+          "keyword": "Author",
+          "text": "<ul><li>It should be possible to identify the author. Bonus points if they list their affiliation (university or organization).</li><li>An author isn’t always a person&mdash;it could be an organization or government agency.</li><li>Check up on the author to make sure they're trustworthy.</li></ul>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "range",
+          "text": "<h1>Test Yourself: Author</h1>You‘re writing a paper on childhood lead exposure. You find a report from the Environmental Protection Agency. How trustworthy do you think it is?",
+          "scale": {
+            "0": "Not Trustworthy",
+            "5": "Okay",
+            "10": "Trustworthy"
+          },
+          "minCorrect": 7,
+          "maxCorrect": 10,
+          "correctResponse": "You are correct! The EPA is generally considered a reliable source on environmental toxins.",
+          "incorrectResponse": "We disagree. The EPA is generally considered a reliable source on environmental toxins."
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "mnemonic",
+          "terms": "Author, Review, Date, Sources, Bias",
+          "keyword": "Review",
+          "text": "<p>There are different levels of review that a writer’s work could go through before being published.</p><p><strong>Peer review</strong> is considered the highest level of review. Multiple researchers in the author’s field make suggestions prior to its publication. Most papers in academic journals are peer reviewed.</p><p><strong>Editorial review</strong> means that an editor has looked over the material before publication. This is better than nothing, but we should remember that editors are susceptible to bias like everyone else. Most books and magazine/newspaper articles are reviewed by editors.</p><p><strong>No review</strong> happens when an author self-publishes their material. Social media posts, for instance, are generally just written and posted.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "classify",
+          "text": "<h1>Test Yourself: Review</h1>Drag each source type to the column that matches its degree of review.",
+          "items": {
+            "item-1": {
+              "id": "item-1",
+              "content": "Tweet"
+            },
+            "item-2": {
+              "id": "item-2",
+              "content": "Academic Article"
+            },
+            "item-3": {
+              "id": "item-3",
+              "content": "Book"
+            },
+            "item-4": {
+              "id": "item-4",
+              "content": "Wikipedia Entry"
+            },
+            "item-5": {
+              "id": "item-5",
+              "content": "Newspaper"
+            }
+          },
+          "columns": {
+            "column-1": {
+              "id": "column-1",
+              "title": null,
+              "itemIds": ["item-1", "item-2", "item-3", "item-4", "item-5"]
+            },
+            "column-2": {
+              "id": "column-2",
+              "title": "No Review",
+              "itemIds": []
+            },
+            "column-3": {
+              "id": "column-3",
+              "title": "Editorial Review",
+              "itemIds": []
+            },
+            "column-4": {
+              "id": "column-4",
+              "title": "Peer Review",
+              "itemIds": []
+            }
+          },
+          "columnOrder": ["column-1", "column-2", "column-3", "column-4"],
+          "correctAnswer": {
+            "column-1": {
+              "id": "column-1",
+              "itemIds": []
+            },
+            "column-2": {
+              "id": "column-2",
+              "itemIds": ["item-1"]
+            },
+            "column-3": {
+              "id": "column-3",
+              "itemIds": ["item-3", "item-4", "item-5"]
+            },
+            "column-4": {
+              "id": "column-4",
+              "itemIds": ["item-2"]
+            }
+          },
+          "correctResponse": "Nice job!",
+          "incorrectResponse": "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Tweet</td><td>No Review</td></tr><tr><td>Article</td><td>Peer Review</td></tr><tr><td>Book</td><td>Editorial Review</td></tr><tr><td>Wikipedia Entry</td><td>Editorial Review</td></tr><tr><td>Newspaper</td><td>Editorial Review</td></tr></tbody></table>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "mnemonic",
+          "terms": "Author, Review, Date, Sources, Bias",
+          "keyword": "Date",
+          "text": "<p>It’s important to think about when something was written. In many cases, you’ll want the latest information on a topic. This is especially true in fields where things change rapidly, like medicine or particle physics.</p><p>Newer isn’t always better, though. For instance, if you’re writing about a classic film or doing research for a history paper, older materials would be very good sources.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "range",
+          "text": "<h1>Test Yourself: Date</h1>You’re writing a paper on recent American elections. You find an article in a major politics journal that addresses this topic. The paper is from 2006. How useful would this source be for your paper?",
+          "scale": {
+            "0": "Not Useful",
+            "5": "Okay",
+            "10": "Very Useful"
+          },
+          "minCorrect": 0,
+          "maxCorrect": 4,
+          "correctResponse": "Nice job! At best, it might contain some good background information, but there have been a lot of elections since 2006.",
+          "incorrectResponse": "We don’t think it’s very useful. At best, it might contain some good background information, but there have been a lot of elections since 2006."
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "mnemonic",
+          "terms": "Author, Review, Date, Sources, Bias",
+          "keyword": "Sources",
+          "text": "<p>Research is a conversation. When a scholar takes part in that conversation, as you are doing when you write a paper in college, they need to acknowledge the work that has gone before.</p><p>Listing your sources also allows readers to verify your information.</p><p>A source that doesn’t cite external information probably isn’t a great choice for your assignment.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself: Sources</h1><p class='excerpt'>\"&hellip; Pippi Longstocking &hellip; is a Swedish cultural icon. She is a rebel; an anti-authoritarian, norm-critical girl who defies convention and challenges gender stereotypes (Metcalf 1990). Pippi breaks down the gender barrier, revealing herself as 'the strongest in the world' as she saves lives, tackles boa constrictors and villains, and even out-lifts the world’s strongest man, Mighty Adolph (Edström 2007; Lindgren 1997). Astrid Lindgren created a female character who dominates her world, living according to her own rules and values (Kåreland and Lindh-Munther 2005a; Metcalf 1990).\"<br/><small>From Lynch, L. (2016). Where are all the Pippis? <i>Sex Roles,</i> 75(9-10), 422-433.</small></p><p>Based on the paragraph above, which source does the idea that Pippi Longstocking challenges gender stereotypes come from?",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Metcalf 1990",
+              "isCorrect": true,
+              "response": "Correct!"
+            },
+            {
+              "answerId": 2,
+              "text": "Edström 2007",
+              "isCorrect": false,
+              "response": "No. The idea is credited to Metcalf 1990."
+            },
+            {
+              "answerId": 3,
+              "text": "Lindgren 1997",
+              "isCorrect": false,
+              "response": "No. The idea is credited to Metcalf 1990."
+            },
+            {
+              "answerId": 4,
+              "text": "None of the above",
+              "isCorrect": false,
+              "response": "No. The idea is credited to Metcalf 1990."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "mnemonic",
+          "terms": "Author, Review, Date, Sources, Bias",
+          "keyword": "Bias",
+          "text": "<p>Consider whether there are social, ideological, or financial factors that may influence the author. Is a story on immigration published in a notably left- or right-leaning publication? Is a website about the benefits of a particular nutrient littered with ads for supplements?</p><p>Bias doesn’t always mean that a source is bad, but may indicate that you should seek out sources with alternate viewpoints and see how they differ.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself: Bias</h1><img src=\"images/evaluating/meat.png\" /><p>What is this image trying to convince you of?</p>",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "This graphic is purely fact-based and is not trying to convince the viewer of anything.",
+              "isCorrect": false,
+              "response": "No, this graphic has a definite viewpoint."
+            },
+            {
+              "answerId": 2,
+              "text": "Meat production is the primary source of greenhouse gasses.",
+              "isCorrect": false,
+              "response": "No, the graphic is trying to convince you that meat production is not a significant source of greenhouse gasses."
+            },
+            {
+              "answerId": 3,
+              "text": "Meat production is not a significant source of greenhouse gasses.",
+              "isCorrect": true,
+              "response": "Correct! This is the main rhetorical point of the graphic."
+            },
+            {
+              "answerId": 4,
+              "text": "30.3% of electricity is used by households.",
+              "isCorrect": false,
+              "response": "No, the graphic is trying to convince you that meat production is not a significant source of greenhouse gasses."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself: Bias</h1><p>This graphic was created by <a href='carnivorecure.com'>carnivorecure.com</a>. Do you think this is a reliable source for information about agriculture and greenhouse gasses?</p>",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Yes",
+              "isCorrect": false,
+              "response": "No, this website is trying to convince you to eat meat, not provide reliable environmental information."
+            },
+            {
+              "answerId": 2,
+              "text": "No",
+              "isCorrect": true,
+              "response": "Correct! This website is trying to convince you to eat meat, not provide reliable environmental information."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Putting It All Together</h1><p>Consider all five criteria when you’re choosing your sources. If a source fails on one criterion, but is strong in all the others, it may still be acceptable.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "userChoice": true,
+      "setContent": [
+        {
+          "contentId": 1,
+          "contentLabel": "Communication",
+          "type": "orderText",
+          "text": "You are presenting a persuasive speech in favor of net neutrality. Please order the following sources from most to least appropriate for your project.",
+          "items": [
+            {
+              "name": "Restoring New Neutrality, One State at a Time” episode of <i>Radio Survivor</i> podcast, including an interview with a policy analyst from the Electronic Frontier Foundation",
+              "id": 1,
+              "type": "podcast",
+              "correctPosition": 4
+            },
+            {
+              "name": "\"Wither U.S. Net Neutrality Regulation?\" in the journal <i>Review of Industrial Organization</i>. The author is a professor in the business school at Berkeley.",
+              "id": 2,
+              "type": "article",
+              "correctPosition": 3
+            },
+            {
+              "name": "H.R. 1644 - Save the Internet Act of 2019, sponsored by Michael F. Doyle, D-PA. House Energy and Commerce Committee.",
+              "id": 3,
+              "type": "govdoc",
+              "correctPosition": 2
+            },
+            {
+              "name": "A video on Verizon’s website in which Verizon’s general counsel explains the changes he would like to see regarding net neutrality.",
+              "id": 4,
+              "type": "video",
+              "correctPosition": 5
+            },
+            {
+              "name": "The book <i>Virtual Freedom: Net Neutrality and Free Speech in the Internet Age</i> by Dawn C. Nunziato, 2009",
+              "id": 5,
+              "type": "book",
+              "correctPosition": 1
+            }
+          ],
+          "correctOrder": [5, 3, 2, 1, 4],
+          "perfectResponse": "Yes, you got the order right",
+          "goodResponse": "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
+          "badResponse": "Not quite. See the numbers above for the way that we ordered the sources."
+        },
+        {
+          "contentId": 2,
+          "contentLabel": "Literature",
+          "type": "orderList",
+          "text": "You are writing a paper on major themes in the works of Isabel Allende. Please order the following sources from most to least appropriate for your project.",
+          "items": [
+            {
+              "name": "\"Z/Z: Isabel Allende and the Mark of Zorro\" from the 2006 volume of <i>Romance Studies</i>",
+              "id": 1,
+              "type": "article",
+              "correctPosition": 3
+            },
+            {
+              "name": "The \"Isabel Allende\" page on Wikipedia",
+              "id": 2,
+              "type": "website",
+              "correctPosition": 4
+            },
+            {
+              "name": "The article \"On the Risks of Fictionalizing National Tragedy: Isabel Allende, Human Rights Novelist?\" written by a literature professor and published on the <i>Literary Hub</i> website",
+              "id": 3,
+              "type": "website",
+              "correctPosition": 2
+            },
+            {
+              "name": "A review of one of Allende's books on amazon.com",
+              "id": 4,
+              "type": "website",
+              "correctPosition": 5
+            },
+            {
+              "name": "The article \"Zorro by Isabel Allende: Masquerade, Identity, and Postcolonial Justice\" by Helene Weldt-Basson, published in the 2014 volume of <i>Letras Femeninas</i>",
+              "id": 5,
+              "type": "article",
+              "correctPosition": 1
+            }
+          ],
+          "correctOrder": [5, 3, 1, 2, 4],
+          "perfectResponse": "Yes, you got the order right",
+          "goodResponse": "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
+          "badResponse": "Not quite. See the numbers above for the way that we ordered the sources."
+        },
+        {
+          "contentId": 3,
+          "contentLabel": "Business",
+          "type": "orderList",
+          "text": "You are writing a paper about the business model of Starbucks. Please order the following sources from most to least appropriate for your project.",
+          "items": [
+            {
+              "name": "A video published on the Starbucks website called Starbucks Ethical Sourcing of Sustainable Products, 2019",
+              "id": 1,
+              "type": "video",
+              "correctPosition": 5
+            },
+            {
+              "name": "A scholarly article published in the <i>McKinsey Quarterly</i>, \"Starbucks' quest for healthy growth: An interview with Howard Schultz (former CEO of Starbucks)\"",
+              "id": 2,
+              "type": "article",
+              "correctPosition": 1
+            },
+            {
+              "name": "S&P Industry Survey, April 2019",
+              "id": 3,
+              "type": "book",
+              "correctPosition": 4
+            },
+            {
+              "name": "Global Markets Direct SWOT Report on Starbucks published by GlobalData Ltd., accessed via <i>Business Insights Essentials</i>, April 1, 2018",
+              "id": 4,
+              "type": "data",
+              "correctPosition": 2
+            },
+            {
+              "name": "The book <i>Leading the Starbucks Way: 5 Principles for Connecting People with Your Customers, Your Products and Your People\" written by Joseph Michelli, 2014",
+              "id": 5,
+              "type": "book",
+              "correctPosition": 3
+            }
+          ],
+          "correctOrder": [2, 4, 5, 3, 1],
+          "perfectResponse": "Yes, you got the order right",
+          "goodResponse": "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
+          "badResponse": "Not quite. See the numbers above for the way that we ordered the sources."
+        },
+        {
+          "contentId": 4,
+          "contentLabel": "Natural Sciences",
+          "type": "orderList",
+          "text": "You are writing a paper about how scientists are looking for signs of extraterrestrial life. Please order the following sources from most to least appropriate for your project.",
+          "items": [
+            {
+              "name": "A news alert posted on the NASA website: \"NASA InSight Lander Arrives on Martian Surface to Learn What Lies Beneath,\" Nov. 26, 2018",
+              "id": 1,
+              "type": "website",
+              "correctPosition": 4
+            },
+            {
+              "name": "An article from <i>The Atlantic</i>, \"The Search for Alien Life Begins in Earth’s Oldest Desert,\" by Rebecca Boyle, Nov. 28, 2018",
+              "id": 2,
+              "type": "article",
+              "correctPosition": 3
+            },
+            {
+              "name": "\"A Large Body of Water on Mars Is Detected, Raising the Potential for Alien Life,\" by Kenneth Chang and Dennis Overbye, <i>New York Times</i>, July 25, 2018",
+              "id": 3,
+              "type": "newspaper",
+              "correctPosition": 2
+            },
+            {
+              "name": "An episode of the podcast \"Are We There Yet?\" that featuring interviews with engineers and scientists about space exploration",
+              "id": 4,
+              "type": "podcast",
+              "correctPosition": 5
+            },
+            {
+              "name": "\"Surface Biosignatures of Exo-Earths: Remote Detection of Extraterrestrial Life\" by Siddharth Hegde in <i>Proceedings of the National Academy of Sciences of the United States of America</i>, 2015",
+              "id": 5,
+              "type": "article",
+              "correctPosition": 1
+            }
+          ],
+          "correctOrder": [5, 3, 2, 1, 4],
+          "perfectResponse": "Yes, you got the order right",
+          "goodResponse": "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
+          "badResponse": "Not quite. See the numbers above for the way that we ordered the sources."
+        },
+        {
+          "contentId": 5,
+          "contentLabel": "Social Sciences",
+          "type": "orderList",
+          "text": "You're writing a paper on the pros and cons of legalizing recreational marijuana. Please order the following sources from most to least appropriate for your project.",
+          "items": [
+            {
+              "name": "<i>Legalizing Marijuana: A Shift in Policies Across America</i>, a book by Nancy E. Marion, Professor of Political Science at the University of Akron, 2016",
+              "id": 1,
+              "type": "book",
+              "correctPosition": 2
+            },
+            {
+              "name": "\"The New Model for a Health-First Approach to Legalizing Weed,\" article in <i>The Atlantic</i> by staff writer James Hamblin, June 22, 2018",
+              "id": 2,
+              "type": "article",
+              "correctPosition": 3
+            },
+            {
+              "name": "The website for the Marijuana Policy Project, an organization dedicated to regulating marijuana use similar to alcohol and educating readers about marijuana",
+              "id": 3,
+              "type": "website",
+              "correctPosition": 5
+            },
+            {
+              "name": "<i>Evergreen: The Road to Legalization</i>, a documentary that investigates the \"absurdity\" of medical marijuana prohibition, 2018",
+              "id": 4,
+              "type": "video",
+              "correctPosition": 4
+            },
+            {
+              "name": "A scholarly article, \"The Impact of Marijuana Legalization on Adolescent Use, Consequences, and Perceived Risk\" by Ashley Estoup in <i>Substance Use & Misuse</i>, 2016",
+              "id": 5,
+              "type": "article",
+              "correctPosition": 1
+            }
+          ],
+          "correctOrder": [1, 5, 2, 4, 3],
+          "perfectResponse": "Yes, you got the order right",
+          "goodResponse": "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
+          "badResponse": "Not quite. See the numbers above for the way that we ordered the sources."
+        },
+        {
+          "contentId": 6,
+          "contentLabel": "Health Sciences",
+          "type": "orderList",
+          "text": "You're writing a paper about how college students find mental health information. Please order the following sources from most to least appropriate for your project.",
+          "items": [
+            {
+              "name": "\"Do Online Mental Health Services Improve Help-Seeking for Young People? A Systematic Review\" by Sylvia Kauer in <i>Journal of Medical Internet Research</i>, 2014",
+              "id": 1,
+              "type": "article",
+              "correctPosition": 1
+            },
+            {
+              "name": "An episode of <i>Anxiety Slayer</i> podcast about anxiety, meditation, and healthy habits from April, 2019",
+              "id": 2,
+              "type": "podcast",
+              "correctPosition": 5
+            },
+            {
+              "name": "The website of the National Institute of Mental Health, the lead federal agency for research on mental disorders",
+              "id": 3,
+              "type": "website",
+              "correctPosition": 3
+            },
+            {
+              "name": "\"In Your Own Words: Mental Health on Campus\" by Monkia Aichele in <i>The New York Times</i>, Feb. 2019",
+              "id": 4,
+              "type": "newspaper",
+              "correctPosition": 2
+            },
+            {
+              "name": "\"Talkspace X Michael Phelps: How Therapy Saved His Life\", a video posted by Talkspace (a therapy app) in May 2018",
+              "id": 5,
+              "type": "video",
+              "correctPosition": 4
+            }
+          ],
+          "correctOrder": [1, 4, 3, 5, 2],
+          "perfectResponse": "Yes, you got the order right",
+          "goodResponse": "Your response is very similar to ours! See the numbers above for the way that we ordered the sources.",
+          "badResponse": "Not quite. See the numbers above for the way that we ordered the sources."
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "submitForm",
+          "text": "Thanks for playing! Fill out this form if you'd like to notify your instructor that you've completed this tutorial. Otherwise, you're all done!",
+          "problem": "What is 3 times 8?",
+          "solution": 24
+        }
+      ]
+    }
+  }
 ]
