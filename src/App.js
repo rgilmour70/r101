@@ -51,7 +51,7 @@ const App = () => {
     let toUse = [];
     let numberOfSets = 0;
     const getData = () => {
-      fetch(`/data/${slug}.json`, {
+      fetch(`./data/${slug}.json`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
