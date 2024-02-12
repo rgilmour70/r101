@@ -48,10 +48,12 @@ const App = () => {
 
   /* Grab data from the appropriate JSON file */
   useEffect(() => {
+    const REACT_APP_DATA_LOCATION = process.env.REACT_APP_DATA_LOCATION;
+    console.log(REACT_APP_DATA_LOCATION);
     let toUse = [];
     let numberOfSets = 0;
     const getData = () => {
-      fetch(`./data/${slug}.json`, {
+      fetch(`${REACT_APP_DATA_LOCATION}/${slug}.json`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
