@@ -284,7 +284,7 @@
         {
           "contentId": 1,
           "type": "multipleChoice",
-          "text": "<h1>Test Yourself: Bias</h1><p>This graphic was created by <a href='carnivorecure.com' target='_blank'>carnivorecure.com</a>. Do you think this is a reliable source for information about agriculture and greenhouse gasses?</p>",
+          "text": "<h1>Test Yourself: Bias</h1><p>This graphic was created by <a href='https://carnivorecure.com' target='_blank'>carnivorecure.com</a>. Do you think this is a reliable source for information about agriculture and greenhouse gasses?</p>",
           "image": "images/evaluating/meat.png",
           "imageAlt": "Infographic: Meat and Greenhouse Gas",
           "answers": [
