@@ -182,7 +182,7 @@
         {
           "contentId": 1,
           "type": "declarative",
-          "text": "<h1>Pro Tip</h1><p>Many library databases will indicate that an article is peer-reviewed and may let you filter your results to see only peer-reviewed articles.</p><div style='text-align:center'><img src='images/scholarly/peer_review_facet.png' class='img-fluid' id='peer-review-screenshot'></div>",
+          "text": "<h1>Pro Tip</h1><p>Many library databases will indicate that an article is peer-reviewed and may let you filter your results to see only peer-reviewed articles.</p>",
           "image": "images/scholarly/peer_review_facet.png",
           "imageAlt": "Library catalog showing peer review facet"
         }
@@ -195,7 +195,9 @@
         {
           "contentId": 1,
           "type": "multipleChoice",
-          "text": "<h1>Test Yourself</h1><p>What kind of periodical does this come from?</p><img src=\"images/scholarly/trade_periodical.png\" alt=\"Article about ruby chocolate\" />",
+          "text": "<h1>Test Yourself</h1><p>What kind of periodical does this come from?</p>",
+          "image": "images/scholarly/trade_periodical.png",
+          "imageAlt": "Article about ruby chocolate",
           "answers": [
             {
               "answerId": 1,
@@ -226,7 +228,9 @@
         {
           "contentId": 1,
           "type": "multipleChoice",
-          "text": "<h1>Test Yourself</h1><p>What kind of periodical does this come from?</p><img src=\"images/scholarly/tswift.png\" alt=\"Article about Taylor Swift\" />",
+          "text": "<h1>Test Yourself</h1><p>What kind of periodical does this come from?</p>",
+          "image": "images/scholarly/tswift.png",
+          "imageAlt": "Article about Taylor Swift",
           "answers": [
             {
               "answerId": 1,
@@ -257,7 +261,9 @@
         {
           "contentId": 1,
           "type": "multipleChoice",
-          "text": "<h1>Test Yourself</h1><p>What kind of periodical does this come from?</p><img src=\"images/scholarly/skull_morphology.png\" alt=\"Article about dinosaur skull morphology\" />",
+          "text": "<h1>Test Yourself</h1><p>What kind of periodical does this come from?</p>",
+          "image": "images/scholarly/skull_morphology.png",
+          "imageAlt": "Article about dinosaur skull morphology",
           "answers": [
             {
               "answerId": 1,
