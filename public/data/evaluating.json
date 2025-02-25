@@ -40,7 +40,7 @@
         {
           "contentId": 1,
           "type": "range",
-          "text": "<h1>Test Yourself: Author</h1>You‘re writing a paper on childhood lead exposure. You find a report from the Environmental Protection Agency. How trustworthy do you think it is?",
+          "text": "<h1>Test Yourself: Author</h1>You‘re writing a paper on childhood lead exposure. You find a report from the World Health Organization. How trustworthy do you think it is?",
           "scale": {
             "0": "Not Trustworthy",
             "5": "Okay",
@@ -48,8 +48,8 @@
           },
           "minCorrect": 7,
           "maxCorrect": 10,
-          "correctResponse": "You are correct! The EPA is generally considered a reliable source on environmental toxins.",
-          "incorrectResponse": "We disagree. The EPA is generally considered a reliable source on environmental toxins."
+          "correctResponse": "You are correct! The WHO is generally considered a reliable source on environmental toxins.",
+          "incorrectResponse": "We disagree. The WHO is generally considered a reliable source on environmental toxins."
         }
       ]
     }
@@ -77,7 +77,7 @@
           "items": {
             "item-1": {
               "id": "item-1",
-              "content": "Tweet"
+              "content": "Instagram Post"
             },
             "item-2": {
               "id": "item-2",
@@ -94,13 +94,24 @@
             "item-5": {
               "id": "item-5",
               "content": "Newspaper"
+            },
+            "item-6": {
+              "id": "item-6",
+              "content": "ChatGPT Summary"
             }
           },
           "columns": {
             "column-1": {
               "id": "column-1",
               "title": null,
-              "itemIds": ["item-1", "item-2", "item-3", "item-4", "item-5"]
+              "itemIds": [
+                "item-1",
+                "item-2",
+                "item-3",
+                "item-4",
+                "item-5",
+                "item-6"
+              ]
             },
             "column-2": {
               "id": "column-2",
@@ -126,7 +137,7 @@
             },
             "column-2": {
               "id": "column-2",
-              "itemIds": ["item-1"]
+              "itemIds": ["item-1", "item-6"]
             },
             "column-3": {
               "id": "column-3",
@@ -138,7 +149,7 @@
             }
           },
           "correctResponse": "Nice job!",
-          "incorrectResponse": "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Tweet</td><td>No Review</td></tr><tr><td>Article</td><td>Peer Review</td></tr><tr><td>Book</td><td>Editorial Review</td></tr><tr><td>Wikipedia Entry</td><td>Editorial Review</td></tr><tr><td>Newspaper</td><td>Editorial Review</td></tr></tbody></table>"
+          "incorrectResponse": "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Instagram Post</td><td>No Review</td></tr><tr><td>ChatGPT Summary</td><td>No Review</td></tr><tr><td>Article</td><td>Peer Review</td></tr><tr><td>Book</td><td>Editorial Review</td></tr><tr><td>Wikipedia Entry</td><td>Editorial Review</td></tr><tr><td>Newspaper</td><td>Editorial Review</td></tr></tbody></table>"
         }
       ]
     }
@@ -162,7 +173,7 @@
         {
           "contentId": 1,
           "type": "range",
-          "text": "<h1>Test Yourself: Date</h1>You’re writing a paper on recent American elections. You find an article in a major politics journal that addresses this topic. The paper is from 2006. How useful would this source be for your paper?",
+          "text": "<h1>Test Yourself: Date</h1>You’re writing a paper on recent American elections. You find an article in a major politics journal that addresses this topic. The paper is from 2013. How useful would this source be for your paper?",
           "scale": {
             "0": "Not Useful",
             "5": "Okay",
@@ -170,8 +181,8 @@
           },
           "minCorrect": 0,
           "maxCorrect": 4,
-          "correctResponse": "Nice job! At best, it might contain some good background information, but there have been a lot of elections since 2006.",
-          "incorrectResponse": "We don’t think it’s very useful. At best, it might contain some good background information, but there have been a lot of elections since 2006."
+          "correctResponse": "Nice job! At best, it might contain some good background information, but there have been a lot of elections since 2013.",
+          "incorrectResponse": "We don’t think it’s very useful. At best, it might contain some good background information, but there have been a lot of elections since 2013."
         }
       ]
     }
@@ -234,7 +245,7 @@
           "type": "mnemonic",
           "terms": "Author, Review, Date, Sources, Bias",
           "keyword": "Bias",
-          "text": "<p>Consider whether there are social, ideological, or financial factors that may influence the author. Is a story on immigration published in a notably left- or right-leaning publication? Is a website about the benefits of a particular nutrient littered with ads for supplements?</p><p>Bias doesn’t always mean that a source is bad, but may indicate that you should seek out sources with alternate viewpoints and see how they differ.</p>"
+          "text": "<p>Consider whether there are social, ideological, or financial factors that may influence the author. Is a story on immigration published in a notably left- or right-leaning publication? Is a website about the benefits of a particular nutrient littered with ads for supplements?</p><p>Bias doesn’t always mean that a source is bad, but may indicate that you should seek out additional sources and see how they differ.</p>"
         }
       ]
     }
@@ -411,9 +422,9 @@
               "correctPosition": 4
             },
             {
-              "name": "The website of the National Institute of Mental Health, the lead federal agency for research on mental disorders",
+              "name": "The 2024 book <i>College Student Mental Health and Wellness : Coping on Campus</i> by Jeffrey A. Hayes.",
               "id": 3,
-              "type": "website",
+              "type": "book",
               "correctPosition": 3
             },
             {
