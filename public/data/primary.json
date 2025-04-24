@@ -1,361 +1,311 @@
 [
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Primary and Secondary Sources</h1><p>Sometimes an instructor will ask you to use <strong>primary sources</strong> for a research project. What does that mean?</p><p>A primary source provides firsthand evidence about an event, object, or person. In the natural and social sciences, primary sources are often empirical studies—research where an experiment was performed, or a direct observation was made.</p><p><i>Example: A chemist performs an experiment and publishes an article about the results in a scientific journal. That article is a primary source on the chemist’s work.</i></p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Secondary Sources</h1><p>Secondary sources are those that evaluate, describe, or summarize primary sources. They do not involve direct observation.</p><p><i>Example: A reporter from a local newspaper hears about the chemist’s work and writes a short piece explaining aspects of the work to non-scientific readers. That article is a secondary source on the chemist’s work.</i></p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Context</h1><p>Whether a source is considered primary or secondary depends on its relationship to the object of your research. If Researcher A publishes a review article citing the work of Researcher B, that article is a primary source for A’s biographer, but a secondary source on the topic of B’s research.</p><p>Confusing? Don’t worry! We’ll go through some examples that should clarify things.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>You are assigned a paper on the planet vs. non-planet status of Pluto. You recall hearing an NPR story about a book by Neil deGrasse Tyson on this topic and you find <i>The Pluto Files: The Rise and Fall of America’s Favorite Planet</i> at the library.</p><p>Is this book a primary or secondary source on the Pluto controversy?</p>",
-					"image" : "images/primary/plutoFiles.png",
-					"imageAlt" : "Cover of The Pluto Files",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This book is a secondary source on the topic. Books, especially those written for a general readership, don’t generally report new research findings—they summarize findings that are reported in the scholarly literature (i.e., journals)."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : true,
-							"response" : "Correct! This book is a secondary source on the topic. Books, especially those written for a general readership, don’t generally report new research findings—they summarize findings that are reported in the scholarly literature (i.e., journals)."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>Okay, so <i>The Pluto Files</i> is secondary. What about the NPR story where Tyson discusses the book?</p><p>Is this a primary or secondary source on Pluto?</p>",
-					"image" : "images/primary/plutoNPR.png",
-					"imageAlt" : "All Things Considered Story",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : false,
-							"response" : "Incorrect. The NPR piece is also a secondary source <em>with reference to Pluto.</em> It is not a first-hand account of original research."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : true,
-							"response" : "Correct! The NPR piece is also a secondary source <em>with reference to Pluto.</em> It is not a first-hand account of original research."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>Now imagine that you’re not writing about Pluto, but about Neil deGrasse Tyson.</p><p>Would the NPR story be primary or secondary with reference to Tyson himself?</p>",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : true,
-							"response" : "Correct. This is a primary source with respect to Tyson, since Tyson himself is interviewed."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source with respect to Tyson, since Tyson himself is interviewed."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>As you’re working on a paper on dwarf galaxies for an astronomy class, Tyson’s name comes up again. Specifically, this paper:</p><p class='citation'>Tyson, Neil D. and Scalo, John M. (1988). \"Bursting dwarf galaxies: Implications for luminosity function, space density, and cosmological mass density.\" <i>Astrophysical Journal 329</i>: 618. doi:10.1086/166408</p><p>For the purposes of your paper, is this source primary or secondary?</p>",
-					"image" : "images/primary/dwarfGalaxies.jpg",
-					"imageAlt" : "Article in Astrophysical Journal",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : true,
-							"response" : "Correct. This is a primary source on dwarf galaxies as evidenced by the use of the first person: \"<em>We</em> have attempted to estimate&hellip;\" (p. 618). This paper is a report of original research conducted by the authors."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source on dwarf galaxies. Notice the use of the first person: \"<em>We</em> have attempted to estimate&hellip;\" (p. 618). This paper is a report of original research conducted by the authors."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1>Having gained an interest in Tyson as a researcher, you learn that he has ties to noted Ithacan Carl Sagan. A quick YouTube search yields the following interview, in which Tyson tells a story about meeting Sagan at Cornell early in his (Tyson's) career:</p><iframe src='https://www.youtube.com/embed/eeqrN3Bfro8?rel=0' allowfullscreen></iframe><br /><br /><p>Is this interview a primary or secondary source with reference to Tyson's life?</p>",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : true,
-							"response" : "Correct. This is a primary source with reference to Tyson's life, as it features Tyson himself recounting remembered events."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source with reference to Tyson's life, as it features Tyson himself recounting remembered events."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>For a history class, you are researching American popular scientists. You decide to focus on Carl Sagan, since you’ve now watched two YouTube videos about him. You find \"Who Was Carl Sagan?\" on the <i>National Geographic</i> website. The article was published in March of 2014.</p><p>Would this source be primary or secondary?</p>",
-					"image" : "images/primary/whoWasCarlSagan.jpg",
-					"imageAlt" : "Article in National Geographic",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a secondary source for the purposes of a paper about Sagan. This piece was written after Sagan’s death in 1996 and there is no indication that the author knew Sagan or is writing from personal memory."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : true,
-							"response" : "Correct. This is a secondary source for the purposes of a paper about Sagan. This piece was written after Sagan’s death in 1996 and there is no indication that the author knew Sagan or is writing from personal memory."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>You find a good biography of Sagan, written in 1999 by William Poundstone.</p><p>Is this source primary or secondary?</p>",
-					"image" : "images/primary/poundstoneBook.png",
-					"imageAlt" : "Sagan biography",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This biography is a secondary source on Sagan. As with the National Geographic piece, there is no indication that the author knew Sagan or is writing from personal memory."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : true,
-							"response" : "Correct. This biography is a secondary source on Sagan. As with the National Geographic piece, there is no indication that the author knew Sagan or is writing from personal memory."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>Using the <i>Historical New York Times</i> database, you find this interview with the Sagans from 1985 about the publication of Sagan’s books <i>Contact</i> and <i>Comet</i>.</p><p>Is this a primary or secondary source for your paper on Sagan?</p>",
-					"image" : "images/primary/saganNYT.jpg",
-					"imageAlt" : "Article in NYT",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : true,
-							"response" : "Correct. This is a primary source on Sagan. It is an interview with Sagan himself."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source on Sagan. It is an interview with Sagan himself."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "multipleChoice",
-					"text" : "<h1>Test Yourself</h1><p>Sagan’s papers are held at the Library of Congress, and some of them are available online, including an early manuscript of <i>A Pale Blue Dot</i>.</p><p>Is this a primary or secondary source on Sagan?</p>",
-					"image" : "images/primary/paleBlueDot.jpg",
-					"imageAlt" : "Pale Blue Dot MS",
-					"answers" : [
-						{
-							"answerId" : 1,
-							"text" : "Primary",
-							"isCorrect" : true,
-							"response" : "Correct. This is a primary source on Sagan, as it is Sagan’s own creative work."
-						},
-						{
-							"answerId" : 2,
-							"text" : "Secondary",
-							"isCorrect" : false,
-							"response" : "Incorrect. This is a primary source on Sagan, as it is Sagan’s own creative work."
-						}
-					]
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "classify",
-					"text" : "<h1>Last Question!</h1><p>You’re writing a paper about the possibility of sub-surface water on Mars. With reference to that topic, classify the sources below as primary or secondary by dragging them to the appropriate box.</p>",
-					"items" : {
-						"item-1" : {
-							"id" : "item-1",
-							"content" : "An encyclopedia entry on Mars"
-						},
-						"item-2" : {
-							"id" : "item-2",
-							"content" : "A published paper by a scientist describing his computer analysis of Martian topography"
-						},
-						"item-3" : {
-							"id" : "item-3",
-							"content" : "A scientist’s lab notes from his work on Martian rocks"
-						},
-						"item-4" : {
-							"id" : "item-4",
-							"content" : "An article in Time describing the latest Mars mission"
-						}
-					},
-					"columns" : {
-						"column-1" : {
-							"id" : "column-1",
-							"title" : null,
-							"itemIds" : ["item-1", "item-2", "item-3", "item-4"]
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"title" : "Primary",
-							"itemIds" : []
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"title" : "Secondary",
-							"itemIds" : []
-						}
-					},
-					"columnOrder" : ["column-1", "column-2", "column-3"],
-					"correctAnswer" : {
-						"column-1" : {
-							"id" : "column-1",
-							"itemIds" : []
-						},
-						"column-2" : {
-							"id" : "column-2",
-							"itemIds" : ["item-2", "item-3"]
-						},
-						"column-3" : {
-							"id" : "column-3",
-							"itemIds" : ["item-1", "item-4"]
-						}
-					},
-					"correctResponse" : "Nice job!",
-					"incorrectResponse" : "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Encyclopedia</td><td>Secondary</td></tr><tr><td>Published Paper</td><td>Primary</td></tr><tr><td>Lab notes</td><td>Primary</td></tr><tr><td>Time article</td><td>Secondary</td></tr></tbody></table>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "declarative",
-					"text" : "<h1>Warning</h1><p>As we mentioned at the beginning of this tutorial, definitions of primary and secondary sources may vary by discipline. Your instructor may not entirely agree with our assessments of what is primary or secondary. When in doubt, ask your instructor.</p>"
-				}
-			]
-		}
-	},
-	{
-		"set" : {
-			"setContent" : [
-				{
-					"contentId" : 1,
-					"type" : "submitForm",
-					"text" : "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!",
-					"problem" : "What is 3 times 6?",
-					"solution" : 18
-				}
-			]
-		}
-	}
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Primary and Secondary Sources</h1><p>Sometimes an instructor will ask you to use <strong>primary sources</strong> for a research project. What does that mean?</p><p>A primary source provides firsthand evidence about an event, object, or person. In the natural and social sciences, primary sources are often empirical studies—research where an experiment was performed, or a direct observation was made.</p><p><i>Example: A chemist performs an experiment and publishes an article about the results in a scientific journal. That article is a primary source on the chemist’s work.</i></p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Secondary Sources</h1><p>Secondary sources are those that evaluate, describe, or summarize primary sources. They do not involve direct observation.</p><p><i>Example: A reporter from a local newspaper hears about the chemist’s work and writes a short piece explaining aspects of the work to non-scientific readers. That article is a secondary source on the chemist’s work.</i></p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Context</h1><p>Whether a source is considered primary or secondary depends on its relationship to the object of your research. If Researcher A publishes a review article citing the work of Researcher B, that article is a primary source for A’s biographer, but a secondary source on the topic of B’s research.</p><p>Confusing? Don’t worry! We’ll go through some examples that should clarify things.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>You are researching the history of the search for extraterrestrial life. In that context, is Louis Friedman’s book <i>Along but Not Lonely: Exploring for Extraterrestrial Life</i> (University or Arizona Press, 2023) a primary or secondary source?</p>",
+          "image": "images/primary/aloneBook.jpg",
+          "imageAlt": "Cover of Along but Not Lonely",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Primary",
+              "isCorrect": false,
+              "response": "Incorrect. This book is a secondary source on the topic. Books, especially those written for a general readership, don’t often report new research—they summarize findings that are reported in the scholarly literature (i.e., journals)."
+            },
+            {
+              "answerId": 2,
+              "text": "Secondary",
+              "isCorrect": true,
+              "response": "Correct! This book is a secondary source on the topic. Books, especially those written for a general readership, don’t often report new research—they summarize findings that are reported in the scholarly literature (i.e., journals)."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>Considering the necessary conditions for life on other planets, you find the following article: <p class='citation'>Spinelli, R., Borsa, F., Ghirlanda, G., Ghisellini, G., & Haardt, F. (2023). The ultraviolet habitable zone of exoplanets. <i>Monthly Notices of the Royal Astronomical Society, 522</i>(1), 1411–1418.</p> <p>Is this a primary or secondary source for the purposes of your research?</p>",
+          "image": "images/primary/spinelli.png",
+          "imageAlt": "Abstract of Spinelli et al.",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Primary",
+              "isCorrect": true,
+              "response": "Correct! This is a report of original research and thus a primary source. Note the use of the first person in the abstract: 'We investigate,' 'We measure,' 'We find'."
+            },
+            {
+              "answerId": 2,
+              "text": "Secondary",
+              "isCorrect": false,
+              "response": "Incorrect. This is a report of original research and thus a primary source. Note the use of the first person in the abstract: 'We investigate,' 'We measure,' 'We find'."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>Continuing your research on the conditions for life on other planets, you find the following article about Mars: <p class='citation'>Ryuki Hyodo, Tomohiro Usui, Searching for life on Mars and its moons. <i>Science</i> 373,742-742(2021).</p><p>For the purposes of your paper, is this source primary or secondary?</p>",
+          "image": "images/primary/ryuki.png",
+          "imageAlt": "Article in Astrophysical Journal",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Primary",
+              "isCorrect": false,
+              "response": "Incorrect. (But don’t feel bad&mdash;this is a tricky one!) This is a secondary source on the possibility of life on Mars. While it <em>is</em> published in a scholarly journal, it does not report original research. It merely speculates on what might be learned from Martian samples that will be collected on future missions."
+            },
+            {
+              "answerId": 2,
+              "text": "Secondary",
+              "isCorrect": true,
+              "response": "Correct! (And congratulations&mdash;this is a tricky one!) This is a secondary source on the possibility of life on Mars. While it <em>is</em> published in a scholarly journal, it does not report original research. It merely speculates on what might be learned from Martian samples that will be collected on future missions."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>Kurtgesagt is a popular science explainer channel on YouTube. One of their videos is called \"Aliends under the Ice: Life on Rogue Planets.\"</p><iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/M7CkdB5z9PY?si=fC4eiyN1pCa2T6ci' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe><br /><br /><p>Is this video a primary or secondary source on the conditions for life?</p>",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Primary",
+              "isCorrect": false,
+              "response": "Incorrect. This is a secondary source. Like a book, this is a summary of pre-existing evidence."
+            },
+            {
+              "answerId": 2,
+              "text": "Secondary",
+              "isCorrect": true,
+              "response": "Correct! This is a secondary source. Like a book, this is a summary of pre-existing evidence."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>This is a video in which a NASA Engineer discusses his involvement with the Mars Rover program.</p><br /><br /><iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/0KWUkehBh0E?si=UVWf5lktevODunI_' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe><p>With respect to the Mars Rover program, is this a primary or secondary source?</p>",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Primary",
+              "isCorrect": true,
+              "response": "Correct! This is an interview with a person who was directly involved with the Mars Rover program."
+            },
+            {
+              "answerId": 2,
+              "text": "Secondary",
+              "isCorrect": false,
+              "response": "Incorrect. This is an interview with a person who was directly involved with the Mars Rover program."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>This article from the Wall Street Journal describes the analysis of Martian atmospheric data by NASA.</p><p class='citation'>Hotz, R. L. (2018, June 7). Mars Rover Curiosity Finds More Clues to the Potential for Life; NASA scientists analyzed six years of atmospheric data collected on Mars and concluded methane there peaks near the end of summer. Wall Street Journal (Online). https://www.proquest.com/docview/2051273399/citation/FB64EB2FFEBB4D62PQ/1</p><p>Is this source primary or secondary?</p>",
+          "image": "images/primary/wsj.png",
+          "imageAlt": "WSJ story about Martian atmospheric data",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Primary",
+              "isCorrect": false,
+              "response": "Incorrect. This is a secondary source on the search for life on Mars. Newspapers often report on science, but scientists don’t publish their research results in newspapers. This news story is a report on results that were initially published elsewhere."
+            },
+            {
+              "answerId": 2,
+              "text": "Secondary",
+              "isCorrect": true,
+              "response": "Correct. This is a secondary source on the search for life on Mars. Newspapers often report on science, but scientists don’t publish their research results in newspapers. This news story is a report on results that were initially published elsewhere."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "multipleChoice",
+          "text": "<h1>Test Yourself</h1><p>The following paper is cited in the WSJ story that we looked at in the last question.</p><p class='citation'>Webster, C. R., Mahaffy, P. R., Atreya, S. K., Moores, J. E., Flesch, G. J., Malespin, C., McKay, C. P., Martinez, G., Smith, C. L., Martin-Torres, J., Gomez-Elvira, J., Zorzano, M.-P., Wong, M. H., Trainer, M. G., Steele, A., Archer, D., Sutter, B., Coll, P. J., Freissinet, C., … Vasavada, A. R. (2018). Background levels of methane in Mars’ atmosphere show strong seasonal variations. <i>Science, 360</i>(6393), 1093–1096. https://doi.org/10.1126/science.aaq0131</p>",
+          "image": "images/primary/science.png",
+          "imageAlt": "Paper in Science",
+          "answers": [
+            {
+              "answerId": 1,
+              "text": "Primary",
+              "isCorrect": true,
+              "response": "Correct. This is a primary source. Unlike the article in <i>Science</i> that we examined earlier, this one is a report of original research."
+            },
+            {
+              "answerId": 2,
+              "text": "Secondary",
+              "isCorrect": false,
+              "response": "Incorrect. This is a primary source. Unlike the article in <i>Science</i> that we examined earlier, this one is a report of original research."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "classify",
+          "text": "<h1>Last Question!</h1><p>You’re writing a paper about the possibility of sub-surface water on Mars. With reference to that topic, classify the sources below as primary or secondary by dragging them to the appropriate box.</p>",
+          "items": {
+            "item-1": {
+              "id": "item-1",
+              "content": "An encyclopedia entry on Mars"
+            },
+            "item-2": {
+              "id": "item-2",
+              "content": "A published paper by a scientist describing his computer analysis of Martian topography"
+            },
+            "item-3": {
+              "id": "item-3",
+              "content": "A scientist’s lab notes from his work on Martian rocks"
+            },
+            "item-4": {
+              "id": "item-4",
+              "content": "An article in Time describing the latest Mars mission"
+            },
+            "item-5": {
+              "id": "item-5",
+              "content": "A dataset of methane measurements on Mars"
+            }
+          },
+          "columns": {
+            "column-1": {
+              "id": "column-1",
+              "title": null,
+              "itemIds": ["item-1", "item-2", "item-3", "item-4", "item-5"]
+            },
+            "column-2": {
+              "id": "column-2",
+              "title": "Primary",
+              "itemIds": []
+            },
+            "column-3": {
+              "id": "column-3",
+              "title": "Secondary",
+              "itemIds": []
+            }
+          },
+          "columnOrder": ["column-1", "column-2", "column-3"],
+          "correctAnswer": {
+            "column-1": {
+              "id": "column-1",
+              "itemIds": []
+            },
+            "column-2": {
+              "id": "column-2",
+              "itemIds": ["item-2", "item-3", "item-5"]
+            },
+            "column-3": {
+              "id": "column-3",
+              "itemIds": ["item-1", "item-4"]
+            }
+          },
+          "correctResponse": "Nice job!",
+          "incorrectResponse": "<p>Not quite. Here are the correct answers:</p><table class='answer-table'><tbody><tr><td>Encyclopedia</td><td>Secondary</td></tr><tr><td>Published Paper</td><td>Primary</td></tr><tr><td>Lab notes</td><td>Primary</td></tr><tr><td>Time article</td><td>Secondary</td></tr></tbody></table>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "declarative",
+          "text": "<h1>Warning</h1><p>As we mentioned at the beginning of this tutorial, definitions of primary and secondary sources may vary by discipline. Your instructor may not entirely agree with our assessments of what is primary or secondary. When in doubt, ask your instructor.</p>"
+        }
+      ]
+    }
+  },
+  {
+    "set": {
+      "setContent": [
+        {
+          "contentId": 1,
+          "type": "submitForm",
+          "text": "Thanks for playing! Fill out this form if you’d like to notify your instructor that you’ve completed this tutorial. Otherwise, you’re all done!",
+          "problem": "What is 3 times 6?",
+          "solution": 18
+        }
+      ]
+    }
+  }
 ]
