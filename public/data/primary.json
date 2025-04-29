@@ -5,7 +5,7 @@
         {
           "contentId": 1,
           "type": "declarative",
-          "text": "<h1>Primary and Secondary Sources</h1><p>Sometimes an instructor will ask you to use <strong>primary sources</strong> for a research project. What does that mean?</p><p>A primary source provides firsthand evidence about an event, object, or person. In the natural and social sciences, primary sources are often empirical studies—research where an experiment was performed, or a direct observation was made.</p><p><i>Example: A chemist performs an experiment and publishes an article about the results in a scientific journal. That article is a primary source on the chemist’s work.</i></p>"
+          "text": "<h1>Primary and Secondary Sources</h1><p>Sometimes an instructor will ask you to use <strong>primary sources</strong> for a research project. What does that mean?</p><p>A primary source provides firsthand evidence about an event, object, or person. In the natural and social sciences, primary sources are often empirical studies—research where the author performs an experiment or makes a direct observation. In the humanities, a primary source is generally a first-hand account but can also include paintings, sculptures, and artifacts from a specific time period.</p><p><i>Example: A chemist performs an experiment and publishes an article about the results in a scientific journal. That article is a primary source on the chemist’s work.</i></p>"
         }
       ]
     }
@@ -92,7 +92,7 @@
         {
           "contentId": 1,
           "type": "multipleChoice",
-          "text": "<h1>Test Yourself</h1><p>Continuing your research on the conditions for life on other planets, you find the following article about Mars: <p class='citation'>Ryuki Hyodo, Tomohiro Usui, Searching for life on Mars and its moons. <i>Science</i> 373,742-742(2021).</p><p>For the purposes of your paper, is this source primary or secondary?</p>",
+          "text": "<h1>Test Yourself</h1><p>Continuing your research on the conditions for life on other planets, you find the following article about Mars: <p class='citation'>Hyodo, R., &amp; Usui, T. (2021). Searching for life on Mars and its moons. <i>Science, 373</i>(6556), 742–742.</p><p>For the purposes of your paper, is this source primary or secondary?</p>",
           "image": "images/primary/ryuki.png",
           "imageAlt": "Article in Astrophysical Journal",
           "answers": [
@@ -119,7 +119,7 @@
         {
           "contentId": 1,
           "type": "multipleChoice",
-          "text": "<h1>Test Yourself</h1><p>Kurtgesagt is a popular science explainer channel on YouTube. One of their videos is called \"Aliends under the Ice: Life on Rogue Planets.\"</p><iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/M7CkdB5z9PY?si=fC4eiyN1pCa2T6ci' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe><br /><br /><p>Is this video a primary or secondary source on the conditions for life?</p>",
+          "text": "<h1>Test Yourself</h1><p>Kurtgesagt is a popular science explainer channel on YouTube. One of their videos is called \"Aliens under the Ice: Life on Rogue Planets.\"</p><iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/M7CkdB5z9PY?si=fC4eiyN1pCa2T6ci' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe><br /><br /><p>Is this video a primary or secondary source on the conditions for life?</p>",
           "answers": [
             {
               "answerId": 1,
@@ -169,7 +169,7 @@
         {
           "contentId": 1,
           "type": "multipleChoice",
-          "text": "<h1>Test Yourself</h1><p>This article from the Wall Street Journal describes the analysis of Martian atmospheric data by NASA.</p><p class='citation'>Hotz, R. L. (2018, June 7). Mars Rover Curiosity Finds More Clues to the Potential for Life; NASA scientists analyzed six years of atmospheric data collected on Mars and concluded methane there peaks near the end of summer. Wall Street Journal (Online). https://www.proquest.com/docview/2051273399/citation/FB64EB2FFEBB4D62PQ/1</p><p>Is this source primary or secondary?</p>",
+          "text": "<h1>Test Yourself</h1><p>This article from the <i>Wall Street Journal</i> describes the analysis of Martian atmospheric data by NASA.</p><p class='citation'>Hotz, R. L. (2018, June 7). Mars Rover Curiosity finds more clues to the potential for life; NASA scientists analyzed six years of atmospheric data collected on Mars and concluded methane there peaks near the end of summer. <i>Wall Street Journal (Online)</i>.</p><p>Is this source primary or secondary?</p>",
           "image": "images/primary/wsj.png",
           "imageAlt": "WSJ story about Martian atmospheric data",
           "answers": [
@@ -196,7 +196,7 @@
         {
           "contentId": 1,
           "type": "multipleChoice",
-          "text": "<h1>Test Yourself</h1><p>The following paper is cited in the WSJ story that we looked at in the last question.</p><p class='citation'>Webster, C. R., Mahaffy, P. R., Atreya, S. K., Moores, J. E., Flesch, G. J., Malespin, C., McKay, C. P., Martinez, G., Smith, C. L., Martin-Torres, J., Gomez-Elvira, J., Zorzano, M.-P., Wong, M. H., Trainer, M. G., Steele, A., Archer, D., Sutter, B., Coll, P. J., Freissinet, C., … Vasavada, A. R. (2018). Background levels of methane in Mars’ atmosphere show strong seasonal variations. <i>Science, 360</i>(6393), 1093–1096. https://doi.org/10.1126/science.aaq0131</p>",
+          "text": "<h1>Test Yourself</h1><p>The following paper is cited in the WSJ story that we looked at in the last question.</p><p class='citation'>Webster, C. R., Mahaffy, P. R., Atreya, et al. (2018). Background levels of methane in Mars’ atmosphere show strong seasonal variations. <i>Science, 360</i>(6393), 1093–1096.</p>",
           "image": "images/primary/science.png",
           "imageAlt": "Paper in Science",
           "answers": [
@@ -204,13 +204,13 @@
               "answerId": 1,
               "text": "Primary",
               "isCorrect": true,
-              "response": "Correct. This is a primary source. Unlike the article in <i>Science</i> that we examined earlier, this one is a report of original research."
+              "response": "Correct. This is a primary source. Unlike the article in <i>Science</i> that we examined earlier, this is a report of original research."
             },
             {
               "answerId": 2,
               "text": "Secondary",
               "isCorrect": false,
-              "response": "Incorrect. This is a primary source. Unlike the article in <i>Science</i> that we examined earlier, this one is a report of original research."
+              "response": "Incorrect. This is a primary source. Unlike the article in <i>Science</i> that we examined earlier, this is a report of original research."
             }
           ]
         }
