@@ -1,75 +1,82 @@
-import React, { Component, Fragment } from 'react';
-import OrderList from './OrderList';
+import React, { Component, Fragment } from "react";
+import OrderList from "./OrderList";
 
 class UserChoice extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentSlide: this.props.currentSlide,
+      response: "",
+      selectedQuestion: null,
+    };
+    this.recordAnswer = this.props.recordAnswer;
+  }
 
-	constructor(props) {
-		super(props);
-		this.state = {
-			currentSlide: this.props.currentSlide,
-			response: '',
-			selectedQuestion : null
-		};
-		this.recordAnswer = this.props.recordAnswer;
-	}
+  onChoiceSelect = (e) => {
+    // Get the selected answer
+    const choiceId = parseInt(e.target.value, 10);
 
-	onChoiceSelect = (e) => {
+    // Make the answer look selected
+    const theChoices = e.target.childNodes;
+    for (let i = 0; i < theChoices.length; i++) {
+      theChoices[i].checked = false;
+    }
+    e.target.checked = true;
 
-		// Get the selected answer
-		const choiceId = parseInt(e.target.previousSibling.value, 10);
+    // Now hide the form
+    const theForm = e.target.closest("form");
+    theForm.classList.add("hidden");
 
-		// Make the answer look selected
-		const theChoices = e.target.closest('form').childNodes;
-		for (let i=0; i<theChoices.length; i++) {
-			theChoices[i].firstChild.checked = false;
-		}
-		e.target.previousSibling.checked = true;
+    this.setState({ selectedQuestion: choiceId });
+  };
 
-		// Now hide the form
-		const theForm = e.target.closest('form');
-		theForm.classList.add('hidden');
-
-		this.setState({ selectedQuestion : choiceId });
-
-	}
-
-	render() {
-		return (
-			<Fragment>
-				<div className="mc-answers user-choice">
-					<form>
-						<p className="text">Please choose a subject area. It doesn't have to be your major.</p>
-						{ this.props.content.setContent.map(q =>
-							<div className="mc-answer" key={q.contentId}>
-								<input type="radio" value={q.contentId} name={'s' + this.props.currentSlide} />
-								<label onClick={this.onChoiceSelect}>{q.contentLabel}</label>
-							</div>
-						)}
-					</form>
-					<div className="uc-question-area">
-						{ this.props.content.setContent.map(q =>
-							<OrderList
-								key={q.contentId} 
-								content={q}
-								slideId={this.props.slideId}
-								contentId={q.contentId}
-								display={this.state.selectedQuestion === q.contentId} 
-								items={q.items}
-								text={q.text}
-								correctOrder={q.correctOrder}
-								perfectResponse={q.perfectResponse}
-								goodResponse={q.goodResponse}
-								badResponse={q.badResponse}
-								recordAnswer={this.props.recordAnswer}
-								thawNav={this.props.thawNav}
-							/>
-						)}
-					</div>
-				</div>
-			</Fragment>
-		);
-	}
-
+  render() {
+    return (
+      <Fragment>
+        <div className="mc-answers user-choice">
+          <form>
+            <fieldset>
+              <legend className="text">
+                Please choose a subject area. It doesn't have to be your major.
+              </legend>
+              {this.props.content.setContent.map((q) => (
+                <div className="mc-answer" key={q.contentId}>
+                  <label>
+                    <input
+                      type="radio"
+                      value={q.contentId}
+                      name={"s" + this.props.currentSlide}
+                      onChange={this.onChoiceSelect}
+                    />
+                    {q.contentLabel}
+                  </label>
+                </div>
+              ))}
+            </fieldset>
+          </form>
+          <div className="uc-question-area">
+            {this.props.content.setContent.map((q) => (
+              <OrderList
+                key={q.contentId}
+                content={q}
+                slideId={this.props.slideId}
+                contentId={q.contentId}
+                display={this.state.selectedQuestion === q.contentId}
+                items={q.items}
+                text={q.text}
+                correctOrder={q.correctOrder}
+                perfectResponse={q.perfectResponse}
+                goodResponse={q.goodResponse}
+                badResponse={q.badResponse}
+                recordAnswer={this.props.recordAnswer}
+                thawNav={this.props.thawNav}
+              />
+            ))}
+          </div>
+        </div>
+      </Fragment>
+    );
+  }
 }
 
 export default UserChoice;

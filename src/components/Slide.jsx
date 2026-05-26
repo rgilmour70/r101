@@ -42,7 +42,9 @@ const Slide = (props) => {
     case "textAnswer":
       return (
         <div className={displayClass} id={"s" + slideId}>
-          <div className="text">{ReactHtmlParser(content.text)}</div>
+          <div className="text" id={"sa" + slideId}>
+            {ReactHtmlParser(content.text)}
+          </div>
           <TextAnswer {...props} />
         </div>
       );

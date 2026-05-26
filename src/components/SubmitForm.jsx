@@ -114,6 +114,7 @@ class SubmitForm extends Component {
               <label htmlFor="year">Year of study </label>
               <select
                 name="year"
+                id="year"
                 value={this.state.year}
                 onChange={(e) => this.setState({ year: e.target.value })}
               >
@@ -134,6 +135,7 @@ class SubmitForm extends Component {
               <input
                 type="number"
                 name="check"
+                id="check"
                 pattern="18"
                 value={this.state.check}
                 onChange={(e) => this.setState({ check: e.target.value })}

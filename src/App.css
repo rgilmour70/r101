@@ -145,6 +145,10 @@ h1 {
   font-weight: bold;
 }
 
+fieldset {
+  border: 0 !important;
+}
+
 .citation-data-table {
   margin-left: auto;
   margin-right: auto;

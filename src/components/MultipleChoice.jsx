@@ -14,7 +14,6 @@ const MultipleChoice = (props) => {
 
     // Get the selected answer
     const answerId = parseInt(e.target.value, 10);
-    console.log(e.target);
 
     // Make the answer look selected
     const theChoices = e.target.closest("form").childNodes;
@@ -51,26 +50,29 @@ const MultipleChoice = (props) => {
     <Fragment>
       <div className="mc-answers">
         <form>
-          {props.content.answers.map((a) => (
-            <div key={a.answerId} className="mc-answer-wrapper">
-              <span
-                className="mc-answer"
-                onClick={onMcAnswerSelect}
-                key={a.answerId}
-              >
-                <label>
-                  <input
-                    type="radio"
-                    name={"s" + currentSlide}
-                    value={a.answerId}
-                  />
-                  {a.text}
-                </label>
-              </span>
-              <ModalInfo info={a.info} infoLabel={a.infoLabel} />
-              <br />
-            </div>
-          ))}
+          <fieldset>
+            <legend></legend>
+            {props.content.answers.map((a) => (
+              <div key={a.answerId} className="mc-answer-wrapper">
+                <span
+                  className="mc-answer"
+                  onClick={onMcAnswerSelect}
+                  key={a.answerId}
+                >
+                  <label>
+                    <input
+                      type="radio"
+                      name={"s" + currentSlide}
+                      value={a.answerId}
+                    />
+                    {a.text}
+                  </label>
+                </span>
+                <ModalInfo info={a.info} infoLabel={a.infoLabel} />
+                <br />
+              </div>
+            ))}
+          </fieldset>
         </form>
       </div>
       <Feedback response={response} />
