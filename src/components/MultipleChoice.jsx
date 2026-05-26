@@ -1,81 +1,88 @@
-import React, { Fragment, useState } from 'react';
-import PropTypes from 'prop-types';
-import Feedback from './Feedback';
-import ModalInfo from './ModalInfo';
+import React, { Fragment, useState } from "react";
+import PropTypes from "prop-types";
+import Feedback from "./Feedback";
+import ModalInfo from "./ModalInfo";
 
 const MultipleChoice = (props) => {
+  const [response, setResponse] = useState("");
+  const [tried, setTried] = useState(false);
 
-	const [response, setResponse] = useState('');
-	const [tried, setTried] = useState(false);
+  const { currentSlide, content, thawNav, recordAnswer } = props;
 
-	const { currentSlide, content, thawNav, recordAnswer } = props;
+  const onMcAnswerSelect = (e) => {
+    setTried(true);
 
-	const onMcAnswerSelect = (e) => {
+    // Get the selected answer
+    const answerId = parseInt(e.target.value, 10);
+    console.log(e.target);
 
-		setTried(true);
+    // Make the answer look selected
+    const theChoices = e.target.closest("form").childNodes;
+    for (let i = 0; i < theChoices.length; i++) {
+      theChoices[i].checked = false;
+    }
+    e.target.checked = true;
 
-		// Get the selected answer
-		const answerId = parseInt(e.target.previousSibling.value, 10);
+    // Determine the correct answer
+    const theAnswers = content.answers;
+    let theRightAnswer = null;
+    for (let j = 0; j < theAnswers.length; j++) {
+      if (theAnswers[j].isCorrect) {
+        theRightAnswer = theAnswers[j].answerId;
+      }
+      if (theAnswers[j].answerId === answerId) {
+        setResponse(theAnswers[j].response);
+      }
+    }
 
-		// Make the answer look selected
-		const theChoices = e.target.closest('form').childNodes;
-		for (let i=0; i<theChoices.length; i++) {
-			theChoices[i].firstChild.checked = false;
-		}
-		e.target.previousSibling.checked = true;
+    const isCorrect = answerId === theRightAnswer;
 
-		// Determine the correct answer
-		const theAnswers = content.answers;
-		let theRightAnswer = null;
-		for (let j=0; j<theAnswers.length; j++) {
-			if (theAnswers[j].isCorrect) {
-				theRightAnswer = theAnswers[j].answerId;
-			} 
-			if (theAnswers[j].answerId === answerId) {
-				setResponse(theAnswers[j].response);
-			}
-		}
+    if (isCorrect) {
+      thawNav();
+    }
 
-		const isCorrect = answerId === theRightAnswer;
+    /* Need to only record the answer if it's the first one! */
+    if (!tried) {
+      recordAnswer(currentSlide, props.content.contentId, answerId, isCorrect);
+    }
+  };
 
-		if (isCorrect) {
-			thawNav();
-		}
-
-		/* Need to only record the answer if it's the first one! */
-		if (!tried) {
-			recordAnswer(currentSlide, props.content.contentId, answerId, isCorrect);
-		}
-
-	}
-
-	return (
-		<Fragment>
-			<div className="mc-answers">
-				<form>
-				{ props.content.answers.map(a =>
-					<div key={a.answerId} className="mc-answer-wrapper">
-						<span className="mc-answer" onClick={onMcAnswerSelect} key={a.answerId}>
-							<input type="radio" name={'s' + currentSlide} value={a.answerId}/>
-							<label>{a.text}</label>
-						</span>
-						<ModalInfo info={a.info} infoLabel={a.infoLabel} />
-						<br />
-					</div>
-				)}
-				</form>
-			</div>
-			<Feedback response={response} />
-		</Fragment>
-	);
-
-}
+  return (
+    <Fragment>
+      <div className="mc-answers">
+        <form>
+          {props.content.answers.map((a) => (
+            <div key={a.answerId} className="mc-answer-wrapper">
+              <span
+                className="mc-answer"
+                onClick={onMcAnswerSelect}
+                key={a.answerId}
+              >
+                <label>
+                  <input
+                    type="radio"
+                    name={"s" + currentSlide}
+                    value={a.answerId}
+                  />
+                  {a.text}
+                </label>
+              </span>
+              <ModalInfo info={a.info} infoLabel={a.infoLabel} />
+              <br />
+            </div>
+          ))}
+        </form>
+      </div>
+      <Feedback response={response} />
+    </Fragment>
+  );
+};
 
 MultipleChoice.propTypes = {
-	currentSlide: PropTypes.number.isRequired,
-	content: PropTypes.object.isRequired,
-	thawNav: PropTypes.func.isRequired,
-	recordAnswer: PropTypes.func.isRequired
+  currentSlide: PropTypes.number.isRequired,
+  content: PropTypes.object.isRequired,
+  thawNav: PropTypes.func.isRequired,
+  recordAnswer: PropTypes.func.isRequired,
 };
 
 export default MultipleChoice;

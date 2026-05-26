@@ -616,14 +616,15 @@ input[type="radio"] {
   /*visibility: hidden;*/
   display: none;
 }
-input[type="radio"] + label {
+label:has(input[type="radio"]) {
   padding: 0.2em 0.2em 0.2em 3em;
   position: relative;
   cursor: pointer;
   margin-bottom: 1em;
   display: table-cell;
 }
-input[type="radio"] + label::before {
+
+label:has(input[type="radio"])::before {
   content: "";
   color: var(--dark-color);
   position: absolute;
@@ -634,8 +635,10 @@ input[type="radio"] + label::before {
   background-color: #fff;
   border: 2px solid var(--dark-color);
   border-radius: 50%;
+  border-radius: 50%;
 }
-input[type="radio"]:checked + label::before {
+
+label:has(input[type="radio"]:checked)::before {
   line-height: 1.8em;
   color: #fff;
   background-color: var(--dark-color);
