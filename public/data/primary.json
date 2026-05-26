@@ -38,9 +38,9 @@
         {
           "contentId": 1,
           "type": "multipleChoice",
-          "text": "<h1>Test Yourself</h1><p>You are researching the history of the search for extraterrestrial life. In that context, is Louis Friedman’s book <i>Along but Not Lonely: Exploring for Extraterrestrial Life</i> (University or Arizona Press, 2023) a primary or secondary source?</p>",
+          "text": "<h1>Test Yourself</h1><p>You are researching the history of the search for extraterrestrial life. In that context, is Louis Friedman’s book <i>Alone but Not Lonely: Exploring for Extraterrestrial Life</i> (University or Arizona Press, 2023) a primary or secondary source?</p>",
           "image": "images/primary/aloneBook.jpg",
-          "imageAlt": "Cover of Along but Not Lonely",
+          "imageAlt": "Cover of Alone but Not Lonely",
           "answers": [
             {
               "answerId": 1,
