@@ -131,6 +131,7 @@ if ($_POST) {
 
 	// data
 	$msg .= $fromName . ' (' . $fromEmail . ') has completed the IC Library ' . $title_for_email . ' Tutorial.';
+	// $msg .= "<br>" . $query_final . "<br><br>" . $error_message . "<br><br>";
 
 	if ($check == $solution
     && preg_match('/\w+\@\w+\.\w{2,4}(\.\w{2,4})?/', $toEmail) 
