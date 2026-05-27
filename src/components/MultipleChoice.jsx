@@ -54,16 +54,13 @@ const MultipleChoice = (props) => {
             <legend></legend>
             {props.content.answers.map((a) => (
               <div key={a.answerId} className="mc-answer-wrapper">
-                <span
-                  className="mc-answer"
-                  onClick={onMcAnswerSelect}
-                  key={a.answerId}
-                >
+                <span className="mc-answer" key={a.answerId}>
                   <label>
                     <input
                       type="radio"
                       name={"s" + currentSlide}
                       value={a.answerId}
+                      onChange={onMcAnswerSelect}
                     />
                     {a.text}
                   </label>

@@ -189,7 +189,7 @@ const App = () => {
       setCurrentSlide(next);
       moveProgressBar(howFar);
     }
-    // console.log(record);
+    // console.log("record value:", JSON.stringify(record));
   };
 
   const recordAnswer = (currentSlide, contentId, answer, isCorrect) => {

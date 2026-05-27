@@ -14,7 +14,6 @@ const TextAnswer = (props) => {
 
     // get the entered answer
     const userInput = e.currentTarget[1].value;
-    console.log(userInput);
     const correctAnswersArray = content.correctAnswers.split(",");
     let isCorrect = false;
     for (let i = 0; i < correctAnswersArray.length; i++) {
